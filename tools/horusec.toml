@@ -1,0 +1,10 @@
+build = ""
+tag = "v2.8.0"
+image = "horuszup/horusec-cli"
+output_volume_docker = ""
+input_volume_docker = ""
+default_option = "scan"
+
+[options]
+    
+scan = "horusec start -p /input/{0} -o sarif -O {output_place}"

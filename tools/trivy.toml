@@ -1,0 +1,11 @@
+build = ""
+tag = "0.34.0"
+image = "aquasec/trivy"
+output_volume_docker = ""
+input_volume_docker = ""
+default_option = "image"
+
+[options]
+    
+image = "image -f sarif --output {output_place} {0}"
+filesystem = "fs /input/{0} -f sarif --output {output_place}"

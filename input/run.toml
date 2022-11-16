@@ -1,0 +1,12 @@
+[[runs]]
+
+tool = "trivy"
+option = "image"
+args = ["bioinformaticsua/catalogue:Test"]
+
+[[runs]]
+
+tool = "trivy"
+option = "filesystem"
+args = ["Security-Pipeline-Testing"]
+

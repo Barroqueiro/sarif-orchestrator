@@ -1,0 +1,10 @@
+build = ""
+tag = "v0.4.9"
+image = "goodwithtech/dockle"
+output_volume_docker = ""
+input_volume_docker = "/path"
+default_option = "scan"
+
+[options]
+    
+scan = "-f sarif -o {output_place} {0}"

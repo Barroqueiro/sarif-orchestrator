@@ -1,0 +1,10 @@
+build = ""
+tag = "v8.15.0"
+image = "zricethezav/gitleaks"
+output_volume_docker = ""
+input_volume_docker = "/path"
+default_option = "detect"
+
+[options]
+    
+detect = "detect --source '/path/{0}' -r {output_place} -f sarif"
