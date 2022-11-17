@@ -7,5 +7,5 @@ default_option = "image"
 
 [options]
     
-image = "image -f sarif --output {output_place} {0}"
-filesystem = "fs /input/{0} -f sarif --output {output_place}"
+image = "image {custom_args} -f sarif --output {output_place} {0}"
+filesystem = "fs /input/{0} -f sarif --output {output_place} {custom_args}"

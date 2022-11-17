@@ -7,4 +7,4 @@ default_option = "scan"
 
 [options]
     
-scan = "horusec start -p /input/{0} -o sarif -O {output_place}"
+scan = "horusec start -p /input/{0} -o sarif -O {output_place} {custom_args}"

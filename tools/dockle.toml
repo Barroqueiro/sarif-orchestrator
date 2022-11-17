@@ -7,4 +7,4 @@ default_option = "scan"
 
 [options]
     
-scan = "-f sarif -o {output_place} {0}"
+scan = "{custom_args} -f sarif -o {output_place} {0}"

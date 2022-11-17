@@ -7,4 +7,4 @@ default_option = "detect"
 
 [options]
     
-detect = "detect --source '/path/{0}' -r {output_place} -f sarif"
+detect = "detect --source '/path/{0}' -r {output_place} -f sarif {custom_args}"
