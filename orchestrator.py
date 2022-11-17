@@ -2,15 +2,23 @@ import sys
 import toml
 import json
 import logging
+import argparse
 import subprocess
 
-OUTPUT_DIR = "/Users/cruz/Desktop/Bolsa/sarif-orchestrator/output"
-INPUT_DIR = "/Users/cruz/Desktop/Bolsa/sarif-orchestrator/input"
 REPORT_DIR = "Reporting"
 LOGS_DIR = "Logs"
 OUTPUT_DIR_DOCKER = "/output"
 INPUT_DIR_DOCKER = "/input"
-DOCKER_CMD = "docker run -v {output_volume}:{output_volume_docker}: -v {input_volume}:{input_volume_docker} -v /var/run/docker.sock:/var/run/docker.sock {image}:{tag} {option}"
+DOCKER_CMD = "docker run --name {name} -v {output_volume}:{output_volume_docker}: \
+-v {input_volume}:{input_volume_docker} \
+-v /var/run/docker.sock:/var/run/docker.sock \
+{image}:{tag} {option}"
+DOCKER_RM = "docker rm -f {containers}"
+DOCKER_IMAGE_RM = "docker image rm -f {images}"
+
+OUTPUT_DIR = ""
+INPUT_DIR = ""
+CONFIG_FILE = ""
 
 logger = None
 
@@ -28,20 +36,35 @@ def printConfig(config):
     """
     print(json.dumps(config,indent=4))
 
-def finish():
+def finish(ran,keep_images):
     """
-    Waits for all processes to end logs their return codes, also closes all log files used for each process
+    Waits for all processes to end logs their return codes, closes all log files used for each process and removes all containers, if desired also delets the images of said containers
     """
     for call, p, f in globals()["processes"]:
         p.wait() 
         logSubprocess(call,p.returncode)
         f.close()
-    
 
-def setup():
+    tools = [r[0] for r in ran]
+    images = [r[1] + ":" + r[2] for r in ran]
+    rm = DOCKER_RM.format(containers=" ".join(tools))
+    exit_docker_rm = subprocess.run(rm, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode
+    logSubprocess(rm, exit_docker_rm)
+
+    if not keep_images:
+
+        image_rm = DOCKER_IMAGE_RM.format(images=" ".join(images))
+        exit_docker_rm = subprocess.run(image_rm, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode
+        logSubprocess(image_rm, exit_docker_rm)
+
+
+def setup(args):
     """
     Creates the reporting and logs directories if they don't exist already, also setups up the logger
     """
+    globals()["OUTPUT_DIR"] = args["output_dir"]
+    globals()["INPUT_DIR"] = args["input_dir"]
+    globals()["CONFIG_FILE"] = args["config"]
     logging.basicConfig(filename=f'{OUTPUT_DIR}/{LOGS_DIR}/app.log', filemode='w', format='[%(name)-8s]  [%(levelname)-8s]  %(message)s', level=logging.DEBUG)
     globals()["logger"] = logging.getLogger()
 
@@ -95,29 +118,45 @@ def runTool(tool,option=None,args=[],custom_args=""):
     option_cmd = config["options"][option].format(*args,output_place=output,custom_args=custom_args)
 
     # Format full docker command
+    name = tool + "_" + option
     call = DOCKER_CMD.format(output_volume=OUTPUT_DIR,input_volume=INPUT_DIR,\
                         output_volume_docker=output_volume_docker,input_volume_docker=input_volume_docker,\
-                        image=config["image"],tag=config["tag"],option=option_cmd)
+                        image=config["image"],tag=config["tag"],option=option_cmd, name=name)
 
     # Create log file and run the process
     f = open(f'{OUTPUT_DIR}/{LOGS_DIR}/{tool}.log',"w")
     p = subprocess.Popen(call, shell=True, stdout=f, stderr=f)
     globals()["processes"].append((call, p, f))
 
+    return (tool, config["image"], config["tag"] )
+
 def main():
+
+    parser = argparse.ArgumentParser(description="Orchestrating sarif tools")
+    parser.add_argument('--input-dir', type=str, required=True,
+                        help='Directory to be shared with docker for input')
+    parser.add_argument('--output-dir', type=str, required=True,
+                        help='Directory to be shared with docker for output')
+    parser.add_argument('--config', type=str, required=True,
+                        help='Current path')
+    parser.add_argument('--keep-images', action='store_true',
+                        help='Output style')
+    args = parser.parse_args()
+    command_args = vars(args)
 
     config = toml.loads(open("input/run.toml").read())
     printConfig(config)
 
-    setup()
+    setup(command_args)
 
-    for r in getRuns(config):
-        runTool(*r)
+    runs = getRuns(config)
 
-    # TODO
-    # - Cleanup the docker environemnt with deleting the containers (Add option to leave images)
-    # - Add argument to pass the config file with the runs to allow for docker and local testing
-    finish()
+    ran = []
+
+    for r in runs:
+        ran.append(runTool(*r))
+
+    finish(ran,command_args["keep_images"])
 
 if __name__ == "__main__":
     main()

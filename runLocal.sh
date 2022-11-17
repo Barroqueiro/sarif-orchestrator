@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 orchestrator.py
+python3 orchestrator.py $@
