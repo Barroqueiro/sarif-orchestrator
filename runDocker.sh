@@ -1,3 +1,10 @@
 #!/bin/bash
 
-docker run -v /Users/cruz/Desktop/Bolsa/sarif-orchestrator/output:/output:rw -v /Users/cruz/Desktop/Bolsa/sarif-orchestrator/input:/input:ro -v /var/run/docker.sock:/var/run/docker.sock:rw sarif-orchestrator
+docker run -v /Users/cruz/Desktop/Bolsa/sarif-orchestrator/output:/output:rw \
+            -v /Users/cruz/Desktop/Bolsa/sarif-orchestrator/input:/input:ro \
+            -v /var/run/docker.sock:/var/run/docker.sock:rw \
+            sarif-orchestrator \
+            --keep-images \
+            --input-dir /input \
+            --output-dir /output \
+            --config /input/run.toml 
