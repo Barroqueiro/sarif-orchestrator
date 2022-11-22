@@ -78,4 +78,4 @@ Note: `output-dir` and `output-host-dir` are the same when running locally (`./r
 
 ## Notes
 
-- Docker does not ssem to allow for multiple accesses to the same image at the same time, this can cause timeout problem within tools that are going to analyse the same image
+- Docker does not seem to allow for multiple accesses to the same image at the same time, this can cause timeout problem within tools that are going to analyse the same image
