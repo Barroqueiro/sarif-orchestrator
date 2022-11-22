@@ -1,9 +1,18 @@
 import sys
 import toml
 import json
+import queue
 import logging
 import argparse
+import threading
 import subprocess
+from random import randint
+from time import sleep
+
+class states:
+    WAITTING = "WAITTING"
+    RUNNING = "RUNNING"
+    FINISHED = "FINISHED"
 
 REPORT_DIR = "Reporting"
 LOGS_DIR = "Logs"
@@ -15,7 +24,6 @@ DOCKER_CMD = "docker run --name {name} -v {output_volume}:{output_volume_docker}
 {image}:{tag} {option}"
 DOCKER_RM = "docker rm -f {containers}"
 DOCKER_IMAGE_RM = "docker image rm -f {images}"
-res = ""
 
 OUTPUT_DIR = ""
 INPUT_DIR = ""
@@ -23,7 +31,15 @@ CONFIG_FILE = ""
 
 logger = None
 
-processes = []
+semaphore = queue.Queue()
+semaphore.put(1)
+
+to_clean = []
+threads = []
+queues = {}
+runs = {}
+
+# Printing and Logging functions
 
 def logSubprocess(cmd,exit_code):
     """
@@ -31,28 +47,31 @@ def logSubprocess(cmd,exit_code):
     """
     logger.info(f"[{exit_code:3d}] {cmd}")
 
-def printDeps(deps,before=""):
-    global res
+def make_deps_tree(deps,res=[],before=""):
+    """
+    Make a tree based on a dictionary, the res has to be a list as strings are not mutable in python so this gymic needs to be used
+    """
     space =  '    '
-    branch = '|   '
-    tee =    '|---'
-    last =   '\___'
+    branch = '│   '
+    tee =    '├───'
+    last =   '└───'
     count = 0
     length = len(deps)
     for d in deps:
         if length == 1:
-            res += before+last+str(d)+"\n"
+            res += [before+last+d+"\n"]
         elif count == 0:
-            res += before+tee+str(d)+"\n"
+            res += [before+tee+d+"\n"]
         elif count < length-1:
-            res += before+tee+str(d)+"\n"
+            res += [before+tee+d+"\n"]
         else:
-            res += before+last+str(d)+"\n"
+            res += [before+last+d+"\n"]
         if count == length-1:
-            printDeps(deps[d], before+space)
+            make_deps_tree(deps[d],res, before+space)
         else:
-            printDeps(deps[d], before+branch)
+            make_deps_tree(deps[d],res, before+branch)
         count+=1
+    return ''.join(res)
 
 def printConfig(config):
     """
@@ -60,14 +79,71 @@ def printConfig(config):
     """
     print(json.dumps(config,indent=4))
 
-def finish(ran,keep_images):
+# Smaller function to keep the global accesses clean
+
+def acquire():
     """
-    Waits for all processes to end logs their return codes, closes all log files used for each process and removes all containers, if desired also delets the images of said containers
+    Acquire the semaphore for shared resource usage
     """
-    for call, p, f in globals()["processes"]:
-        p.wait() 
-        logSubprocess(call,p.returncode)
-        f.close()
+    globals()["semaphore"].get()
+
+def release():
+    """
+    Release the semaphore for shared resource usage
+    """
+    globals()["semaphore"].put(1)
+
+def addToClean(name, image, tag):
+    acquire()
+    globals()["to_clean"].append((name,image,tag))
+    release()
+
+def updateState(tool, state):
+    acquire()
+    globals()["runs"][tool]["state"] = state
+    release()
+
+def releaseTool(tool):
+    globals()["queues"][tool].put(1)
+
+def setInitialState():
+    acquire()
+    for items in globals()["runs"].values():
+        items["state"] = "WAITTING"
+    release()
+
+def startTasks():
+    acquire()
+    for t in globals()["threads"]:
+        t.start()
+    release()
+
+def waitForFullCompletion():
+    acquire()
+    for t in globals()["threads"]:
+        t.join()
+    release()
+
+def createTasks():
+    acquire()
+    for tool,args in globals()["runs"].items():
+        
+        q = queue.Queue()
+        t = threading.Thread(target=runToolThread, args=(tool,args,q,))
+
+        if not args["depends_on"]:
+            q.put(1)
+
+        globals()["threads"].append(t)
+        globals()["queues"][tool] = q
+
+    release()
+
+def finish(keep_images):
+    """
+    Function to remove the docker containers, the argument specifies if the function should keep the images downloaded or purge them from docker as well
+    """
+    ran = globals()["to_clean"]
 
     tools = [r[0] for r in ran]
     images = [r[1] + ":" + r[2] for r in ran]
@@ -101,12 +177,34 @@ def setup(args):
     logSubprocess(mkdir_logs_cmd,exit_code_mkdir_logs)
 
 def getDeps(tool,dependencies):
+    """
+    Get the dependecies of a root tool (A tool that has no dependents)
+    """
     if tool not in dependencies.values():
-        return {tool:[]}
+        return {tool:{}}
     else:
-        return {tool:[getDeps(x,dependencies) for x in dependencies if dependencies[x] == tool]}
+        tmp = {}
+        for x in dependencies:
+            if dependencies[x] == tool:
+                tmp.update(getDeps(x,dependencies))
+        return {tool:tmp}
 
 def getRuns(config):
+    res = {}
+    for run in config["runs"]:
+        if "custom_args" not in run:
+            run["custom_args"] = ""
+        if "depends_on" not in run:
+            run["depends_on"] = []
+        res[run["tool"]] = run
+        del run["tool"]
+    return res
+
+
+def getD(config):
+    """
+    Get the dictionary containing the tools used nesting the dependencies each have
+    """
     depends = {}
 
     runs = config["runs"]
@@ -117,38 +215,60 @@ def getRuns(config):
         else:
             depends[tool["tool"]] = ""
 
-    print(depends)
-
-    count = 0
-    total = len(depends)
     res = {}
 
     for tool in depends:
         if depends[tool] == "":
             res.update(getDeps(tool,depends))
 
-    print()
-    #printDeps(res)
-
-    # batches = [[]]
-    # idx = 0
-
-    # for i,tool in enumerate(depends):
-    #     if depends[tool] == "":
-    #         batches[0].append(tool)
-    #         count += 1
-
-    # while count < total:
-    #     if count == total:
-    #         break
-    #     batches.append([])
-    #     for i,tool in enumerate(depends):
-    #         if depends[tool] in batches[idx]:
-    #             batches[idx+1].append(tool)
-    #             count += 1
-    #     idx += 1
+    print(res)
 
     return res
+
+def runPossible():
+    """
+    Function that evaluates all the non root tools and whose state is WAITTING and checks for the FINISH state within the dependencies it has, it all dependencies are FINISHED,
+    lauch the tool
+    """
+
+    acquire()
+
+    for tool,args in globals()["runs"].items():
+
+        if args["depends_on"] != [] and args["state"] == "WAITTING":
+
+            depends = args["depends_on"]
+            can_run = all([runs[d]["state"] == "FINISHED" for d in depends])
+
+            if can_run:
+                
+                print("Lauching ",tool)
+                updateState(tool, states.RUNNING)
+                releaseTool(tool)
+                
+
+    release()
+
+
+
+def runToolThread(tool,args,q):
+    """
+    Function each thread will execute, this function will remain blocked until the tools that this tool depends on are FINISHED 
+    """
+    
+    # Blocking call
+    q.get()
+
+    # Run the docker and wait for it's completion
+    runTool(tool,args["option"],args["args"],args["custom_args"])
+
+    # Update the state to finished when the runTool function returns
+    updateState(tool, states.FINISHED)
+
+    # Run the tools that can start running
+    runPossible()
+
+
 
 def runTool(tool,option=None,args=[],custom_args=""):
     """
@@ -182,16 +302,20 @@ def runTool(tool,option=None,args=[],custom_args=""):
 
     # Format full docker command
     name = tool + "_" + option
+    image = config["image"]
+    tag = config["tag"]
     call = DOCKER_CMD.format(output_volume=OUTPUT_DIR,input_volume=INPUT_DIR,\
                         output_volume_docker=output_volume_docker,input_volume_docker=input_volume_docker,\
-                        image=config["image"],tag=config["tag"],option=option_cmd, name=name)
+                        image=image,tag=tag,option=option_cmd, name=name)
 
     # Create log file and run the process
     f = open(f'{OUTPUT_DIR}/{LOGS_DIR}/{tool}.log',"w")
-    p = subprocess.Popen(call, shell=True, stdout=f, stderr=f)
-    globals()["processes"].append((call, p, f))
+    p = subprocess.run(call, shell=True, stdout=f, stderr=f).returncode
+    logSubprocess(call,p)
 
-    return (tool, config["image"], config["tag"])
+    addToClean(name,image,tag)
+
+    return p
 
 def main():
 
@@ -208,20 +332,21 @@ def main():
     command_args = vars(args)
 
     config = toml.loads(open(command_args["config"]).read())
+    print("Full config: ")
     printConfig(config)
 
     setup(command_args)
 
-    runs = getRuns(config)
-    print(runs)
-    exit()
+    globals()["runs"] = getRuns(config)
+    setInitialState()
 
-    ran = []
+    createTasks()
 
-    for r in runs:
-        ran.append(runTool(*r))
+    startTasks()
 
-    finish(ran,command_args["keep_images"])
+    waitForFullCompletion()
+
+    finish(command_args["keep_images"])
 
 if __name__ == "__main__":
     main()
