@@ -6,7 +6,6 @@ docker run -v /Users/cruz/Desktop/Bolsa/sarif-orchestrator/output:/output:rw \
             -v /var/run/docker.sock:/var/run/docker.sock:rw \
             sarif-orchestrator \
             --keep-images \
-            --input-dir /Users/cruz/Desktop/Bolsa/sarif-orchestrator/input \
-            --output-dir /output \
+            --input-dir-host /Users/cruz/Desktop/Bolsa/sarif-orchestrator/input \
             --output-dir-host /Users/cruz/Desktop/Bolsa/sarif-orchestrator/output \
             --config /input/run.toml 

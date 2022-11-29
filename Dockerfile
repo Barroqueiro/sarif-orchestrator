@@ -14,6 +14,6 @@ ADD tools /app/tools
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
-COPY orchestrator.py .
+COPY orchestrator2.py .
 
-ENTRYPOINT ["python3", "orchestrator.py"]
+ENTRYPOINT ["python3", "orchestrator2.py"]
