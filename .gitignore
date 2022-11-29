@@ -6,6 +6,7 @@ __pycache__/
 # Mine
 input/
 output/
+.DS_Store
 
 # C extensions
 *.so

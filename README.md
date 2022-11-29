@@ -50,12 +50,24 @@ args = ["<image-name-placeholder>"]
 
 The python script takes as arguments:
 
-- input-dir - Directory to be shared with docker to get access to files for analysis
-- output-dir - Directory within docker where output results must be places
+- input-dir-host - Directory to be shared with docker to get access to files for analysis
 - output-dir-host - Directory to be shared with docker to allow for writting within the user system to get reports, this folder can be expected to gain 2 folders (Reporting and Logging)
 - keep-images - When cleaning up, the script will remove the images for the containers ran, with-out this flag the images will be erased
 
-Note: `output-dir` and `output-host-dir` are the same when running locally (`./runLocal.sh`) because the reporting and logging directories will be created within the host, however when running with docker (`./runDocker.sh`) the output folder where the directories will be created is within docker and we shall pass the host output directory to allow for the new dockers to communicate with it.
+## High level representation of architecture
+
+![Architecture](images/Orchestrator_Resource_Sharing.png?raw=True "Architecture")
+
+## Thread execution
+
+The image bellow shows an example where tool 3 depends on both tool 1 and tool 2
+
+![Thread Execution](images/Thread_Explanation.png?raw=True "Threads example")
+
+
+Run runDocker.sh file and change the inputs given (It's easier as the python file is constructed for docker and can't be ran locally without changes)
+
+# Misc
 
 ## List of (Possible) Tools
 
