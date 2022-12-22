@@ -64,7 +64,7 @@ def print_config(config):
     """
     print(json.dumps(config,indent=4))
 
-# Semaphore function
+# Semaphore access
 
 def acquire():
     """
@@ -207,15 +207,8 @@ def create_tool(tool, input_dir_host, output_dir_host, to_clean, tool_values):
         option = config["default_option"]
 
     # If no volumes for input or output are configured setup the defaults
-    if config["output_volume_docker"] == "":
-        output_volume_docker = OUTPUT_DIR_DOCKER
-    else:
-        output_volume_docker = config["output_volume_docker"]
-
-    if config["input_volume_docker"] == "":
-        input_volume_docker = INPUT_DIR_DOCKER
-    else:
-        input_volume_docker = config["input_volume_docker"]
+    output_volume_docker = OUTPUT_DIR_DOCKER if config["output_volume_docker"] == "" else config["output_volume_docker"] 
+    input_volume_docker = INPUT_DIR_DOCKER if config["input_volume_docker"] == "" else config["input_volume_docker"]
 
     # Output file
     output = f"{output_volume_docker}/{REPORT_DIR}/{tool}_{option}.sarif"

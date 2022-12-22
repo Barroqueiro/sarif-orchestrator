@@ -71,16 +71,18 @@ Run runDocker.sh file and change the inputs given (It's easier as the python fil
 
 ## List of (Possible) Tools
 
-- [x] GitLeaks [Has docker]
-- [ ] Hadolint
-- [x] Dockle [Has docker]
-- [ ] Grype and Syft
-- [x] Trivy [Has Docker]
-- [ ] ESLint
-- [ ] Bandit
-- [ ] Semgrep
-- [x] Horusec [Has docker](https://docs.horusec.io/docs/cli/installation/#installation-via-docker-image)
-- [ ] OWASP Depedency Check
+- [x] GitLeaks [Has Docker](https://github.com/zricethezav/gitleaks#installing)
+- [ ] Hadolint [Has Docker](https://github.com/hadolint/hadolint#install)
+- [x] Dockle [Has Docker](https://github.com/goodwithtech/dockle#use-docker)
+- [ ] Grype and Syft [Both have Docker](https://github.com/anchore/grype#getting-started)
+- [x] Trivy [Has Docker](https://github.com/aquasecurity/trivy#get-trivy)
+- [ ] ESLint [Has Docker](https://hub.docker.com/r/cytopia/eslint)
+- [ ] Flake8 [Has Docker](https://hub.docker.com/r/alpine/flake8)
+- [ ] Bandit [Has Docker](https://github.com/cytopia/docker-bandit)
+- [ ] Semgrep [Has Docker](https://github.com/returntocorp/semgrep#getting-started)
+- [x] Horusec [Has Docker](https://docs.horusec.io/docs/cli/installation/#installation-via-docker-image)
+- [ ] OWASP Depedency Check [Has Docker](https://github.com/jeremylong/DependencyCheck#docker)
+- [ ] Zap [Has Docker](https://www.zaproxy.org/docs/docker/about/)
 
 ## Todo
 
@@ -91,3 +93,6 @@ Run runDocker.sh file and change the inputs given (It's easier as the python fil
 ## Notes
 
 - Docker does not seem to allow for multiple accesses to the same image at the same time, this can cause timeout problem within tools that are going to analyse the same image
+- OWASP Zap com SARIF, installar addon com as opções de installadon da command line e depois deverá ser possivel usar a automation framework com um ficheiro para gerar reports
+  - [Explicação da automation framework](https://groups.google.com/g/zaproxy-users/c/s8icYZnOIpc)
+  - [Report generation com automation framework](https://www.zaproxy.org/docs/desktop/addons/report-generation/automation/)
