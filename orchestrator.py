@@ -190,8 +190,8 @@ def create_tool(tool, input_dir_host, output_dir_host, to_clean, tool_values):
     :param arguments: Dictionary with tool specific arguments
     """
 
-    docker_cmd = "docker create --name {name} -v {output_volume}:{output_volume_docker}: \
-                    -v {input_volume}:{input_volume_docker} \
+    docker_cmd = "docker create --name {name} -v {output_volume}:{output_volume_docker}:rw \
+                    -v {input_volume}:{input_volume_docker}:ro \
                     -v /var/run/docker.sock:/var/run/docker.sock \
                     {image}:{tag} {option}" 
 
@@ -298,7 +298,6 @@ def run_tasks(runs, input_dir_host, output_dir_host):
     return to_clean
 
 # Main
-
 def main():
     parser = argparse.ArgumentParser(description="Orchestrating sarif tools")
     parser.add_argument('--input-dir-host', type=str, required=True,

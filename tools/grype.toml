@@ -1,0 +1,10 @@
+build = ""
+tag = "v0.54.0"
+image = "anchore/grype"
+output_volume_docker = ""
+input_volume_docker = ""
+default_option = "scan"
+
+[options]
+    
+scan = "{custom_args} -o sarif --file {output_place} {0}"

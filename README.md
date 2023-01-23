@@ -73,8 +73,9 @@ Run runDocker.sh file and change the inputs given (It's easier as the python fil
 
 - [x] GitLeaks [Has Docker](https://github.com/zricethezav/gitleaks#installing)
 - [ ] Hadolint [Has Docker](https://github.com/hadolint/hadolint#install)
+  - Does not have a way to output to a file, don't know how to circumvent this problems without major refactor, [they are working on a feature to do just that](https://github.com/hadolint/hadolint/issues/863)
 - [x] Dockle [Has Docker](https://github.com/goodwithtech/dockle#use-docker)
-- [ ] Grype and Syft [Both have Docker](https://github.com/anchore/grype#getting-started)
+- [x] Grype and Syft [Both have Docker](https://github.com/anchore/grype#getting-started)
 - [x] Trivy [Has Docker](https://github.com/aquasecurity/trivy#get-trivy)
 - [ ] ESLint [Has Docker](https://hub.docker.com/r/cytopia/eslint)
 - [ ] Flake8 [Has Docker](https://hub.docker.com/r/alpine/flake8)
