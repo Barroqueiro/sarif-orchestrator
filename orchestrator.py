@@ -1,7 +1,8 @@
 """
 Docker conatiner orchestrator for SARIF reporting tools
 """
-
+import re
+import toml
 import json
 import shlex
 import queue
@@ -10,8 +11,6 @@ import argparse
 import threading
 import subprocess
 from enum import Enum
-
-import toml
 
 # Example of runs object for consideration
 
@@ -42,6 +41,7 @@ REPORT_DIR = "Reporting"                                    # Directory that wil
 LOGS_DIR = "Logs"                                           # Directory that wills store the logs created (By this orchestrator and each tool)
 OUTPUT_DIR_DOCKER = "/output"                               # Default directory that is used to share output information (From docker's prespective)
 INPUT_DIR_DOCKER = "/input"                                 # Default directory that is used to share input information (From docker's prespective)
+CONFIG_DIR_DOCKER = "/config"                               # Default directory that is used to share configuration information (From docker's prespective)
 LOG_FILE = f'{OUTPUT_DIR_DOCKER}/{LOGS_DIR}/app.log'        # Log file
 
 # Logger object
@@ -138,6 +138,7 @@ def get_runs(config):
 
         res[tool] = {r:run[r] for r in run if r != "tool"}
         res[tool].setdefault("option", None)
+        res[tool].setdefault("platform", None)
         res[tool].setdefault("custom_args","")
         res[tool].setdefault("depends_on",[])
         res[tool]["state"] = states.WAITTING
@@ -159,6 +160,7 @@ def start_container(tool, container):
     f = open(f'{OUTPUT_DIR_DOCKER}/{LOGS_DIR}/{tool}.log',"w")
     p = subprocess.run(shlex.split(call), stdout=f, stderr=f).returncode
     log_subprocess(call,p)
+    f.close()
 
 def run_possible(runs):
     """
@@ -170,7 +172,7 @@ def run_possible(runs):
     for tool, args in runs.items():
         # Check if the tool should actually be started
         if args["depends_on"] != [] and args["state"] == states.WAITTING:
-
+            
             # Make sure all states of the dependencies are FINISHED
             if all([runs[d]["state"] == states.FINISHED for d in args["depends_on"]]):
 
@@ -178,7 +180,7 @@ def run_possible(runs):
 
     release()
 
-def create_tool(tool, input_dir_host, output_dir_host, to_clean, tool_values):
+def create_tool(tool, input_dir_host, output_dir_host, config_dir_host , to_clean, tool_values):
     """
     create_tool function creates the container for a certain tool using the configuration provided within the tool's file, volumes are configured
     using the default options or the ones within the config, the name, image and tag are appended to a shared list for future clean up
@@ -190,14 +192,16 @@ def create_tool(tool, input_dir_host, output_dir_host, to_clean, tool_values):
     :param arguments: Dictionary with tool specific arguments
     """
 
-    docker_cmd = "docker create --name {name} -v {output_volume}:{output_volume_docker}:rw \
+    docker_cmd = "docker create --name {name} {platform} -v {output_volume}:{output_volume_docker}:rw \
                     -v {input_volume}:{input_volume_docker}:ro \
+                    -v {config_volume}:{config_volume_docker}:ro  \
                     -v /var/run/docker.sock:/var/run/docker.sock \
                     {image}:{tag} {option}" 
 
     option = tool_values["option"]
     args = tool_values["args"]
     custom_args = tool_values["custom_args"]
+    platform = f"--platform={tool_values['platform']}" if tool_values["platform"] else ""
 
     # Load tool config
     config = toml.loads(open(f"tools/{tool}.toml").read())
@@ -220,9 +224,9 @@ def create_tool(tool, input_dir_host, output_dir_host, to_clean, tool_values):
     name = tool + "_" + option
     image = config["image"]
     tag = config["tag"]
-    call = docker_cmd.format(output_volume=output_dir_host, input_volume=input_dir_host,\
-                        output_volume_docker=output_volume_docker, input_volume_docker=input_volume_docker,\
-                        image=image, tag=tag, option=option_cmd, name=name)
+    call = docker_cmd.format(output_volume=output_dir_host, input_volume=input_dir_host, config_volume=config_dir_host,\
+                        output_volume_docker=output_volume_docker, input_volume_docker=input_volume_docker, config_volume_docker=CONFIG_DIR_DOCKER,  \
+                        image=image, tag=tag, option=option_cmd, name=name, platform=platform)
 
     # Create log file and run the process
     p = subprocess.run(shlex.split(call), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode
@@ -232,7 +236,7 @@ def create_tool(tool, input_dir_host, output_dir_host, to_clean, tool_values):
 
     return name
 
-def run_tool_thread(tool, input_dir_host, output_dir_host, runs, to_clean):
+def run_tool_thread(tool, input_dir_host, output_dir_host, config_dir_host, runs, to_clean):
     """
     run_tool_thread will be executed by each thread, this function will create the docker container for a future run of a certain tool,
     it will then remain blocked until the tools that this tool depends on are FINISHED (They will unblock this tools thread), when FINISHED
@@ -246,10 +250,10 @@ def run_tool_thread(tool, input_dir_host, output_dir_host, runs, to_clean):
     :param to_clean: List to append information for clean up (name, image, tag)
     """
     # Get the arguments for a tool run
-    tool_values = {a:runs[tool][a] for a in runs[tool] if a in ["option", "args", "custom_args"]}
+    tool_values = {a:runs[tool][a] for a in runs[tool] if a in ["option", "args", "custom_args","platform"]}
 
     # Create the docker container
-    container = create_tool(tool, input_dir_host, output_dir_host, to_clean, tool_values)
+    container = create_tool(tool, input_dir_host, output_dir_host, config_dir_host, to_clean, tool_values)
 
     # Blocking call
     runs[tool]["queue"].get()
@@ -264,7 +268,7 @@ def run_tool_thread(tool, input_dir_host, output_dir_host, runs, to_clean):
     # Run the tools that can start running
     run_possible(runs)
 
-def run_tasks(runs, input_dir_host, output_dir_host):
+def run_tasks(runs, input_dir_host, output_dir_host, config_dir_host):
     """
     run_tasks function creates a thread for all tools with a corresponding queue, appends this information to the runs object to be shared.
     It starts and waits for the completion of all threads.
@@ -280,7 +284,7 @@ def run_tasks(runs, input_dir_host, output_dir_host):
     for tool, args in runs.items():
 
         q = queue.Queue()
-        t = threading.Thread(target=run_tool_thread, args=(tool, input_dir_host, output_dir_host, runs, to_clean))
+        t = threading.Thread(target=run_tool_thread, args=(tool, input_dir_host, output_dir_host, config_dir_host, runs, to_clean))
 
         # If the tool has no dependencies run it imediatly
         if not args["depends_on"]:
@@ -304,6 +308,8 @@ def main():
                         help='Directory to be shared with docker for input')
     parser.add_argument('--output-dir-host', type=str, required=True,
                         help='Directory to be shared with the docker runs for output')
+    parser.add_argument('--config-dir-host', type=str, required=True,
+                        help='Directory to be shared with the docker runs for configuration')
     parser.add_argument('--config', type=str, required=True,
                         help='Current path')
     parser.add_argument('--keep-images', action='store_true',
@@ -318,7 +324,7 @@ def main():
     runs = get_runs(config)
     print_config(runs)
 
-    to_clean = run_tasks(runs, command_args["input_dir_host"], command_args["output_dir_host"])
+    to_clean = run_tasks(runs, command_args["input_dir_host"], command_args["output_dir_host"], command_args["config_dir_host"])
 
     finish(to_clean, command_args["keep_images"])
 

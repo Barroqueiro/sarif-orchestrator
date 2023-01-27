@@ -1,0 +1,46 @@
+[[runs]]
+
+tool = "tool_1"
+option = ""
+args = [""]
+
+[[runs]]
+
+tool = "tool_2"
+option = ""
+args = [""]
+
+[[runs]]
+
+depends_on = ["tool_1"]
+tool = "tool_3"
+option = ""
+args = [""]
+
+[[runs]]
+
+depends_on = ["tool_3"]
+tool = "tool_4"
+option = ""
+args = [""]
+
+[[runs]]
+
+depends_on = ["tool_3"]
+tool = "tool_5"
+option = ""
+args = [""]
+
+[[runs]]
+
+depends_on = ["tool_3"]
+tool = "tool_6"
+option = ""
+args = [""]
+
+[[runs]]
+
+depends_on = ["tool_2"]
+tool = "tool_7"
+option = ""
+args = [""]

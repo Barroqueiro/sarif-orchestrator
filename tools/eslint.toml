@@ -1,0 +1,10 @@
+build = ""
+tag = "latest"
+image = "eslint-sarif"
+output_volume_docker = ""
+input_volume_docker = "/data"
+default_option = "scan"
+
+[options]
+    
+scan = "{custom_args} -c /config/.eslintrc -f @microsoft/eslint-formatter-sarif -o {output_place} {0}"

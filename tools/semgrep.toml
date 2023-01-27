@@ -1,0 +1,10 @@
+build = ""
+tag = "1.5.0"
+image = "returntocorp/semgrep"
+output_volume_docker = ""
+input_volume_docker = "/src"
+default_option = "scan"
+
+[options]
+    
+scan = "scan --config auto --sarif --output {output_place} {0}"

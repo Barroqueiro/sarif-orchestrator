@@ -1,0 +1,94 @@
+env:                                   # The environment, mandatory
+  contexts :                           # List of 1 or more contexts, mandatory
+    - name: context 1                  # Name to be used to refer to this context in other jobs, mandatory
+      urls:
+        - ${target}                            # The top level url, mandatory, everything under this will be included
+      includePaths:                    # TBA: An optional list of regexes to include
+      excludePaths:                    # TBA: An optional list of regexes to exclude
+      authentication:                  # TBA: In time to cover all auth configs
+  parameters:
+    failOnError: true                  # If set exit on an error
+    failOnWarning: false               # If set exit on a warning
+    progressToStdout: true             # If set will write job progress to stdout
+
+jobs:
+  - type: passiveScan-config           # Passive scan configuration
+    parameters:
+      maxAlertsPerRule: 10             # Int: Maximum number of alerts to raise per rule
+      scanOnlyInScope: true            # Bool: Only scan URLs in scope (recommended)
+      maxBodySizeInBytesToScan:        # Int: Maximum body size to scan, default: 0 - will scan all messages
+  - type: spider                       # The traditional spider - fast but doesnt handle modern apps so well
+    parameters:
+      context:  context 1                            # String: Name of the context to spider, default: first context
+      url: ${target}                              # String: Url to start spidering from, default: first context URL
+      failIfFoundUrlsLessThan:         # Int: Fail if spider finds less than the specified number of URLs, default: 0
+      warnIfFoundUrlsLessThan:         # Int: Warn if spider finds less than the specified number of URLs, default: 0
+      maxDuration:                     # Int: The max time in minutes the spider will be allowed to run for, default: 0 unlimited
+      maxDepth:                        # Int: The maximum tree depth to explore, default 5
+      maxChildren:                     # Int: The maximum number of children to add to each node in the tree
+      acceptCookies:                   # Bool: Whether the spider will accept cookies, default: true
+      handleODataParametersVisited:    # Bool: Whether the spider will handle OData responses, default: false
+      handleParameters:                # Enum [ignore_completely, ignore_value, use_all]: How query string parameters are used when checking if a URI has already been visited, default: use_all
+      maxParseSizeBytes:               # Int: The max size of a response that will be parsed, default: 2621440 - 2.5 Mb
+      parseComments:                   # Bool: Whether the spider will parse HTML comments in order to find URLs, default: true
+      parseGit:                        # Bool: Whether the spider will parse Git metadata in order to find URLs, default: false
+      parseRobotsTxt:                  # Bool: Whether the spider will parse 'robots.txt' files in order to find URLs, default: true
+      parseSitemapXml:                 # Bool: Whether the spider will parse 'sitemap.xml' files in order to find URLs, default: true
+      parseSVNEntries:                 # Bool: Whether the spider will parse SVN metadata in order to find URLs, default: false
+      postForm:                        # Bool: Whether the spider will submit POST forms, default: true
+      processForm:                     # Bool: Whether the spider will process forms, default: true
+      requestWaitTime:                 # Int: The time between the requests sent to a server in milliseconds, default: 200
+      sendRefererHeader:               # Bool: Whether the spider will send the referer header, default: true
+      threadCount:                     # Int: The number of spider threads, default: 2
+      userAgent:                       # String: The user agent to use in requests, default: '' - use the default ZAP one
+  - type: spiderAjax                   # The ajax spider - slower than the spider but handles modern apps well
+    parameters:
+      context:  context 1                           # String: Name of the context to spider, default: first context
+      url:  ${target}                              # String: Url to start spidering from, default: first context URL
+      failIfFoundUrlsLessThan:         # Int: Fail if spider finds less than the specified number of URLs, default: 0
+      warnIfFoundUrlsLessThan:         # Int: Warn if spider finds less than the specified number of URLs, default: 0
+      maxDuration:                     # Int: The max time in minutes the ajax spider will be allowed to run for, default: 0 unlimited
+      maxCrawlDepth:                   # Int: The max depth that the crawler can reach, default: 10, 0 is unlimited
+      numberOfBrowsers:                # Int: The number of browsers the spider will use, more will be faster but will use up more memory, default: 1
+      browserId:                       # String: Browser Id to use, default: firefox-headless
+      clickDefaultElems:               # Bool: When enabled only click the default element: 'a', 'button' and input, default: true
+      clickElemsOnce:                  # Bool: When enabled only click each element once, default: true
+      eventWait:                       # Int: The time in millseconds to wait after a client side event is fired, default: 1000
+      maxCrawlStates:                  # Int: The maximum number of crawl states the crawler should crawl, default: 0 unlimited
+      randomInputs:                    # Bool: When enabled random values will be entered into input element, default: true
+      reloadWait:                      # Int: The time in millseconds to wait after the URL is loaded, default: 1000
+  - type: passiveScan-wait             # Passive scan wait for the passive scanner to finish
+    parameters:
+      maxDuration: 5                   # Int: The max time to wait for the passive scanner, default: 0 unlimited
+  - type: activeScan                   # The active scanner - this actively attacks the target so should only be used with permission
+    parameters:
+      context: context 1                            # String: Name of the context to attack, default: first context
+      policy:                          # String: Name of the scan policy to be used, default: Default Policy
+      maxRuleDurationInMins:           # Int: The max time in minutes any individual rule will be allowed to run for, default: 0 unlimited
+      maxScanDurationInMins:           # Int: The max time in minutes the active scanner will be allowed to run for, default: 0 unlimited
+      addQueryParam:                   # Bool: If set will add an extra query parameter to requests that do not have one, default: false
+      defaultPolicy:                   # String: The name of the default scan policy to use, default: Default Policy
+      delayInMs:                       # Int: The delay in milliseconds between each request, use to reduce the strain on the target, default 0
+      handleAntiCSRFTokens:            # Bool: If set then automatically handle anti CSRF tokens, default: false
+      injectPluginIdInHeader:          # Bool: If set then the relevant rule Id will be injected into the X-ZAP-Scan-ID header of each request, default: false
+      scanHeadersAllRequests:          # Bool: If set then the headers of requests that do not include any parameters will be scanned, default: false
+      threadPerHost:                   # Int: The max number of threads per host, default: 2
+  - type: report                       # Report generation
+    parameters:
+      template: sarif-json             # String: The template id, default : traditional-html
+      reportDir: /zap/wrk              # String: The directory into which the report will be written
+      reportFile: zap_scan.sarif       # String: The report file name pattern, default: {{yyyy-MM-dd}}-ZAP-Report-[[site]]
+      reportTitle:                     # String: The report title
+      reportDescription:               # String: The report description
+      displayReport:                   # Boolean: Display the report when generated, default: false
+    risks:                             # List: The risks to include in this report, default all
+      - high
+      - medium
+      - low
+      - info
+    confidences:                       # List: The confidences to include in this report, default all
+      - high
+      - medium
+      - low
+      - falsepositive
+    sections:                          # List: The template sections to include in this report - see the relevant template, default all

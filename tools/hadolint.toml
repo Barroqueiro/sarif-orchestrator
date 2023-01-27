@@ -1,5 +1,5 @@
 build = ""
-tag = "latest-debian"
+tag = "v2.12.0-debian"
 image = "hadolint/hadolint"
 output_volume_docker = ""
 input_volume_docker = ""
@@ -7,4 +7,4 @@ default_option = "scan"
 
 [options]
 
-scan = "hadolint /input/{0} {custom_args} -f sarif"
+scan = 'sh -c "hadolint /input/{0} {custom_args} -f sarif | tee -a {output_place}"'
