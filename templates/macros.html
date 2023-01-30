@@ -1,0 +1,20 @@
+{% macro print_dict(d,indent=0) %} 
+{%- set idxs = [0] -%}
+{%- for key, value in d recursive%}
+{%- if value %}
+{{indent * " " + (idxs|length - 1) * 2 * " "}}+ <details>
+{{indent * " " + (idxs|length - 1) * 2 * " " + 2 * " "}}<summary>{{ key.capitalize() }}</summary>
+{% if value is mapping %}
+
+{%- do idxs.append(loop.index) -%}
+{{ loop(value.items())}}
+{%- do idxs.pop() -%}
+{% elif value is string %}
+{{indent * " " + (idxs|length - 1) * 2 * " " + 2 * " "}}- {{value}}
+
+{%- endif %}   
+{{indent * " " + (idxs|length - 1) * 2 * " " + 2 * " "}}</details>
+
+{%- endif %}
+{%- endfor %} 
+{%- endmacro %}

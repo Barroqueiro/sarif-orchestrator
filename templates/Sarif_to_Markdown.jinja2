@@ -1,0 +1,37 @@
+{% from "macros.html" import print_dict %}
+
+{% for run in sarif["runs"] %}
+# Report for {{ run["tool"]["driver"]["name"]}}
+
+{{ print_dict(run["tool"].items()) }}
+
+{# {%- set idxs = [0] -%}
+{%- for key, value in run["tool"].items() recursive%}
+{%- if value %}
+{{(idxs|length - 1) * 2 * " "}}+ <details>
+{{(idxs|length - 1) * 2 * " " + 2 * " "}}<summary>{{ key.capitalize() }}</summary>
+{% if value is mapping %}
+
+{%- do idxs.append(loop.index) -%}
+{{ loop(value.items())}}
+{%- do idxs.pop() -%}
+{% elif value is string %}
+{{(idxs|length - 1) * 2 * " " + 2 * " "}}- {{value}}
+
+{%- endif %}   
+{{(idxs|length - 1) * 2 * " " + 2 * " "}}</details>
+
+{%- endif %}
+{%- endfor %}  #}
+
+
+
+{% for tool_keys in run["tool"] %}
+{% endfor %}
+
+## Tool information
+
+{% for result in run["results"] %}
+## {{ result["message"]["text"] }}
+{% endfor %}
+{% endfor %}
