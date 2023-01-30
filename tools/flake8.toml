@@ -1,0 +1,10 @@
+build = ""
+tag = "latest"
+image = "flake8-sarif"
+output_volume_docker = ""
+input_volume_docker = "/apps"
+default_option = "scan"
+
+[options]
+    
+scan = "{custom_args} --format sarif --output-file {output_place} {0}"

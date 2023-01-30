@@ -4,11 +4,24 @@
 # option = "scan"
 # args = ["Security-Pipeline-Testing/Dockerfile"]
 
-[[runs]]
+# [[runs]]
 
-tool = "eslint"
-option = "scan"
-args = ["Security-Pipeline-Testing/databases_datatable.js"]
+# tool = "flake8"
+# option = "scan"
+# args = ["Security-Pipeline-Testing/app/app.py"]
+
+# [[runs]]
+
+# tool = "eslint"
+# option = "scan"
+# args = ["Security-Pipeline-Testing/databases_datatable.js"]
+
+# [[runs]]
+
+# tool = "bandit"
+# option = "scan"
+# args = ["Security-Pipeline-Testing"]
+# custom_args = "-r"
 
 # [[runs]]
 
