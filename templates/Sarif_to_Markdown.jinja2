@@ -1,37 +1,99 @@
-{% from "macros.html" import print_dict %}
+{%- from "macros.html" import addDetails -%}
+{%- from "macros.html" import addDetailsUrl -%}
+# Vulnerability Report
 
-{% for run in sarif["runs"] %}
-# Report for {{ run["tool"]["driver"]["name"]}}
-
-{{ print_dict(run["tool"].items()) }}
-
-{# {%- set idxs = [0] -%}
-{%- for key, value in run["tool"].items() recursive%}
-{%- if value %}
-{{(idxs|length - 1) * 2 * " "}}+ <details>
-{{(idxs|length - 1) * 2 * " " + 2 * " "}}<summary>{{ key.capitalize() }}</summary>
-{% if value is mapping %}
-
-{%- do idxs.append(loop.index) -%}
-{{ loop(value.items())}}
-{%- do idxs.pop() -%}
-{% elif value is string %}
-{{(idxs|length - 1) * 2 * " " + 2 * " "}}- {{value}}
-
-{%- endif %}   
-{{(idxs|length - 1) * 2 * " " + 2 * " "}}</details>
-
-{%- endif %}
-{%- endfor %}  #}
-
-
-
-{% for tool_keys in run["tool"] %}
-{% endfor %}
+This report was automaticly generated based on the vulnerabilities specification of a [SARIF](https://sarifweb.azurewebsites.net) file.
 
 ## Tool information
 
-{% for result in run["results"] %}
-## {{ result["message"]["text"] }}
-{% endfor %}
+> Name: {{ tool["name"] }}
+
+{%+ if "fullName" in tool -%}
+> Full name: {{ tool["fullName"] }}
+{%+ endif %}
+{%+ if "informationUri" in tool -%}
+> Information Uri: [{{ tool["informationUri"] }}]({{ tool["informationUri"] }})
+{%+ endif %}
+{%+ if "downloadUri" in tool -%}
+> Information Uri: [{{ tool["downloadUri"] }}]({{ tool["downloadUri"] }})
+{%+ endif %}
+{%+ if "version" in tool -%}
+> Version: {{ tool["version"] }}
+{%+ endif %}
+{%+ if "semanticVersion" in tool -%}
+> Semantic version: {{ tool["semanticVersion"] }}
+{%+ endif %}
+
+---
+
+## Vulnerabilities
+
+{%+ for vuln in results -%}
+{{ vuln["message"]["text"] }}
+
+{%+ if "locations" in vuln -%}
+### Locations
+{%+ for l in vuln["locations"]-%}
+{%+ if "physicalLocation" in l -%}
+#### **Physical Location**
+{%+ if "artifactLocation" in l["physicalLocation"] -%}
+- {{ l["physicalLocation"]["artifactLocation"]["uri"] }}
+{%+ endif %}
+{%+ endif %}
+{%+ if "region" in l["physicalLocation"] -%}
+{%+ if "startLine" in l["physicalLocation"]["region"] -%}
+- Line {{ l["physicalLocation"]["region"]["startLine"] }}
+{%+ endif %}
+{%+ if "snippet" in l["physicalLocation"]["region"] -%}
+```
+{{ l["physicalLocation"]["region"]["snippet"]["text"].strip()|safe }}
+```
+{%+ endif %}
+{%+ endif %}
+{%+ if "logicalLocations" in l -%}
+#### **Logical Locations**
+{%+ for logic in l["logicalLocations"] -%}
+- {{ logic["name"] }}
+{%+ endfor %}
+{%+ endif %}
+{%+ endfor %}
+{%+ endif %}
+
+{%+ if "level" in vuln -%}
+### Level
+
+- {{ vuln["level"].capitalize() }}
+{%+ endif %}
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    {{ vuln["ruleId"] }}
+  </details>
+
+{%+ if "helpUri" in rules[vuln["ruleId"]] -%}
+{{ addDetailsUrl("Help Uri", rules[vuln["ruleId"]]["helpUri"]) }}
+{%+ endif %}
+{%+ if "shortDescription" in rules[vuln["ruleId"]] -%}
+{{ addDetails("Short Description", rules[vuln["ruleId"]]["shortDescription"]["text"]) }}
+{%+ endif %}
+{%+ if "fullDescription" in rules[vuln["ruleId"]] -%}
+{{ addDetails("Full Description", rules[vuln["ruleId"]]["fullDescription"]["text"]) }}
+{%+ endif %}
+{%+ if "properties" in rules[vuln["ruleId"]] -%}
+{%+ for p in rules[vuln["ruleId"]]["properties"] -%}
+{%+ if rules[vuln["ruleId"]]["properties"][p] is string -%}
+{{ addDetails(p.capitalize(), rules[vuln["ruleId"]]["properties"][p]) }}
+{%+ endif %}
+{%+ endfor %}
+{%+ endif %}
+{%+ if "help" in rules[vuln["ruleId"]] -%}
+{{ addDetails("Help", rules[vuln["ruleId"]]["help"]["text"]) }}
+{%+ endif %}
+
+
+---
+
 {% endfor %}

@@ -1,7 +1,7 @@
 """
 Docker conatiner orchestrator for SARIF reporting tools
 """
-import re
+import os
 import toml
 import json
 import shlex
@@ -11,6 +11,7 @@ import argparse
 import threading
 import subprocess
 from enum import Enum
+from jinja2 import Environment, FileSystemLoader
 
 # Example of runs object for consideration
 
@@ -77,6 +78,61 @@ def release():
     Release the semaphore for shared resource usage
     """
     globals()["semaphore"].put(1)
+
+# Reporting functions
+
+def populate_level(results, rules):
+    """
+    populate the level atribute of sarif results if not included
+    """
+    for r in results:
+        if "level" not in r:
+            if "defaultConfiguration" in rules[r["ruleId"]]:
+                if "level" in rules[r["ruleId"]]["defaultConfiguration"]:
+                    r["level"] = rules[r["ruleId"]]["defaultConfiguration"]["level"]
+                else:
+                    r["level"] = "warning"
+            else:
+                r["level"] = "warning"
+
+def produce_sarif_reports(input_dir, output_dir):
+    for subdir, dirs, files in os.walk(input_dir):
+        for file in files:
+            ext = os.path.splitext(file)[-1].lower()
+            if ext in [".sarif", ".json.sarif"]:
+                produce_single_sarif(os.path.join(subdir, file),output_dir)
+
+def produce_single_sarif(file, output_dir):
+    basename = os.path.basename(file)
+
+    with open(file,"r") as f:
+        data = json.loads(f.read())
+
+    # Get information on the tool and it's rules 
+    info_rules_tools = data["runs"][0]["tool"]["driver"]
+
+    # Produce dictionary with rules
+    if "rules" in info_rules_tools:
+        rules_info = {r["id"]: r for r in info_rules_tools["rules"]}
+    else:
+        rules_info = {}
+
+    # Produce dictionary for tool information without the rules
+    tool_info = {key: value for key, value in info_rules_tools.items() if key != "rules"}
+
+    # Populate the level of results to then order it
+    results = data["runs"][0]["results"]
+    populate_level(results, rules_info)
+
+    results_info = [r for r in sorted(results, key=lambda x: x["level"])]
+
+    # Load template and produce final report
+    env = Environment(loader=FileSystemLoader("templates"), autoescape=True, extensions=['jinja2.ext.do'])
+    template = env.get_template('Sarif_to_Markdown.jinja2')
+    output_from_parsed_template = template.render(tool=tool_info,rules=rules_info,results=results_info)
+    with open(output_dir + "/" + basename.replace(".sarif",".md"),"w") as f:
+        f.write(output_from_parsed_template)
+
 
 # Setup and Cleaning functions
 
@@ -304,29 +360,45 @@ def run_tasks(runs, input_dir_host, output_dir_host, config_dir_host):
 # Main
 def main():
     parser = argparse.ArgumentParser(description="Orchestrating sarif tools")
-    parser.add_argument('--input-dir-host', type=str, required=True,
+    subparsers = parser.add_subparsers(title="subcommands", help="Different commands", dest="command")
+    orchestrator_parser = subparsers.add_parser("orchestrator", help="Orchestrate tools to produce sarif reporting")
+    orchestrator_parser.add_argument('--input-dir-host', type=str, required=True,
                         help='Directory to be shared with docker for input')
-    parser.add_argument('--output-dir-host', type=str, required=True,
+    orchestrator_parser.add_argument('--output-dir-host', type=str, required=True,
                         help='Directory to be shared with the docker runs for output')
-    parser.add_argument('--config-dir-host', type=str, required=True,
+    orchestrator_parser.add_argument('--config-dir-host', type=str, required=True,
                         help='Directory to be shared with the docker runs for configuration')
-    parser.add_argument('--config', type=str, required=True,
+    orchestrator_parser.add_argument('--config', type=str, required=True,
                         help='Current path')
-    parser.add_argument('--keep-images', action='store_true',
-                        help='Output style')
+    orchestrator_parser.add_argument('--keep-images', action='store_true',
+                        help='Keep images after finishing')
+
+    reporting_parser = subparsers.add_parser("report", help="Produce Markdown reports from sarif files")
+    reporting_parser.add_argument('--input-dir', type=str, required=True,
+                        help='Directory with the sarif files')
+    reporting_parser.add_argument('--output-dir', type=str, required=True,
+                        help='Directory to output the results')
     args = parser.parse_args()
     command_args = vars(args)
 
-    config = toml.loads(open(command_args["config"]).read())
-    print("Full config: ")
+    command = command_args["command"]
 
-    setup()
-    runs = get_runs(config)
-    print_config(runs)
+    if command == "orchestrator":
 
-    to_clean = run_tasks(runs, command_args["input_dir_host"], command_args["output_dir_host"], command_args["config_dir_host"])
+        config = toml.loads(open(command_args["config"]).read())
+        print("Full config: ")
 
-    finish(to_clean, command_args["keep_images"])
+        setup()
+        runs = get_runs(config)
+        print_config(runs)
+
+        to_clean = run_tasks(runs, command_args["input_dir_host"], command_args["output_dir_host"], command_args["config_dir_host"])
+
+        finish(to_clean, command_args["keep_images"])
+    
+    if command == "report":
+
+        produce_sarif_reports(command_args["input_dir"],command_args["output_dir"])
 
 
 if __name__ == "__main__":

@@ -19,6 +19,7 @@ RUN apt install docker-ce-cli:amd64 -y
 
 # Setup Orchestrator
 ADD tools /app/tools
+ADD templates /app/templates
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
