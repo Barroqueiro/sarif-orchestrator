@@ -104,3 +104,42 @@ Run runDocker.sh file and change the inputs given (It's easier as the python fil
 - OWASP Zap com SARIF, installar addon com as opções de installadon da command line e depois deverá ser possivel usar a automation framework com um ficheiro para gerar reports
   - [Explicação da automation framework](https://groups.google.com/g/zaproxy-users/c/s8icYZnOIpc)
   - [Report generation com automation framework](https://www.zaproxy.org/docs/desktop/addons/report-generation/automation/)
+
+### SARIF Information
+
+Organized by Tool
+
+#### **Required Information**
+
+- message
+- level
+- ruleId
+
+#### **Further Information**
+
+- properties
+- locations
+  - artifactLocation
+    - uri
+  - physicalLocation
+    - region
+      - snippet
+        - text
+- rules
+  - name
+  - helpUri
+  - shortDescription
+    - text
+  - fullDescription
+    - text
+  - properties
+  - help
+    - text or markdown
+- tool
+  - drive
+    - name
+    - fullName
+    - informationUri
+    - downloadUri
+    - version
+    - semanticVersion

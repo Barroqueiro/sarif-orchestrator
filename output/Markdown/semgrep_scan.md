@@ -17,6 +17,8 @@ This report was automaticly generated based on the vulnerabilities specification
 
 ## Vulnerabilities
 
+---
+
 User controlled data in methods like `innerHTML`, `outerHTML` or `document.write` is an anti-pattern that can lead to XSS vulnerabilities
 
 ### Locations

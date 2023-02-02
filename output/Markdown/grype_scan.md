@@ -18,6 +18,8 @@ This report was automaticly generated based on the vulnerabilities specification
 
 ## Vulnerabilities
 
+---
+
 The path /usr/share/doc/libc-bin/copyright reports libc-bin at version 2.27-3ubuntu1.6  which is a vulnerable (deb) package installed in the container
 
 ### Locations

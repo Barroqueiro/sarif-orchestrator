@@ -19,6 +19,8 @@ This report was automaticly generated based on the vulnerabilities specification
 
 ## Vulnerabilities
 
+---
+
 Pin versions in pip. Instead of `pip install &lt;package&gt;` use `pip install &lt;package&gt;==&lt;version&gt;` or `pip install --requirement &lt;requirements file&gt;`
 
 ### Locations

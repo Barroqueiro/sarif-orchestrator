@@ -43,20 +43,20 @@
 # option = "scan"
 # args = ["Security-Pipeline-Testing"]
 
-# [[runs]]
+[[runs]]
 
-# tool = "gitleaks"
-# option = "detect"
-# args = ["Security-Pipeline-Testing"]
-# custom_args = "--exit-code 0"
+tool = "gitleaks"
+option = "detect"
+args = ["Security-Pipeline-Testing"]
+custom_args = "--exit-code 0"
 # depends_on= ["horusec"]
 
-# [[runs]]
+[[runs]]
 
-# tool = "dockle"
-# option = "scan"
-# args = ["bioinformaticsua/catalogue:Test"]
-# custom_args = "--timeout 600s"
+tool = "dockle"
+option = "scan"
+args = ["bioinformaticsua/catalogue:Test"]
+custom_args = "--timeout 600s"
 # depends_on= ["trivy"]
 
 # [[runs]]

@@ -28,6 +28,8 @@ This report was automaticly generated based on the vulnerabilities specification
 
 ## Vulnerabilities
 
+---
+
 {%+ for vuln in results -%}
 {{ vuln["message"]["text"] }}
 
@@ -44,7 +46,7 @@ This report was automaticly generated based on the vulnerabilities specification
 {%+ if "startLine" in l["physicalLocation"]["region"] -%}
 - Line {{ l["physicalLocation"]["region"]["startLine"] }}
 {%+ endif %}
-{%+ if "snippet" in l["physicalLocation"]["region"] -%}
+{%+ if "snippet" in l["physicalLocation"]["region"] and l["physicalLocation"]["region"]["snippet"]["text"] != ""  -%}
 ```
 {{ l["physicalLocation"]["region"]["snippet"]["text"].strip()|safe }}
 ```

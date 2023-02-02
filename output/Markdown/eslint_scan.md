@@ -18,6 +18,8 @@ This report was automaticly generated based on the vulnerabilities specification
 
 ## Vulnerabilities
 
+---
+
 Strings must use doublequote.
 
 ### Locations

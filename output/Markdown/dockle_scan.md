@@ -17,6 +17,8 @@ This report was automaticly generated based on the vulnerabilities specification
 
 ## Vulnerabilities
 
+---
+
 Suspicious filename found : usr/local/lib/python2.7/dist-packages/rest_framework_nested/runtests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/newsletter/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/constance/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/django_countries/tests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/django_premailer/tests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/pymongo/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/cssutils/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/django_js_reverse/tests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/userena/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/rest_framework/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/userena/runtests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/easy_thumbnails/tests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/django_extensions/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/guardian/conf/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/grappelli/settings.py (You can suppress it with &#34;-af settings.py&#34;)
 
 ### Locations
@@ -199,6 +201,52 @@ Use &#39;rm -rf /var/lib/apt/lists&#39; after &#39;apt-get install|update&#39; :
 
 ---
 
+Last user should not be root
+
+### Locations
+#### **Physical Location**
+- metadata
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CIS-DI-0001
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://github.com/goodwithtech/dockle/blob/master/CHECKPOINT.md#CIS-DI-0001">https://github.com/goodwithtech/dockle/blob/master/CHECKPOINT.md#CIS-DI-0001</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Create a user for the container
+    </details>
+
+
+
+
+
+
+---
+
 export DOCKER_CONTENT_TRUST=1 before docker pull/build
 
 ### Locations
@@ -282,188 +330,6 @@ not found HEALTHCHECK statement
     <summary>Short Description</summary>
     <br>
     Add HEALTHCHECK instruction to the container image
-    </details>
-
-
-
-
-
-
----
-
-setuid file: urwxr-xr-x bin/mount, setuid file: urwxr-xr-x usr/bin/chsh, setgid file: grwxr-xr-x usr/bin/wall, setuid file: urwxr-xr-x usr/bin/newgrp, setuid file: urwxr-xr-x usr/bin/passwd, setgid file: grwxr-xr-x usr/bin/expiry, setuid file: urwxr-xr-x usr/lib/openssh/ssh-keysign, setuid file: urwxr-xr-x bin/umount, setgid file: grwxr-xr-x sbin/unix_chkpwd, setuid file: urwxr-xr-x bin/su, setgid file: grwxr-xr-x usr/bin/chage, setuid file: urwxr-xr-x usr/bin/chfn, setgid file: grwxr-xr-x usr/bin/ssh-agent, setuid file: urwxr-xr-x usr/bin/gpasswd, setgid file: grwxr-xr-x sbin/pam_extrausers_chkpwd, setuid file: urwxr-xr-- usr/lib/dbus-1.0/dbus-daemon-launch-helper
-
-### Locations
-#### **Physical Location**
-- bin/mount
-
-
-
-
-#### **Physical Location**
-- usr/bin/chsh
-
-
-
-
-#### **Physical Location**
-- usr/bin/wall
-
-
-
-
-#### **Physical Location**
-- usr/bin/newgrp
-
-
-
-
-#### **Physical Location**
-- usr/bin/passwd
-
-
-
-
-#### **Physical Location**
-- usr/bin/expiry
-
-
-
-
-#### **Physical Location**
-- usr/lib/openssh/ssh-keysign
-
-
-
-
-#### **Physical Location**
-- bin/umount
-
-
-
-
-#### **Physical Location**
-- sbin/unix_chkpwd
-
-
-
-
-#### **Physical Location**
-- bin/su
-
-
-
-
-#### **Physical Location**
-- usr/bin/chage
-
-
-
-
-#### **Physical Location**
-- usr/bin/chfn
-
-
-
-
-#### **Physical Location**
-- usr/bin/ssh-agent
-
-
-
-
-#### **Physical Location**
-- usr/bin/gpasswd
-
-
-
-
-#### **Physical Location**
-- sbin/pam_extrausers_chkpwd
-
-
-
-
-#### **Physical Location**
-- usr/lib/dbus-1.0/dbus-daemon-launch-helper
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CIS-DI-0008
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://github.com/goodwithtech/dockle/blob/master/CHECKPOINT.md#CIS-DI-0008">https://github.com/goodwithtech/dockle/blob/master/CHECKPOINT.md#CIS-DI-0008</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    Confirm safety of setuid/setgid files
-    </details>
-
-
-
-
-
-
----
-
-Last user should not be root
-
-### Locations
-#### **Physical Location**
-- metadata
-
-
-
-
-
-
-
-### Level
-
-- Warning
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CIS-DI-0001
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://github.com/goodwithtech/dockle/blob/master/CHECKPOINT.md#CIS-DI-0001">https://github.com/goodwithtech/dockle/blob/master/CHECKPOINT.md#CIS-DI-0001</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    Create a user for the container
     </details>
 
 

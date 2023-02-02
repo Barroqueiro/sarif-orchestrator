@@ -19,6 +19,8 @@ This report was automaticly generated based on the vulnerabilities specification
 
 ## Vulnerabilities
 
+---
+
 Package: libksba8
 Installed Version: 1.3.5-2
 Vulnerability CVE-2022-3515
@@ -2362,18703 +2364,6 @@ Link: [CVE-2020-5390](https://avd.aquasec.com/nvd/cve-2020-5390)
 	Fixed Version: 5.0.0
 	Link: [CVE-2020-5390](https://avd.aquasec.com/nvd/cve-2020-5390)
 	PySAML2 before 5.0.0 does not check that the signature in a SAML document is enveloped and thus signature wrapping is effective, i.e., it is affected by XML Signature Wrapping (XSW). The signature information and the node/object that is signed can be in different places and thus the signature verification will succeed, but the wrong data will be used. This specifically affects the verification of assertion that have been signed.
-    </details>
-
-
-
----
-
-Package: binutils
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2017-13716
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2017-13716
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2017-13716">https://avd.aquasec.com/nvd/cve-2017-13716</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    binutils: Memory leak with the C++ symbol demangler routine in libiberty
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2017-13716
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
-	The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
-    </details>
-
-
-
----
-
-Package: binutils
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2018-20657
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-20657
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-20657">https://avd.aquasec.com/nvd/cve-2018-20657</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    libiberty: Memory leak in demangle_template function resulting in a denial of service
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-20657
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
-	The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
-    </details>
-
-
-
----
-
-Package: binutils
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2019-1010204
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-1010204
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-1010204">https://avd.aquasec.com/nvd/cve-2019-1010204</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-1010204
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
-	GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
-    </details>
-
-
-
----
-
-Package: binutils
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2021-45078
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-45078
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-45078">https://avd.aquasec.com/nvd/cve-2021-45078</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-45078
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
-	stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
-    </details>
-
-
-
----
-
-Package: binutils
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2021-46195
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-46195
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-46195">https://avd.aquasec.com/nvd/cve-2021-46195</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gcc: uncontrolled recursion in libiberty/rust-demangle.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-46195
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
-	GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
-    </details>
-
-
-
----
-
-Package: binutils-common
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2017-13716
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2017-13716
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2017-13716">https://avd.aquasec.com/nvd/cve-2017-13716</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    binutils: Memory leak with the C++ symbol demangler routine in libiberty
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2017-13716
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
-	The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
-    </details>
-
-
-
----
-
-Package: binutils-common
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2018-20657
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-20657
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-20657">https://avd.aquasec.com/nvd/cve-2018-20657</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    libiberty: Memory leak in demangle_template function resulting in a denial of service
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-20657
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
-	The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
-    </details>
-
-
-
----
-
-Package: binutils-common
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2019-1010204
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-1010204
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-1010204">https://avd.aquasec.com/nvd/cve-2019-1010204</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-1010204
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
-	GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
-    </details>
-
-
-
----
-
-Package: binutils-common
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2021-45078
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-45078
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-45078">https://avd.aquasec.com/nvd/cve-2021-45078</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-45078
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
-	stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
-    </details>
-
-
-
----
-
-Package: binutils-common
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2021-46195
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-46195
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-46195">https://avd.aquasec.com/nvd/cve-2021-46195</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gcc: uncontrolled recursion in libiberty/rust-demangle.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-46195
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
-	GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
-    </details>
-
-
-
----
-
-Package: binutils-x86-64-linux-gnu
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2017-13716
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2017-13716
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2017-13716">https://avd.aquasec.com/nvd/cve-2017-13716</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    binutils: Memory leak with the C++ symbol demangler routine in libiberty
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2017-13716
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
-	The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
-    </details>
-
-
-
----
-
-Package: binutils-x86-64-linux-gnu
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2018-20657
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-20657
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-20657">https://avd.aquasec.com/nvd/cve-2018-20657</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    libiberty: Memory leak in demangle_template function resulting in a denial of service
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-20657
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
-	The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
-    </details>
-
-
-
----
-
-Package: binutils-x86-64-linux-gnu
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2019-1010204
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-1010204
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-1010204">https://avd.aquasec.com/nvd/cve-2019-1010204</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-1010204
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
-	GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
-    </details>
-
-
-
----
-
-Package: binutils-x86-64-linux-gnu
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2021-45078
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-45078
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-45078">https://avd.aquasec.com/nvd/cve-2021-45078</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-45078
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
-	stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
-    </details>
-
-
-
----
-
-Package: binutils-x86-64-linux-gnu
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2021-46195
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-46195
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-46195">https://avd.aquasec.com/nvd/cve-2021-46195</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gcc: uncontrolled recursion in libiberty/rust-demangle.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-46195
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
-	GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
-    </details>
-
-
-
----
-
-Package: coreutils
-Installed Version: 8.28-1ubuntu1
-Vulnerability CVE-2016-2781
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2016-2781](https://avd.aquasec.com/nvd/cve-2016-2781)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2016-2781
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2016-2781">https://avd.aquasec.com/nvd/cve-2016-2781</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    coreutils: Non-privileged session can escape to the parent session in chroot
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal&amp;#39;s input buffer.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2016-2781
-	Severity: LOW
-	Package: coreutils
-	Fixed Version: 
-	Link: [CVE-2016-2781](https://avd.aquasec.com/nvd/cve-2016-2781)
-	chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal&#39;s input buffer.
-    </details>
-
-
-
----
-
-Package: dirmngr
-Installed Version: 2.2.4-1ubuntu1.6
-Vulnerability CVE-2022-3219
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3219
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gnupg: denial of service issue (resource consumption) using compressed packets
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    No description is available for this CVE.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3219
-	Severity: LOW
-	Package: gpgv
-	Fixed Version: 
-	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-	No description is available for this CVE.
-    </details>
-
-
-
----
-
-Package: git
-Installed Version: 1:2.17.1-1ubuntu0.12
-Vulnerability CVE-2018-1000021
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-1000021](https://avd.aquasec.com/nvd/cve-2018-1000021)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-1000021
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-1000021">https://avd.aquasec.com/nvd/cve-2018-1000021</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    git: client prints server-sent ANSI escape codes to the terminal, allowing for unverified messages to potentially execute arbitrary commands
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    GIT version 2.15.1 and earlier contains a Input Validation Error vulnerability in Client that can result in problems including messing up terminal configuration to RCE. This attack appear to be exploitable via The user must interact with a malicious git server, (or have their traffic modified in a MITM attack).
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-1000021
-	Severity: LOW
-	Package: git-man
-	Fixed Version: 
-	Link: [CVE-2018-1000021](https://avd.aquasec.com/nvd/cve-2018-1000021)
-	GIT version 2.15.1 and earlier contains a Input Validation Error vulnerability in Client that can result in problems including messing up terminal configuration to RCE. This attack appear to be exploitable via The user must interact with a malicious git server, (or have their traffic modified in a MITM attack).
-    </details>
-
-
-
----
-
-Package: git-man
-Installed Version: 1:2.17.1-1ubuntu0.12
-Vulnerability CVE-2018-1000021
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-1000021](https://avd.aquasec.com/nvd/cve-2018-1000021)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-1000021
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-1000021">https://avd.aquasec.com/nvd/cve-2018-1000021</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    git: client prints server-sent ANSI escape codes to the terminal, allowing for unverified messages to potentially execute arbitrary commands
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    GIT version 2.15.1 and earlier contains a Input Validation Error vulnerability in Client that can result in problems including messing up terminal configuration to RCE. This attack appear to be exploitable via The user must interact with a malicious git server, (or have their traffic modified in a MITM attack).
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-1000021
-	Severity: LOW
-	Package: git-man
-	Fixed Version: 
-	Link: [CVE-2018-1000021](https://avd.aquasec.com/nvd/cve-2018-1000021)
-	GIT version 2.15.1 and earlier contains a Input Validation Error vulnerability in Client that can result in problems including messing up terminal configuration to RCE. This attack appear to be exploitable via The user must interact with a malicious git server, (or have their traffic modified in a MITM attack).
-    </details>
-
-
-
----
-
-Package: gnupg
-Installed Version: 2.2.4-1ubuntu1.6
-Vulnerability CVE-2022-3219
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3219
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gnupg: denial of service issue (resource consumption) using compressed packets
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    No description is available for this CVE.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3219
-	Severity: LOW
-	Package: gpgv
-	Fixed Version: 
-	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-	No description is available for this CVE.
-    </details>
-
-
-
----
-
-Package: gnupg-l10n
-Installed Version: 2.2.4-1ubuntu1.6
-Vulnerability CVE-2022-3219
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3219
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gnupg: denial of service issue (resource consumption) using compressed packets
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    No description is available for this CVE.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3219
-	Severity: LOW
-	Package: gpgv
-	Fixed Version: 
-	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-	No description is available for this CVE.
-    </details>
-
-
-
----
-
-Package: gnupg-utils
-Installed Version: 2.2.4-1ubuntu1.6
-Vulnerability CVE-2022-3219
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3219
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gnupg: denial of service issue (resource consumption) using compressed packets
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    No description is available for this CVE.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3219
-	Severity: LOW
-	Package: gpgv
-	Fixed Version: 
-	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-	No description is available for this CVE.
-    </details>
-
-
-
----
-
-Package: gpg
-Installed Version: 2.2.4-1ubuntu1.6
-Vulnerability CVE-2022-3219
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3219
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gnupg: denial of service issue (resource consumption) using compressed packets
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    No description is available for this CVE.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3219
-	Severity: LOW
-	Package: gpgv
-	Fixed Version: 
-	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-	No description is available for this CVE.
-    </details>
-
-
-
----
-
-Package: gpg-agent
-Installed Version: 2.2.4-1ubuntu1.6
-Vulnerability CVE-2022-3219
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3219
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gnupg: denial of service issue (resource consumption) using compressed packets
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    No description is available for this CVE.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3219
-	Severity: LOW
-	Package: gpgv
-	Fixed Version: 
-	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-	No description is available for this CVE.
-    </details>
-
-
-
----
-
-Package: gpg-wks-client
-Installed Version: 2.2.4-1ubuntu1.6
-Vulnerability CVE-2022-3219
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3219
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gnupg: denial of service issue (resource consumption) using compressed packets
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    No description is available for this CVE.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3219
-	Severity: LOW
-	Package: gpgv
-	Fixed Version: 
-	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-	No description is available for this CVE.
-    </details>
-
-
-
----
-
-Package: gpg-wks-server
-Installed Version: 2.2.4-1ubuntu1.6
-Vulnerability CVE-2022-3219
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3219
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gnupg: denial of service issue (resource consumption) using compressed packets
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    No description is available for this CVE.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3219
-	Severity: LOW
-	Package: gpgv
-	Fixed Version: 
-	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-	No description is available for this CVE.
-    </details>
-
-
-
----
-
-Package: gpgconf
-Installed Version: 2.2.4-1ubuntu1.6
-Vulnerability CVE-2022-3219
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3219
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gnupg: denial of service issue (resource consumption) using compressed packets
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    No description is available for this CVE.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3219
-	Severity: LOW
-	Package: gpgv
-	Fixed Version: 
-	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-	No description is available for this CVE.
-    </details>
-
-
-
----
-
-Package: gpgsm
-Installed Version: 2.2.4-1ubuntu1.6
-Vulnerability CVE-2022-3219
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3219
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gnupg: denial of service issue (resource consumption) using compressed packets
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    No description is available for this CVE.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3219
-	Severity: LOW
-	Package: gpgv
-	Fixed Version: 
-	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-	No description is available for this CVE.
-    </details>
-
-
-
----
-
-Package: gpgv
-Installed Version: 2.2.4-1ubuntu1.6
-Vulnerability CVE-2022-3219
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3219
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gnupg: denial of service issue (resource consumption) using compressed packets
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    No description is available for this CVE.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3219
-	Severity: LOW
-	Package: gpgv
-	Fixed Version: 
-	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
-	No description is available for this CVE.
-    </details>
-
-
-
----
-
-Package: libasn1-8-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2019-12098
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-12098
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-12098
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-
----
-
-Package: libasn1-8-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2021-3671
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-3671
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    samba: Null pointer dereference on missing sname in TGS-REQ
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-3671
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-
----
-
-Package: libbinutils
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2017-13716
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2017-13716
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2017-13716">https://avd.aquasec.com/nvd/cve-2017-13716</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    binutils: Memory leak with the C++ symbol demangler routine in libiberty
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2017-13716
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
-	The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
-    </details>
-
-
-
----
-
-Package: libbinutils
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2018-20657
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-20657
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-20657">https://avd.aquasec.com/nvd/cve-2018-20657</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    libiberty: Memory leak in demangle_template function resulting in a denial of service
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-20657
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
-	The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
-    </details>
-
-
-
----
-
-Package: libbinutils
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2019-1010204
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-1010204
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-1010204">https://avd.aquasec.com/nvd/cve-2019-1010204</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-1010204
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
-	GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
-    </details>
-
-
-
----
-
-Package: libbinutils
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2021-45078
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-45078
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-45078">https://avd.aquasec.com/nvd/cve-2021-45078</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-45078
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
-	stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
-    </details>
-
-
-
----
-
-Package: libbinutils
-Installed Version: 2.30-21ubuntu1~18.04.7
-Vulnerability CVE-2021-46195
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-46195
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-46195">https://avd.aquasec.com/nvd/cve-2021-46195</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gcc: uncontrolled recursion in libiberty/rust-demangle.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-46195
-	Severity: LOW
-	Package: libbinutils
-	Fixed Version: 
-	Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
-	GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
-    </details>
-
-
-
----
-
-Package: libc-bin
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2009-5155
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2009-5155
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2009-5155">https://avd.aquasec.com/nvd/cve-2009-5155</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    glibc: parse_reg_exp in posix/regcomp.c misparses alternatives leading to denial of service or trigger incorrect result
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2009-5155
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
-	In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
-    </details>
-
-
-
----
-
-Package: libc-bin
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2015-8985
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2015-8985
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2015-8985">https://avd.aquasec.com/nvd/cve-2015-8985</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    glibc: potential denial of service in pop_fail_stack()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2015-8985
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
-	The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
-    </details>
-
-
-
----
-
-Package: libc-bin
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2016-20013
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2016-20013
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2016-20013">https://avd.aquasec.com/nvd/cve-2016-20013</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&amp;#39;s runtime is proportional to the square of the length of the password.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2016-20013
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
-	sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&#39;s runtime is proportional to the square of the length of the password.
-    </details>
-
-
-
----
-
-Package: libc-dev-bin
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2009-5155
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2009-5155
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2009-5155">https://avd.aquasec.com/nvd/cve-2009-5155</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    glibc: parse_reg_exp in posix/regcomp.c misparses alternatives leading to denial of service or trigger incorrect result
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2009-5155
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
-	In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
-    </details>
-
-
-
----
-
-Package: libc-dev-bin
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2015-8985
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2015-8985
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2015-8985">https://avd.aquasec.com/nvd/cve-2015-8985</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    glibc: potential denial of service in pop_fail_stack()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2015-8985
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
-	The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
-    </details>
-
-
-
----
-
-Package: libc-dev-bin
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2016-20013
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2016-20013
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2016-20013">https://avd.aquasec.com/nvd/cve-2016-20013</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&amp;#39;s runtime is proportional to the square of the length of the password.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2016-20013
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
-	sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&#39;s runtime is proportional to the square of the length of the password.
-    </details>
-
-
-
----
-
-Package: libc6
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2009-5155
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2009-5155
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2009-5155">https://avd.aquasec.com/nvd/cve-2009-5155</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    glibc: parse_reg_exp in posix/regcomp.c misparses alternatives leading to denial of service or trigger incorrect result
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2009-5155
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
-	In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
-    </details>
-
-
-
----
-
-Package: libc6
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2015-8985
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2015-8985
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2015-8985">https://avd.aquasec.com/nvd/cve-2015-8985</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    glibc: potential denial of service in pop_fail_stack()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2015-8985
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
-	The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
-    </details>
-
-
-
----
-
-Package: libc6
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2016-20013
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2016-20013
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2016-20013">https://avd.aquasec.com/nvd/cve-2016-20013</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&amp;#39;s runtime is proportional to the square of the length of the password.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2016-20013
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
-	sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&#39;s runtime is proportional to the square of the length of the password.
-    </details>
-
-
-
----
-
-Package: libc6-dev
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2009-5155
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2009-5155
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2009-5155">https://avd.aquasec.com/nvd/cve-2009-5155</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    glibc: parse_reg_exp in posix/regcomp.c misparses alternatives leading to denial of service or trigger incorrect result
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2009-5155
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
-	In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
-    </details>
-
-
-
----
-
-Package: libc6-dev
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2015-8985
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2015-8985
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2015-8985">https://avd.aquasec.com/nvd/cve-2015-8985</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    glibc: potential denial of service in pop_fail_stack()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2015-8985
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
-	The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
-    </details>
-
-
-
----
-
-Package: libc6-dev
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2016-20013
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2016-20013
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2016-20013">https://avd.aquasec.com/nvd/cve-2016-20013</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&amp;#39;s runtime is proportional to the square of the length of the password.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2016-20013
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
-	sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&#39;s runtime is proportional to the square of the length of the password.
-    </details>
-
-
-
----
-
-Package: libgmp10
-Installed Version: 2:6.1.2+dfsg-2
-Vulnerability CVE-2021-43618
-Severity: LOW
-Fixed Version: 2:6.1.2+dfsg-2ubuntu0.1
-Link: [CVE-2021-43618](https://avd.aquasec.com/nvd/cve-2021-43618)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-43618
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-43618">https://avd.aquasec.com/nvd/cve-2021-43618</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    gmp: Integer overflow and resultant buffer overflow via crafted input
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    GNU Multiple Precision Arithmetic Library (GMP) through 6.2.1 has an mpz/inp_raw.c integer overflow and resultant buffer overflow via crafted input, leading to a segmentation fault on 32-bit platforms.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-43618
-	Severity: LOW
-	Package: libgmp10
-	Fixed Version: 2:6.1.2+dfsg-2ubuntu0.1
-	Link: [CVE-2021-43618](https://avd.aquasec.com/nvd/cve-2021-43618)
-	GNU Multiple Precision Arithmetic Library (GMP) through 6.2.1 has an mpz/inp_raw.c integer overflow and resultant buffer overflow via crafted input, leading to a segmentation fault on 32-bit platforms.
-    </details>
-
-
-
----
-
-Package: libgssapi3-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2019-12098
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-12098
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-12098
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-
----
-
-Package: libgssapi3-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2021-3671
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-3671
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    samba: Null pointer dereference on missing sname in TGS-REQ
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-3671
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-
----
-
-Package: libhcrypto4-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2019-12098
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-12098
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-12098
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-
----
-
-Package: libhcrypto4-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2021-3671
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-3671
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    samba: Null pointer dereference on missing sname in TGS-REQ
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-3671
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-
----
-
-Package: libheimbase1-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2019-12098
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-12098
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-12098
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-
----
-
-Package: libheimbase1-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2021-3671
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-3671
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    samba: Null pointer dereference on missing sname in TGS-REQ
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-3671
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-
----
-
-Package: libheimntlm0-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2019-12098
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-12098
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-12098
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-
----
-
-Package: libheimntlm0-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2021-3671
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-3671
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    samba: Null pointer dereference on missing sname in TGS-REQ
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-3671
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-
----
-
-Package: libhx509-5-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2019-12098
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-12098
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-12098
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-
----
-
-Package: libhx509-5-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2021-3671
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-3671
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    samba: Null pointer dereference on missing sname in TGS-REQ
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-3671
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-
----
-
-Package: libjpeg-turbo8
-Installed Version: 1.5.2-0ubuntu5.18.04.4
-Vulnerability CVE-2018-11813
-Severity: LOW
-Fixed Version: 1.5.2-0ubuntu5.18.04.6
-Link: [CVE-2018-11813](https://avd.aquasec.com/nvd/cve-2018-11813)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-11813
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-11813">https://avd.aquasec.com/nvd/cve-2018-11813</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    libjpeg: &amp;#34;cjpeg&amp;#34; utility large loop because read_pixel in rdtarga.c mishandles EOF
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    libjpeg 9c has a large loop because read_pixel in rdtarga.c mishandles EOF.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-11813
-	Severity: LOW
-	Package: libjpeg-turbo8-dev
-	Fixed Version: 1.5.2-0ubuntu5.18.04.6
-	Link: [CVE-2018-11813](https://avd.aquasec.com/nvd/cve-2018-11813)
-	libjpeg 9c has a large loop because read_pixel in rdtarga.c mishandles EOF.
-    </details>
-
-
-
----
-
-Package: libjpeg-turbo8
-Installed Version: 1.5.2-0ubuntu5.18.04.4
-Vulnerability CVE-2020-17541
-Severity: LOW
-Fixed Version: 1.5.2-0ubuntu5.18.04.6
-Link: [CVE-2020-17541](https://avd.aquasec.com/nvd/cve-2020-17541)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2020-17541
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2020-17541">https://avd.aquasec.com/nvd/cve-2020-17541</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    libjpeg-turbo: Stack-based buffer overflow in the &amp;#34;transform&amp;#34; component
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Libjpeg-turbo all version have a stack-based buffer overflow in the &amp;#34;transform&amp;#34; component. A remote attacker can send a malformed jpeg file to the service and cause arbitrary code execution or denial of service of the target service.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2020-17541
-	Severity: LOW
-	Package: libjpeg-turbo8-dev
-	Fixed Version: 1.5.2-0ubuntu5.18.04.6
-	Link: [CVE-2020-17541](https://avd.aquasec.com/nvd/cve-2020-17541)
-	Libjpeg-turbo all version have a stack-based buffer overflow in the &#34;transform&#34; component. A remote attacker can send a malformed jpeg file to the service and cause arbitrary code execution or denial of service of the target service.
-    </details>
-
-
-
----
-
-Package: libjpeg-turbo8
-Installed Version: 1.5.2-0ubuntu5.18.04.4
-Vulnerability CVE-2022-32325
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-32325](https://avd.aquasec.com/nvd/cve-2022-32325)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-32325
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-32325">https://avd.aquasec.com/nvd/cve-2022-32325</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation wh ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation which is caused by a READ memory access at jpegoptim.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-32325
-	Severity: LOW
-	Package: libjpeg-turbo8-dev
-	Fixed Version: 
-	Link: [CVE-2022-32325](https://avd.aquasec.com/nvd/cve-2022-32325)
-	JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation which is caused by a READ memory access at jpegoptim.c.
-    </details>
-
-
-
----
-
-Package: libjpeg-turbo8-dev
-Installed Version: 1.5.2-0ubuntu5.18.04.4
-Vulnerability CVE-2018-11813
-Severity: LOW
-Fixed Version: 1.5.2-0ubuntu5.18.04.6
-Link: [CVE-2018-11813](https://avd.aquasec.com/nvd/cve-2018-11813)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-11813
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-11813">https://avd.aquasec.com/nvd/cve-2018-11813</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    libjpeg: &amp;#34;cjpeg&amp;#34; utility large loop because read_pixel in rdtarga.c mishandles EOF
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    libjpeg 9c has a large loop because read_pixel in rdtarga.c mishandles EOF.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-11813
-	Severity: LOW
-	Package: libjpeg-turbo8-dev
-	Fixed Version: 1.5.2-0ubuntu5.18.04.6
-	Link: [CVE-2018-11813](https://avd.aquasec.com/nvd/cve-2018-11813)
-	libjpeg 9c has a large loop because read_pixel in rdtarga.c mishandles EOF.
-    </details>
-
-
-
----
-
-Package: libjpeg-turbo8-dev
-Installed Version: 1.5.2-0ubuntu5.18.04.4
-Vulnerability CVE-2020-17541
-Severity: LOW
-Fixed Version: 1.5.2-0ubuntu5.18.04.6
-Link: [CVE-2020-17541](https://avd.aquasec.com/nvd/cve-2020-17541)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2020-17541
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2020-17541">https://avd.aquasec.com/nvd/cve-2020-17541</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    libjpeg-turbo: Stack-based buffer overflow in the &amp;#34;transform&amp;#34; component
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Libjpeg-turbo all version have a stack-based buffer overflow in the &amp;#34;transform&amp;#34; component. A remote attacker can send a malformed jpeg file to the service and cause arbitrary code execution or denial of service of the target service.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2020-17541
-	Severity: LOW
-	Package: libjpeg-turbo8-dev
-	Fixed Version: 1.5.2-0ubuntu5.18.04.6
-	Link: [CVE-2020-17541](https://avd.aquasec.com/nvd/cve-2020-17541)
-	Libjpeg-turbo all version have a stack-based buffer overflow in the &#34;transform&#34; component. A remote attacker can send a malformed jpeg file to the service and cause arbitrary code execution or denial of service of the target service.
-    </details>
-
-
-
----
-
-Package: libjpeg-turbo8-dev
-Installed Version: 1.5.2-0ubuntu5.18.04.4
-Vulnerability CVE-2022-32325
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-32325](https://avd.aquasec.com/nvd/cve-2022-32325)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-32325
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-32325">https://avd.aquasec.com/nvd/cve-2022-32325</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation wh ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation which is caused by a READ memory access at jpegoptim.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-32325
-	Severity: LOW
-	Package: libjpeg-turbo8-dev
-	Fixed Version: 
-	Link: [CVE-2022-32325](https://avd.aquasec.com/nvd/cve-2022-32325)
-	JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation which is caused by a READ memory access at jpegoptim.c.
-    </details>
-
-
-
----
-
-Package: libkrb5-26-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2019-12098
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-12098
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-12098
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-
----
-
-Package: libkrb5-26-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2021-3671
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-3671
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    samba: Null pointer dereference on missing sname in TGS-REQ
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-3671
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-
----
-
-Package: libncurses5
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2019-17594
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-17594
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-17594">https://avd.aquasec.com/nvd/cve-2019-17594</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-17594
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
-	There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-
----
-
-Package: libncurses5
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2019-17595
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-17595
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-17595">https://avd.aquasec.com/nvd/cve-2019-17595</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-17595
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
-	There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-
----
-
-Package: libncurses5
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2021-39537
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-39537
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-39537">https://avd.aquasec.com/nvd/cve-2021-39537</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-39537
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
-	An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
-    </details>
-
-
-
----
-
-Package: libncurses5
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2022-29458
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-29458
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-29458">https://avd.aquasec.com/nvd/cve-2022-29458</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: segfaulting OOB read
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-29458
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
-	ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
-    </details>
-
-
-
----
-
-Package: libncursesw5
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2019-17594
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-17594
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-17594">https://avd.aquasec.com/nvd/cve-2019-17594</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-17594
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
-	There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-
----
-
-Package: libncursesw5
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2019-17595
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-17595
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-17595">https://avd.aquasec.com/nvd/cve-2019-17595</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-17595
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
-	There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-
----
-
-Package: libncursesw5
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2021-39537
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-39537
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-39537">https://avd.aquasec.com/nvd/cve-2021-39537</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-39537
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
-	An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
-    </details>
-
-
-
----
-
-Package: libncursesw5
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2022-29458
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-29458
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-29458">https://avd.aquasec.com/nvd/cve-2022-29458</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: segfaulting OOB read
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-29458
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
-	ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
-    </details>
-
-
-
----
-
-Package: libpcre16-3
-Installed Version: 2:8.39-9ubuntu0.1
-Vulnerability CVE-2017-11164
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2017-11164
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2017-11164">https://avd.aquasec.com/nvd/cve-2017-11164</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    pcre: OP_KETRMAX feature in the match function in pcre_exec.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2017-11164
-	Severity: LOW
-	Package: libpcrecpp0v5
-	Fixed Version: 
-	Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
-	In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
-    </details>
-
-
-
----
-
-Package: libpcre3
-Installed Version: 2:8.39-9ubuntu0.1
-Vulnerability CVE-2017-11164
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2017-11164
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2017-11164">https://avd.aquasec.com/nvd/cve-2017-11164</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    pcre: OP_KETRMAX feature in the match function in pcre_exec.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2017-11164
-	Severity: LOW
-	Package: libpcrecpp0v5
-	Fixed Version: 
-	Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
-	In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
-    </details>
-
-
-
----
-
-Package: libpcre3-dev
-Installed Version: 2:8.39-9ubuntu0.1
-Vulnerability CVE-2017-11164
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2017-11164
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2017-11164">https://avd.aquasec.com/nvd/cve-2017-11164</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    pcre: OP_KETRMAX feature in the match function in pcre_exec.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2017-11164
-	Severity: LOW
-	Package: libpcrecpp0v5
-	Fixed Version: 
-	Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
-	In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
-    </details>
-
-
-
----
-
-Package: libpcre32-3
-Installed Version: 2:8.39-9ubuntu0.1
-Vulnerability CVE-2017-11164
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2017-11164
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2017-11164">https://avd.aquasec.com/nvd/cve-2017-11164</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    pcre: OP_KETRMAX feature in the match function in pcre_exec.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2017-11164
-	Severity: LOW
-	Package: libpcrecpp0v5
-	Fixed Version: 
-	Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
-	In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
-    </details>
-
-
-
----
-
-Package: libpcrecpp0v5
-Installed Version: 2:8.39-9ubuntu0.1
-Vulnerability CVE-2017-11164
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2017-11164
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2017-11164">https://avd.aquasec.com/nvd/cve-2017-11164</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    pcre: OP_KETRMAX feature in the match function in pcre_exec.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2017-11164
-	Severity: LOW
-	Package: libpcrecpp0v5
-	Fixed Version: 
-	Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
-	In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
-    </details>
-
-
-
----
-
-Package: libpng16-16
-Installed Version: 1.6.34-1ubuntu0.18.04.2
-Vulnerability CVE-2018-14048
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-14048](https://avd.aquasec.com/nvd/cve-2018-14048)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-14048
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-14048">https://avd.aquasec.com/nvd/cve-2018-14048</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    libpng: Segmentation fault in png.c:png_free_data function causing denial of service
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    An issue has been found in libpng 1.6.34. It is a SEGV in the function png_free_data in png.c, related to the recommended error handling for png_read_image.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-14048
-	Severity: LOW
-	Package: libpng16-16
-	Fixed Version: 
-	Link: [CVE-2018-14048](https://avd.aquasec.com/nvd/cve-2018-14048)
-	An issue has been found in libpng 1.6.34. It is a SEGV in the function png_free_data in png.c, related to the recommended error handling for png_read_image.
-    </details>
-
-
-
----
-
-Package: libpng16-16
-Installed Version: 1.6.34-1ubuntu0.18.04.2
-Vulnerability CVE-2022-3857
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-3857](https://avd.aquasec.com/nvd/cve-2022-3857)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3857
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3857">https://avd.aquasec.com/nvd/cve-2022-3857</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    libpng: Null pointer dereference leads to segmentation fault
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    No description is available for this CVE.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3857
-	Severity: LOW
-	Package: libpng16-16
-	Fixed Version: 
-	Link: [CVE-2022-3857](https://avd.aquasec.com/nvd/cve-2022-3857)
-	No description is available for this CVE.
-    </details>
-
-
-
----
-
-Package: libpython3.6
-Installed Version: 3.6.9-1~18.04ubuntu1.8
-Vulnerability CVE-2021-28861
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-28861
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-28861">https://avd.aquasec.com/nvd/cve-2021-28861</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    python: open redirection vulnerability in lib/http/server.py may lead to information disclosure
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &amp;#34;Warning: http.server is not recommended for production. It only implements basic security checks.&amp;#34;
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-28861
-	Severity: LOW
-	Package: python3.6-minimal
-	Fixed Version: 
-	Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
-	** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &#34;Warning: http.server is not recommended for production. It only implements basic security checks.&#34;
-    </details>
-
-
-
----
-
-Package: libpython3.6-minimal
-Installed Version: 3.6.9-1~18.04ubuntu1.8
-Vulnerability CVE-2021-28861
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-28861
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-28861">https://avd.aquasec.com/nvd/cve-2021-28861</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    python: open redirection vulnerability in lib/http/server.py may lead to information disclosure
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &amp;#34;Warning: http.server is not recommended for production. It only implements basic security checks.&amp;#34;
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-28861
-	Severity: LOW
-	Package: python3.6-minimal
-	Fixed Version: 
-	Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
-	** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &#34;Warning: http.server is not recommended for production. It only implements basic security checks.&#34;
-    </details>
-
-
-
----
-
-Package: libpython3.6-stdlib
-Installed Version: 3.6.9-1~18.04ubuntu1.8
-Vulnerability CVE-2021-28861
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-28861
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-28861">https://avd.aquasec.com/nvd/cve-2021-28861</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    python: open redirection vulnerability in lib/http/server.py may lead to information disclosure
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &amp;#34;Warning: http.server is not recommended for production. It only implements basic security checks.&amp;#34;
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-28861
-	Severity: LOW
-	Package: python3.6-minimal
-	Fixed Version: 
-	Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
-	** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &#34;Warning: http.server is not recommended for production. It only implements basic security checks.&#34;
-    </details>
-
-
-
----
-
-Package: libroken18-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2019-12098
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-12098
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-12098
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-
----
-
-Package: libroken18-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2021-3671
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-3671
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    samba: Null pointer dereference on missing sname in TGS-REQ
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-3671
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-
----
-
-Package: libtinfo5
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2019-17594
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-17594
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-17594">https://avd.aquasec.com/nvd/cve-2019-17594</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-17594
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
-	There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-
----
-
-Package: libtinfo5
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2019-17595
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-17595
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-17595">https://avd.aquasec.com/nvd/cve-2019-17595</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-17595
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
-	There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-
----
-
-Package: libtinfo5
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2021-39537
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-39537
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-39537">https://avd.aquasec.com/nvd/cve-2021-39537</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-39537
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
-	An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
-    </details>
-
-
-
----
-
-Package: libtinfo5
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2022-29458
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-29458
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-29458">https://avd.aquasec.com/nvd/cve-2022-29458</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: segfaulting OOB read
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-29458
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
-	ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
-    </details>
-
-
-
----
-
-Package: libwind0-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2019-12098
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-12098
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-12098
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
-	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
-    </details>
-
-
-
----
-
-Package: libwind0-heimdal
-Installed Version: 7.5.0+dfsg-1
-Vulnerability CVE-2021-3671
-Severity: LOW
-Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-3671
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    samba: Null pointer dereference on missing sname in TGS-REQ
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-3671
-	Severity: LOW
-	Package: libwind0-heimdal
-	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
-	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
-	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2016-10723
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2016-10723](https://avd.aquasec.com/nvd/cve-2016-10723)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2016-10723
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2016-10723">https://avd.aquasec.com/nvd/cve-2016-10723</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ** DISPUTED ** An issue was discovered in the Linux kernel through 4.1 ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ** DISPUTED ** An issue was discovered in the Linux kernel through 4.17.2. Since the page allocator does not yield CPU resources to the owner of the oom_lock mutex, a local unprivileged user can trivially lock up the system forever by wasting CPU resources from the page allocator (e.g., via concurrent page fault events) when the global OOM killer is invoked. NOTE: the software maintainer has not accepted certain proposed patches, in part because of a viewpoint that &amp;#34;the underlying problem is non-trivial to handle.&amp;#34;
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2016-10723
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2016-10723](https://avd.aquasec.com/nvd/cve-2016-10723)
-	** DISPUTED ** An issue was discovered in the Linux kernel through 4.17.2. Since the page allocator does not yield CPU resources to the owner of the oom_lock mutex, a local unprivileged user can trivially lock up the system forever by wasting CPU resources from the page allocator (e.g., via concurrent page fault events) when the global OOM killer is invoked. NOTE: the software maintainer has not accepted certain proposed patches, in part because of a viewpoint that &#34;the underlying problem is non-trivial to handle.&#34;
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2017-0537
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2017-0537](https://avd.aquasec.com/nvd/cve-2017-0537)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2017-0537
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2017-0537">https://avd.aquasec.com/nvd/cve-2017-0537</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    An information disclosure vulnerability in the kernel USB gadget driver could enable a local malicious application to access data outside of its permission levels. This issue is rated as Moderate because it first requires compromising a privileged process. Product: Android. Versions: Kernel-3.18. Android ID: A-31614969.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2017-0537
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2017-0537](https://avd.aquasec.com/nvd/cve-2017-0537)
-	An information disclosure vulnerability in the kernel USB gadget driver could enable a local malicious application to access data outside of its permission levels. This issue is rated as Moderate because it first requires compromising a privileged process. Product: Android. Versions: Kernel-3.18. Android ID: A-31614969.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2017-13165
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2017-13165](https://avd.aquasec.com/nvd/cve-2017-13165)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2017-13165
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2017-13165">https://avd.aquasec.com/nvd/cve-2017-13165</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    An elevation of privilege vulnerability in the kernel file system. Product: Android. Versions: Android kernel. Android ID A-31269937.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2017-13165
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2017-13165](https://avd.aquasec.com/nvd/cve-2017-13165)
-	An elevation of privilege vulnerability in the kernel file system. Product: Android. Versions: Android kernel. Android ID A-31269937.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2017-13693
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2017-13693](https://avd.aquasec.com/nvd/cve-2017-13693)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2017-13693
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2017-13693">https://avd.aquasec.com/nvd/cve-2017-13693</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: ACPI operand cache leak in dsutils.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The acpi_ds_create_operands() function in drivers/acpi/acpica/dsutils.c in the Linux kernel through 4.12.9 does not flush the operand cache and causes a kernel stack dump, which allows local users to obtain sensitive information from kernel memory and bypass the KASLR protection mechanism (in the kernel through 4.9) via a crafted ACPI table.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2017-13693
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2017-13693](https://avd.aquasec.com/nvd/cve-2017-13693)
-	The acpi_ds_create_operands() function in drivers/acpi/acpica/dsutils.c in the Linux kernel through 4.12.9 does not flush the operand cache and causes a kernel stack dump, which allows local users to obtain sensitive information from kernel memory and bypass the KASLR protection mechanism (in the kernel through 4.9) via a crafted ACPI table.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2018-1121
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-1121](https://avd.aquasec.com/nvd/cve-2018-1121)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-1121
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-1121">https://avd.aquasec.com/nvd/cve-2018-1121</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    procps-ng, procps: process hiding through race condition enumerating /proc
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    procps-ng, procps is vulnerable to a process hiding through race condition. Since the kernel&amp;#39;s proc_pid_readdir() returns PID entries in ascending numeric order, a process occupying a high PID can use inotify events to determine when the process list is being scanned, and fork/exec to obtain a lower PID, thus avoiding enumeration. An unprivileged attacker can hide a process from procps-ng&amp;#39;s utilities by exploiting a race condition in reading /proc/PID entries. This vulnerability affects procps and procps-ng up to version 3.3.15, newer versions might be affected also.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-1121
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2018-1121](https://avd.aquasec.com/nvd/cve-2018-1121)
-	procps-ng, procps is vulnerable to a process hiding through race condition. Since the kernel&#39;s proc_pid_readdir() returns PID entries in ascending numeric order, a process occupying a high PID can use inotify events to determine when the process list is being scanned, and fork/exec to obtain a lower PID, thus avoiding enumeration. An unprivileged attacker can hide a process from procps-ng&#39;s utilities by exploiting a race condition in reading /proc/PID entries. This vulnerability affects procps and procps-ng up to version 3.3.15, newer versions might be affected also.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2018-12928
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-12928](https://avd.aquasec.com/nvd/cve-2018-12928)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-12928
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-12928">https://avd.aquasec.com/nvd/cve-2018-12928</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: NULL pointer dereference in hfs_ext_read_extent in hfs.ko
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the Linux kernel 4.15.0, a NULL pointer dereference was discovered in hfs_ext_read_extent in hfs.ko. This can occur during a mount of a crafted hfs filesystem.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-12928
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2018-12928](https://avd.aquasec.com/nvd/cve-2018-12928)
-	In the Linux kernel 4.15.0, a NULL pointer dereference was discovered in hfs_ext_read_extent in hfs.ko. This can occur during a mount of a crafted hfs filesystem.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2018-12929
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-12929](https://avd.aquasec.com/nvd/cve-2018-12929)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-12929
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-12929">https://avd.aquasec.com/nvd/cve-2018-12929</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: use-after-free in ntfs_read_locked_inode in the ntfs.ko
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ntfs_read_locked_inode in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a use-after-free read and possibly cause a denial of service (kernel oops or panic) via a crafted ntfs filesystem.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-12929
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2018-12929](https://avd.aquasec.com/nvd/cve-2018-12929)
-	ntfs_read_locked_inode in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a use-after-free read and possibly cause a denial of service (kernel oops or panic) via a crafted ntfs filesystem.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2018-12930
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-12930](https://avd.aquasec.com/nvd/cve-2018-12930)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-12930
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-12930">https://avd.aquasec.com/nvd/cve-2018-12930</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: stack-based out-of-bounds write in ntfs_end_buffer_async_read in the ntfs.ko
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ntfs_end_buffer_async_read in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-12930
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2018-12930](https://avd.aquasec.com/nvd/cve-2018-12930)
-	ntfs_end_buffer_async_read in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2018-12931
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-12931](https://avd.aquasec.com/nvd/cve-2018-12931)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-12931
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-12931">https://avd.aquasec.com/nvd/cve-2018-12931</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: stack-based out-of-bounds write in ntfs_attr_find in the ntfs.ko
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-12931
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2018-12931](https://avd.aquasec.com/nvd/cve-2018-12931)
-	ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2019-14899
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-14899](https://avd.aquasec.com/nvd/cve-2019-14899)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-14899
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-14899">https://avd.aquasec.com/nvd/cve-2019-14899</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    VPN: an attacker can inject data into the TCP stream which allows a hijack of active connections inside the VPN tunnel
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A vulnerability was discovered in Linux, FreeBSD, OpenBSD, MacOS, iOS, and Android that allows a malicious access point, or an adjacent user, to determine if a connected user is using a VPN, make positive inferences about the websites they are visiting, and determine the correct sequence and acknowledgement numbers in use, allowing the bad actor to inject data into the TCP stream. This provides everything that is needed for an attacker to hijack active connections inside the VPN tunnel.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-14899
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2019-14899](https://avd.aquasec.com/nvd/cve-2019-14899)
-	A vulnerability was discovered in Linux, FreeBSD, OpenBSD, MacOS, iOS, and Android that allows a malicious access point, or an adjacent user, to determine if a connected user is using a VPN, make positive inferences about the websites they are visiting, and determine the correct sequence and acknowledgement numbers in use, allowing the bad actor to inject data into the TCP stream. This provides everything that is needed for an attacker to hijack active connections inside the VPN tunnel.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2019-15213
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-15213](https://avd.aquasec.com/nvd/cve-2019-15213)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-15213
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-15213">https://avd.aquasec.com/nvd/cve-2019-15213</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: use-after-free caused by malicious USB device in drivers/media/usb/dvb-usb/dvb-usb-init.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    An issue was discovered in the Linux kernel before 5.2.3. There is a use-after-free caused by a malicious USB device in the drivers/media/usb/dvb-usb/dvb-usb-init.c driver.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-15213
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2019-15213](https://avd.aquasec.com/nvd/cve-2019-15213)
-	An issue was discovered in the Linux kernel before 5.2.3. There is a use-after-free caused by a malicious USB device in the drivers/media/usb/dvb-usb/dvb-usb-init.c driver.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2019-16230
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-16230](https://avd.aquasec.com/nvd/cve-2019-16230)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-16230
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-16230">https://avd.aquasec.com/nvd/cve-2019-16230</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: null pointer dereference in drivers/gpu/drm/radeon/radeon_display.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ** DISPUTED ** drivers/gpu/drm/radeon/radeon_display.c in the Linux kernel 5.2.14 does not check the alloc_workqueue return value, leading to a NULL pointer dereference. NOTE: A third-party software maintainer states that the work queue allocation is happening during device initialization, which for a graphics card occurs during boot. It is not attacker controllable and OOM at that time is highly unlikely.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-16230
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2019-16230](https://avd.aquasec.com/nvd/cve-2019-16230)
-	** DISPUTED ** drivers/gpu/drm/radeon/radeon_display.c in the Linux kernel 5.2.14 does not check the alloc_workqueue return value, leading to a NULL pointer dereference. NOTE: A third-party software maintainer states that the work queue allocation is happening during device initialization, which for a graphics card occurs during boot. It is not attacker controllable and OOM at that time is highly unlikely.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2019-19378
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-19378](https://avd.aquasec.com/nvd/cve-2019-19378)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-19378
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-19378">https://avd.aquasec.com/nvd/cve-2019-19378</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: out-of-bounds write in index_rbio_pages in fs/btrfs/raid56.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the Linux kernel 5.0.21, mounting a crafted btrfs filesystem image can lead to slab-out-of-bounds write access in index_rbio_pages in fs/btrfs/raid56.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-19378
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2019-19378](https://avd.aquasec.com/nvd/cve-2019-19378)
-	In the Linux kernel 5.0.21, mounting a crafted btrfs filesystem image can lead to slab-out-of-bounds write access in index_rbio_pages in fs/btrfs/raid56.c.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2019-19814
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-19814](https://avd.aquasec.com/nvd/cve-2019-19814)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-19814
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-19814">https://avd.aquasec.com/nvd/cve-2019-19814</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: out-of-bounds write in __remove_dirty_segment in fs/f2fs/segment.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the Linux kernel 5.0.21, mounting a crafted f2fs filesystem image can cause __remove_dirty_segment slab-out-of-bounds write access because an array is bounded by the number of dirty types (8) but the array index can exceed this.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-19814
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2019-19814](https://avd.aquasec.com/nvd/cve-2019-19814)
-	In the Linux kernel 5.0.21, mounting a crafted f2fs filesystem image can cause __remove_dirty_segment slab-out-of-bounds write access because an array is bounded by the number of dirty types (8) but the array index can exceed this.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2019-19815
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-19815](https://avd.aquasec.com/nvd/cve-2019-19815)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-19815
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-19815">https://avd.aquasec.com/nvd/cve-2019-19815</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: NULL pointer dereference in f2fs_recover_fsync_data in fs/f2fs/recovery.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the Linux kernel 5.0.21, mounting a crafted f2fs filesystem image can cause a NULL pointer dereference in f2fs_recover_fsync_data in fs/f2fs/recovery.c. This is related to F2FS_P_SB in fs/f2fs/f2fs.h.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-19815
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2019-19815](https://avd.aquasec.com/nvd/cve-2019-19815)
-	In the Linux kernel 5.0.21, mounting a crafted f2fs filesystem image can cause a NULL pointer dereference in f2fs_recover_fsync_data in fs/f2fs/recovery.c. This is related to F2FS_P_SB in fs/f2fs/f2fs.h.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2019-20425
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-20425](https://avd.aquasec.com/nvd/cve-2019-20425)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-20425
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-20425">https://avd.aquasec.com/nvd/cve-2019-20425</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the Lustre file system before 2.12.3, the ptlrpc module has an out-of-bounds access and panic due to the lack of validation for specific fields of packets sent by a client. In the function lustre_msg_string, there is no validation of a certain length value derived from lustre_msg_buflen_v2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-20425
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2019-20425](https://avd.aquasec.com/nvd/cve-2019-20425)
-	In the Lustre file system before 2.12.3, the ptlrpc module has an out-of-bounds access and panic due to the lack of validation for specific fields of packets sent by a client. In the function lustre_msg_string, there is no validation of a certain length value derived from lustre_msg_buflen_v2.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2019-20429
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-20429](https://avd.aquasec.com/nvd/cve-2019-20429)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-20429
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-20429">https://avd.aquasec.com/nvd/cve-2019-20429</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the Lustre file system before 2.12.3, the ptlrpc module has an out-of-bounds read and panic (via a modified lm_bufcount field) due to the lack of validation for specific fields of packets sent by a client. This is caused by interaction between sptlrpc_svc_unwrap_request and lustre_msg_hdr_size_v2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-20429
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2019-20429](https://avd.aquasec.com/nvd/cve-2019-20429)
-	In the Lustre file system before 2.12.3, the ptlrpc module has an out-of-bounds read and panic (via a modified lm_bufcount field) due to the lack of validation for specific fields of packets sent by a client. This is caused by interaction between sptlrpc_svc_unwrap_request and lustre_msg_hdr_size_v2.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2020-11725
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2020-11725](https://avd.aquasec.com/nvd/cve-2020-11725)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2020-11725
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2020-11725">https://avd.aquasec.com/nvd/cve-2020-11725</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: improper handling of private_size*count multiplication due to count=info-&amp;gt;owner typo
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ** DISPUTED ** snd_ctl_elem_add in sound/core/control.c in the Linux kernel through 5.6.3 has a count=info-&amp;gt;owner line, which later affects a private_size*count multiplication for unspecified &amp;#34;interesting side effects.&amp;#34; NOTE: kernel engineers dispute this finding, because it could be relevant only if new callers were added that were unfamiliar with the misuse of the info-&amp;gt;owner field to represent data unrelated to the &amp;#34;owner&amp;#34; concept. The existing callers, SNDRV_CTL_IOCTL_ELEM_ADD and SNDRV_CTL_IOCTL_ELEM_REPLACE, have been designed to misuse the info-&amp;gt;owner field in a safe way.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2020-11725
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2020-11725](https://avd.aquasec.com/nvd/cve-2020-11725)
-	** DISPUTED ** snd_ctl_elem_add in sound/core/control.c in the Linux kernel through 5.6.3 has a count=info-&gt;owner line, which later affects a private_size*count multiplication for unspecified &#34;interesting side effects.&#34; NOTE: kernel engineers dispute this finding, because it could be relevant only if new callers were added that were unfamiliar with the misuse of the info-&gt;owner field to represent data unrelated to the &#34;owner&#34; concept. The existing callers, SNDRV_CTL_IOCTL_ELEM_ADD and SNDRV_CTL_IOCTL_ELEM_REPLACE, have been designed to misuse the info-&gt;owner field in a safe way.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2020-12363
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2020-12363](https://avd.aquasec.com/nvd/cve-2020-12363)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2020-12363
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2020-12363">https://avd.aquasec.com/nvd/cve-2020-12363</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: Improper input validation in some Intel(R) Graphics Drivers
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Improper input validation in some Intel(R) Graphics Drivers for Windows* before version 26.20.100.7212 and before Linux kernel version 5.5 may allow a privileged user to potentially enable a denial of service via local access.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2020-12363
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2020-12363](https://avd.aquasec.com/nvd/cve-2020-12363)
-	Improper input validation in some Intel(R) Graphics Drivers for Windows* before version 26.20.100.7212 and before Linux kernel version 5.5 may allow a privileged user to potentially enable a denial of service via local access.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2020-12364
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2020-12364](https://avd.aquasec.com/nvd/cve-2020-12364)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2020-12364
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2020-12364">https://avd.aquasec.com/nvd/cve-2020-12364</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: Null pointer dereference in some Intel(R) Graphics Drivers
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Null pointer reference in some Intel(R) Graphics Drivers for Windows* before version 26.20.100.7212 and before version Linux kernel version 5.5 may allow a privileged user to potentially enable a denial of service via local access.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2020-12364
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2020-12364](https://avd.aquasec.com/nvd/cve-2020-12364)
-	Null pointer reference in some Intel(R) Graphics Drivers for Windows* before version 26.20.100.7212 and before version Linux kernel version 5.5 may allow a privileged user to potentially enable a denial of service via local access.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2020-14304
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2020-14304](https://avd.aquasec.com/nvd/cve-2020-14304)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2020-14304
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2020-14304">https://avd.aquasec.com/nvd/cve-2020-14304</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: ethtool when reading eeprom of device could lead to memory leak
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A memory disclosure flaw was found in the Linux kernel&amp;#39;s ethernet drivers, in the way it read data from the EEPROM of the device. This flaw allows a local user to read uninitialized values from the kernel memory. The highest threat from this vulnerability is to confidentiality.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2020-14304
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2020-14304](https://avd.aquasec.com/nvd/cve-2020-14304)
-	A memory disclosure flaw was found in the Linux kernel&#39;s ethernet drivers, in the way it read data from the EEPROM of the device. This flaw allows a local user to read uninitialized values from the kernel memory. The highest threat from this vulnerability is to confidentiality.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2020-27820
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2020-27820](https://avd.aquasec.com/nvd/cve-2020-27820)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2020-27820
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2020-27820">https://avd.aquasec.com/nvd/cve-2020-27820</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: use-after-free in nouveau kernel module
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A vulnerability was found in Linux kernel, where a use-after-frees in nouveau&amp;#39;s postclose() handler could happen if removing device (that is not common to remove video card physically without power-off, but same happens if &amp;#34;unbind&amp;#34; the driver).
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2020-27820
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2020-27820](https://avd.aquasec.com/nvd/cve-2020-27820)
-	A vulnerability was found in Linux kernel, where a use-after-frees in nouveau&#39;s postclose() handler could happen if removing device (that is not common to remove video card physically without power-off, but same happens if &#34;unbind&#34; the driver).
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2020-35501
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2020-35501](https://avd.aquasec.com/nvd/cve-2020-35501)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2020-35501
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2020-35501">https://avd.aquasec.com/nvd/cve-2020-35501</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: audit not logging access to syscall open_by_handle_at for users with CAP_DAC_READ_SEARCH capability
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A flaw was found in the Linux kernels implementation of audit rules, where a syscall can unexpectedly not be correctly not be logged by the audit subsystem
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2020-35501
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2020-35501](https://avd.aquasec.com/nvd/cve-2020-35501)
-	A flaw was found in the Linux kernels implementation of audit rules, where a syscall can unexpectedly not be correctly not be logged by the audit subsystem
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2021-32078
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-32078](https://avd.aquasec.com/nvd/cve-2021-32078)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-32078
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-32078">https://avd.aquasec.com/nvd/cve-2021-32078</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: out-of-bounds read in arch/arm/mach-footbridge/personal-pci.c due to improper input validation
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    An Out-of-Bounds Read was discovered in arch/arm/mach-footbridge/personal-pci.c in the Linux kernel through 5.12.11 because of the lack of a check for a value that shouldn&amp;#39;t be negative, e.g., access to element -2 of an array, aka CID-298a58e165e4.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-32078
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2021-32078](https://avd.aquasec.com/nvd/cve-2021-32078)
-	An Out-of-Bounds Read was discovered in arch/arm/mach-footbridge/personal-pci.c in the Linux kernel through 5.12.11 because of the lack of a check for a value that shouldn&#39;t be negative, e.g., access to element -2 of an array, aka CID-298a58e165e4.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2021-34981
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-34981](https://avd.aquasec.com/nvd/cve-2021-34981)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-34981
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-34981">https://avd.aquasec.com/nvd/cve-2021-34981</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: Bluetooth CMTP Module Double Free Privilege Escalation Vulnerability
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A flaw was found in the Linux kernel&amp;#39;s CAPI over Bluetooth connection code. An attacker with a local account can escalate privileges when CAPI (ISDN) hardware connection fails.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-34981
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2021-34981](https://avd.aquasec.com/nvd/cve-2021-34981)
-	A flaw was found in the Linux kernel&#39;s CAPI over Bluetooth connection code. An attacker with a local account can escalate privileges when CAPI (ISDN) hardware connection fails.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2021-3669
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-3669](https://avd.aquasec.com/nvd/cve-2021-3669)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-3669
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-3669">https://avd.aquasec.com/nvd/cve-2021-3669</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: reading /proc/sysvipc/shm does not scale with large shared memory segment counts
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A flaw was found in the Linux kernel. Measuring usage of the shared memory does not scale with large shared memory segment counts which could lead to resource exhaustion and DoS.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-3669
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2021-3669](https://avd.aquasec.com/nvd/cve-2021-3669)
-	A flaw was found in the Linux kernel. Measuring usage of the shared memory does not scale with large shared memory segment counts which could lead to resource exhaustion and DoS.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2021-39686
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-39686](https://avd.aquasec.com/nvd/cve-2021-39686)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-39686
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-39686">https://avd.aquasec.com/nvd/cve-2021-39686</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: race condition in the Android binder driver could lead to incorrect security checks
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In several functions of binder.c, there is a possible way to represent the wrong domain to SELinux due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-200688826References: Upstream kernel
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-39686
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2021-39686](https://avd.aquasec.com/nvd/cve-2021-39686)
-	In several functions of binder.c, there is a possible way to represent the wrong domain to SELinux due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-200688826References: Upstream kernel
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2021-39801
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-39801](https://avd.aquasec.com/nvd/cve-2021-39801)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-39801
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-39801">https://avd.aquasec.com/nvd/cve-2021-39801</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In ion_ioctl of ion-ioctl.c, there is a possible use after free due to improper locking. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-209791720References: Upstream kernel
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-39801
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2021-39801](https://avd.aquasec.com/nvd/cve-2021-39801)
-	In ion_ioctl of ion-ioctl.c, there is a possible use after free due to improper locking. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-209791720References: Upstream kernel
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2022-0854
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-0854](https://avd.aquasec.com/nvd/cve-2022-0854)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-0854
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-0854">https://avd.aquasec.com/nvd/cve-2022-0854</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: swiotlb information leak with DMA_FROM_DEVICE
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A memory leak flaw was found in the Linux kernel’s DMA subsystem, in the way a user calls DMA_FROM_DEVICE. This flaw allows a local user to read random memory from the kernel space.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-0854
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2022-0854](https://avd.aquasec.com/nvd/cve-2022-0854)
-	A memory leak flaw was found in the Linux kernel’s DMA subsystem, in the way a user calls DMA_FROM_DEVICE. This flaw allows a local user to read random memory from the kernel space.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2022-20132
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-20132](https://avd.aquasec.com/nvd/cve-2022-20132)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-20132
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-20132">https://avd.aquasec.com/nvd/cve-2022-20132</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    In lg_probe and related functions of hid-lg.c and other USB HID files, ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In lg_probe and related functions of hid-lg.c and other USB HID files, there is a possible out of bounds read due to improper input validation. This could lead to local information disclosure if a malicious USB HID device were plugged in, with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-188677105References: Upstream kernel
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-20132
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2022-20132](https://avd.aquasec.com/nvd/cve-2022-20132)
-	In lg_probe and related functions of hid-lg.c and other USB HID files, there is a possible out of bounds read due to improper input validation. This could lead to local information disclosure if a malicious USB HID device were plugged in, with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-188677105References: Upstream kernel
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2022-3565
-Severity: LOW
-Fixed Version: 4.15.0-200.211
-Link: [CVE-2022-3565](https://avd.aquasec.com/nvd/cve-2022-3565)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3565
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3565">https://avd.aquasec.com/nvd/cve-2022-3565</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: use-after-free in l1oip timer handlers
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A vulnerability, which was classified as critical, has been found in Linux Kernel. Affected by this issue is the function del_timer of the file drivers/isdn/mISDN/l1oip_core.c of the component Bluetooth. The manipulation leads to use after free. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-211088.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3565
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 4.15.0-200.211
-	Link: [CVE-2022-3565](https://avd.aquasec.com/nvd/cve-2022-3565)
-	A vulnerability, which was classified as critical, has been found in Linux Kernel. Affected by this issue is the function del_timer of the file drivers/isdn/mISDN/l1oip_core.c of the component Bluetooth. The manipulation leads to use after free. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-211088.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2022-3621
-Severity: LOW
-Fixed Version: 4.15.0-200.211
-Link: [CVE-2022-3621](https://avd.aquasec.com/nvd/cve-2022-3621)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3621
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3621">https://avd.aquasec.com/nvd/cve-2022-3621</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: nilfs2: NULL pointer dereference in nilfs_bmap_lookup_at_level in fs/nilfs2/inode.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A vulnerability was found in Linux Kernel. It has been classified as problematic. Affected is the function nilfs_bmap_lookup_at_level of the file fs/nilfs2/inode.c of the component nilfs2. The manipulation leads to null pointer dereference. It is possible to launch the attack remotely. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-211920.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3621
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 4.15.0-200.211
-	Link: [CVE-2022-3621](https://avd.aquasec.com/nvd/cve-2022-3621)
-	A vulnerability was found in Linux Kernel. It has been classified as problematic. Affected is the function nilfs_bmap_lookup_at_level of the file fs/nilfs2/inode.c of the component nilfs2. The manipulation leads to null pointer dereference. It is possible to launch the attack remotely. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-211920.
-    </details>
-
-
-
----
-
-Package: login
-Installed Version: 1:4.5-1ubuntu2.3
-Vulnerability CVE-2013-4235
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2013-4235](https://avd.aquasec.com/nvd/cve-2013-4235)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2013-4235
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2013-4235">https://avd.aquasec.com/nvd/cve-2013-4235</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    shadow-utils: TOCTOU race conditions by copying and removing directory trees
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2013-4235
-	Severity: LOW
-	Package: passwd
-	Fixed Version: 
-	Link: [CVE-2013-4235](https://avd.aquasec.com/nvd/cve-2013-4235)
-	shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees
-    </details>
-
-
-
----
-
-Package: multiarch-support
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2009-5155
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2009-5155
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2009-5155">https://avd.aquasec.com/nvd/cve-2009-5155</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    glibc: parse_reg_exp in posix/regcomp.c misparses alternatives leading to denial of service or trigger incorrect result
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2009-5155
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
-	In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
-    </details>
-
-
-
----
-
-Package: multiarch-support
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2015-8985
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2015-8985
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2015-8985">https://avd.aquasec.com/nvd/cve-2015-8985</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    glibc: potential denial of service in pop_fail_stack()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2015-8985
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
-	The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
-    </details>
-
-
-
----
-
-Package: multiarch-support
-Installed Version: 2.27-3ubuntu1.6
-Vulnerability CVE-2016-20013
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2016-20013
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2016-20013">https://avd.aquasec.com/nvd/cve-2016-20013</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&amp;#39;s runtime is proportional to the square of the length of the password.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2016-20013
-	Severity: LOW
-	Package: multiarch-support
-	Fixed Version: 
-	Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
-	sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&#39;s runtime is proportional to the square of the length of the password.
-    </details>
-
-
-
----
-
-Package: ncurses-base
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2019-17594
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-17594
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-17594">https://avd.aquasec.com/nvd/cve-2019-17594</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-17594
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
-	There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-
----
-
-Package: ncurses-base
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2019-17595
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-17595
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-17595">https://avd.aquasec.com/nvd/cve-2019-17595</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-17595
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
-	There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-
----
-
-Package: ncurses-base
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2021-39537
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-39537
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-39537">https://avd.aquasec.com/nvd/cve-2021-39537</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-39537
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
-	An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
-    </details>
-
-
-
----
-
-Package: ncurses-base
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2022-29458
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-29458
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-29458">https://avd.aquasec.com/nvd/cve-2022-29458</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: segfaulting OOB read
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-29458
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
-	ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
-    </details>
-
-
-
----
-
-Package: ncurses-bin
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2019-17594
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-17594
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-17594">https://avd.aquasec.com/nvd/cve-2019-17594</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-17594
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
-	There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-
----
-
-Package: ncurses-bin
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2019-17595
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-17595
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-17595">https://avd.aquasec.com/nvd/cve-2019-17595</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-17595
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
-	There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
-    </details>
-
-
-
----
-
-Package: ncurses-bin
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2021-39537
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-39537
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-39537">https://avd.aquasec.com/nvd/cve-2021-39537</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-39537
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
-	An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
-    </details>
-
-
-
----
-
-Package: ncurses-bin
-Installed Version: 6.1-1ubuntu1.18.04
-Vulnerability CVE-2022-29458
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-29458
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-29458">https://avd.aquasec.com/nvd/cve-2022-29458</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    ncurses: segfaulting OOB read
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-29458
-	Severity: LOW
-	Package: ncurses-bin
-	Fixed Version: 
-	Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
-	ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
-    </details>
-
-
-
----
-
-Package: nodejs
-Installed Version: 12.22.12-1nodesource1
-Vulnerability CVE-2018-12123
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-12123](https://avd.aquasec.com/nvd/cve-2018-12123)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-12123
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-12123">https://avd.aquasec.com/nvd/cve-2018-12123</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    nodejs: Hostname spoofing in URL parser for javascript protocol
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Hostname spoofing in URL parser for javascript protocol: If a Node.js application is using url.parse() to determine the URL hostname, that hostname can be spoofed by using a mixed case &amp;#34;javascript:&amp;#34; (e.g. &amp;#34;javAscript:&amp;#34;) protocol (other protocols are not affected). If security decisions are made about the URL based on the hostname, they may be incorrect.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-12123
-	Severity: LOW
-	Package: nodejs
-	Fixed Version: 
-	Link: [CVE-2018-12123](https://avd.aquasec.com/nvd/cve-2018-12123)
-	Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Hostname spoofing in URL parser for javascript protocol: If a Node.js application is using url.parse() to determine the URL hostname, that hostname can be spoofed by using a mixed case &#34;javascript:&#34; (e.g. &#34;javAscript:&#34;) protocol (other protocols are not affected). If security decisions are made about the URL based on the hostname, they may be incorrect.
-    </details>
-
-
-
----
-
-Package: nodejs
-Installed Version: 12.22.12-1nodesource1
-Vulnerability CVE-2018-7159
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-7159](https://avd.aquasec.com/nvd/cve-2018-7159)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-7159
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-7159">https://avd.aquasec.com/nvd/cve-2018-7159</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    nodejs: HTTP parser allowed for spaces inside Content-Length header values
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The HTTP parser in all current versions of Node.js ignores spaces in the `Content-Length` header, allowing input such as `Content-Length: 1 2` to be interpreted as having a value of `12`. The HTTP specification does not allow for spaces in the `Content-Length` value and the Node.js HTTP parser has been brought into line on this particular difference. The security risk of this flaw to Node.js users is considered to be VERY LOW as it is difficult, and may be impossible, to craft an attack that makes use of this flaw in a way that could not already be achieved by supplying an incorrect value for `Content-Length`. Vulnerabilities may exist in user-code that make incorrect assumptions about the potential accuracy of this value compared to the actual length of the data supplied. Node.js users crafting lower-level HTTP utilities are advised to re-check the length of any input supplied after parsing is complete.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-7159
-	Severity: LOW
-	Package: nodejs
-	Fixed Version: 
-	Link: [CVE-2018-7159](https://avd.aquasec.com/nvd/cve-2018-7159)
-	The HTTP parser in all current versions of Node.js ignores spaces in the `Content-Length` header, allowing input such as `Content-Length: 1 2` to be interpreted as having a value of `12`. The HTTP specification does not allow for spaces in the `Content-Length` value and the Node.js HTTP parser has been brought into line on this particular difference. The security risk of this flaw to Node.js users is considered to be VERY LOW as it is difficult, and may be impossible, to craft an attack that makes use of this flaw in a way that could not already be achieved by supplying an incorrect value for `Content-Length`. Vulnerabilities may exist in user-code that make incorrect assumptions about the potential accuracy of this value compared to the actual length of the data supplied. Node.js users crafting lower-level HTTP utilities are advised to re-check the length of any input supplied after parsing is complete.
-    </details>
-
-
-
----
-
-Package: openssh-client
-Installed Version: 1:7.6p1-4ubuntu0.7
-Vulnerability CVE-2020-14145
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2020-14145](https://avd.aquasec.com/nvd/cve-2020-14145)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2020-14145
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2020-14145">https://avd.aquasec.com/nvd/cve-2020-14145</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    openssh: Observable discrepancy leading to an information leak in the algorithm negotiation
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client). NOTE: some reports state that 8.5 and 8.6 are also affected.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2020-14145
-	Severity: LOW
-	Package: openssh-client
-	Fixed Version: 
-	Link: [CVE-2020-14145](https://avd.aquasec.com/nvd/cve-2020-14145)
-	The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client). NOTE: some reports state that 8.5 and 8.6 are also affected.
-    </details>
-
-
-
----
-
-Package: openssh-client
-Installed Version: 1:7.6p1-4ubuntu0.7
-Vulnerability CVE-2021-41617
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-41617](https://avd.aquasec.com/nvd/cve-2021-41617)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-41617
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-41617">https://avd.aquasec.com/nvd/cve-2021-41617</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    openssh: privilege escalation when AuthorizedKeysCommand or AuthorizedPrincipalsCommand are configured
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    sshd in OpenSSH 6.2 through 8.x before 8.8, when certain non-default configurations are used, allows privilege escalation because supplemental groups are not initialized as expected. Helper programs for AuthorizedKeysCommand and AuthorizedPrincipalsCommand may run with privileges associated with group memberships of the sshd process, if the configuration specifies running the command as a different user.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-41617
-	Severity: LOW
-	Package: openssh-client
-	Fixed Version: 
-	Link: [CVE-2021-41617](https://avd.aquasec.com/nvd/cve-2021-41617)
-	sshd in OpenSSH 6.2 through 8.x before 8.8, when certain non-default configurations are used, allows privilege escalation because supplemental groups are not initialized as expected. Helper programs for AuthorizedKeysCommand and AuthorizedPrincipalsCommand may run with privileges associated with group memberships of the sshd process, if the configuration specifies running the command as a different user.
-    </details>
-
-
-
----
-
-Package: passwd
-Installed Version: 1:4.5-1ubuntu2.3
-Vulnerability CVE-2013-4235
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2013-4235](https://avd.aquasec.com/nvd/cve-2013-4235)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2013-4235
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2013-4235">https://avd.aquasec.com/nvd/cve-2013-4235</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    shadow-utils: TOCTOU race conditions by copying and removing directory trees
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2013-4235
-	Severity: LOW
-	Package: passwd
-	Fixed Version: 
-	Link: [CVE-2013-4235](https://avd.aquasec.com/nvd/cve-2013-4235)
-	shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees
-    </details>
-
-
-
----
-
-Package: patch
-Installed Version: 2.7.6-2ubuntu1.1
-Vulnerability CVE-2018-6952
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2018-6952](https://avd.aquasec.com/nvd/cve-2018-6952)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2018-6952
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2018-6952">https://avd.aquasec.com/nvd/cve-2018-6952</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    patch: Double free of memory in pch.c:another_hunk() causes a crash
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A double free exists in the another_hunk function in pch.c in GNU patch through 2.7.6.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2018-6952
-	Severity: LOW
-	Package: patch
-	Fixed Version: 
-	Link: [CVE-2018-6952](https://avd.aquasec.com/nvd/cve-2018-6952)
-	A double free exists in the another_hunk function in pch.c in GNU patch through 2.7.6.
-    </details>
-
-
-
----
-
-Package: patch
-Installed Version: 2.7.6-2ubuntu1.1
-Vulnerability CVE-2021-45261
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-45261](https://avd.aquasec.com/nvd/cve-2021-45261)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-45261
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-45261">https://avd.aquasec.com/nvd/cve-2021-45261</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    patch: Invalid Pointer via another_hunk function
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    An Invalid Pointer vulnerability exists in GNU patch 2.7 via the another_hunk function, which causes a Denial of Service.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-45261
-	Severity: LOW
-	Package: patch
-	Fixed Version: 
-	Link: [CVE-2021-45261](https://avd.aquasec.com/nvd/cve-2021-45261)
-	An Invalid Pointer vulnerability exists in GNU patch 2.7 via the another_hunk function, which causes a Denial of Service.
-    </details>
-
-
-
----
-
-Package: python-pip
-Installed Version: 9.0.1-2.3~ubuntu1.18.04.5
-Vulnerability CVE-2021-3572
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-3572](https://avd.aquasec.com/nvd/cve-2021-3572)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-3572
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-3572">https://avd.aquasec.com/nvd/cve-2021-3572</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    python-pip: Incorrect handling of unicode separators in git references
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    5.7
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-3572
-	Severity: MEDIUM
-	Package: pip
-	Fixed Version: 21.1
-	Link: [CVE-2021-3572](https://avd.aquasec.com/nvd/cve-2021-3572)
-	A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.
-    </details>
-
-
-
----
-
-Package: python-pip-whl
-Installed Version: 9.0.1-2.3~ubuntu1.18.04.5
-Vulnerability CVE-2021-3572
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-3572](https://avd.aquasec.com/nvd/cve-2021-3572)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-3572
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-3572">https://avd.aquasec.com/nvd/cve-2021-3572</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    python-pip: Incorrect handling of unicode separators in git references
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    5.7
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-3572
-	Severity: MEDIUM
-	Package: pip
-	Fixed Version: 21.1
-	Link: [CVE-2021-3572](https://avd.aquasec.com/nvd/cve-2021-3572)
-	A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.
-    </details>
-
-
-
----
-
-Package: python3.6
-Installed Version: 3.6.9-1~18.04ubuntu1.8
-Vulnerability CVE-2021-28861
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-28861
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-28861">https://avd.aquasec.com/nvd/cve-2021-28861</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    python: open redirection vulnerability in lib/http/server.py may lead to information disclosure
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &amp;#34;Warning: http.server is not recommended for production. It only implements basic security checks.&amp;#34;
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-28861
-	Severity: LOW
-	Package: python3.6-minimal
-	Fixed Version: 
-	Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
-	** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &#34;Warning: http.server is not recommended for production. It only implements basic security checks.&#34;
-    </details>
-
-
-
----
-
-Package: python3.6-minimal
-Installed Version: 3.6.9-1~18.04ubuntu1.8
-Vulnerability CVE-2021-28861
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-28861
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-28861">https://avd.aquasec.com/nvd/cve-2021-28861</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    python: open redirection vulnerability in lib/http/server.py may lead to information disclosure
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &amp;#34;Warning: http.server is not recommended for production. It only implements basic security checks.&amp;#34;
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-28861
-	Severity: LOW
-	Package: python3.6-minimal
-	Fixed Version: 
-	Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
-	** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &#34;Warning: http.server is not recommended for production. It only implements basic security checks.&#34;
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2021-4193
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-4193
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-4193">https://avd.aquasec.com/nvd/cve-2021-4193</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out-of-bound read in getvcol()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    vim is vulnerable to Out-of-bounds Read
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-4193
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
-	vim is vulnerable to Out-of-bounds Read
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-0443
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-0443
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-0443">https://avd.aquasec.com/nvd/cve-2022-0443</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: heap-use-after-free in enter_buffer() of src/buffer.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-0443
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
-	Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-0729
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-0729
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-0729">https://avd.aquasec.com/nvd/cve-2022-0729</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Use of Out-of-range Pointer Offset
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-0729
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
-	Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1733
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1733
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1733">https://avd.aquasec.com/nvd/cve-2022-1733</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Heap-based Buffer Overflow in cindent.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1733
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
-	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1735
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1735
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1735">https://avd.aquasec.com/nvd/cve-2022-1735</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: changing text in visual mode may cause invalid memory access that lead to a heap buffer overflow
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1735
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
-	Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1785
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1785
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1785">https://avd.aquasec.com/nvd/cve-2022-1785</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Out-of-bounds Write
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1785
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
-	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1796
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1796
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1796">https://avd.aquasec.com/nvd/cve-2022-1796</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Use After Free
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use After Free in GitHub repository vim/vim prior to 8.2.4979.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1796
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
-	Use After Free in GitHub repository vim/vim prior to 8.2.4979.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1898
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1898
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1898">https://avd.aquasec.com/nvd/cve-2022-1898</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: use-after-free in find_pattern_in_path() in search.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1898
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
-	Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2124
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2124
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2124">https://avd.aquasec.com/nvd/cve-2022-2124</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out of bounds read in current_quote()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Buffer Over-read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2124
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
-	Buffer Over-read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2125
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2125
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2125">https://avd.aquasec.com/nvd/cve-2022-2125</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Heap-based Buffer Overflow in get_lisp_indent()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2125
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
-	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2126
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2126
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2126">https://avd.aquasec.com/nvd/cve-2022-2126</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out of bounds read in suggest_trie_walk()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2126
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
-	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2129
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2129
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2129">https://avd.aquasec.com/nvd/cve-2022-2129</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out of bounds write in vim_regsub_both()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2129
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
-	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2206
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2206
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2206">https://avd.aquasec.com/nvd/cve-2022-2206</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out-of-bound read in function msg_outtrans_attr
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2206
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
-	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2581
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2581
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2581">https://avd.aquasec.com/nvd/cve-2022-2581</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Out-of-bounds Read in vim src/regexp.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2581
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
-	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2845
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2845
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2845">https://avd.aquasec.com/nvd/cve-2022-2845</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Buffer Under-read
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2845
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
-	Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
-    </details>
-
-
-
----
-
-Package: vim
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2849
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2849
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2849">https://avd.aquasec.com/nvd/cve-2022-2849</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: heap-based buffer overflow in latin_ptr2len() at src/mbyte.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2849
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
-	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2021-4193
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-4193
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-4193">https://avd.aquasec.com/nvd/cve-2021-4193</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out-of-bound read in getvcol()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    vim is vulnerable to Out-of-bounds Read
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-4193
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
-	vim is vulnerable to Out-of-bounds Read
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-0443
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-0443
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-0443">https://avd.aquasec.com/nvd/cve-2022-0443</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: heap-use-after-free in enter_buffer() of src/buffer.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-0443
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
-	Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-0729
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-0729
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-0729">https://avd.aquasec.com/nvd/cve-2022-0729</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Use of Out-of-range Pointer Offset
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-0729
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
-	Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1733
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1733
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1733">https://avd.aquasec.com/nvd/cve-2022-1733</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Heap-based Buffer Overflow in cindent.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1733
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
-	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1735
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1735
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1735">https://avd.aquasec.com/nvd/cve-2022-1735</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: changing text in visual mode may cause invalid memory access that lead to a heap buffer overflow
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1735
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
-	Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1785
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1785
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1785">https://avd.aquasec.com/nvd/cve-2022-1785</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Out-of-bounds Write
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1785
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
-	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1796
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1796
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1796">https://avd.aquasec.com/nvd/cve-2022-1796</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Use After Free
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use After Free in GitHub repository vim/vim prior to 8.2.4979.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1796
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
-	Use After Free in GitHub repository vim/vim prior to 8.2.4979.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1898
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1898
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1898">https://avd.aquasec.com/nvd/cve-2022-1898</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: use-after-free in find_pattern_in_path() in search.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1898
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
-	Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2124
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2124
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2124">https://avd.aquasec.com/nvd/cve-2022-2124</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out of bounds read in current_quote()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Buffer Over-read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2124
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
-	Buffer Over-read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2125
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2125
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2125">https://avd.aquasec.com/nvd/cve-2022-2125</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Heap-based Buffer Overflow in get_lisp_indent()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2125
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
-	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2126
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2126
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2126">https://avd.aquasec.com/nvd/cve-2022-2126</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out of bounds read in suggest_trie_walk()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2126
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
-	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2129
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2129
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2129">https://avd.aquasec.com/nvd/cve-2022-2129</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out of bounds write in vim_regsub_both()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2129
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
-	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2206
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2206
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2206">https://avd.aquasec.com/nvd/cve-2022-2206</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out-of-bound read in function msg_outtrans_attr
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2206
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
-	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2581
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2581
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2581">https://avd.aquasec.com/nvd/cve-2022-2581</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Out-of-bounds Read in vim src/regexp.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2581
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
-	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2845
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2845
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2845">https://avd.aquasec.com/nvd/cve-2022-2845</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Buffer Under-read
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2845
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
-	Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
-    </details>
-
-
-
----
-
-Package: vim-common
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2849
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2849
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2849">https://avd.aquasec.com/nvd/cve-2022-2849</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: heap-based buffer overflow in latin_ptr2len() at src/mbyte.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2849
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
-	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2021-4193
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-4193
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-4193">https://avd.aquasec.com/nvd/cve-2021-4193</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out-of-bound read in getvcol()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    vim is vulnerable to Out-of-bounds Read
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-4193
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
-	vim is vulnerable to Out-of-bounds Read
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-0443
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-0443
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-0443">https://avd.aquasec.com/nvd/cve-2022-0443</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: heap-use-after-free in enter_buffer() of src/buffer.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-0443
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
-	Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-0729
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-0729
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-0729">https://avd.aquasec.com/nvd/cve-2022-0729</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Use of Out-of-range Pointer Offset
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-0729
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
-	Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1733
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1733
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1733">https://avd.aquasec.com/nvd/cve-2022-1733</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Heap-based Buffer Overflow in cindent.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1733
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
-	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1735
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1735
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1735">https://avd.aquasec.com/nvd/cve-2022-1735</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: changing text in visual mode may cause invalid memory access that lead to a heap buffer overflow
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1735
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
-	Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1785
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1785
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1785">https://avd.aquasec.com/nvd/cve-2022-1785</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Out-of-bounds Write
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1785
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
-	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1796
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1796
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1796">https://avd.aquasec.com/nvd/cve-2022-1796</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Use After Free
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use After Free in GitHub repository vim/vim prior to 8.2.4979.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1796
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
-	Use After Free in GitHub repository vim/vim prior to 8.2.4979.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1898
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1898
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1898">https://avd.aquasec.com/nvd/cve-2022-1898</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: use-after-free in find_pattern_in_path() in search.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1898
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
-	Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2124
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2124
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2124">https://avd.aquasec.com/nvd/cve-2022-2124</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out of bounds read in current_quote()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Buffer Over-read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2124
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
-	Buffer Over-read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2125
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2125
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2125">https://avd.aquasec.com/nvd/cve-2022-2125</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Heap-based Buffer Overflow in get_lisp_indent()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2125
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
-	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2126
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2126
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2126">https://avd.aquasec.com/nvd/cve-2022-2126</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out of bounds read in suggest_trie_walk()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2126
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
-	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2129
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2129
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2129">https://avd.aquasec.com/nvd/cve-2022-2129</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out of bounds write in vim_regsub_both()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2129
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
-	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2206
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2206
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2206">https://avd.aquasec.com/nvd/cve-2022-2206</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out-of-bound read in function msg_outtrans_attr
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2206
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
-	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2581
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2581
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2581">https://avd.aquasec.com/nvd/cve-2022-2581</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Out-of-bounds Read in vim src/regexp.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2581
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
-	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2845
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2845
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2845">https://avd.aquasec.com/nvd/cve-2022-2845</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Buffer Under-read
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2845
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
-	Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
-    </details>
-
-
-
----
-
-Package: vim-runtime
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2849
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2849
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2849">https://avd.aquasec.com/nvd/cve-2022-2849</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: heap-based buffer overflow in latin_ptr2len() at src/mbyte.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2849
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
-	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2021-4193
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2021-4193
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2021-4193">https://avd.aquasec.com/nvd/cve-2021-4193</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out-of-bound read in getvcol()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    vim is vulnerable to Out-of-bounds Read
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2021-4193
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
-	vim is vulnerable to Out-of-bounds Read
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-0443
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-0443
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-0443">https://avd.aquasec.com/nvd/cve-2022-0443</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: heap-use-after-free in enter_buffer() of src/buffer.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-0443
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
-	Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-0729
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-0729
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-0729">https://avd.aquasec.com/nvd/cve-2022-0729</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Use of Out-of-range Pointer Offset
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-0729
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
-	Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1733
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1733
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1733">https://avd.aquasec.com/nvd/cve-2022-1733</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Heap-based Buffer Overflow in cindent.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1733
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
-	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1735
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1735
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1735">https://avd.aquasec.com/nvd/cve-2022-1735</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: changing text in visual mode may cause invalid memory access that lead to a heap buffer overflow
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1735
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
-	Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1785
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1785
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1785">https://avd.aquasec.com/nvd/cve-2022-1785</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Out-of-bounds Write
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1785
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
-	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1796
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1796
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1796">https://avd.aquasec.com/nvd/cve-2022-1796</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Use After Free
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use After Free in GitHub repository vim/vim prior to 8.2.4979.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1796
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
-	Use After Free in GitHub repository vim/vim prior to 8.2.4979.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-1898
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-1898
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-1898">https://avd.aquasec.com/nvd/cve-2022-1898</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: use-after-free in find_pattern_in_path() in search.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-1898
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
-	Use After Free in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2124
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2124
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2124">https://avd.aquasec.com/nvd/cve-2022-2124</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out of bounds read in current_quote()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Buffer Over-read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2124
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
-	Buffer Over-read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2125
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2125
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2125">https://avd.aquasec.com/nvd/cve-2022-2125</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Heap-based Buffer Overflow in get_lisp_indent()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2125
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
-	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2126
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2126
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2126">https://avd.aquasec.com/nvd/cve-2022-2126</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out of bounds read in suggest_trie_walk()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2126
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
-	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2129
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2129
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2129">https://avd.aquasec.com/nvd/cve-2022-2129</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out of bounds write in vim_regsub_both()
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2129
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
-	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2206
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2206
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2206">https://avd.aquasec.com/nvd/cve-2022-2206</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: out-of-bound read in function msg_outtrans_attr
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2206
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
-	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2581
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2581
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2581">https://avd.aquasec.com/nvd/cve-2022-2581</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Out-of-bounds Read in vim src/regexp.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2581
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
-	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2845
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2845
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2845">https://avd.aquasec.com/nvd/cve-2022-2845</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: Buffer Under-read
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2845
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
-	Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
-    </details>
-
-
-
----
-
-Package: xxd
-Installed Version: 2:8.0.1453-1ubuntu1.9
-Vulnerability CVE-2022-2849
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-2849
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-2849">https://avd.aquasec.com/nvd/cve-2022-2849</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    vim: heap-based buffer overflow in latin_ptr2len() at src/mbyte.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-2849
-	Severity: LOW
-	Package: xxd
-	Fixed Version: 
-	Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
-	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
-    </details>
-
-
-
----
-
-Package: Pillow
-Installed Version: 6.2.2
-Vulnerability GHSA-4fx9-vc88-q2xc
-Severity: LOW
-Fixed Version: 9.0.0
-Link: [GHSA-4fx9-vc88-q2xc](https://github.com/advisories/GHSA-4fx9-vc88-q2xc)
-
-### Locations
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/Pillow-6.2.2.dist-info/METADATA
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    GHSA-4fx9-vc88-q2xc
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://github.com/advisories/GHSA-4fx9-vc88-q2xc">https://github.com/advisories/GHSA-4fx9-vc88-q2xc</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    Infinite loop in Pillow
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    JpegImagePlugin may append an EOF marker to the end of a truncated file, so that the last segment of the data will still be processed by the decoder.
-	
-	If the EOF marker is not detected as such however, this could lead to an infinite loop where JpegImagePlugin keeps trying to end the file.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability GHSA-4fx9-vc88-q2xc
-	Severity: LOW
-	Package: Pillow
-	Fixed Version: 9.0.0
-	Link: [GHSA-4fx9-vc88-q2xc](https://github.com/advisories/GHSA-4fx9-vc88-q2xc)
-	JpegImagePlugin may append an EOF marker to the end of a truncated file, so that the last segment of the data will still be processed by the decoder.
-	
-	If the EOF marker is not detected as such however, this could lead to an infinite loop where JpegImagePlugin keeps trying to end the file.
-    </details>
-
-
-
----
-
-Package: Pillow
-Installed Version: 6.2.2
-Vulnerability PYSEC-2020-77
-Severity: UNKNOWN
-Fixed Version: 7.1.0
-Link: [PYSEC-2020-77]()
-
-### Locations
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/Pillow-6.2.2.dist-info/METADATA
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    PYSEC-2020-77
-  </details>
-
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In libImaging/PcxDecode.c in Pillow before 7.1.0, an out-of-bounds read can occur when reading PCX files where state-&amp;gt;shuffle is instructed to read beyond state-&amp;gt;buffer.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    0.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability PYSEC-2020-77
-	Severity: UNKNOWN
-	Package: Pillow
-	Fixed Version: 7.1.0
-	Link: [PYSEC-2020-77]()
-	In libImaging/PcxDecode.c in Pillow before 7.1.0, an out-of-bounds read can occur when reading PCX files where state-&gt;shuffle is instructed to read beyond state-&gt;buffer.
-    </details>
-
-
-
----
-
-Package: Pillow
-Installed Version: 6.2.2
-Vulnerability PYSEC-2020-78
-Severity: UNKNOWN
-Fixed Version: 7.1.0
-Link: [PYSEC-2020-78]()
-
-### Locations
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/Pillow-6.2.2.dist-info/METADATA
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    PYSEC-2020-78
-  </details>
-
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    In Pillow before 7.1.0, there are two Buffer Overflows in libImaging/TiffDecode.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    0.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability PYSEC-2020-78
-	Severity: UNKNOWN
-	Package: Pillow
-	Fixed Version: 7.1.0
-	Link: [PYSEC-2020-78]()
-	In Pillow before 7.1.0, there are two Buffer Overflows in libImaging/TiffDecode.c.
     </details>
 
 
@@ -52876,6 +34181,18703 @@ Link: [CVE-2021-21239](https://avd.aquasec.com/nvd/cve-2021-21239)
 	Fixed Version: 6.5.0
 	Link: [CVE-2021-21239](https://avd.aquasec.com/nvd/cve-2021-21239)
 	PySAML2 is a pure python implementation of SAML Version 2 Standard. PySAML2 before 6.5.0 has an improper verification of cryptographic signature vulnerability. Users of pysaml2 that use the default CryptoBackendXmlSec1 backend and need to verify signed SAML documents are impacted. PySAML2 does not ensure that a signed SAML document is correctly signed. The default CryptoBackendXmlSec1 backend is using the xmlsec1 binary to verify the signature of signed SAML documents, but by default xmlsec1 accepts any type of key found within the given document. xmlsec1 needs to be configured explicitly to only use only _x509 certificates_ for the verification process of the SAML document signature. This is fixed in PySAML2 6.5.0.
+    </details>
+
+
+
+---
+
+Package: binutils
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2017-13716
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2017-13716
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2017-13716">https://avd.aquasec.com/nvd/cve-2017-13716</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    binutils: Memory leak with the C++ symbol demangler routine in libiberty
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2017-13716
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
+	The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
+    </details>
+
+
+
+---
+
+Package: binutils
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2018-20657
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-20657
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-20657">https://avd.aquasec.com/nvd/cve-2018-20657</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    libiberty: Memory leak in demangle_template function resulting in a denial of service
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-20657
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
+	The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
+    </details>
+
+
+
+---
+
+Package: binutils
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2019-1010204
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-1010204
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-1010204">https://avd.aquasec.com/nvd/cve-2019-1010204</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-1010204
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
+	GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
+    </details>
+
+
+
+---
+
+Package: binutils
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2021-45078
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-45078
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-45078">https://avd.aquasec.com/nvd/cve-2021-45078</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-45078
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
+	stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
+    </details>
+
+
+
+---
+
+Package: binutils
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2021-46195
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-46195
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-46195">https://avd.aquasec.com/nvd/cve-2021-46195</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gcc: uncontrolled recursion in libiberty/rust-demangle.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-46195
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
+	GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
+    </details>
+
+
+
+---
+
+Package: binutils-common
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2017-13716
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2017-13716
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2017-13716">https://avd.aquasec.com/nvd/cve-2017-13716</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    binutils: Memory leak with the C++ symbol demangler routine in libiberty
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2017-13716
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
+	The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
+    </details>
+
+
+
+---
+
+Package: binutils-common
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2018-20657
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-20657
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-20657">https://avd.aquasec.com/nvd/cve-2018-20657</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    libiberty: Memory leak in demangle_template function resulting in a denial of service
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-20657
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
+	The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
+    </details>
+
+
+
+---
+
+Package: binutils-common
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2019-1010204
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-1010204
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-1010204">https://avd.aquasec.com/nvd/cve-2019-1010204</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-1010204
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
+	GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
+    </details>
+
+
+
+---
+
+Package: binutils-common
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2021-45078
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-45078
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-45078">https://avd.aquasec.com/nvd/cve-2021-45078</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-45078
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
+	stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
+    </details>
+
+
+
+---
+
+Package: binutils-common
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2021-46195
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-46195
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-46195">https://avd.aquasec.com/nvd/cve-2021-46195</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gcc: uncontrolled recursion in libiberty/rust-demangle.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-46195
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
+	GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
+    </details>
+
+
+
+---
+
+Package: binutils-x86-64-linux-gnu
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2017-13716
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2017-13716
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2017-13716">https://avd.aquasec.com/nvd/cve-2017-13716</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    binutils: Memory leak with the C++ symbol demangler routine in libiberty
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2017-13716
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
+	The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
+    </details>
+
+
+
+---
+
+Package: binutils-x86-64-linux-gnu
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2018-20657
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-20657
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-20657">https://avd.aquasec.com/nvd/cve-2018-20657</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    libiberty: Memory leak in demangle_template function resulting in a denial of service
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-20657
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
+	The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
+    </details>
+
+
+
+---
+
+Package: binutils-x86-64-linux-gnu
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2019-1010204
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-1010204
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-1010204">https://avd.aquasec.com/nvd/cve-2019-1010204</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-1010204
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
+	GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
+    </details>
+
+
+
+---
+
+Package: binutils-x86-64-linux-gnu
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2021-45078
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-45078
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-45078">https://avd.aquasec.com/nvd/cve-2021-45078</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-45078
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
+	stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
+    </details>
+
+
+
+---
+
+Package: binutils-x86-64-linux-gnu
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2021-46195
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-46195
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-46195">https://avd.aquasec.com/nvd/cve-2021-46195</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gcc: uncontrolled recursion in libiberty/rust-demangle.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-46195
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
+	GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
+    </details>
+
+
+
+---
+
+Package: coreutils
+Installed Version: 8.28-1ubuntu1
+Vulnerability CVE-2016-2781
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2016-2781](https://avd.aquasec.com/nvd/cve-2016-2781)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2016-2781
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2016-2781">https://avd.aquasec.com/nvd/cve-2016-2781</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    coreutils: Non-privileged session can escape to the parent session in chroot
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal&amp;#39;s input buffer.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2016-2781
+	Severity: LOW
+	Package: coreutils
+	Fixed Version: 
+	Link: [CVE-2016-2781](https://avd.aquasec.com/nvd/cve-2016-2781)
+	chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal&#39;s input buffer.
+    </details>
+
+
+
+---
+
+Package: dirmngr
+Installed Version: 2.2.4-1ubuntu1.6
+Vulnerability CVE-2022-3219
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3219
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gnupg: denial of service issue (resource consumption) using compressed packets
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    No description is available for this CVE.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3219
+	Severity: LOW
+	Package: gpgv
+	Fixed Version: 
+	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+	No description is available for this CVE.
+    </details>
+
+
+
+---
+
+Package: git
+Installed Version: 1:2.17.1-1ubuntu0.12
+Vulnerability CVE-2018-1000021
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-1000021](https://avd.aquasec.com/nvd/cve-2018-1000021)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-1000021
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-1000021">https://avd.aquasec.com/nvd/cve-2018-1000021</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    git: client prints server-sent ANSI escape codes to the terminal, allowing for unverified messages to potentially execute arbitrary commands
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    GIT version 2.15.1 and earlier contains a Input Validation Error vulnerability in Client that can result in problems including messing up terminal configuration to RCE. This attack appear to be exploitable via The user must interact with a malicious git server, (or have their traffic modified in a MITM attack).
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-1000021
+	Severity: LOW
+	Package: git-man
+	Fixed Version: 
+	Link: [CVE-2018-1000021](https://avd.aquasec.com/nvd/cve-2018-1000021)
+	GIT version 2.15.1 and earlier contains a Input Validation Error vulnerability in Client that can result in problems including messing up terminal configuration to RCE. This attack appear to be exploitable via The user must interact with a malicious git server, (or have their traffic modified in a MITM attack).
+    </details>
+
+
+
+---
+
+Package: git-man
+Installed Version: 1:2.17.1-1ubuntu0.12
+Vulnerability CVE-2018-1000021
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-1000021](https://avd.aquasec.com/nvd/cve-2018-1000021)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-1000021
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-1000021">https://avd.aquasec.com/nvd/cve-2018-1000021</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    git: client prints server-sent ANSI escape codes to the terminal, allowing for unverified messages to potentially execute arbitrary commands
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    GIT version 2.15.1 and earlier contains a Input Validation Error vulnerability in Client that can result in problems including messing up terminal configuration to RCE. This attack appear to be exploitable via The user must interact with a malicious git server, (or have their traffic modified in a MITM attack).
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-1000021
+	Severity: LOW
+	Package: git-man
+	Fixed Version: 
+	Link: [CVE-2018-1000021](https://avd.aquasec.com/nvd/cve-2018-1000021)
+	GIT version 2.15.1 and earlier contains a Input Validation Error vulnerability in Client that can result in problems including messing up terminal configuration to RCE. This attack appear to be exploitable via The user must interact with a malicious git server, (or have their traffic modified in a MITM attack).
+    </details>
+
+
+
+---
+
+Package: gnupg
+Installed Version: 2.2.4-1ubuntu1.6
+Vulnerability CVE-2022-3219
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3219
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gnupg: denial of service issue (resource consumption) using compressed packets
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    No description is available for this CVE.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3219
+	Severity: LOW
+	Package: gpgv
+	Fixed Version: 
+	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+	No description is available for this CVE.
+    </details>
+
+
+
+---
+
+Package: gnupg-l10n
+Installed Version: 2.2.4-1ubuntu1.6
+Vulnerability CVE-2022-3219
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3219
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gnupg: denial of service issue (resource consumption) using compressed packets
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    No description is available for this CVE.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3219
+	Severity: LOW
+	Package: gpgv
+	Fixed Version: 
+	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+	No description is available for this CVE.
+    </details>
+
+
+
+---
+
+Package: gnupg-utils
+Installed Version: 2.2.4-1ubuntu1.6
+Vulnerability CVE-2022-3219
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3219
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gnupg: denial of service issue (resource consumption) using compressed packets
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    No description is available for this CVE.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3219
+	Severity: LOW
+	Package: gpgv
+	Fixed Version: 
+	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+	No description is available for this CVE.
+    </details>
+
+
+
+---
+
+Package: gpg
+Installed Version: 2.2.4-1ubuntu1.6
+Vulnerability CVE-2022-3219
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3219
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gnupg: denial of service issue (resource consumption) using compressed packets
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    No description is available for this CVE.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3219
+	Severity: LOW
+	Package: gpgv
+	Fixed Version: 
+	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+	No description is available for this CVE.
+    </details>
+
+
+
+---
+
+Package: gpg-agent
+Installed Version: 2.2.4-1ubuntu1.6
+Vulnerability CVE-2022-3219
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3219
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gnupg: denial of service issue (resource consumption) using compressed packets
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    No description is available for this CVE.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3219
+	Severity: LOW
+	Package: gpgv
+	Fixed Version: 
+	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+	No description is available for this CVE.
+    </details>
+
+
+
+---
+
+Package: gpg-wks-client
+Installed Version: 2.2.4-1ubuntu1.6
+Vulnerability CVE-2022-3219
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3219
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gnupg: denial of service issue (resource consumption) using compressed packets
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    No description is available for this CVE.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3219
+	Severity: LOW
+	Package: gpgv
+	Fixed Version: 
+	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+	No description is available for this CVE.
+    </details>
+
+
+
+---
+
+Package: gpg-wks-server
+Installed Version: 2.2.4-1ubuntu1.6
+Vulnerability CVE-2022-3219
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3219
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gnupg: denial of service issue (resource consumption) using compressed packets
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    No description is available for this CVE.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3219
+	Severity: LOW
+	Package: gpgv
+	Fixed Version: 
+	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+	No description is available for this CVE.
+    </details>
+
+
+
+---
+
+Package: gpgconf
+Installed Version: 2.2.4-1ubuntu1.6
+Vulnerability CVE-2022-3219
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3219
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gnupg: denial of service issue (resource consumption) using compressed packets
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    No description is available for this CVE.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3219
+	Severity: LOW
+	Package: gpgv
+	Fixed Version: 
+	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+	No description is available for this CVE.
+    </details>
+
+
+
+---
+
+Package: gpgsm
+Installed Version: 2.2.4-1ubuntu1.6
+Vulnerability CVE-2022-3219
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3219
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gnupg: denial of service issue (resource consumption) using compressed packets
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    No description is available for this CVE.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3219
+	Severity: LOW
+	Package: gpgv
+	Fixed Version: 
+	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+	No description is available for this CVE.
+    </details>
+
+
+
+---
+
+Package: gpgv
+Installed Version: 2.2.4-1ubuntu1.6
+Vulnerability CVE-2022-3219
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3219
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3219">https://avd.aquasec.com/nvd/cve-2022-3219</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gnupg: denial of service issue (resource consumption) using compressed packets
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    No description is available for this CVE.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3219
+	Severity: LOW
+	Package: gpgv
+	Fixed Version: 
+	Link: [CVE-2022-3219](https://avd.aquasec.com/nvd/cve-2022-3219)
+	No description is available for this CVE.
+    </details>
+
+
+
+---
+
+Package: libasn1-8-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2019-12098
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-12098
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-12098
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
+
+---
+
+Package: libasn1-8-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2021-3671
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-3671
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    samba: Null pointer dereference on missing sname in TGS-REQ
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-3671
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
+
+---
+
+Package: libbinutils
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2017-13716
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2017-13716
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2017-13716">https://avd.aquasec.com/nvd/cve-2017-13716</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    binutils: Memory leak with the C++ symbol demangler routine in libiberty
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2017-13716
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2017-13716](https://avd.aquasec.com/nvd/cve-2017-13716)
+	The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).
+    </details>
+
+
+
+---
+
+Package: libbinutils
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2018-20657
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-20657
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-20657">https://avd.aquasec.com/nvd/cve-2018-20657</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    libiberty: Memory leak in demangle_template function resulting in a denial of service
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-20657
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2018-20657](https://avd.aquasec.com/nvd/cve-2018-20657)
+	The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.
+    </details>
+
+
+
+---
+
+Package: libbinutils
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2019-1010204
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-1010204
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-1010204">https://avd.aquasec.com/nvd/cve-2019-1010204</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-1010204
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2019-1010204](https://avd.aquasec.com/nvd/cve-2019-1010204)
+	GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.
+    </details>
+
+
+
+---
+
+Package: libbinutils
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2021-45078
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-45078
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-45078">https://avd.aquasec.com/nvd/cve-2021-45078</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-45078
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2021-45078](https://avd.aquasec.com/nvd/cve-2021-45078)
+	stab_xcoff_builtin_type in stabs.c in GNU Binutils through 2.37 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write. NOTE: this issue exists because of an incorrect fix for CVE-2018-12699.
+    </details>
+
+
+
+---
+
+Package: libbinutils
+Installed Version: 2.30-21ubuntu1~18.04.7
+Vulnerability CVE-2021-46195
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-46195
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-46195">https://avd.aquasec.com/nvd/cve-2021-46195</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gcc: uncontrolled recursion in libiberty/rust-demangle.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-46195
+	Severity: LOW
+	Package: libbinutils
+	Fixed Version: 
+	Link: [CVE-2021-46195](https://avd.aquasec.com/nvd/cve-2021-46195)
+	GCC v12.0 was discovered to contain an uncontrolled recursion via the component libiberty/rust-demangle.c. This vulnerability allows attackers to cause a Denial of Service (DoS) by consuming excessive CPU and memory resources.
+    </details>
+
+
+
+---
+
+Package: libc-bin
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2009-5155
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2009-5155
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2009-5155">https://avd.aquasec.com/nvd/cve-2009-5155</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    glibc: parse_reg_exp in posix/regcomp.c misparses alternatives leading to denial of service or trigger incorrect result
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2009-5155
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
+	In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
+    </details>
+
+
+
+---
+
+Package: libc-bin
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2015-8985
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2015-8985
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2015-8985">https://avd.aquasec.com/nvd/cve-2015-8985</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    glibc: potential denial of service in pop_fail_stack()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2015-8985
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
+	The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
+    </details>
+
+
+
+---
+
+Package: libc-bin
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2016-20013
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2016-20013
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2016-20013">https://avd.aquasec.com/nvd/cve-2016-20013</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&amp;#39;s runtime is proportional to the square of the length of the password.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2016-20013
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
+	sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&#39;s runtime is proportional to the square of the length of the password.
+    </details>
+
+
+
+---
+
+Package: libc-dev-bin
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2009-5155
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2009-5155
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2009-5155">https://avd.aquasec.com/nvd/cve-2009-5155</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    glibc: parse_reg_exp in posix/regcomp.c misparses alternatives leading to denial of service or trigger incorrect result
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2009-5155
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
+	In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
+    </details>
+
+
+
+---
+
+Package: libc-dev-bin
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2015-8985
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2015-8985
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2015-8985">https://avd.aquasec.com/nvd/cve-2015-8985</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    glibc: potential denial of service in pop_fail_stack()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2015-8985
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
+	The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
+    </details>
+
+
+
+---
+
+Package: libc-dev-bin
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2016-20013
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2016-20013
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2016-20013">https://avd.aquasec.com/nvd/cve-2016-20013</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&amp;#39;s runtime is proportional to the square of the length of the password.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2016-20013
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
+	sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&#39;s runtime is proportional to the square of the length of the password.
+    </details>
+
+
+
+---
+
+Package: libc6
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2009-5155
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2009-5155
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2009-5155">https://avd.aquasec.com/nvd/cve-2009-5155</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    glibc: parse_reg_exp in posix/regcomp.c misparses alternatives leading to denial of service or trigger incorrect result
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2009-5155
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
+	In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
+    </details>
+
+
+
+---
+
+Package: libc6
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2015-8985
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2015-8985
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2015-8985">https://avd.aquasec.com/nvd/cve-2015-8985</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    glibc: potential denial of service in pop_fail_stack()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2015-8985
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
+	The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
+    </details>
+
+
+
+---
+
+Package: libc6
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2016-20013
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2016-20013
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2016-20013">https://avd.aquasec.com/nvd/cve-2016-20013</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&amp;#39;s runtime is proportional to the square of the length of the password.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2016-20013
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
+	sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&#39;s runtime is proportional to the square of the length of the password.
+    </details>
+
+
+
+---
+
+Package: libc6-dev
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2009-5155
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2009-5155
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2009-5155">https://avd.aquasec.com/nvd/cve-2009-5155</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    glibc: parse_reg_exp in posix/regcomp.c misparses alternatives leading to denial of service or trigger incorrect result
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2009-5155
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
+	In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
+    </details>
+
+
+
+---
+
+Package: libc6-dev
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2015-8985
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2015-8985
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2015-8985">https://avd.aquasec.com/nvd/cve-2015-8985</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    glibc: potential denial of service in pop_fail_stack()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2015-8985
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
+	The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
+    </details>
+
+
+
+---
+
+Package: libc6-dev
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2016-20013
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2016-20013
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2016-20013">https://avd.aquasec.com/nvd/cve-2016-20013</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&amp;#39;s runtime is proportional to the square of the length of the password.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2016-20013
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
+	sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&#39;s runtime is proportional to the square of the length of the password.
+    </details>
+
+
+
+---
+
+Package: libgmp10
+Installed Version: 2:6.1.2+dfsg-2
+Vulnerability CVE-2021-43618
+Severity: LOW
+Fixed Version: 2:6.1.2+dfsg-2ubuntu0.1
+Link: [CVE-2021-43618](https://avd.aquasec.com/nvd/cve-2021-43618)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-43618
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-43618">https://avd.aquasec.com/nvd/cve-2021-43618</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    gmp: Integer overflow and resultant buffer overflow via crafted input
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    GNU Multiple Precision Arithmetic Library (GMP) through 6.2.1 has an mpz/inp_raw.c integer overflow and resultant buffer overflow via crafted input, leading to a segmentation fault on 32-bit platforms.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-43618
+	Severity: LOW
+	Package: libgmp10
+	Fixed Version: 2:6.1.2+dfsg-2ubuntu0.1
+	Link: [CVE-2021-43618](https://avd.aquasec.com/nvd/cve-2021-43618)
+	GNU Multiple Precision Arithmetic Library (GMP) through 6.2.1 has an mpz/inp_raw.c integer overflow and resultant buffer overflow via crafted input, leading to a segmentation fault on 32-bit platforms.
+    </details>
+
+
+
+---
+
+Package: libgssapi3-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2019-12098
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-12098
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-12098
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
+
+---
+
+Package: libgssapi3-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2021-3671
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-3671
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    samba: Null pointer dereference on missing sname in TGS-REQ
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-3671
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
+
+---
+
+Package: libhcrypto4-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2019-12098
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-12098
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-12098
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
+
+---
+
+Package: libhcrypto4-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2021-3671
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-3671
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    samba: Null pointer dereference on missing sname in TGS-REQ
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-3671
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
+
+---
+
+Package: libheimbase1-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2019-12098
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-12098
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-12098
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
+
+---
+
+Package: libheimbase1-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2021-3671
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-3671
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    samba: Null pointer dereference on missing sname in TGS-REQ
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-3671
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
+
+---
+
+Package: libheimntlm0-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2019-12098
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-12098
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-12098
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
+
+---
+
+Package: libheimntlm0-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2021-3671
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-3671
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    samba: Null pointer dereference on missing sname in TGS-REQ
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-3671
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
+
+---
+
+Package: libhx509-5-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2019-12098
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-12098
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-12098
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
+
+---
+
+Package: libhx509-5-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2021-3671
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-3671
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    samba: Null pointer dereference on missing sname in TGS-REQ
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-3671
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
+
+---
+
+Package: libjpeg-turbo8
+Installed Version: 1.5.2-0ubuntu5.18.04.4
+Vulnerability CVE-2018-11813
+Severity: LOW
+Fixed Version: 1.5.2-0ubuntu5.18.04.6
+Link: [CVE-2018-11813](https://avd.aquasec.com/nvd/cve-2018-11813)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-11813
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-11813">https://avd.aquasec.com/nvd/cve-2018-11813</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    libjpeg: &amp;#34;cjpeg&amp;#34; utility large loop because read_pixel in rdtarga.c mishandles EOF
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    libjpeg 9c has a large loop because read_pixel in rdtarga.c mishandles EOF.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-11813
+	Severity: LOW
+	Package: libjpeg-turbo8-dev
+	Fixed Version: 1.5.2-0ubuntu5.18.04.6
+	Link: [CVE-2018-11813](https://avd.aquasec.com/nvd/cve-2018-11813)
+	libjpeg 9c has a large loop because read_pixel in rdtarga.c mishandles EOF.
+    </details>
+
+
+
+---
+
+Package: libjpeg-turbo8
+Installed Version: 1.5.2-0ubuntu5.18.04.4
+Vulnerability CVE-2020-17541
+Severity: LOW
+Fixed Version: 1.5.2-0ubuntu5.18.04.6
+Link: [CVE-2020-17541](https://avd.aquasec.com/nvd/cve-2020-17541)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2020-17541
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2020-17541">https://avd.aquasec.com/nvd/cve-2020-17541</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    libjpeg-turbo: Stack-based buffer overflow in the &amp;#34;transform&amp;#34; component
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Libjpeg-turbo all version have a stack-based buffer overflow in the &amp;#34;transform&amp;#34; component. A remote attacker can send a malformed jpeg file to the service and cause arbitrary code execution or denial of service of the target service.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2020-17541
+	Severity: LOW
+	Package: libjpeg-turbo8-dev
+	Fixed Version: 1.5.2-0ubuntu5.18.04.6
+	Link: [CVE-2020-17541](https://avd.aquasec.com/nvd/cve-2020-17541)
+	Libjpeg-turbo all version have a stack-based buffer overflow in the &#34;transform&#34; component. A remote attacker can send a malformed jpeg file to the service and cause arbitrary code execution or denial of service of the target service.
+    </details>
+
+
+
+---
+
+Package: libjpeg-turbo8
+Installed Version: 1.5.2-0ubuntu5.18.04.4
+Vulnerability CVE-2022-32325
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-32325](https://avd.aquasec.com/nvd/cve-2022-32325)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-32325
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-32325">https://avd.aquasec.com/nvd/cve-2022-32325</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation wh ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation which is caused by a READ memory access at jpegoptim.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-32325
+	Severity: LOW
+	Package: libjpeg-turbo8-dev
+	Fixed Version: 
+	Link: [CVE-2022-32325](https://avd.aquasec.com/nvd/cve-2022-32325)
+	JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation which is caused by a READ memory access at jpegoptim.c.
+    </details>
+
+
+
+---
+
+Package: libjpeg-turbo8-dev
+Installed Version: 1.5.2-0ubuntu5.18.04.4
+Vulnerability CVE-2018-11813
+Severity: LOW
+Fixed Version: 1.5.2-0ubuntu5.18.04.6
+Link: [CVE-2018-11813](https://avd.aquasec.com/nvd/cve-2018-11813)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-11813
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-11813">https://avd.aquasec.com/nvd/cve-2018-11813</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    libjpeg: &amp;#34;cjpeg&amp;#34; utility large loop because read_pixel in rdtarga.c mishandles EOF
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    libjpeg 9c has a large loop because read_pixel in rdtarga.c mishandles EOF.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-11813
+	Severity: LOW
+	Package: libjpeg-turbo8-dev
+	Fixed Version: 1.5.2-0ubuntu5.18.04.6
+	Link: [CVE-2018-11813](https://avd.aquasec.com/nvd/cve-2018-11813)
+	libjpeg 9c has a large loop because read_pixel in rdtarga.c mishandles EOF.
+    </details>
+
+
+
+---
+
+Package: libjpeg-turbo8-dev
+Installed Version: 1.5.2-0ubuntu5.18.04.4
+Vulnerability CVE-2020-17541
+Severity: LOW
+Fixed Version: 1.5.2-0ubuntu5.18.04.6
+Link: [CVE-2020-17541](https://avd.aquasec.com/nvd/cve-2020-17541)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2020-17541
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2020-17541">https://avd.aquasec.com/nvd/cve-2020-17541</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    libjpeg-turbo: Stack-based buffer overflow in the &amp;#34;transform&amp;#34; component
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Libjpeg-turbo all version have a stack-based buffer overflow in the &amp;#34;transform&amp;#34; component. A remote attacker can send a malformed jpeg file to the service and cause arbitrary code execution or denial of service of the target service.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2020-17541
+	Severity: LOW
+	Package: libjpeg-turbo8-dev
+	Fixed Version: 1.5.2-0ubuntu5.18.04.6
+	Link: [CVE-2020-17541](https://avd.aquasec.com/nvd/cve-2020-17541)
+	Libjpeg-turbo all version have a stack-based buffer overflow in the &#34;transform&#34; component. A remote attacker can send a malformed jpeg file to the service and cause arbitrary code execution or denial of service of the target service.
+    </details>
+
+
+
+---
+
+Package: libjpeg-turbo8-dev
+Installed Version: 1.5.2-0ubuntu5.18.04.4
+Vulnerability CVE-2022-32325
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-32325](https://avd.aquasec.com/nvd/cve-2022-32325)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-32325
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-32325">https://avd.aquasec.com/nvd/cve-2022-32325</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation wh ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation which is caused by a READ memory access at jpegoptim.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-32325
+	Severity: LOW
+	Package: libjpeg-turbo8-dev
+	Fixed Version: 
+	Link: [CVE-2022-32325](https://avd.aquasec.com/nvd/cve-2022-32325)
+	JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation which is caused by a READ memory access at jpegoptim.c.
+    </details>
+
+
+
+---
+
+Package: libkrb5-26-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2019-12098
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-12098
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-12098
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
+
+---
+
+Package: libkrb5-26-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2021-3671
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-3671
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    samba: Null pointer dereference on missing sname in TGS-REQ
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-3671
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
+
+---
+
+Package: libncurses5
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2019-17594
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-17594
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-17594">https://avd.aquasec.com/nvd/cve-2019-17594</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-17594
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
+	There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
+
+---
+
+Package: libncurses5
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2019-17595
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-17595
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-17595">https://avd.aquasec.com/nvd/cve-2019-17595</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-17595
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
+	There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
+
+---
+
+Package: libncurses5
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2021-39537
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-39537
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-39537">https://avd.aquasec.com/nvd/cve-2021-39537</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-39537
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
+	An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
+    </details>
+
+
+
+---
+
+Package: libncurses5
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2022-29458
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-29458
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-29458">https://avd.aquasec.com/nvd/cve-2022-29458</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: segfaulting OOB read
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-29458
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
+	ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
+    </details>
+
+
+
+---
+
+Package: libncursesw5
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2019-17594
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-17594
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-17594">https://avd.aquasec.com/nvd/cve-2019-17594</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-17594
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
+	There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
+
+---
+
+Package: libncursesw5
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2019-17595
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-17595
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-17595">https://avd.aquasec.com/nvd/cve-2019-17595</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-17595
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
+	There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
+
+---
+
+Package: libncursesw5
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2021-39537
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-39537
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-39537">https://avd.aquasec.com/nvd/cve-2021-39537</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-39537
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
+	An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
+    </details>
+
+
+
+---
+
+Package: libncursesw5
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2022-29458
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-29458
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-29458">https://avd.aquasec.com/nvd/cve-2022-29458</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: segfaulting OOB read
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-29458
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
+	ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
+    </details>
+
+
+
+---
+
+Package: libpcre16-3
+Installed Version: 2:8.39-9ubuntu0.1
+Vulnerability CVE-2017-11164
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2017-11164
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2017-11164">https://avd.aquasec.com/nvd/cve-2017-11164</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    pcre: OP_KETRMAX feature in the match function in pcre_exec.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2017-11164
+	Severity: LOW
+	Package: libpcrecpp0v5
+	Fixed Version: 
+	Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
+	In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
+    </details>
+
+
+
+---
+
+Package: libpcre3
+Installed Version: 2:8.39-9ubuntu0.1
+Vulnerability CVE-2017-11164
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2017-11164
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2017-11164">https://avd.aquasec.com/nvd/cve-2017-11164</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    pcre: OP_KETRMAX feature in the match function in pcre_exec.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2017-11164
+	Severity: LOW
+	Package: libpcrecpp0v5
+	Fixed Version: 
+	Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
+	In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
+    </details>
+
+
+
+---
+
+Package: libpcre3-dev
+Installed Version: 2:8.39-9ubuntu0.1
+Vulnerability CVE-2017-11164
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2017-11164
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2017-11164">https://avd.aquasec.com/nvd/cve-2017-11164</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    pcre: OP_KETRMAX feature in the match function in pcre_exec.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2017-11164
+	Severity: LOW
+	Package: libpcrecpp0v5
+	Fixed Version: 
+	Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
+	In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
+    </details>
+
+
+
+---
+
+Package: libpcre32-3
+Installed Version: 2:8.39-9ubuntu0.1
+Vulnerability CVE-2017-11164
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2017-11164
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2017-11164">https://avd.aquasec.com/nvd/cve-2017-11164</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    pcre: OP_KETRMAX feature in the match function in pcre_exec.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2017-11164
+	Severity: LOW
+	Package: libpcrecpp0v5
+	Fixed Version: 
+	Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
+	In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
+    </details>
+
+
+
+---
+
+Package: libpcrecpp0v5
+Installed Version: 2:8.39-9ubuntu0.1
+Vulnerability CVE-2017-11164
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2017-11164
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2017-11164">https://avd.aquasec.com/nvd/cve-2017-11164</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    pcre: OP_KETRMAX feature in the match function in pcre_exec.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2017-11164
+	Severity: LOW
+	Package: libpcrecpp0v5
+	Fixed Version: 
+	Link: [CVE-2017-11164](https://avd.aquasec.com/nvd/cve-2017-11164)
+	In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.
+    </details>
+
+
+
+---
+
+Package: libpng16-16
+Installed Version: 1.6.34-1ubuntu0.18.04.2
+Vulnerability CVE-2018-14048
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-14048](https://avd.aquasec.com/nvd/cve-2018-14048)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-14048
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-14048">https://avd.aquasec.com/nvd/cve-2018-14048</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    libpng: Segmentation fault in png.c:png_free_data function causing denial of service
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue has been found in libpng 1.6.34. It is a SEGV in the function png_free_data in png.c, related to the recommended error handling for png_read_image.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-14048
+	Severity: LOW
+	Package: libpng16-16
+	Fixed Version: 
+	Link: [CVE-2018-14048](https://avd.aquasec.com/nvd/cve-2018-14048)
+	An issue has been found in libpng 1.6.34. It is a SEGV in the function png_free_data in png.c, related to the recommended error handling for png_read_image.
+    </details>
+
+
+
+---
+
+Package: libpng16-16
+Installed Version: 1.6.34-1ubuntu0.18.04.2
+Vulnerability CVE-2022-3857
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-3857](https://avd.aquasec.com/nvd/cve-2022-3857)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3857
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3857">https://avd.aquasec.com/nvd/cve-2022-3857</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    libpng: Null pointer dereference leads to segmentation fault
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    No description is available for this CVE.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3857
+	Severity: LOW
+	Package: libpng16-16
+	Fixed Version: 
+	Link: [CVE-2022-3857](https://avd.aquasec.com/nvd/cve-2022-3857)
+	No description is available for this CVE.
+    </details>
+
+
+
+---
+
+Package: libpython3.6
+Installed Version: 3.6.9-1~18.04ubuntu1.8
+Vulnerability CVE-2021-28861
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-28861
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-28861">https://avd.aquasec.com/nvd/cve-2021-28861</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    python: open redirection vulnerability in lib/http/server.py may lead to information disclosure
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &amp;#34;Warning: http.server is not recommended for production. It only implements basic security checks.&amp;#34;
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-28861
+	Severity: LOW
+	Package: python3.6-minimal
+	Fixed Version: 
+	Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
+	** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &#34;Warning: http.server is not recommended for production. It only implements basic security checks.&#34;
+    </details>
+
+
+
+---
+
+Package: libpython3.6-minimal
+Installed Version: 3.6.9-1~18.04ubuntu1.8
+Vulnerability CVE-2021-28861
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-28861
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-28861">https://avd.aquasec.com/nvd/cve-2021-28861</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    python: open redirection vulnerability in lib/http/server.py may lead to information disclosure
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &amp;#34;Warning: http.server is not recommended for production. It only implements basic security checks.&amp;#34;
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-28861
+	Severity: LOW
+	Package: python3.6-minimal
+	Fixed Version: 
+	Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
+	** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &#34;Warning: http.server is not recommended for production. It only implements basic security checks.&#34;
+    </details>
+
+
+
+---
+
+Package: libpython3.6-stdlib
+Installed Version: 3.6.9-1~18.04ubuntu1.8
+Vulnerability CVE-2021-28861
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-28861
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-28861">https://avd.aquasec.com/nvd/cve-2021-28861</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    python: open redirection vulnerability in lib/http/server.py may lead to information disclosure
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &amp;#34;Warning: http.server is not recommended for production. It only implements basic security checks.&amp;#34;
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-28861
+	Severity: LOW
+	Package: python3.6-minimal
+	Fixed Version: 
+	Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
+	** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &#34;Warning: http.server is not recommended for production. It only implements basic security checks.&#34;
+    </details>
+
+
+
+---
+
+Package: libroken18-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2019-12098
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-12098
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-12098
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
+
+---
+
+Package: libroken18-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2021-3671
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-3671
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    samba: Null pointer dereference on missing sname in TGS-REQ
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-3671
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
+
+---
+
+Package: libtinfo5
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2019-17594
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-17594
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-17594">https://avd.aquasec.com/nvd/cve-2019-17594</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-17594
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
+	There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
+
+---
+
+Package: libtinfo5
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2019-17595
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-17595
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-17595">https://avd.aquasec.com/nvd/cve-2019-17595</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-17595
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
+	There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
+
+---
+
+Package: libtinfo5
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2021-39537
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-39537
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-39537">https://avd.aquasec.com/nvd/cve-2021-39537</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-39537
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
+	An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
+    </details>
+
+
+
+---
+
+Package: libtinfo5
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2022-29458
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-29458
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-29458">https://avd.aquasec.com/nvd/cve-2022-29458</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: segfaulting OOB read
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-29458
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
+	ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
+    </details>
+
+
+
+---
+
+Package: libwind0-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2019-12098
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-12098
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-12098">https://avd.aquasec.com/nvd/cve-2019-12098</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymou ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-12098
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2019-12098](https://avd.aquasec.com/nvd/cve-2019-12098)
+	In the client side of Heimdal before 7.6.0, failure to verify anonymous PKINIT PA-PKINIT-KX key exchange permits a man-in-the-middle attack. This issue is in krb5_init_creds_step in lib/krb5/init_creds_pw.c.
+    </details>
+
+
+
+---
+
+Package: libwind0-heimdal
+Installed Version: 7.5.0+dfsg-1
+Vulnerability CVE-2021-3671
+Severity: LOW
+Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-3671
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-3671">https://avd.aquasec.com/nvd/cve-2021-3671</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    samba: Null pointer dereference on missing sname in TGS-REQ
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-3671
+	Severity: LOW
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.1
+	Link: [CVE-2021-3671](https://avd.aquasec.com/nvd/cve-2021-3671)
+	A null pointer de-reference was found in the way samba kerberos server handled missing sname in TGS-REQ (Ticket Granting Server - Request). An authenticated user could use this flaw to crash the samba server.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2016-10723
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2016-10723](https://avd.aquasec.com/nvd/cve-2016-10723)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2016-10723
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2016-10723">https://avd.aquasec.com/nvd/cve-2016-10723</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ** DISPUTED ** An issue was discovered in the Linux kernel through 4.1 ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ** DISPUTED ** An issue was discovered in the Linux kernel through 4.17.2. Since the page allocator does not yield CPU resources to the owner of the oom_lock mutex, a local unprivileged user can trivially lock up the system forever by wasting CPU resources from the page allocator (e.g., via concurrent page fault events) when the global OOM killer is invoked. NOTE: the software maintainer has not accepted certain proposed patches, in part because of a viewpoint that &amp;#34;the underlying problem is non-trivial to handle.&amp;#34;
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2016-10723
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2016-10723](https://avd.aquasec.com/nvd/cve-2016-10723)
+	** DISPUTED ** An issue was discovered in the Linux kernel through 4.17.2. Since the page allocator does not yield CPU resources to the owner of the oom_lock mutex, a local unprivileged user can trivially lock up the system forever by wasting CPU resources from the page allocator (e.g., via concurrent page fault events) when the global OOM killer is invoked. NOTE: the software maintainer has not accepted certain proposed patches, in part because of a viewpoint that &#34;the underlying problem is non-trivial to handle.&#34;
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2017-0537
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2017-0537](https://avd.aquasec.com/nvd/cve-2017-0537)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2017-0537
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2017-0537">https://avd.aquasec.com/nvd/cve-2017-0537</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An information disclosure vulnerability in the kernel USB gadget driver could enable a local malicious application to access data outside of its permission levels. This issue is rated as Moderate because it first requires compromising a privileged process. Product: Android. Versions: Kernel-3.18. Android ID: A-31614969.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2017-0537
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2017-0537](https://avd.aquasec.com/nvd/cve-2017-0537)
+	An information disclosure vulnerability in the kernel USB gadget driver could enable a local malicious application to access data outside of its permission levels. This issue is rated as Moderate because it first requires compromising a privileged process. Product: Android. Versions: Kernel-3.18. Android ID: A-31614969.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2017-13165
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2017-13165](https://avd.aquasec.com/nvd/cve-2017-13165)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2017-13165
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2017-13165">https://avd.aquasec.com/nvd/cve-2017-13165</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An elevation of privilege vulnerability in the kernel file system. Product: Android. Versions: Android kernel. Android ID A-31269937.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2017-13165
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2017-13165](https://avd.aquasec.com/nvd/cve-2017-13165)
+	An elevation of privilege vulnerability in the kernel file system. Product: Android. Versions: Android kernel. Android ID A-31269937.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2017-13693
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2017-13693](https://avd.aquasec.com/nvd/cve-2017-13693)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2017-13693
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2017-13693">https://avd.aquasec.com/nvd/cve-2017-13693</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: ACPI operand cache leak in dsutils.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The acpi_ds_create_operands() function in drivers/acpi/acpica/dsutils.c in the Linux kernel through 4.12.9 does not flush the operand cache and causes a kernel stack dump, which allows local users to obtain sensitive information from kernel memory and bypass the KASLR protection mechanism (in the kernel through 4.9) via a crafted ACPI table.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2017-13693
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2017-13693](https://avd.aquasec.com/nvd/cve-2017-13693)
+	The acpi_ds_create_operands() function in drivers/acpi/acpica/dsutils.c in the Linux kernel through 4.12.9 does not flush the operand cache and causes a kernel stack dump, which allows local users to obtain sensitive information from kernel memory and bypass the KASLR protection mechanism (in the kernel through 4.9) via a crafted ACPI table.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2018-1121
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-1121](https://avd.aquasec.com/nvd/cve-2018-1121)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-1121
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-1121">https://avd.aquasec.com/nvd/cve-2018-1121</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    procps-ng, procps: process hiding through race condition enumerating /proc
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    procps-ng, procps is vulnerable to a process hiding through race condition. Since the kernel&amp;#39;s proc_pid_readdir() returns PID entries in ascending numeric order, a process occupying a high PID can use inotify events to determine when the process list is being scanned, and fork/exec to obtain a lower PID, thus avoiding enumeration. An unprivileged attacker can hide a process from procps-ng&amp;#39;s utilities by exploiting a race condition in reading /proc/PID entries. This vulnerability affects procps and procps-ng up to version 3.3.15, newer versions might be affected also.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-1121
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2018-1121](https://avd.aquasec.com/nvd/cve-2018-1121)
+	procps-ng, procps is vulnerable to a process hiding through race condition. Since the kernel&#39;s proc_pid_readdir() returns PID entries in ascending numeric order, a process occupying a high PID can use inotify events to determine when the process list is being scanned, and fork/exec to obtain a lower PID, thus avoiding enumeration. An unprivileged attacker can hide a process from procps-ng&#39;s utilities by exploiting a race condition in reading /proc/PID entries. This vulnerability affects procps and procps-ng up to version 3.3.15, newer versions might be affected also.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2018-12928
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-12928](https://avd.aquasec.com/nvd/cve-2018-12928)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-12928
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-12928">https://avd.aquasec.com/nvd/cve-2018-12928</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: NULL pointer dereference in hfs_ext_read_extent in hfs.ko
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the Linux kernel 4.15.0, a NULL pointer dereference was discovered in hfs_ext_read_extent in hfs.ko. This can occur during a mount of a crafted hfs filesystem.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-12928
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2018-12928](https://avd.aquasec.com/nvd/cve-2018-12928)
+	In the Linux kernel 4.15.0, a NULL pointer dereference was discovered in hfs_ext_read_extent in hfs.ko. This can occur during a mount of a crafted hfs filesystem.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2018-12929
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-12929](https://avd.aquasec.com/nvd/cve-2018-12929)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-12929
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-12929">https://avd.aquasec.com/nvd/cve-2018-12929</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: use-after-free in ntfs_read_locked_inode in the ntfs.ko
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ntfs_read_locked_inode in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a use-after-free read and possibly cause a denial of service (kernel oops or panic) via a crafted ntfs filesystem.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-12929
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2018-12929](https://avd.aquasec.com/nvd/cve-2018-12929)
+	ntfs_read_locked_inode in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a use-after-free read and possibly cause a denial of service (kernel oops or panic) via a crafted ntfs filesystem.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2018-12930
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-12930](https://avd.aquasec.com/nvd/cve-2018-12930)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-12930
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-12930">https://avd.aquasec.com/nvd/cve-2018-12930</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: stack-based out-of-bounds write in ntfs_end_buffer_async_read in the ntfs.ko
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ntfs_end_buffer_async_read in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-12930
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2018-12930](https://avd.aquasec.com/nvd/cve-2018-12930)
+	ntfs_end_buffer_async_read in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2018-12931
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-12931](https://avd.aquasec.com/nvd/cve-2018-12931)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-12931
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-12931">https://avd.aquasec.com/nvd/cve-2018-12931</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: stack-based out-of-bounds write in ntfs_attr_find in the ntfs.ko
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-12931
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2018-12931](https://avd.aquasec.com/nvd/cve-2018-12931)
+	ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2019-14899
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-14899](https://avd.aquasec.com/nvd/cve-2019-14899)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-14899
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-14899">https://avd.aquasec.com/nvd/cve-2019-14899</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    VPN: an attacker can inject data into the TCP stream which allows a hijack of active connections inside the VPN tunnel
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A vulnerability was discovered in Linux, FreeBSD, OpenBSD, MacOS, iOS, and Android that allows a malicious access point, or an adjacent user, to determine if a connected user is using a VPN, make positive inferences about the websites they are visiting, and determine the correct sequence and acknowledgement numbers in use, allowing the bad actor to inject data into the TCP stream. This provides everything that is needed for an attacker to hijack active connections inside the VPN tunnel.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-14899
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2019-14899](https://avd.aquasec.com/nvd/cve-2019-14899)
+	A vulnerability was discovered in Linux, FreeBSD, OpenBSD, MacOS, iOS, and Android that allows a malicious access point, or an adjacent user, to determine if a connected user is using a VPN, make positive inferences about the websites they are visiting, and determine the correct sequence and acknowledgement numbers in use, allowing the bad actor to inject data into the TCP stream. This provides everything that is needed for an attacker to hijack active connections inside the VPN tunnel.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2019-15213
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-15213](https://avd.aquasec.com/nvd/cve-2019-15213)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-15213
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-15213">https://avd.aquasec.com/nvd/cve-2019-15213</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: use-after-free caused by malicious USB device in drivers/media/usb/dvb-usb/dvb-usb-init.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in the Linux kernel before 5.2.3. There is a use-after-free caused by a malicious USB device in the drivers/media/usb/dvb-usb/dvb-usb-init.c driver.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-15213
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2019-15213](https://avd.aquasec.com/nvd/cve-2019-15213)
+	An issue was discovered in the Linux kernel before 5.2.3. There is a use-after-free caused by a malicious USB device in the drivers/media/usb/dvb-usb/dvb-usb-init.c driver.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2019-16230
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-16230](https://avd.aquasec.com/nvd/cve-2019-16230)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-16230
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-16230">https://avd.aquasec.com/nvd/cve-2019-16230</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: null pointer dereference in drivers/gpu/drm/radeon/radeon_display.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ** DISPUTED ** drivers/gpu/drm/radeon/radeon_display.c in the Linux kernel 5.2.14 does not check the alloc_workqueue return value, leading to a NULL pointer dereference. NOTE: A third-party software maintainer states that the work queue allocation is happening during device initialization, which for a graphics card occurs during boot. It is not attacker controllable and OOM at that time is highly unlikely.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-16230
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2019-16230](https://avd.aquasec.com/nvd/cve-2019-16230)
+	** DISPUTED ** drivers/gpu/drm/radeon/radeon_display.c in the Linux kernel 5.2.14 does not check the alloc_workqueue return value, leading to a NULL pointer dereference. NOTE: A third-party software maintainer states that the work queue allocation is happening during device initialization, which for a graphics card occurs during boot. It is not attacker controllable and OOM at that time is highly unlikely.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2019-19378
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-19378](https://avd.aquasec.com/nvd/cve-2019-19378)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-19378
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-19378">https://avd.aquasec.com/nvd/cve-2019-19378</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: out-of-bounds write in index_rbio_pages in fs/btrfs/raid56.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the Linux kernel 5.0.21, mounting a crafted btrfs filesystem image can lead to slab-out-of-bounds write access in index_rbio_pages in fs/btrfs/raid56.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-19378
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2019-19378](https://avd.aquasec.com/nvd/cve-2019-19378)
+	In the Linux kernel 5.0.21, mounting a crafted btrfs filesystem image can lead to slab-out-of-bounds write access in index_rbio_pages in fs/btrfs/raid56.c.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2019-19814
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-19814](https://avd.aquasec.com/nvd/cve-2019-19814)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-19814
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-19814">https://avd.aquasec.com/nvd/cve-2019-19814</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: out-of-bounds write in __remove_dirty_segment in fs/f2fs/segment.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the Linux kernel 5.0.21, mounting a crafted f2fs filesystem image can cause __remove_dirty_segment slab-out-of-bounds write access because an array is bounded by the number of dirty types (8) but the array index can exceed this.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-19814
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2019-19814](https://avd.aquasec.com/nvd/cve-2019-19814)
+	In the Linux kernel 5.0.21, mounting a crafted f2fs filesystem image can cause __remove_dirty_segment slab-out-of-bounds write access because an array is bounded by the number of dirty types (8) but the array index can exceed this.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2019-19815
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-19815](https://avd.aquasec.com/nvd/cve-2019-19815)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-19815
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-19815">https://avd.aquasec.com/nvd/cve-2019-19815</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: NULL pointer dereference in f2fs_recover_fsync_data in fs/f2fs/recovery.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the Linux kernel 5.0.21, mounting a crafted f2fs filesystem image can cause a NULL pointer dereference in f2fs_recover_fsync_data in fs/f2fs/recovery.c. This is related to F2FS_P_SB in fs/f2fs/f2fs.h.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-19815
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2019-19815](https://avd.aquasec.com/nvd/cve-2019-19815)
+	In the Linux kernel 5.0.21, mounting a crafted f2fs filesystem image can cause a NULL pointer dereference in f2fs_recover_fsync_data in fs/f2fs/recovery.c. This is related to F2FS_P_SB in fs/f2fs/f2fs.h.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2019-20425
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-20425](https://avd.aquasec.com/nvd/cve-2019-20425)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-20425
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-20425">https://avd.aquasec.com/nvd/cve-2019-20425</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the Lustre file system before 2.12.3, the ptlrpc module has an out-of-bounds access and panic due to the lack of validation for specific fields of packets sent by a client. In the function lustre_msg_string, there is no validation of a certain length value derived from lustre_msg_buflen_v2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-20425
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2019-20425](https://avd.aquasec.com/nvd/cve-2019-20425)
+	In the Lustre file system before 2.12.3, the ptlrpc module has an out-of-bounds access and panic due to the lack of validation for specific fields of packets sent by a client. In the function lustre_msg_string, there is no validation of a certain length value derived from lustre_msg_buflen_v2.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2019-20429
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-20429](https://avd.aquasec.com/nvd/cve-2019-20429)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-20429
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-20429">https://avd.aquasec.com/nvd/cve-2019-20429</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the Lustre file system before 2.12.3, the ptlrpc module has an out-of-bounds read and panic (via a modified lm_bufcount field) due to the lack of validation for specific fields of packets sent by a client. This is caused by interaction between sptlrpc_svc_unwrap_request and lustre_msg_hdr_size_v2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-20429
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2019-20429](https://avd.aquasec.com/nvd/cve-2019-20429)
+	In the Lustre file system before 2.12.3, the ptlrpc module has an out-of-bounds read and panic (via a modified lm_bufcount field) due to the lack of validation for specific fields of packets sent by a client. This is caused by interaction between sptlrpc_svc_unwrap_request and lustre_msg_hdr_size_v2.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2020-11725
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2020-11725](https://avd.aquasec.com/nvd/cve-2020-11725)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2020-11725
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2020-11725">https://avd.aquasec.com/nvd/cve-2020-11725</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: improper handling of private_size*count multiplication due to count=info-&amp;gt;owner typo
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ** DISPUTED ** snd_ctl_elem_add in sound/core/control.c in the Linux kernel through 5.6.3 has a count=info-&amp;gt;owner line, which later affects a private_size*count multiplication for unspecified &amp;#34;interesting side effects.&amp;#34; NOTE: kernel engineers dispute this finding, because it could be relevant only if new callers were added that were unfamiliar with the misuse of the info-&amp;gt;owner field to represent data unrelated to the &amp;#34;owner&amp;#34; concept. The existing callers, SNDRV_CTL_IOCTL_ELEM_ADD and SNDRV_CTL_IOCTL_ELEM_REPLACE, have been designed to misuse the info-&amp;gt;owner field in a safe way.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2020-11725
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2020-11725](https://avd.aquasec.com/nvd/cve-2020-11725)
+	** DISPUTED ** snd_ctl_elem_add in sound/core/control.c in the Linux kernel through 5.6.3 has a count=info-&gt;owner line, which later affects a private_size*count multiplication for unspecified &#34;interesting side effects.&#34; NOTE: kernel engineers dispute this finding, because it could be relevant only if new callers were added that were unfamiliar with the misuse of the info-&gt;owner field to represent data unrelated to the &#34;owner&#34; concept. The existing callers, SNDRV_CTL_IOCTL_ELEM_ADD and SNDRV_CTL_IOCTL_ELEM_REPLACE, have been designed to misuse the info-&gt;owner field in a safe way.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2020-12363
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2020-12363](https://avd.aquasec.com/nvd/cve-2020-12363)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2020-12363
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2020-12363">https://avd.aquasec.com/nvd/cve-2020-12363</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: Improper input validation in some Intel(R) Graphics Drivers
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Improper input validation in some Intel(R) Graphics Drivers for Windows* before version 26.20.100.7212 and before Linux kernel version 5.5 may allow a privileged user to potentially enable a denial of service via local access.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2020-12363
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2020-12363](https://avd.aquasec.com/nvd/cve-2020-12363)
+	Improper input validation in some Intel(R) Graphics Drivers for Windows* before version 26.20.100.7212 and before Linux kernel version 5.5 may allow a privileged user to potentially enable a denial of service via local access.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2020-12364
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2020-12364](https://avd.aquasec.com/nvd/cve-2020-12364)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2020-12364
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2020-12364">https://avd.aquasec.com/nvd/cve-2020-12364</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: Null pointer dereference in some Intel(R) Graphics Drivers
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Null pointer reference in some Intel(R) Graphics Drivers for Windows* before version 26.20.100.7212 and before version Linux kernel version 5.5 may allow a privileged user to potentially enable a denial of service via local access.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2020-12364
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2020-12364](https://avd.aquasec.com/nvd/cve-2020-12364)
+	Null pointer reference in some Intel(R) Graphics Drivers for Windows* before version 26.20.100.7212 and before version Linux kernel version 5.5 may allow a privileged user to potentially enable a denial of service via local access.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2020-14304
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2020-14304](https://avd.aquasec.com/nvd/cve-2020-14304)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2020-14304
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2020-14304">https://avd.aquasec.com/nvd/cve-2020-14304</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: ethtool when reading eeprom of device could lead to memory leak
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A memory disclosure flaw was found in the Linux kernel&amp;#39;s ethernet drivers, in the way it read data from the EEPROM of the device. This flaw allows a local user to read uninitialized values from the kernel memory. The highest threat from this vulnerability is to confidentiality.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2020-14304
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2020-14304](https://avd.aquasec.com/nvd/cve-2020-14304)
+	A memory disclosure flaw was found in the Linux kernel&#39;s ethernet drivers, in the way it read data from the EEPROM of the device. This flaw allows a local user to read uninitialized values from the kernel memory. The highest threat from this vulnerability is to confidentiality.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2020-27820
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2020-27820](https://avd.aquasec.com/nvd/cve-2020-27820)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2020-27820
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2020-27820">https://avd.aquasec.com/nvd/cve-2020-27820</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: use-after-free in nouveau kernel module
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A vulnerability was found in Linux kernel, where a use-after-frees in nouveau&amp;#39;s postclose() handler could happen if removing device (that is not common to remove video card physically without power-off, but same happens if &amp;#34;unbind&amp;#34; the driver).
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2020-27820
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2020-27820](https://avd.aquasec.com/nvd/cve-2020-27820)
+	A vulnerability was found in Linux kernel, where a use-after-frees in nouveau&#39;s postclose() handler could happen if removing device (that is not common to remove video card physically without power-off, but same happens if &#34;unbind&#34; the driver).
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2020-35501
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2020-35501](https://avd.aquasec.com/nvd/cve-2020-35501)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2020-35501
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2020-35501">https://avd.aquasec.com/nvd/cve-2020-35501</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: audit not logging access to syscall open_by_handle_at for users with CAP_DAC_READ_SEARCH capability
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A flaw was found in the Linux kernels implementation of audit rules, where a syscall can unexpectedly not be correctly not be logged by the audit subsystem
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2020-35501
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2020-35501](https://avd.aquasec.com/nvd/cve-2020-35501)
+	A flaw was found in the Linux kernels implementation of audit rules, where a syscall can unexpectedly not be correctly not be logged by the audit subsystem
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2021-32078
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-32078](https://avd.aquasec.com/nvd/cve-2021-32078)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-32078
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-32078">https://avd.aquasec.com/nvd/cve-2021-32078</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: out-of-bounds read in arch/arm/mach-footbridge/personal-pci.c due to improper input validation
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An Out-of-Bounds Read was discovered in arch/arm/mach-footbridge/personal-pci.c in the Linux kernel through 5.12.11 because of the lack of a check for a value that shouldn&amp;#39;t be negative, e.g., access to element -2 of an array, aka CID-298a58e165e4.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-32078
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2021-32078](https://avd.aquasec.com/nvd/cve-2021-32078)
+	An Out-of-Bounds Read was discovered in arch/arm/mach-footbridge/personal-pci.c in the Linux kernel through 5.12.11 because of the lack of a check for a value that shouldn&#39;t be negative, e.g., access to element -2 of an array, aka CID-298a58e165e4.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2021-34981
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-34981](https://avd.aquasec.com/nvd/cve-2021-34981)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-34981
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-34981">https://avd.aquasec.com/nvd/cve-2021-34981</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: Bluetooth CMTP Module Double Free Privilege Escalation Vulnerability
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A flaw was found in the Linux kernel&amp;#39;s CAPI over Bluetooth connection code. An attacker with a local account can escalate privileges when CAPI (ISDN) hardware connection fails.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-34981
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2021-34981](https://avd.aquasec.com/nvd/cve-2021-34981)
+	A flaw was found in the Linux kernel&#39;s CAPI over Bluetooth connection code. An attacker with a local account can escalate privileges when CAPI (ISDN) hardware connection fails.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2021-3669
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-3669](https://avd.aquasec.com/nvd/cve-2021-3669)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-3669
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-3669">https://avd.aquasec.com/nvd/cve-2021-3669</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: reading /proc/sysvipc/shm does not scale with large shared memory segment counts
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A flaw was found in the Linux kernel. Measuring usage of the shared memory does not scale with large shared memory segment counts which could lead to resource exhaustion and DoS.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-3669
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2021-3669](https://avd.aquasec.com/nvd/cve-2021-3669)
+	A flaw was found in the Linux kernel. Measuring usage of the shared memory does not scale with large shared memory segment counts which could lead to resource exhaustion and DoS.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2021-39686
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-39686](https://avd.aquasec.com/nvd/cve-2021-39686)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-39686
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-39686">https://avd.aquasec.com/nvd/cve-2021-39686</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: race condition in the Android binder driver could lead to incorrect security checks
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In several functions of binder.c, there is a possible way to represent the wrong domain to SELinux due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-200688826References: Upstream kernel
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-39686
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2021-39686](https://avd.aquasec.com/nvd/cve-2021-39686)
+	In several functions of binder.c, there is a possible way to represent the wrong domain to SELinux due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-200688826References: Upstream kernel
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2021-39801
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-39801](https://avd.aquasec.com/nvd/cve-2021-39801)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-39801
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-39801">https://avd.aquasec.com/nvd/cve-2021-39801</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In ion_ioctl of ion-ioctl.c, there is a possible use after free due to improper locking. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-209791720References: Upstream kernel
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-39801
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2021-39801](https://avd.aquasec.com/nvd/cve-2021-39801)
+	In ion_ioctl of ion-ioctl.c, there is a possible use after free due to improper locking. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-209791720References: Upstream kernel
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-0854
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-0854](https://avd.aquasec.com/nvd/cve-2022-0854)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-0854
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-0854">https://avd.aquasec.com/nvd/cve-2022-0854</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: swiotlb information leak with DMA_FROM_DEVICE
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A memory leak flaw was found in the Linux kernel’s DMA subsystem, in the way a user calls DMA_FROM_DEVICE. This flaw allows a local user to read random memory from the kernel space.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-0854
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-0854](https://avd.aquasec.com/nvd/cve-2022-0854)
+	A memory leak flaw was found in the Linux kernel’s DMA subsystem, in the way a user calls DMA_FROM_DEVICE. This flaw allows a local user to read random memory from the kernel space.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-20132
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-20132](https://avd.aquasec.com/nvd/cve-2022-20132)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-20132
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-20132">https://avd.aquasec.com/nvd/cve-2022-20132</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    In lg_probe and related functions of hid-lg.c and other USB HID files, ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In lg_probe and related functions of hid-lg.c and other USB HID files, there is a possible out of bounds read due to improper input validation. This could lead to local information disclosure if a malicious USB HID device were plugged in, with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-188677105References: Upstream kernel
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-20132
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-20132](https://avd.aquasec.com/nvd/cve-2022-20132)
+	In lg_probe and related functions of hid-lg.c and other USB HID files, there is a possible out of bounds read due to improper input validation. This could lead to local information disclosure if a malicious USB HID device were plugged in, with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-188677105References: Upstream kernel
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-3565
+Severity: LOW
+Fixed Version: 4.15.0-200.211
+Link: [CVE-2022-3565](https://avd.aquasec.com/nvd/cve-2022-3565)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3565
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3565">https://avd.aquasec.com/nvd/cve-2022-3565</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: use-after-free in l1oip timer handlers
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A vulnerability, which was classified as critical, has been found in Linux Kernel. Affected by this issue is the function del_timer of the file drivers/isdn/mISDN/l1oip_core.c of the component Bluetooth. The manipulation leads to use after free. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-211088.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3565
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 4.15.0-200.211
+	Link: [CVE-2022-3565](https://avd.aquasec.com/nvd/cve-2022-3565)
+	A vulnerability, which was classified as critical, has been found in Linux Kernel. Affected by this issue is the function del_timer of the file drivers/isdn/mISDN/l1oip_core.c of the component Bluetooth. The manipulation leads to use after free. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-211088.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-3621
+Severity: LOW
+Fixed Version: 4.15.0-200.211
+Link: [CVE-2022-3621](https://avd.aquasec.com/nvd/cve-2022-3621)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3621
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3621">https://avd.aquasec.com/nvd/cve-2022-3621</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: nilfs2: NULL pointer dereference in nilfs_bmap_lookup_at_level in fs/nilfs2/inode.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A vulnerability was found in Linux Kernel. It has been classified as problematic. Affected is the function nilfs_bmap_lookup_at_level of the file fs/nilfs2/inode.c of the component nilfs2. The manipulation leads to null pointer dereference. It is possible to launch the attack remotely. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-211920.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3621
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 4.15.0-200.211
+	Link: [CVE-2022-3621](https://avd.aquasec.com/nvd/cve-2022-3621)
+	A vulnerability was found in Linux Kernel. It has been classified as problematic. Affected is the function nilfs_bmap_lookup_at_level of the file fs/nilfs2/inode.c of the component nilfs2. The manipulation leads to null pointer dereference. It is possible to launch the attack remotely. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-211920.
+    </details>
+
+
+
+---
+
+Package: login
+Installed Version: 1:4.5-1ubuntu2.3
+Vulnerability CVE-2013-4235
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2013-4235](https://avd.aquasec.com/nvd/cve-2013-4235)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2013-4235
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2013-4235">https://avd.aquasec.com/nvd/cve-2013-4235</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    shadow-utils: TOCTOU race conditions by copying and removing directory trees
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2013-4235
+	Severity: LOW
+	Package: passwd
+	Fixed Version: 
+	Link: [CVE-2013-4235](https://avd.aquasec.com/nvd/cve-2013-4235)
+	shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees
+    </details>
+
+
+
+---
+
+Package: multiarch-support
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2009-5155
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2009-5155
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2009-5155">https://avd.aquasec.com/nvd/cve-2009-5155</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    glibc: parse_reg_exp in posix/regcomp.c misparses alternatives leading to denial of service or trigger incorrect result
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2009-5155
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2009-5155](https://avd.aquasec.com/nvd/cve-2009-5155)
+	In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.
+    </details>
+
+
+
+---
+
+Package: multiarch-support
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2015-8985
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2015-8985
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2015-8985">https://avd.aquasec.com/nvd/cve-2015-8985</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    glibc: potential denial of service in pop_fail_stack()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2015-8985
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2015-8985](https://avd.aquasec.com/nvd/cve-2015-8985)
+	The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.
+    </details>
+
+
+
+---
+
+Package: multiarch-support
+Installed Version: 2.27-3ubuntu1.6
+Vulnerability CVE-2016-20013
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2016-20013
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2016-20013">https://avd.aquasec.com/nvd/cve-2016-20013</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&amp;#39;s runtime is proportional to the square of the length of the password.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2016-20013
+	Severity: LOW
+	Package: multiarch-support
+	Fixed Version: 
+	Link: [CVE-2016-20013](https://avd.aquasec.com/nvd/cve-2016-20013)
+	sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&#39;s runtime is proportional to the square of the length of the password.
+    </details>
+
+
+
+---
+
+Package: ncurses-base
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2019-17594
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-17594
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-17594">https://avd.aquasec.com/nvd/cve-2019-17594</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-17594
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
+	There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
+
+---
+
+Package: ncurses-base
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2019-17595
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-17595
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-17595">https://avd.aquasec.com/nvd/cve-2019-17595</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-17595
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
+	There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
+
+---
+
+Package: ncurses-base
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2021-39537
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-39537
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-39537">https://avd.aquasec.com/nvd/cve-2021-39537</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-39537
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
+	An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
+    </details>
+
+
+
+---
+
+Package: ncurses-base
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2022-29458
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-29458
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-29458">https://avd.aquasec.com/nvd/cve-2022-29458</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: segfaulting OOB read
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-29458
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
+	ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
+    </details>
+
+
+
+---
+
+Package: ncurses-bin
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2019-17594
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-17594
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-17594">https://avd.aquasec.com/nvd/cve-2019-17594</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-17594
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2019-17594](https://avd.aquasec.com/nvd/cve-2019-17594)
+	There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
+
+---
+
+Package: ncurses-bin
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2019-17595
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2019-17595
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2019-17595">https://avd.aquasec.com/nvd/cve-2019-17595</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2019-17595
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2019-17595](https://avd.aquasec.com/nvd/cve-2019-17595)
+	There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.
+    </details>
+
+
+
+---
+
+Package: ncurses-bin
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2021-39537
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-39537
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-39537">https://avd.aquasec.com/nvd/cve-2021-39537</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-39537
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2021-39537](https://avd.aquasec.com/nvd/cve-2021-39537)
+	An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.
+    </details>
+
+
+
+---
+
+Package: ncurses-bin
+Installed Version: 6.1-1ubuntu1.18.04
+Vulnerability CVE-2022-29458
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-29458
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-29458">https://avd.aquasec.com/nvd/cve-2022-29458</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    ncurses: segfaulting OOB read
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-29458
+	Severity: LOW
+	Package: ncurses-bin
+	Fixed Version: 
+	Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
+	ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
+    </details>
+
+
+
+---
+
+Package: nodejs
+Installed Version: 12.22.12-1nodesource1
+Vulnerability CVE-2018-12123
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-12123](https://avd.aquasec.com/nvd/cve-2018-12123)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-12123
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-12123">https://avd.aquasec.com/nvd/cve-2018-12123</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    nodejs: Hostname spoofing in URL parser for javascript protocol
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Hostname spoofing in URL parser for javascript protocol: If a Node.js application is using url.parse() to determine the URL hostname, that hostname can be spoofed by using a mixed case &amp;#34;javascript:&amp;#34; (e.g. &amp;#34;javAscript:&amp;#34;) protocol (other protocols are not affected). If security decisions are made about the URL based on the hostname, they may be incorrect.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-12123
+	Severity: LOW
+	Package: nodejs
+	Fixed Version: 
+	Link: [CVE-2018-12123](https://avd.aquasec.com/nvd/cve-2018-12123)
+	Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Hostname spoofing in URL parser for javascript protocol: If a Node.js application is using url.parse() to determine the URL hostname, that hostname can be spoofed by using a mixed case &#34;javascript:&#34; (e.g. &#34;javAscript:&#34;) protocol (other protocols are not affected). If security decisions are made about the URL based on the hostname, they may be incorrect.
+    </details>
+
+
+
+---
+
+Package: nodejs
+Installed Version: 12.22.12-1nodesource1
+Vulnerability CVE-2018-7159
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-7159](https://avd.aquasec.com/nvd/cve-2018-7159)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-7159
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-7159">https://avd.aquasec.com/nvd/cve-2018-7159</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    nodejs: HTTP parser allowed for spaces inside Content-Length header values
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The HTTP parser in all current versions of Node.js ignores spaces in the `Content-Length` header, allowing input such as `Content-Length: 1 2` to be interpreted as having a value of `12`. The HTTP specification does not allow for spaces in the `Content-Length` value and the Node.js HTTP parser has been brought into line on this particular difference. The security risk of this flaw to Node.js users is considered to be VERY LOW as it is difficult, and may be impossible, to craft an attack that makes use of this flaw in a way that could not already be achieved by supplying an incorrect value for `Content-Length`. Vulnerabilities may exist in user-code that make incorrect assumptions about the potential accuracy of this value compared to the actual length of the data supplied. Node.js users crafting lower-level HTTP utilities are advised to re-check the length of any input supplied after parsing is complete.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-7159
+	Severity: LOW
+	Package: nodejs
+	Fixed Version: 
+	Link: [CVE-2018-7159](https://avd.aquasec.com/nvd/cve-2018-7159)
+	The HTTP parser in all current versions of Node.js ignores spaces in the `Content-Length` header, allowing input such as `Content-Length: 1 2` to be interpreted as having a value of `12`. The HTTP specification does not allow for spaces in the `Content-Length` value and the Node.js HTTP parser has been brought into line on this particular difference. The security risk of this flaw to Node.js users is considered to be VERY LOW as it is difficult, and may be impossible, to craft an attack that makes use of this flaw in a way that could not already be achieved by supplying an incorrect value for `Content-Length`. Vulnerabilities may exist in user-code that make incorrect assumptions about the potential accuracy of this value compared to the actual length of the data supplied. Node.js users crafting lower-level HTTP utilities are advised to re-check the length of any input supplied after parsing is complete.
+    </details>
+
+
+
+---
+
+Package: openssh-client
+Installed Version: 1:7.6p1-4ubuntu0.7
+Vulnerability CVE-2020-14145
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2020-14145](https://avd.aquasec.com/nvd/cve-2020-14145)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2020-14145
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2020-14145">https://avd.aquasec.com/nvd/cve-2020-14145</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    openssh: Observable discrepancy leading to an information leak in the algorithm negotiation
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client). NOTE: some reports state that 8.5 and 8.6 are also affected.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2020-14145
+	Severity: LOW
+	Package: openssh-client
+	Fixed Version: 
+	Link: [CVE-2020-14145](https://avd.aquasec.com/nvd/cve-2020-14145)
+	The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client). NOTE: some reports state that 8.5 and 8.6 are also affected.
+    </details>
+
+
+
+---
+
+Package: openssh-client
+Installed Version: 1:7.6p1-4ubuntu0.7
+Vulnerability CVE-2021-41617
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-41617](https://avd.aquasec.com/nvd/cve-2021-41617)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-41617
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-41617">https://avd.aquasec.com/nvd/cve-2021-41617</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    openssh: privilege escalation when AuthorizedKeysCommand or AuthorizedPrincipalsCommand are configured
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    sshd in OpenSSH 6.2 through 8.x before 8.8, when certain non-default configurations are used, allows privilege escalation because supplemental groups are not initialized as expected. Helper programs for AuthorizedKeysCommand and AuthorizedPrincipalsCommand may run with privileges associated with group memberships of the sshd process, if the configuration specifies running the command as a different user.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-41617
+	Severity: LOW
+	Package: openssh-client
+	Fixed Version: 
+	Link: [CVE-2021-41617](https://avd.aquasec.com/nvd/cve-2021-41617)
+	sshd in OpenSSH 6.2 through 8.x before 8.8, when certain non-default configurations are used, allows privilege escalation because supplemental groups are not initialized as expected. Helper programs for AuthorizedKeysCommand and AuthorizedPrincipalsCommand may run with privileges associated with group memberships of the sshd process, if the configuration specifies running the command as a different user.
+    </details>
+
+
+
+---
+
+Package: passwd
+Installed Version: 1:4.5-1ubuntu2.3
+Vulnerability CVE-2013-4235
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2013-4235](https://avd.aquasec.com/nvd/cve-2013-4235)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2013-4235
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2013-4235">https://avd.aquasec.com/nvd/cve-2013-4235</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    shadow-utils: TOCTOU race conditions by copying and removing directory trees
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2013-4235
+	Severity: LOW
+	Package: passwd
+	Fixed Version: 
+	Link: [CVE-2013-4235](https://avd.aquasec.com/nvd/cve-2013-4235)
+	shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees
+    </details>
+
+
+
+---
+
+Package: patch
+Installed Version: 2.7.6-2ubuntu1.1
+Vulnerability CVE-2018-6952
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2018-6952](https://avd.aquasec.com/nvd/cve-2018-6952)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2018-6952
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2018-6952">https://avd.aquasec.com/nvd/cve-2018-6952</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    patch: Double free of memory in pch.c:another_hunk() causes a crash
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A double free exists in the another_hunk function in pch.c in GNU patch through 2.7.6.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2018-6952
+	Severity: LOW
+	Package: patch
+	Fixed Version: 
+	Link: [CVE-2018-6952](https://avd.aquasec.com/nvd/cve-2018-6952)
+	A double free exists in the another_hunk function in pch.c in GNU patch through 2.7.6.
+    </details>
+
+
+
+---
+
+Package: patch
+Installed Version: 2.7.6-2ubuntu1.1
+Vulnerability CVE-2021-45261
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-45261](https://avd.aquasec.com/nvd/cve-2021-45261)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-45261
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-45261">https://avd.aquasec.com/nvd/cve-2021-45261</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    patch: Invalid Pointer via another_hunk function
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An Invalid Pointer vulnerability exists in GNU patch 2.7 via the another_hunk function, which causes a Denial of Service.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-45261
+	Severity: LOW
+	Package: patch
+	Fixed Version: 
+	Link: [CVE-2021-45261](https://avd.aquasec.com/nvd/cve-2021-45261)
+	An Invalid Pointer vulnerability exists in GNU patch 2.7 via the another_hunk function, which causes a Denial of Service.
+    </details>
+
+
+
+---
+
+Package: python-pip
+Installed Version: 9.0.1-2.3~ubuntu1.18.04.5
+Vulnerability CVE-2021-3572
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-3572](https://avd.aquasec.com/nvd/cve-2021-3572)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-3572
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-3572">https://avd.aquasec.com/nvd/cve-2021-3572</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    python-pip: Incorrect handling of unicode separators in git references
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.7
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-3572
+	Severity: MEDIUM
+	Package: pip
+	Fixed Version: 21.1
+	Link: [CVE-2021-3572](https://avd.aquasec.com/nvd/cve-2021-3572)
+	A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.
+    </details>
+
+
+
+---
+
+Package: python-pip-whl
+Installed Version: 9.0.1-2.3~ubuntu1.18.04.5
+Vulnerability CVE-2021-3572
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-3572](https://avd.aquasec.com/nvd/cve-2021-3572)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-3572
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-3572">https://avd.aquasec.com/nvd/cve-2021-3572</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    python-pip: Incorrect handling of unicode separators in git references
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.7
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-3572
+	Severity: MEDIUM
+	Package: pip
+	Fixed Version: 21.1
+	Link: [CVE-2021-3572](https://avd.aquasec.com/nvd/cve-2021-3572)
+	A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.
+    </details>
+
+
+
+---
+
+Package: python3.6
+Installed Version: 3.6.9-1~18.04ubuntu1.8
+Vulnerability CVE-2021-28861
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-28861
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-28861">https://avd.aquasec.com/nvd/cve-2021-28861</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    python: open redirection vulnerability in lib/http/server.py may lead to information disclosure
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &amp;#34;Warning: http.server is not recommended for production. It only implements basic security checks.&amp;#34;
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-28861
+	Severity: LOW
+	Package: python3.6-minimal
+	Fixed Version: 
+	Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
+	** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &#34;Warning: http.server is not recommended for production. It only implements basic security checks.&#34;
+    </details>
+
+
+
+---
+
+Package: python3.6-minimal
+Installed Version: 3.6.9-1~18.04ubuntu1.8
+Vulnerability CVE-2021-28861
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-28861
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-28861">https://avd.aquasec.com/nvd/cve-2021-28861</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    python: open redirection vulnerability in lib/http/server.py may lead to information disclosure
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &amp;#34;Warning: http.server is not recommended for production. It only implements basic security checks.&amp;#34;
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-28861
+	Severity: LOW
+	Package: python3.6-minimal
+	Fixed Version: 
+	Link: [CVE-2021-28861](https://avd.aquasec.com/nvd/cve-2021-28861)
+	** DISPUTED ** Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states &#34;Warning: http.server is not recommended for production. It only implements basic security checks.&#34;
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2021-4193
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-4193
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-4193">https://avd.aquasec.com/nvd/cve-2021-4193</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out-of-bound read in getvcol()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    vim is vulnerable to Out-of-bounds Read
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-4193
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
+	vim is vulnerable to Out-of-bounds Read
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-0443
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-0443
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-0443">https://avd.aquasec.com/nvd/cve-2022-0443</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: heap-use-after-free in enter_buffer() of src/buffer.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-0443
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
+	Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-0729
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-0729
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-0729">https://avd.aquasec.com/nvd/cve-2022-0729</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Use of Out-of-range Pointer Offset
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-0729
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
+	Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1733
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1733
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1733">https://avd.aquasec.com/nvd/cve-2022-1733</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Heap-based Buffer Overflow in cindent.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1733
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1735
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1735
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1735">https://avd.aquasec.com/nvd/cve-2022-1735</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: changing text in visual mode may cause invalid memory access that lead to a heap buffer overflow
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1735
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
+	Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1785
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1785
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1785">https://avd.aquasec.com/nvd/cve-2022-1785</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Out-of-bounds Write
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1785
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
+	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1796
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1796
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1796">https://avd.aquasec.com/nvd/cve-2022-1796</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Use After Free
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use After Free in GitHub repository vim/vim prior to 8.2.4979.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1796
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
+	Use After Free in GitHub repository vim/vim prior to 8.2.4979.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1898
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1898
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1898">https://avd.aquasec.com/nvd/cve-2022-1898</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: use-after-free in find_pattern_in_path() in search.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1898
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
+	Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2124
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2124
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2124">https://avd.aquasec.com/nvd/cve-2022-2124</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out of bounds read in current_quote()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Buffer Over-read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2124
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
+	Buffer Over-read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2125
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2125
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2125">https://avd.aquasec.com/nvd/cve-2022-2125</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Heap-based Buffer Overflow in get_lisp_indent()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2125
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2126
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2126
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2126">https://avd.aquasec.com/nvd/cve-2022-2126</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out of bounds read in suggest_trie_walk()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2126
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2129
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2129
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2129">https://avd.aquasec.com/nvd/cve-2022-2129</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out of bounds write in vim_regsub_both()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2129
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
+	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2206
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2206
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2206">https://avd.aquasec.com/nvd/cve-2022-2206</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out-of-bound read in function msg_outtrans_attr
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2206
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2581
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2581
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2581">https://avd.aquasec.com/nvd/cve-2022-2581</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Out-of-bounds Read in vim src/regexp.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2581
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2845
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2845
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2845">https://avd.aquasec.com/nvd/cve-2022-2845</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Buffer Under-read
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2845
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
+	Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2849
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2849
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2849">https://avd.aquasec.com/nvd/cve-2022-2849</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: heap-based buffer overflow in latin_ptr2len() at src/mbyte.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2849
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2021-4193
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-4193
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-4193">https://avd.aquasec.com/nvd/cve-2021-4193</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out-of-bound read in getvcol()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    vim is vulnerable to Out-of-bounds Read
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-4193
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
+	vim is vulnerable to Out-of-bounds Read
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-0443
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-0443
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-0443">https://avd.aquasec.com/nvd/cve-2022-0443</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: heap-use-after-free in enter_buffer() of src/buffer.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-0443
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
+	Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-0729
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-0729
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-0729">https://avd.aquasec.com/nvd/cve-2022-0729</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Use of Out-of-range Pointer Offset
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-0729
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
+	Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1733
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1733
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1733">https://avd.aquasec.com/nvd/cve-2022-1733</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Heap-based Buffer Overflow in cindent.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1733
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1735
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1735
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1735">https://avd.aquasec.com/nvd/cve-2022-1735</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: changing text in visual mode may cause invalid memory access that lead to a heap buffer overflow
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1735
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
+	Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1785
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1785
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1785">https://avd.aquasec.com/nvd/cve-2022-1785</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Out-of-bounds Write
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1785
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
+	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1796
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1796
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1796">https://avd.aquasec.com/nvd/cve-2022-1796</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Use After Free
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use After Free in GitHub repository vim/vim prior to 8.2.4979.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1796
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
+	Use After Free in GitHub repository vim/vim prior to 8.2.4979.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1898
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1898
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1898">https://avd.aquasec.com/nvd/cve-2022-1898</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: use-after-free in find_pattern_in_path() in search.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1898
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
+	Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2124
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2124
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2124">https://avd.aquasec.com/nvd/cve-2022-2124</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out of bounds read in current_quote()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Buffer Over-read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2124
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
+	Buffer Over-read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2125
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2125
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2125">https://avd.aquasec.com/nvd/cve-2022-2125</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Heap-based Buffer Overflow in get_lisp_indent()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2125
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2126
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2126
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2126">https://avd.aquasec.com/nvd/cve-2022-2126</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out of bounds read in suggest_trie_walk()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2126
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2129
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2129
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2129">https://avd.aquasec.com/nvd/cve-2022-2129</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out of bounds write in vim_regsub_both()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2129
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
+	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2206
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2206
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2206">https://avd.aquasec.com/nvd/cve-2022-2206</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out-of-bound read in function msg_outtrans_attr
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2206
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2581
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2581
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2581">https://avd.aquasec.com/nvd/cve-2022-2581</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Out-of-bounds Read in vim src/regexp.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2581
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2845
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2845
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2845">https://avd.aquasec.com/nvd/cve-2022-2845</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Buffer Under-read
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2845
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
+	Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2849
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2849
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2849">https://avd.aquasec.com/nvd/cve-2022-2849</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: heap-based buffer overflow in latin_ptr2len() at src/mbyte.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2849
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2021-4193
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-4193
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-4193">https://avd.aquasec.com/nvd/cve-2021-4193</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out-of-bound read in getvcol()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    vim is vulnerable to Out-of-bounds Read
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-4193
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
+	vim is vulnerable to Out-of-bounds Read
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-0443
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-0443
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-0443">https://avd.aquasec.com/nvd/cve-2022-0443</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: heap-use-after-free in enter_buffer() of src/buffer.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-0443
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
+	Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-0729
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-0729
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-0729">https://avd.aquasec.com/nvd/cve-2022-0729</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Use of Out-of-range Pointer Offset
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-0729
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
+	Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1733
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1733
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1733">https://avd.aquasec.com/nvd/cve-2022-1733</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Heap-based Buffer Overflow in cindent.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1733
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1735
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1735
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1735">https://avd.aquasec.com/nvd/cve-2022-1735</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: changing text in visual mode may cause invalid memory access that lead to a heap buffer overflow
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1735
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
+	Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1785
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1785
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1785">https://avd.aquasec.com/nvd/cve-2022-1785</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Out-of-bounds Write
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1785
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
+	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1796
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1796
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1796">https://avd.aquasec.com/nvd/cve-2022-1796</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Use After Free
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use After Free in GitHub repository vim/vim prior to 8.2.4979.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1796
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
+	Use After Free in GitHub repository vim/vim prior to 8.2.4979.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1898
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1898
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1898">https://avd.aquasec.com/nvd/cve-2022-1898</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: use-after-free in find_pattern_in_path() in search.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1898
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
+	Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2124
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2124
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2124">https://avd.aquasec.com/nvd/cve-2022-2124</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out of bounds read in current_quote()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Buffer Over-read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2124
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
+	Buffer Over-read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2125
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2125
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2125">https://avd.aquasec.com/nvd/cve-2022-2125</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Heap-based Buffer Overflow in get_lisp_indent()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2125
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2126
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2126
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2126">https://avd.aquasec.com/nvd/cve-2022-2126</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out of bounds read in suggest_trie_walk()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2126
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2129
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2129
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2129">https://avd.aquasec.com/nvd/cve-2022-2129</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out of bounds write in vim_regsub_both()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2129
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
+	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2206
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2206
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2206">https://avd.aquasec.com/nvd/cve-2022-2206</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out-of-bound read in function msg_outtrans_attr
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2206
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2581
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2581
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2581">https://avd.aquasec.com/nvd/cve-2022-2581</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Out-of-bounds Read in vim src/regexp.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2581
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2845
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2845
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2845">https://avd.aquasec.com/nvd/cve-2022-2845</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Buffer Under-read
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2845
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
+	Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2849
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2849
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2849">https://avd.aquasec.com/nvd/cve-2022-2849</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: heap-based buffer overflow in latin_ptr2len() at src/mbyte.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2849
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2021-4193
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-4193
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-4193">https://avd.aquasec.com/nvd/cve-2021-4193</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out-of-bound read in getvcol()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    vim is vulnerable to Out-of-bounds Read
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-4193
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2021-4193](https://avd.aquasec.com/nvd/cve-2021-4193)
+	vim is vulnerable to Out-of-bounds Read
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-0443
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-0443
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-0443">https://avd.aquasec.com/nvd/cve-2022-0443</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: heap-use-after-free in enter_buffer() of src/buffer.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-0443
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-0443](https://avd.aquasec.com/nvd/cve-2022-0443)
+	Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-0729
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-0729
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-0729">https://avd.aquasec.com/nvd/cve-2022-0729</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Use of Out-of-range Pointer Offset
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-0729
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-0729](https://avd.aquasec.com/nvd/cve-2022-0729)
+	Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 8.2.4440.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1733
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1733
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1733">https://avd.aquasec.com/nvd/cve-2022-1733</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Heap-based Buffer Overflow in cindent.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1733
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1733](https://avd.aquasec.com/nvd/cve-2022-1733)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4968.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1735
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1735
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1735">https://avd.aquasec.com/nvd/cve-2022-1735</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: changing text in visual mode may cause invalid memory access that lead to a heap buffer overflow
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1735
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1735](https://avd.aquasec.com/nvd/cve-2022-1735)
+	Classic Buffer Overflow in GitHub repository vim/vim prior to 8.2.4969.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1785
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1785
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1785">https://avd.aquasec.com/nvd/cve-2022-1785</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Out-of-bounds Write
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1785
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1785](https://avd.aquasec.com/nvd/cve-2022-1785)
+	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.4977.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1796
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1796
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1796">https://avd.aquasec.com/nvd/cve-2022-1796</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Use After Free
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use After Free in GitHub repository vim/vim prior to 8.2.4979.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1796
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1796](https://avd.aquasec.com/nvd/cve-2022-1796)
+	Use After Free in GitHub repository vim/vim prior to 8.2.4979.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-1898
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1898
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1898">https://avd.aquasec.com/nvd/cve-2022-1898</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: use-after-free in find_pattern_in_path() in search.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1898
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-1898](https://avd.aquasec.com/nvd/cve-2022-1898)
+	Use After Free in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2124
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2124
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2124">https://avd.aquasec.com/nvd/cve-2022-2124</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out of bounds read in current_quote()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Buffer Over-read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2124
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2124](https://avd.aquasec.com/nvd/cve-2022-2124)
+	Buffer Over-read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2125
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2125
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2125">https://avd.aquasec.com/nvd/cve-2022-2125</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Heap-based Buffer Overflow in get_lisp_indent()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2125
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2125](https://avd.aquasec.com/nvd/cve-2022-2125)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2126
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2126
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2126">https://avd.aquasec.com/nvd/cve-2022-2126</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out of bounds read in suggest_trie_walk()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2126
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2126](https://avd.aquasec.com/nvd/cve-2022-2126)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2129
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2129
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2129">https://avd.aquasec.com/nvd/cve-2022-2129</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out of bounds write in vim_regsub_both()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2129
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2129](https://avd.aquasec.com/nvd/cve-2022-2129)
+	Out-of-bounds Write in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2206
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2206
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2206">https://avd.aquasec.com/nvd/cve-2022-2206</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: out-of-bound read in function msg_outtrans_attr
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2206
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2206](https://avd.aquasec.com/nvd/cve-2022-2206)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2581
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2581
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2581">https://avd.aquasec.com/nvd/cve-2022-2581</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Out-of-bounds Read in vim src/regexp.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2581
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2581](https://avd.aquasec.com/nvd/cve-2022-2581)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.0104.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2845
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2845
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2845">https://avd.aquasec.com/nvd/cve-2022-2845</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: Buffer Under-read
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2845
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2845](https://avd.aquasec.com/nvd/cve-2022-2845)
+	Buffer Over-read in GitHub repository vim/vim prior to 9.0.0218.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-2849
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2849
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2849">https://avd.aquasec.com/nvd/cve-2022-2849</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    vim: heap-based buffer overflow in latin_ptr2len() at src/mbyte.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2849
+	Severity: LOW
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-2849](https://avd.aquasec.com/nvd/cve-2022-2849)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0220.
+    </details>
+
+
+
+---
+
+Package: Pillow
+Installed Version: 6.2.2
+Vulnerability GHSA-4fx9-vc88-q2xc
+Severity: LOW
+Fixed Version: 9.0.0
+Link: [GHSA-4fx9-vc88-q2xc](https://github.com/advisories/GHSA-4fx9-vc88-q2xc)
+
+### Locations
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/Pillow-6.2.2.dist-info/METADATA
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    GHSA-4fx9-vc88-q2xc
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://github.com/advisories/GHSA-4fx9-vc88-q2xc">https://github.com/advisories/GHSA-4fx9-vc88-q2xc</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Infinite loop in Pillow
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    JpegImagePlugin may append an EOF marker to the end of a truncated file, so that the last segment of the data will still be processed by the decoder.
+	
+	If the EOF marker is not detected as such however, this could lead to an infinite loop where JpegImagePlugin keeps trying to end the file.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability GHSA-4fx9-vc88-q2xc
+	Severity: LOW
+	Package: Pillow
+	Fixed Version: 9.0.0
+	Link: [GHSA-4fx9-vc88-q2xc](https://github.com/advisories/GHSA-4fx9-vc88-q2xc)
+	JpegImagePlugin may append an EOF marker to the end of a truncated file, so that the last segment of the data will still be processed by the decoder.
+	
+	If the EOF marker is not detected as such however, this could lead to an infinite loop where JpegImagePlugin keeps trying to end the file.
+    </details>
+
+
+
+---
+
+Package: Pillow
+Installed Version: 6.2.2
+Vulnerability PYSEC-2020-77
+Severity: UNKNOWN
+Fixed Version: 7.1.0
+Link: [PYSEC-2020-77]()
+
+### Locations
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/Pillow-6.2.2.dist-info/METADATA
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    PYSEC-2020-77
+  </details>
+
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In libImaging/PcxDecode.c in Pillow before 7.1.0, an out-of-bounds read can occur when reading PCX files where state-&amp;gt;shuffle is instructed to read beyond state-&amp;gt;buffer.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    0.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability PYSEC-2020-77
+	Severity: UNKNOWN
+	Package: Pillow
+	Fixed Version: 7.1.0
+	Link: [PYSEC-2020-77]()
+	In libImaging/PcxDecode.c in Pillow before 7.1.0, an out-of-bounds read can occur when reading PCX files where state-&gt;shuffle is instructed to read beyond state-&gt;buffer.
+    </details>
+
+
+
+---
+
+Package: Pillow
+Installed Version: 6.2.2
+Vulnerability PYSEC-2020-78
+Severity: UNKNOWN
+Fixed Version: 7.1.0
+Link: [PYSEC-2020-78]()
+
+### Locations
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/Pillow-6.2.2.dist-info/METADATA
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    PYSEC-2020-78
+  </details>
+
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In Pillow before 7.1.0, there are two Buffer Overflows in libImaging/TiffDecode.c.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    0.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability PYSEC-2020-78
+	Severity: UNKNOWN
+	Package: Pillow
+	Fixed Version: 7.1.0
+	Link: [PYSEC-2020-78]()
+	In Pillow before 7.1.0, there are two Buffer Overflows in libImaging/TiffDecode.c.
     </details>
 
 

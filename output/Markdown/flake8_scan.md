@@ -18,6 +18,8 @@ This report was automaticly generated based on the vulnerabilities specification
 
 ## Vulnerabilities
 
+---
+
 line too long (110 &gt; 79 characters)
 
 ### Locations

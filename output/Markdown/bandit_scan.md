@@ -16,6 +16,8 @@ This report was automaticly generated based on the vulnerabilities specification
 
 ## Vulnerabilities
 
+---
+
 Use of weak MD4, MD5, or SHA1 hash for security. Consider usedforsecurity=False
 
 ### Locations
@@ -144,6 +146,98 @@ digest_shuffle_key = hashlib.md5(shuffle_key.encode()).hexdigest()
     <summary>Help Uri</summary>
     <br>
     <a href="https://bandit.readthedocs.io/en/1.7.4/plugins/b324_hashlib.html">https://bandit.readthedocs.io/en/1.7.4/plugins/b324_hashlib.html</a>
+    </details>
+
+
+
+
+
+
+
+---
+
+Possible SQL injection vector through string-based query construction.
+
+### Locations
+#### **Physical Location**
+- Security-Pipeline-Testing/app/app.py
+
+
+- Line 262
+
+```
+str_query = "SELECT first_name, last_name, username FROM customer WHERE username = '%s';" % search_term
+```
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    B608
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://bandit.readthedocs.io/en/1.7.4/plugins/b608_hardcoded_sql_expressions.html">https://bandit.readthedocs.io/en/1.7.4/plugins/b608_hardcoded_sql_expressions.html</a>
+    </details>
+
+
+
+
+
+
+
+---
+
+Use of unsafe yaml load. Allows instantiation of arbitrary objects. Consider yaml.safe_load().
+
+### Locations
+#### **Physical Location**
+- Security-Pipeline-Testing/app/app.py
+
+
+- Line 330
+
+```
+ydata = yaml.load(y)
+```
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    B506
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://bandit.readthedocs.io/en/1.7.4/plugins/b506_yaml_load.html">https://bandit.readthedocs.io/en/1.7.4/plugins/b506_yaml_load.html</a>
     </details>
 
 
@@ -466,98 +560,6 @@ rand = random.randint(1,100)
     <summary>Help Uri</summary>
     <br>
     <a href="https://bandit.readthedocs.io/en/1.7.4/blacklists/blacklist_calls.html#b311-random">https://bandit.readthedocs.io/en/1.7.4/blacklists/blacklist_calls.html#b311-random</a>
-    </details>
-
-
-
-
-
-
-
----
-
-Possible SQL injection vector through string-based query construction.
-
-### Locations
-#### **Physical Location**
-- Security-Pipeline-Testing/app/app.py
-
-
-- Line 262
-
-```
-str_query = "SELECT first_name, last_name, username FROM customer WHERE username = '%s';" % search_term
-```
-
-
-
-
-
-
-### Level
-
-- Warning
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    B608
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://bandit.readthedocs.io/en/1.7.4/plugins/b608_hardcoded_sql_expressions.html">https://bandit.readthedocs.io/en/1.7.4/plugins/b608_hardcoded_sql_expressions.html</a>
-    </details>
-
-
-
-
-
-
-
----
-
-Use of unsafe yaml load. Allows instantiation of arbitrary objects. Consider yaml.safe_load().
-
-### Locations
-#### **Physical Location**
-- Security-Pipeline-Testing/app/app.py
-
-
-- Line 330
-
-```
-ydata = yaml.load(y)
-```
-
-
-
-
-
-
-### Level
-
-- Warning
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    B506
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://bandit.readthedocs.io/en/1.7.4/plugins/b506_yaml_load.html">https://bandit.readthedocs.io/en/1.7.4/plugins/b506_yaml_load.html</a>
     </details>
 
 

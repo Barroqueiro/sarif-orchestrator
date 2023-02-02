@@ -17,6 +17,8 @@ This report was automaticly generated based on the vulnerabilities specification
 
 ## Vulnerabilities
 
+---
+
 generic-api-key has detected secret for file .secrets.baseline at commit abe6b18e9da3ea3f0783368a2e640a070fdfb676.
 
 ### Locations

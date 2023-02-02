@@ -6,6 +6,7 @@ import toml
 import json
 import shlex
 import queue
+import hashlib
 import logging
 import argparse
 import threading
@@ -39,7 +40,7 @@ class states(str, Enum):
 
 # Constants
 REPORT_DIR = "Reporting"                                    # Directory that will store the reports generated
-LOGS_DIR = "Logs"                                           # Directory that wills store the logs created (By this orchestrator and each tool)
+LOGS_DIR = "Logs"                                           # Directory that will store the logs created (By this orchestrator and each tool)
 OUTPUT_DIR_DOCKER = "/output"                               # Default directory that is used to share output information (From docker's prespective)
 INPUT_DIR_DOCKER = "/input"                                 # Default directory that is used to share input information (From docker's prespective)
 CONFIG_DIR_DOCKER = "/config"                               # Default directory that is used to share configuration information (From docker's prespective)
@@ -79,11 +80,74 @@ def release():
     """
     globals()["semaphore"].put(1)
 
+# Vulnerability ignoring functions
+
+def hash_vuln(vuln):
+    """
+    Produce a SHA-256 hash of a result object
+    """
+    return hashlib.sha256(str(vuln).encode("utf-8")).hexdigest()
+
+def update_single_sarif(filename):
+    """
+    Update a SARIF file with the hashes for each vulnerability found, if an hash or id is found within the ignoring files they are discarded from the final results
+    """
+
+    # Get items to ignore
+    hashes = open(CONFIG_DIR_DOCKER + "/" + ".ignore_hash").read().split("\n")
+    ids = open(CONFIG_DIR_DOCKER + "/" + ".ignore_id").read().split("\n")
+
+    # Load information
+    with open(filename,"r") as f:
+        data = json.loads(f.read())
+    runs = data["runs"]
+
+    # Remove or update the vulnerability entries
+    for r in runs:
+        iterator = [x for x in r["results"]]
+        results = r["results"]
+        for res in iterator:
+
+            # Remove ids
+            if res["ruleId"] in ids:
+                results.remove(res)
+                continue
+
+            # Get hash if it exists else hash the vulnerability
+            if "properties" in res and "hash" in res["properties"]:
+                hash = res["properties"]["hash"]
+            else:
+                hash = hash_vuln(res)
+                if "properties" in res:
+                    res["properties"]["hash"] = hash
+                else:
+                    res["properties"] = {"hash": hash}
+
+            # Remove hashes
+            if hash in hashes:
+                results.remove(res)
+
+    # Store the information back
+    data["runs"] = runs
+
+    with open(filename, "w", encoding='utf-8') as f:
+        json.dump(data, f, indent=4)
+
+def update_sarif_reports(input_dir):
+    """
+    Walk through a directory and find all sarif files, update each with hashing information
+    """
+    for subdir, dirs, files in os.walk(input_dir):
+        for file in files:
+            ext = os.path.splitext(file)[-1].lower()
+            if ext in [".sarif", ".json.sarif"]:
+                update_single_sarif(os.path.join(subdir, file))
+
 # Reporting functions
 
 def populate_level(results, rules):
     """
-    populate the level atribute of sarif results if not included
+    Populate the level atribute of sarif results if not included
     """
     for r in results:
         if "level" not in r:
@@ -96,6 +160,9 @@ def populate_level(results, rules):
                 r["level"] = "warning"
 
 def produce_sarif_reports(input_dir, output_dir):
+    """
+    Walk through a directory and find all sarif files, produce a report for each
+    """
     for subdir, dirs, files in os.walk(input_dir):
         for file in files:
             ext = os.path.splitext(file)[-1].lower()
@@ -103,6 +170,9 @@ def produce_sarif_reports(input_dir, output_dir):
                 produce_single_sarif(os.path.join(subdir, file),output_dir)
 
 def produce_single_sarif(file, output_dir):
+    """
+    Given a sarif file, recover information and craft a markdown file that represents the findings
+    """
     basename = os.path.basename(file)
 
     with open(file,"r") as f:
@@ -124,7 +194,7 @@ def produce_single_sarif(file, output_dir):
     results = data["runs"][0]["results"]
     populate_level(results, rules_info)
 
-    results_info = [r for r in sorted(results, key=lambda x: x["level"])]
+    results_info = [r for r in sorted(results, key=lambda x: "f" if x["level"] == "warning" else x["level"])]
 
     # Load template and produce final report
     env = Environment(loader=FileSystemLoader("templates"), autoescape=True, extensions=['jinja2.ext.do'])
@@ -133,6 +203,7 @@ def produce_single_sarif(file, output_dir):
     with open(output_dir + "/" + basename.replace(".sarif",".md"),"w") as f:
         f.write(output_from_parsed_template)
 
+## error warning note
 
 # Setup and Cleaning functions
 
@@ -395,6 +466,8 @@ def main():
         to_clean = run_tasks(runs, command_args["input_dir_host"], command_args["output_dir_host"], command_args["config_dir_host"])
 
         finish(to_clean, command_args["keep_images"])
+
+        update_sarif_reports(OUTPUT_DIR_DOCKER + "/" +REPORT_DIR)
     
     if command == "report":
 
