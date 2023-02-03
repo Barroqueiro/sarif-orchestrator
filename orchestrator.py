@@ -45,6 +45,8 @@ OUTPUT_DIR_DOCKER = "/output"                               # Default directory 
 INPUT_DIR_DOCKER = "/input"                                 # Default directory that is used to share input information (From docker's prespective)
 CONFIG_DIR_DOCKER = "/config"                               # Default directory that is used to share configuration information (From docker's prespective)
 LOG_FILE = f'{OUTPUT_DIR_DOCKER}/{LOGS_DIR}/app.log'        # Log file
+HASH_IGNORE_FILE = ".hashignore"
+ID_IGNORE_FILE = ".idignore"
 
 # Logger object
 logger = None
@@ -94,8 +96,11 @@ def update_single_sarif(filename):
     """
 
     # Get items to ignore
-    hashes = open(CONFIG_DIR_DOCKER + "/" + ".ignore_hash").read().split("\n")
-    ids = open(CONFIG_DIR_DOCKER + "/" + ".ignore_id").read().split("\n")
+    hashes = open(CONFIG_DIR_DOCKER + "/" + HASH_IGNORE_FILE).read().split("\n")
+    hashes = [h for h in hashes if h != "" and h[0] != "#" ]
+    ids = open(CONFIG_DIR_DOCKER + "/" + ID_IGNORE_FILE).read().split("\n")
+    ids = [i for i in ids if i != "" and i[0] != "#" ]
+    print(ids)
 
     # Load information
     with open(filename,"r") as f:
@@ -319,7 +324,7 @@ def create_tool(tool, input_dir_host, output_dir_host, config_dir_host , to_clea
     :param arguments: Dictionary with tool specific arguments
     """
 
-    docker_cmd = "docker create --name {name} {platform} -v {output_volume}:{output_volume_docker}:rw \
+    docker_cmd = "docker create --network host --name {name} {platform} -v {output_volume}:{output_volume_docker}:rw \
                     -v {input_volume}:{input_volume_docker}:ro \
                     -v {config_volume}:{config_volume_docker}:ro  \
                     -v /var/run/docker.sock:/var/run/docker.sock \
