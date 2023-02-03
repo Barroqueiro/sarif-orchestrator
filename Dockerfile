@@ -1,21 +1,12 @@
-FROM --platform=amd64 ubuntu:22.04
+FROM alpine:3.14
 
 WORKDIR /app
 
-# Setup user
-RUN groupadd -r orchestrator && useradd -r -g orchestrator orchestrator
-RUN groupadd docker
-RUN usermod -aG docker orchestrator
-
 # Install Python
-RUN apt update
-RUN apt install software-properties-common python3-pip curl -y
+RUN apk add --no-cache python3 py3-pip
 
 # Install Docker
-RUN apt install apt-transport-https ca-certificates -y 
-RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
-RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
-RUN apt install docker-ce-cli:amd64 -y
+RUN apk add --update docker openrc
 
 # Setup Orchestrator
 ADD tools /app/tools
