@@ -65,32 +65,24 @@ The file uses [toml](https://toml.io/en/) and its composed of a list of runs whe
 ```
 [[runs]]
 
-tool = "horusec"
-option = "scan"
-args = ["<repo-name_placeholder>"]
-
-[[runs]]
-
-depends_on= ["horusec"]
-tool = "gitleaks"
-option = "detect"
-args = ["<repo-name_placeholder>"]
-
-[[runs]]
-
-depends_on= ["gitleaks"]
 tool = "dockle"
 option = "scan"
 args = ["<image-name-placeholder>"]
 custom_args = "--timeout 600s"
-
-[[runs]]
-
 depends_on= ["gitleaks"]
-tool = "trivy"
-option = "image"
-args = ["<image-name-placeholder>"]
+platform = "linux/amd64"
 ```
 
+## Ignoring vulnerabilities
 
+Vulnerabilities reported can be false positives or simply accepted as a risk, this can be achieved in different ways, one of which works outside this orchestrator as most tools provide a way to do this either by a configuration file or by command line, a unifying solution was created to keep the track of ignored vulnerabilities in a more sustainable way.
 
+### Hash
+
+When finishing up the reporting process the orchestrator will iterate over all vulnerabilities found and produce a hash which will be appended to the SARIF file inside each of the vulnerabilities present. This hash can later be used inside a file called `.hashignore` to make sure that this result does not show up inside the SARIF reports.
+
+## Id
+
+All results take into considerationa `ruleId` and as such these Ids can be used to ignore vulnerabilities as well, every Id included inside the `.idignore` file will be discarded from the results.
+
+Note: Both file follow the `.gitignore` comment syntax for simplification, this means that they can be commented using the `#` symbol and all lines with that symbol as the first characters will be ignored, **this does not allow for inline commenting**.
