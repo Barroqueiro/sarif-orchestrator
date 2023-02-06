@@ -19,65 +19,11 @@ This report was automaticly generated based on the vulnerabilities specification
 
 ---
 
-Suspicious filename found : usr/local/lib/python2.7/dist-packages/rest_framework_nested/runtests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/newsletter/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/constance/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/django_countries/tests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/django_premailer/tests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/pymongo/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/cssutils/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/django_js_reverse/tests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/userena/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/rest_framework/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/userena/runtests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/easy_thumbnails/tests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/django_extensions/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/guardian/conf/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/grappelli/settings.py (You can suppress it with &#34;-af settings.py&#34;)
+Suspicious filename found : usr/local/lib/python2.7/dist-packages/easy_thumbnails/tests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/userena/runtests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/userena/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/rest_framework_nested/runtests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/django_js_reverse/tests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/constance/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/cssutils/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/grappelli/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/django_premailer/tests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/django_countries/tests/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/pymongo/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/newsletter/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/rest_framework/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/django_extensions/settings.py (You can suppress it with &#34;-af settings.py&#34;), Suspicious filename found : usr/local/lib/python2.7/dist-packages/guardian/conf/settings.py (You can suppress it with &#34;-af settings.py&#34;)
 
 ### Locations
 #### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/rest_framework_nested/runtests/settings.py
-
-
-
-
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/newsletter/settings.py
-
-
-
-
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/constance/settings.py
-
-
-
-
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/django_countries/tests/settings.py
-
-
-
-
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/django_premailer/tests/settings.py
-
-
-
-
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/pymongo/settings.py
-
-
-
-
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/cssutils/settings.py
-
-
-
-
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/django_js_reverse/tests/settings.py
-
-
-
-
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/userena/settings.py
-
-
-
-
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/rest_framework/settings.py
+- usr/local/lib/python2.7/dist-packages/easy_thumbnails/tests/settings.py
 
 
 
@@ -89,7 +35,67 @@ Suspicious filename found : usr/local/lib/python2.7/dist-packages/rest_framework
 
 
 #### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/easy_thumbnails/tests/settings.py
+- usr/local/lib/python2.7/dist-packages/userena/settings.py
+
+
+
+
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/rest_framework_nested/runtests/settings.py
+
+
+
+
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/django_js_reverse/tests/settings.py
+
+
+
+
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/constance/settings.py
+
+
+
+
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/cssutils/settings.py
+
+
+
+
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/grappelli/settings.py
+
+
+
+
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/django_premailer/tests/settings.py
+
+
+
+
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/django_countries/tests/settings.py
+
+
+
+
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/pymongo/settings.py
+
+
+
+
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/newsletter/settings.py
+
+
+
+
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/rest_framework/settings.py
 
 
 
@@ -102,12 +108,6 @@ Suspicious filename found : usr/local/lib/python2.7/dist-packages/rest_framework
 
 #### **Physical Location**
 - usr/local/lib/python2.7/dist-packages/guardian/conf/settings.py
-
-
-
-
-#### **Physical Location**
-- usr/local/lib/python2.7/dist-packages/grappelli/settings.py
 
 
 
@@ -149,7 +149,7 @@ Suspicious filename found : usr/local/lib/python2.7/dist-packages/rest_framework
 
 ---
 
-Use &#39;rm -rf /var/lib/apt/lists&#39; after &#39;apt-get install|update&#39; : RUN /bin/sh -c apt update  &amp;&amp; apt -y -q install build-essential libssl-dev libffi-dev python3-dev cargo                           libjpeg-dev libpq-dev postgresql-client curl git python-pip                           vim libcurl4-openssl-dev uwsgi uwsgi-plugin-python                           python-dev libxml2-dev libxslt1-dev libyaml-dev # buildkit, Use &#39;rm -rf /var/lib/apt/lists&#39; after &#39;apt-get install|update&#39; : RUN /bin/sh -c curl -sL https://deb.nodesource.com/setup_12.x | bash -     &amp;&amp; apt-get install -y nodejs # buildkit
+Use &#39;rm -rf /var/lib/apt/lists&#39; after &#39;apt-get install|update&#39; : RUN /bin/sh -c curl -sL https://deb.nodesource.com/setup_12.x | bash -     &amp;&amp; apt-get install -y nodejs # buildkit, Use &#39;rm -rf /var/lib/apt/lists&#39; after &#39;apt-get install|update&#39; : RUN /bin/sh -c apt update  &amp;&amp; apt -y -q install build-essential libssl-dev libffi-dev python3-dev cargo                           libjpeg-dev libpq-dev postgresql-client curl git python-pip                           vim libcurl4-openssl-dev uwsgi uwsgi-plugin-python                           python-dev libxml2-dev libxslt1-dev libyaml-dev # buildkit
 
 ### Locations
 #### **Physical Location**

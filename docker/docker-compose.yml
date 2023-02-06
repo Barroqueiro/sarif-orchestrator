@@ -1,0 +1,36 @@
+version: "3.9"
+services:
+  orchestrator:
+    build: 
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    image: sarif-orchestrator
+    network_mode: "host"
+    volumes:
+      - ${INPUT_HOST_DIR}:/input:ro
+      - ${OUTPUT_HOST_DIR}:/output:rw
+      - ${CONFIG_HOST_DIR}:/config:ro
+      - /var/run/docker.sock:/var/run/docker.sock:rw 
+    command:
+      - "orchestrator"
+      - "--input-dir-host"
+      - "${INPUT_HOST_DIR}"
+      - "--output-dir-host"
+      - "${OUTPUT_HOST_DIR}"
+      - "--config-dir-host"
+      - "${CONFIG_HOST_DIR}"
+      - "--config"
+      - "/config/${CONFIG_FILE}"
+      - "--keep-images"
+  report:
+    image: sarif-orchestrator
+    volumes:
+      - ${INPUT_DIR}:/input:ro
+      - ${OUTPUT_DIR}:/output:rw
+    command:
+      - "report"
+      - "--input-dir"
+      - "/input"
+      - "--output-dir"
+      - "/output"
+

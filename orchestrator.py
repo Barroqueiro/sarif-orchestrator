@@ -12,6 +12,7 @@ import argparse
 import threading
 import subprocess
 from enum import Enum
+from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 
 # Example of runs object for consideration
@@ -60,13 +61,14 @@ def log_subprocess(cmd,exit_code):
     """
     Logging subprocesses and their exit codes in a standard way
     """
-    logger.info(f"[{exit_code:3d}] {cmd}")
+    time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    logger.info(f"[{time}] [{exit_code:3d}] {cmd}")
 
 def print_config(config):
     """
     Printing the global configuration in a user friendly way using json indent
     """
-    print(json.dumps(config,indent=4))
+    print(json.dumps(config, indent=4))
 
 # Semaphore access
 
@@ -100,7 +102,6 @@ def update_single_sarif(filename):
     hashes = [h for h in hashes if h != "" and h[0] != "#" ]
     ids = open(CONFIG_DIR_DOCKER + "/" + ID_IGNORE_FILE).read().split("\n")
     ids = [i for i in ids if i != "" and i[0] != "#" ]
-    print(ids)
 
     # Load information
     with open(filename,"r") as f:
