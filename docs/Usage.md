@@ -86,3 +86,127 @@ When finishing up the reporting process the orchestrator will iterate over all v
 All results take into considerationa `ruleId` and as such these Ids can be used to ignore vulnerabilities as well, every Id included inside the `.idignore` file will be discarded from the results.
 
 Note: Both file follow the `.gitignore` comment syntax for simplification, this means that they can be commented using the `#` symbol and all lines with that symbol as the first characters will be ignored, **this does not allow for inline commenting**.
+
+## Tools available
+
+### Bandit
+
+Bandit looks for common security issus in python code.
+
+Arguments:
+
+    - Path of the code to be analysed
+
+### Dependency Check
+
+Detects publicly disclosed vulnerabilities in the dependencies of a project.
+
+Arguments:
+
+    - Path to scan
+
+Note: Dependency Check is only built on docker using the linux/amd64 architecture, this means that when running this image on other host OS it can have unexpected bahviour even when casting the platform to linux/amd64.
+
+### Dockle
+
+Scans Docker images for bad practices
+
+Arguments:
+
+    - Image to be scanned
+
+### EsLint
+
+Scans JavaScript files for problems
+
+Arguments:
+
+    - File(s) to be scanned (Glob patterns can be passed as arguments (p.e 'lib/**'))
+
+Note: EsLint will not work without a configuration file by default, one is present within the `config` folder and can be altered for necessities
+
+### Flake8
+
+Checks style conventions and code complexity in python files
+
+Arguments:
+
+    - Path to be scanned
+
+### GitLeaks
+
+Detects hardcoded secrets in git repositories
+
+Arguments:
+
+    - Path to be scanned
+
+### Grype
+
+Vulnerability scanner for containers and filesystems
+
+Arguments:
+
+    - Image to be scanned
+
+### Hadolint
+
+Scans docker images for bad practices and performs shell linting
+
+Arguments:
+
+    - Docker file to be analysed
+
+### Horusec
+
+Collection of tools for SAST and SCA analysis for different languages
+
+Arguments:
+
+    - Path to be scanned
+
+### Semgrep
+
+Code scanning for different linguages
+
+Arguments:
+
+    - Path to be scanned
+
+### Trivy
+
+Multi-purpose scanner (Images, filesystems, git repositories)
+
+Arguments:
+
+    - Image to be scanned (or path to be scanned depending on the option selected)
+
+### Zap
+
+Dynamic scanner for web applications
+
+Arguments:
+
+    - Target to be scanned
+
+Zap offers a great deal of costumization and complexity when testing, this tool only functions with a configuration file already present within the `config` folder. The one present is configured for a normal active scan but can be adapted for the user needs without altering the reporting section as the SARIF reporting depends on that section
+
+## Example
+
+The following configuration file provides the steps for a 2 tool scan (Dockle and Hadolint), here hadolint is configured with the scan option and takes as arguments the Dockerfile to be analysed, dockle is configured much of the same way but this time taking as argument the image it is going to scan, a custom argument to ensure the tool times out after 600 seconds and this execution depends on hadolint, meaning once hadolint is finished dockle is lauched.
+
+```
+[[runs]]
+
+tool = "hadolint"
+option = "scan"
+args = ["Security-Pipeline-Testing/Dockerfile"]
+
+[[runs]]
+
+tool = "dockle"
+option = "scan"
+args = ["bioinformaticsua/catalogue:Test"]
+custom_args = "--timeout 600s"
+depends_on= ["hadolint"]
+```
