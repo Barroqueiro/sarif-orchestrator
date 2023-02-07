@@ -1,4 +1,3 @@
-build = ""
 tag = "v2.12.0-debian"
 image = "hadolint/hadolint"
 output_volume_docker = ""

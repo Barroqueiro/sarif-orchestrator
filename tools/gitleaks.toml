@@ -1,4 +1,3 @@
-build = ""
 tag = "v8.15.0"
 image = "zricethezav/gitleaks"
 output_volume_docker = ""

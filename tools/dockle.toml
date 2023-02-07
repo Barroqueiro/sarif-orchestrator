@@ -1,4 +1,3 @@
-build = ""
 tag = "v0.4.9"
 image = "goodwithtech/dockle"
 output_volume_docker = ""

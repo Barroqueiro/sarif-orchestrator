@@ -1,4 +1,3 @@
-build = ""
 tag = "2.12.0"
 image = "owasp/zap2docker-stable"
 output_volume_docker = "/zap/wrk"

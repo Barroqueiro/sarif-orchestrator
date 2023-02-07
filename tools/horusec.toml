@@ -1,4 +1,3 @@
-build = ""
 tag = "v2.8.0"
 image = "horuszup/horusec-cli"
 output_volume_docker = ""

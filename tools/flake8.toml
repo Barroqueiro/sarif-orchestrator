@@ -1,4 +1,3 @@
-build = ""
 tag = "latest"
 image = "flake8-sarif"
 output_volume_docker = ""

@@ -1,4 +1,3 @@
-build = ""
 tag = "0.34.0"
 image = "aquasec/trivy"
 output_volume_docker = ""

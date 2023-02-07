@@ -1,4 +1,3 @@
-build = ""
 tag = "7.4.1"
 image = "owasp/dependency-check"
 output_volume_docker = "/report"
