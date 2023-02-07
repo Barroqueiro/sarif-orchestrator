@@ -197,9 +197,96 @@ Link: [CVE-2022-42703](https://avd.aquasec.com/nvd/cve-2022-42703)
 
 Package: linux-libc-dev
 Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-42896
+Severity: HIGH
+Fixed Version: 4.15.0-202.213
+Link: [CVE-2022-42896](https://avd.aquasec.com/nvd/cve-2022-42896)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Error
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-42896
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-42896">https://avd.aquasec.com/nvd/cve-2022-42896</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: use-after-free in l2cap_connect and l2cap_le_connect_req in net/bluetooth/l2cap_core.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    There are use-after-free vulnerabilities in the Linux kernel&amp;#39;s net/bluetooth/l2cap_core.c&amp;#39;s l2cap_connect and l2cap_le_connect_req functions which may allow code execution and leaking kernel memory (respectively) remotely via Bluetooth. A remote attacker could execute code leaking kernel memory via Bluetooth if within proximity of the victim. We recommend upgrading past commit https://www.google.com/url https://github.com/torvalds/linux/commit/711f8c3fb3db61897080468586b970c87c61d9e4 https://www.google.com/url
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    8.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-42896
+	Severity: HIGH
+	Package: linux-libc-dev
+	Fixed Version: 4.15.0-202.213
+	Link: [CVE-2022-42896](https://avd.aquasec.com/nvd/cve-2022-42896)
+	There are use-after-free vulnerabilities in the Linux kernel&#39;s net/bluetooth/l2cap_core.c&#39;s l2cap_connect and l2cap_le_connect_req functions which may allow code execution and leaking kernel memory (respectively) remotely via Bluetooth. A remote attacker could execute code leaking kernel memory via Bluetooth if within proximity of the victim. We recommend upgrading past commit https://www.google.com/url https://github.com/torvalds/linux/commit/711f8c3fb3db61897080468586b970c87c61d9e4 https://www.google.com/url
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
 Vulnerability CVE-2022-43945
 Severity: HIGH
-Fixed Version: 
+Fixed Version: 4.15.0-202.213
 Link: [CVE-2022-43945](https://avd.aquasec.com/nvd/cve-2022-43945)
 
 ### Locations
@@ -273,7 +360,7 @@ Link: [CVE-2022-43945](https://avd.aquasec.com/nvd/cve-2022-43945)
     Vulnerability CVE-2022-43945
 	Severity: HIGH
 	Package: linux-libc-dev
-	Fixed Version: 
+	Fixed Version: 4.15.0-202.213
 	Link: [CVE-2022-43945](https://avd.aquasec.com/nvd/cve-2022-43945)
 	The Linux kernel NFSD implementation prior to versions 5.19.17 and 6.0.2 are vulnerable to buffer overflow. NFSD tracks the number of pages held by each NFSD thread by combining the receive and send buffers of a remote procedure call (RPC) into a single array of pages. A client can force the send buffer to shrink by sending an RPC message over TCP with garbage data added at the end of the message. The RPC message with garbage data is still correctly formed according to the specification and is passed forward to handlers. Vulnerable code in NFSD is not expecting the oversized request and writes beyond the allocated buffer space. CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
     </details>
@@ -2196,6 +2283,93 @@ Link: [CVE-2021-23727](https://avd.aquasec.com/nvd/cve-2021-23727)
 
 ---
 
+Package: future
+Installed Version: 0.18.2
+Vulnerability CVE-2022-40899
+Severity: HIGH
+Fixed Version: 0.18.3
+Link: [CVE-2022-40899](https://avd.aquasec.com/nvd/cve-2022-40899)
+
+### Locations
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/future-0.18.2.dist-info/METADATA
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Error
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-40899
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-40899">https://avd.aquasec.com/nvd/cve-2022-40899</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    python-future: remote attackers can cause denial of service via crafted Set-Cookie header from malicious web server
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue discovered in Python Charmers Future 0.18.2 and earlier allows remote attackers to cause a denial of service via crafted Set-Cookie header from malicious web server.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    7.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-40899
+	Severity: HIGH
+	Package: future
+	Fixed Version: 0.18.3
+	Link: [CVE-2022-40899](https://avd.aquasec.com/nvd/cve-2022-40899)
+	An issue discovered in Python Charmers Future 0.18.2 and earlier allows remote attackers to cause a denial of service via crafted Set-Cookie header from malicious web server.
+    </details>
+
+
+
+---
+
 Package: lxml
 Installed Version: 4.7.1
 Vulnerability CVE-2022-2309
@@ -2364,6 +2538,93 @@ Link: [CVE-2020-5390](https://avd.aquasec.com/nvd/cve-2020-5390)
 	Fixed Version: 5.0.0
 	Link: [CVE-2020-5390](https://avd.aquasec.com/nvd/cve-2020-5390)
 	PySAML2 before 5.0.0 does not check that the signature in a SAML document is enveloped and thus signature wrapping is effective, i.e., it is affected by XML Signature Wrapping (XSW). The signature information and the node/object that is signed can be in different places and thus the signature verification will succeed, but the wrong data will be used. This specifically affects the verification of assertion that have been signed.
+    </details>
+
+
+
+---
+
+Package: setuptools
+Installed Version: 44.1.1
+Vulnerability CVE-2022-40897
+Severity: HIGH
+Fixed Version: 65.5.1
+Link: [CVE-2022-40897](https://avd.aquasec.com/nvd/cve-2022-40897)
+
+### Locations
+#### **Physical Location**
+- usr/local/lib/python2.7/dist-packages/setuptools-44.1.1.dist-info/METADATA
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Error
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-40897
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-40897">https://avd.aquasec.com/nvd/cve-2022-40897</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    pypa-setuptools: Regular Expression Denial of Service (ReDoS) in package_index.py
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    7.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-40897
+	Severity: HIGH
+	Package: setuptools
+	Fixed Version: 65.5.1
+	Link: [CVE-2022-40897](https://avd.aquasec.com/nvd/cve-2022-40897)
+	Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.
     </details>
 
 
@@ -2675,7 +2936,7 @@ Link: [CVE-2022-23491](https://avd.aquasec.com/nvd/cve-2022-23491)
 + <details>
     <summary>Short Description</summary>
     <br>
-    Certifi removing TrustCor root certificate
+    Certifi is a curated collection of Root Certificates for validating th ...
     </details>
 
 
@@ -2886,6 +3147,93 @@ Link: [CVE-2022-32221](https://avd.aquasec.com/nvd/cve-2022-32221)
 	Fixed Version: 7.58.0-2ubuntu3.21
 	Link: [CVE-2022-32221](https://avd.aquasec.com/nvd/cve-2022-32221)
 	When doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously was used to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the subsequent `POST` request. The problem exists in the logic for a reused handle when it is changed from a PUT to a POST.
+    </details>
+
+
+
+---
+
+Package: curl
+Installed Version: 7.58.0-2ubuntu3.20
+Vulnerability CVE-2022-43552
+Severity: MEDIUM
+Fixed Version: 7.58.0-2ubuntu3.22
+Link: [CVE-2022-43552](https://avd.aquasec.com/nvd/cve-2022-43552)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-43552
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-43552">https://avd.aquasec.com/nvd/cve-2022-43552</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    curl: Use-after-free triggered by an HTTP proxy deny response
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A vulnerability was found in curl. In this issue, curl can be asked to tunnel all protocols virtually it supports through an HTTP proxy. HTTP proxies can deny these tunnel operations using an appropriate HTTP error response code. When getting denied to tunnel the specific SMB or TELNET protocols, curl can use a heap-allocated struct after it has been freed and shut down the code path in its transfer.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-43552
+	Severity: MEDIUM
+	Package: libcurl4-openssl-dev
+	Fixed Version: 7.58.0-2ubuntu3.22
+	Link: [CVE-2022-43552](https://avd.aquasec.com/nvd/cve-2022-43552)
+	A vulnerability was found in curl. In this issue, curl can be asked to tunnel all protocols virtually it supports through an HTTP proxy. HTTP proxies can deny these tunnel operations using an appropriate HTTP error response code. When getting denied to tunnel the specific SMB or TELNET protocols, curl can use a heap-allocated struct after it has been freed and shut down the code path in its transfer.
     </details>
 
 
@@ -3416,6 +3764,93 @@ Link: [CVE-2020-13844](https://avd.aquasec.com/nvd/cve-2020-13844)
 
 Package: git
 Installed Version: 1:2.17.1-1ubuntu0.12
+Vulnerability CVE-2022-23521
+Severity: MEDIUM
+Fixed Version: 1:2.17.1-1ubuntu0.15
+Link: [CVE-2022-23521](https://avd.aquasec.com/nvd/cve-2022-23521)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-23521
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-23521">https://avd.aquasec.com/nvd/cve-2022-23521</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Git is distributed revision control system. gitattributes are a mechan ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Git is distributed revision control system. gitattributes are a mechanism to allow defining attributes for paths. These attributes can be defined by adding a `.gitattributes` file to the repository, which contains a set of file patterns and the attributes that should be set for paths matching this pattern. When parsing gitattributes, multiple integer overflows can occur when there is a huge number of path patterns, a huge number of attributes for a single pattern, or when the declared attribute names are huge. These overflows can be triggered via a crafted `.gitattributes` file that may be part of the commit history. Git silently splits lines longer than 2KB when parsing gitattributes from a file, but not when parsing them from the index. Consequentially, the failure mode depends on whether the file exists in the working tree, the index or both. This integer overflow can result in arbitrary heap reads and writes, which may result in remote code execution. The problem has been patched in the versions published on 2023-01-17, going back to v2.30.7. Users are advised to upgrade. There are no known workarounds for this issue.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-23521
+	Severity: MEDIUM
+	Package: git-man
+	Fixed Version: 1:2.17.1-1ubuntu0.15
+	Link: [CVE-2022-23521](https://avd.aquasec.com/nvd/cve-2022-23521)
+	Git is distributed revision control system. gitattributes are a mechanism to allow defining attributes for paths. These attributes can be defined by adding a `.gitattributes` file to the repository, which contains a set of file patterns and the attributes that should be set for paths matching this pattern. When parsing gitattributes, multiple integer overflows can occur when there is a huge number of path patterns, a huge number of attributes for a single pattern, or when the declared attribute names are huge. These overflows can be triggered via a crafted `.gitattributes` file that may be part of the commit history. Git silently splits lines longer than 2KB when parsing gitattributes from a file, but not when parsing them from the index. Consequentially, the failure mode depends on whether the file exists in the working tree, the index or both. This integer overflow can result in arbitrary heap reads and writes, which may result in remote code execution. The problem has been patched in the versions published on 2023-01-17, going back to v2.30.7. Users are advised to upgrade. There are no known workarounds for this issue.
+    </details>
+
+
+
+---
+
+Package: git
+Installed Version: 1:2.17.1-1ubuntu0.12
 Vulnerability CVE-2022-39253
 Severity: MEDIUM
 Fixed Version: 1:2.17.1-1ubuntu0.13
@@ -3588,6 +4023,180 @@ Link: [CVE-2022-39260](https://avd.aquasec.com/nvd/cve-2022-39260)
 
 ---
 
+Package: git
+Installed Version: 1:2.17.1-1ubuntu0.12
+Vulnerability CVE-2022-41903
+Severity: MEDIUM
+Fixed Version: 1:2.17.1-1ubuntu0.15
+Link: [CVE-2022-41903](https://avd.aquasec.com/nvd/cve-2022-41903)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-41903
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-41903">https://avd.aquasec.com/nvd/cve-2022-41903</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Git is distributed revision control system. `git log` can display comm ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Git is distributed revision control system. `git log` can display commits in an arbitrary format using its `--format` specifiers. This functionality is also exposed to `git archive` via the `export-subst` gitattribute. When processing the padding operators, there is a integer overflow in `pretty.c::format_and_pad_commit()` where a `size_t` is stored improperly as an `int`, and then added as an offset to a `memcpy()`. This overflow can be triggered directly by a user running a command which invokes the commit formatting machinery (e.g., `git log --format=...`). It may also be triggered indirectly through git archive via the export-subst mechanism, which expands format specifiers inside of files within the repository during a git archive. This integer overflow can result in arbitrary heap writes, which may result in arbitrary code execution. The problem has been patched in the versions published on 2023-01-17, going back to v2.30.7. Users are advised to upgrade. Users who are unable to upgrade should disable `git archive` in untrusted repositories. If you expose git archive via `git daemon`, disable it by running `git config --global daemon.uploadArch false`.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-41903
+	Severity: MEDIUM
+	Package: git-man
+	Fixed Version: 1:2.17.1-1ubuntu0.15
+	Link: [CVE-2022-41903](https://avd.aquasec.com/nvd/cve-2022-41903)
+	Git is distributed revision control system. `git log` can display commits in an arbitrary format using its `--format` specifiers. This functionality is also exposed to `git archive` via the `export-subst` gitattribute. When processing the padding operators, there is a integer overflow in `pretty.c::format_and_pad_commit()` where a `size_t` is stored improperly as an `int`, and then added as an offset to a `memcpy()`. This overflow can be triggered directly by a user running a command which invokes the commit formatting machinery (e.g., `git log --format=...`). It may also be triggered indirectly through git archive via the export-subst mechanism, which expands format specifiers inside of files within the repository during a git archive. This integer overflow can result in arbitrary heap writes, which may result in arbitrary code execution. The problem has been patched in the versions published on 2023-01-17, going back to v2.30.7. Users are advised to upgrade. Users who are unable to upgrade should disable `git archive` in untrusted repositories. If you expose git archive via `git daemon`, disable it by running `git config --global daemon.uploadArch false`.
+    </details>
+
+
+
+---
+
+Package: git-man
+Installed Version: 1:2.17.1-1ubuntu0.12
+Vulnerability CVE-2022-23521
+Severity: MEDIUM
+Fixed Version: 1:2.17.1-1ubuntu0.15
+Link: [CVE-2022-23521](https://avd.aquasec.com/nvd/cve-2022-23521)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-23521
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-23521">https://avd.aquasec.com/nvd/cve-2022-23521</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Git is distributed revision control system. gitattributes are a mechan ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Git is distributed revision control system. gitattributes are a mechanism to allow defining attributes for paths. These attributes can be defined by adding a `.gitattributes` file to the repository, which contains a set of file patterns and the attributes that should be set for paths matching this pattern. When parsing gitattributes, multiple integer overflows can occur when there is a huge number of path patterns, a huge number of attributes for a single pattern, or when the declared attribute names are huge. These overflows can be triggered via a crafted `.gitattributes` file that may be part of the commit history. Git silently splits lines longer than 2KB when parsing gitattributes from a file, but not when parsing them from the index. Consequentially, the failure mode depends on whether the file exists in the working tree, the index or both. This integer overflow can result in arbitrary heap reads and writes, which may result in remote code execution. The problem has been patched in the versions published on 2023-01-17, going back to v2.30.7. Users are advised to upgrade. There are no known workarounds for this issue.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-23521
+	Severity: MEDIUM
+	Package: git-man
+	Fixed Version: 1:2.17.1-1ubuntu0.15
+	Link: [CVE-2022-23521](https://avd.aquasec.com/nvd/cve-2022-23521)
+	Git is distributed revision control system. gitattributes are a mechanism to allow defining attributes for paths. These attributes can be defined by adding a `.gitattributes` file to the repository, which contains a set of file patterns and the attributes that should be set for paths matching this pattern. When parsing gitattributes, multiple integer overflows can occur when there is a huge number of path patterns, a huge number of attributes for a single pattern, or when the declared attribute names are huge. These overflows can be triggered via a crafted `.gitattributes` file that may be part of the commit history. Git silently splits lines longer than 2KB when parsing gitattributes from a file, but not when parsing them from the index. Consequentially, the failure mode depends on whether the file exists in the working tree, the index or both. This integer overflow can result in arbitrary heap reads and writes, which may result in remote code execution. The problem has been patched in the versions published on 2023-01-17, going back to v2.30.7. Users are advised to upgrade. There are no known workarounds for this issue.
+    </details>
+
+
+
+---
+
 Package: git-man
 Installed Version: 1:2.17.1-1ubuntu0.12
 Vulnerability CVE-2022-39253
@@ -3762,11 +4371,98 @@ Link: [CVE-2022-39260](https://avd.aquasec.com/nvd/cve-2022-39260)
 
 ---
 
+Package: git-man
+Installed Version: 1:2.17.1-1ubuntu0.12
+Vulnerability CVE-2022-41903
+Severity: MEDIUM
+Fixed Version: 1:2.17.1-1ubuntu0.15
+Link: [CVE-2022-41903](https://avd.aquasec.com/nvd/cve-2022-41903)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-41903
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-41903">https://avd.aquasec.com/nvd/cve-2022-41903</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Git is distributed revision control system. `git log` can display comm ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Git is distributed revision control system. `git log` can display commits in an arbitrary format using its `--format` specifiers. This functionality is also exposed to `git archive` via the `export-subst` gitattribute. When processing the padding operators, there is a integer overflow in `pretty.c::format_and_pad_commit()` where a `size_t` is stored improperly as an `int`, and then added as an offset to a `memcpy()`. This overflow can be triggered directly by a user running a command which invokes the commit formatting machinery (e.g., `git log --format=...`). It may also be triggered indirectly through git archive via the export-subst mechanism, which expands format specifiers inside of files within the repository during a git archive. This integer overflow can result in arbitrary heap writes, which may result in arbitrary code execution. The problem has been patched in the versions published on 2023-01-17, going back to v2.30.7. Users are advised to upgrade. Users who are unable to upgrade should disable `git archive` in untrusted repositories. If you expose git archive via `git daemon`, disable it by running `git config --global daemon.uploadArch false`.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-41903
+	Severity: MEDIUM
+	Package: git-man
+	Fixed Version: 1:2.17.1-1ubuntu0.15
+	Link: [CVE-2022-41903](https://avd.aquasec.com/nvd/cve-2022-41903)
+	Git is distributed revision control system. `git log` can display commits in an arbitrary format using its `--format` specifiers. This functionality is also exposed to `git archive` via the `export-subst` gitattribute. When processing the padding operators, there is a integer overflow in `pretty.c::format_and_pad_commit()` where a `size_t` is stored improperly as an `int`, and then added as an offset to a `memcpy()`. This overflow can be triggered directly by a user running a command which invokes the commit formatting machinery (e.g., `git log --format=...`). It may also be triggered indirectly through git archive via the export-subst mechanism, which expands format specifiers inside of files within the repository during a git archive. This integer overflow can result in arbitrary heap writes, which may result in arbitrary code execution. The problem has been patched in the versions published on 2023-01-17, going back to v2.30.7. Users are advised to upgrade. Users who are unable to upgrade should disable `git archive` in untrusted repositories. If you expose git archive via `git daemon`, disable it by running `git config --global daemon.uploadArch false`.
+    </details>
+
+
+
+---
+
 Package: krb5-locales
 Installed Version: 1.16-2ubuntu0.2
 Vulnerability CVE-2018-20217
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 1.16-2ubuntu0.3
 Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
 
 ### Locations
@@ -3840,7 +4536,7 @@ Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
     Vulnerability CVE-2018-20217
 	Severity: MEDIUM
 	Package: libkrb5support0
-	Fixed Version: 
+	Fixed Version: 1.16-2ubuntu0.3
 	Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
 	A Reachable Assertion issue was discovered in the KDC in MIT Kerberos 5 (aka krb5) before 1.17. If an attacker can obtain a krbtgt ticket using an older encryption type (single-DES, triple-DES, or RC4), the attacker can crash the KDC by making an S4U2Self request.
     </details>
@@ -4017,6 +4713,93 @@ Link: [CVE-2021-37750](https://avd.aquasec.com/nvd/cve-2021-37750)
 	Fixed Version: 
 	Link: [CVE-2021-37750](https://avd.aquasec.com/nvd/cve-2021-37750)
 	The Key Distribution Center (KDC) in MIT Kerberos 5 (aka krb5) before 1.18.5 and 1.19.x before 1.19.3 has a NULL pointer dereference in kdc/do_tgs_req.c via a FAST inner body that lacks a server field.
+    </details>
+
+
+
+---
+
+Package: krb5-locales
+Installed Version: 1.16-2ubuntu0.2
+Vulnerability CVE-2022-42898
+Severity: MEDIUM
+Fixed Version: 1.16-2ubuntu0.3
+Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-42898
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-42898">https://avd.aquasec.com/nvd/cve-2022-42898</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    krb5: integer overflow vulnerabilities in PAC parsing
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-42898
+	Severity: MEDIUM
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
+	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
     </details>
 
 
@@ -4288,7 +5071,7 @@ Package: libasn1-8-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2021-44758
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 
 ### Locations
@@ -4328,14 +5111,14 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer derefere ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    Denial of service. [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -4362,9 +5145,9 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
     Vulnerability CVE-2021-44758
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
-	Denial of service. [spnego: send_reject when no mech selected]
+	Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -4462,7 +5245,7 @@ Package: libasn1-8-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-3437
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 
 ### Locations
@@ -4536,7 +5319,7 @@ Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
     Vulnerability CVE-2022-3437
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 	A heap-based buffer overflow vulnerability was found in Samba within the GSSAPI unwrap_des() and unwrap_des3() routines of Heimdal. The DES and Triple-DES decryption routines in the Heimdal GSSAPI library allow a length-limited write buffer overflow on malloc() allocated memory when presented with a maliciously small packet. This flaw allows a remote user to send specially crafted malicious data to the application, possibly resulting in a denial of service (DoS) attack.
     </details>
@@ -4636,7 +5419,7 @@ Package: libasn1-8-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-42898
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 
 ### Locations
@@ -4683,7 +5466,7 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 + <details>
     <summary>Full Description</summary>
     <br>
-    A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
     </details>
 
 
@@ -4710,9 +5493,9 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
     Vulnerability CVE-2022-42898
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
-	A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
     </details>
 
 
@@ -4723,7 +5506,7 @@ Package: libasn1-8-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-44640
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 
 ### Locations
@@ -4763,14 +5546,14 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -4797,9 +5580,9 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
     Vulnerability CVE-2022-44640
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
-	[Invalid free in ASN.1 codec]
+	Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -5241,7 +6024,268 @@ Link: [CVE-2022-32221](https://avd.aquasec.com/nvd/cve-2022-32221)
 
 ---
 
+Package: libcurl3-gnutls
+Installed Version: 7.58.0-2ubuntu3.20
+Vulnerability CVE-2022-43552
+Severity: MEDIUM
+Fixed Version: 7.58.0-2ubuntu3.22
+Link: [CVE-2022-43552](https://avd.aquasec.com/nvd/cve-2022-43552)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-43552
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-43552">https://avd.aquasec.com/nvd/cve-2022-43552</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    curl: Use-after-free triggered by an HTTP proxy deny response
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A vulnerability was found in curl. In this issue, curl can be asked to tunnel all protocols virtually it supports through an HTTP proxy. HTTP proxies can deny these tunnel operations using an appropriate HTTP error response code. When getting denied to tunnel the specific SMB or TELNET protocols, curl can use a heap-allocated struct after it has been freed and shut down the code path in its transfer.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-43552
+	Severity: MEDIUM
+	Package: libcurl4-openssl-dev
+	Fixed Version: 7.58.0-2ubuntu3.22
+	Link: [CVE-2022-43552](https://avd.aquasec.com/nvd/cve-2022-43552)
+	A vulnerability was found in curl. In this issue, curl can be asked to tunnel all protocols virtually it supports through an HTTP proxy. HTTP proxies can deny these tunnel operations using an appropriate HTTP error response code. When getting denied to tunnel the specific SMB or TELNET protocols, curl can use a heap-allocated struct after it has been freed and shut down the code path in its transfer.
+    </details>
+
+
+
+---
+
 Package: libcurl4
+Installed Version: 7.58.0-2ubuntu3.20
+Vulnerability CVE-2022-32221
+Severity: MEDIUM
+Fixed Version: 7.58.0-2ubuntu3.21
+Link: [CVE-2022-32221](https://avd.aquasec.com/nvd/cve-2022-32221)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-32221
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-32221">https://avd.aquasec.com/nvd/cve-2022-32221</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    curl: POST following PUT confusion
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    When doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously was used to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the subsequent `POST` request. The problem exists in the logic for a reused handle when it is changed from a PUT to a POST.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-32221
+	Severity: MEDIUM
+	Package: libcurl4-openssl-dev
+	Fixed Version: 7.58.0-2ubuntu3.21
+	Link: [CVE-2022-32221](https://avd.aquasec.com/nvd/cve-2022-32221)
+	When doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously was used to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the subsequent `POST` request. The problem exists in the logic for a reused handle when it is changed from a PUT to a POST.
+    </details>
+
+
+
+---
+
+Package: libcurl4
+Installed Version: 7.58.0-2ubuntu3.20
+Vulnerability CVE-2022-43552
+Severity: MEDIUM
+Fixed Version: 7.58.0-2ubuntu3.22
+Link: [CVE-2022-43552](https://avd.aquasec.com/nvd/cve-2022-43552)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-43552
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-43552">https://avd.aquasec.com/nvd/cve-2022-43552</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    curl: Use-after-free triggered by an HTTP proxy deny response
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A vulnerability was found in curl. In this issue, curl can be asked to tunnel all protocols virtually it supports through an HTTP proxy. HTTP proxies can deny these tunnel operations using an appropriate HTTP error response code. When getting denied to tunnel the specific SMB or TELNET protocols, curl can use a heap-allocated struct after it has been freed and shut down the code path in its transfer.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-43552
+	Severity: MEDIUM
+	Package: libcurl4-openssl-dev
+	Fixed Version: 7.58.0-2ubuntu3.22
+	Link: [CVE-2022-43552](https://avd.aquasec.com/nvd/cve-2022-43552)
+	A vulnerability was found in curl. In this issue, curl can be asked to tunnel all protocols virtually it supports through an HTTP proxy. HTTP proxies can deny these tunnel operations using an appropriate HTTP error response code. When getting denied to tunnel the specific SMB or TELNET protocols, curl can use a heap-allocated struct after it has been freed and shut down the code path in its transfer.
+    </details>
+
+
+
+---
+
+Package: libcurl4-openssl-dev
 Installed Version: 7.58.0-2ubuntu3.20
 Vulnerability CVE-2022-32221
 Severity: MEDIUM
@@ -5330,10 +6374,10 @@ Link: [CVE-2022-32221](https://avd.aquasec.com/nvd/cve-2022-32221)
 
 Package: libcurl4-openssl-dev
 Installed Version: 7.58.0-2ubuntu3.20
-Vulnerability CVE-2022-32221
+Vulnerability CVE-2022-43552
 Severity: MEDIUM
-Fixed Version: 7.58.0-2ubuntu3.21
-Link: [CVE-2022-32221](https://avd.aquasec.com/nvd/cve-2022-32221)
+Fixed Version: 7.58.0-2ubuntu3.22
+Link: [CVE-2022-43552](https://avd.aquasec.com/nvd/cve-2022-43552)
 
 ### Locations
 #### **Physical Location**
@@ -5358,28 +6402,28 @@ Link: [CVE-2022-32221](https://avd.aquasec.com/nvd/cve-2022-32221)
 + <details>
   <summary>Rule Id</summary>
   <br>
-    CVE-2022-32221
+    CVE-2022-43552
   </details>
 
 
 + <details>
     <summary>Help Uri</summary>
     <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-32221">https://avd.aquasec.com/nvd/cve-2022-32221</a>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-43552">https://avd.aquasec.com/nvd/cve-2022-43552</a>
     </details>
 
 
 + <details>
     <summary>Short Description</summary>
     <br>
-    curl: POST following PUT confusion
+    curl: Use-after-free triggered by an HTTP proxy deny response
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    When doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously was used to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the subsequent `POST` request. The problem exists in the logic for a reused handle when it is changed from a PUT to a POST.
+    A vulnerability was found in curl. In this issue, curl can be asked to tunnel all protocols virtually it supports through an HTTP proxy. HTTP proxies can deny these tunnel operations using an appropriate HTTP error response code. When getting denied to tunnel the specific SMB or TELNET protocols, curl can use a heap-allocated struct after it has been freed and shut down the code path in its transfer.
     </details>
 
 
@@ -5403,12 +6447,12 @@ Link: [CVE-2022-32221](https://avd.aquasec.com/nvd/cve-2022-32221)
 + <details>
     <summary>Help</summary>
     <br>
-    Vulnerability CVE-2022-32221
+    Vulnerability CVE-2022-43552
 	Severity: MEDIUM
 	Package: libcurl4-openssl-dev
-	Fixed Version: 7.58.0-2ubuntu3.21
-	Link: [CVE-2022-32221](https://avd.aquasec.com/nvd/cve-2022-32221)
-	When doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously was used to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the subsequent `POST` request. The problem exists in the logic for a reused handle when it is changed from a PUT to a POST.
+	Fixed Version: 7.58.0-2ubuntu3.22
+	Link: [CVE-2022-43552](https://avd.aquasec.com/nvd/cve-2022-43552)
+	A vulnerability was found in curl. In this issue, curl can be asked to tunnel all protocols virtually it supports through an HTTP proxy. HTTP proxies can deny these tunnel operations using an appropriate HTTP error response code. When getting denied to tunnel the specific SMB or TELNET protocols, curl can use a heap-allocated struct after it has been freed and shut down the code path in its transfer.
     </details>
 
 
@@ -6289,7 +7333,7 @@ Package: libgssapi-krb5-2
 Installed Version: 1.16-2ubuntu0.2
 Vulnerability CVE-2018-20217
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 1.16-2ubuntu0.3
 Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
 
 ### Locations
@@ -6363,7 +7407,7 @@ Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
     Vulnerability CVE-2018-20217
 	Severity: MEDIUM
 	Package: libkrb5support0
-	Fixed Version: 
+	Fixed Version: 1.16-2ubuntu0.3
 	Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
 	A Reachable Assertion issue was discovered in the KDC in MIT Kerberos 5 (aka krb5) before 1.17. If an attacker can obtain a krbtgt ticket using an older encryption type (single-DES, triple-DES, or RC4), the attacker can crash the KDC by making an S4U2Self request.
     </details>
@@ -6546,6 +7590,93 @@ Link: [CVE-2021-37750](https://avd.aquasec.com/nvd/cve-2021-37750)
 
 ---
 
+Package: libgssapi-krb5-2
+Installed Version: 1.16-2ubuntu0.2
+Vulnerability CVE-2022-42898
+Severity: MEDIUM
+Fixed Version: 1.16-2ubuntu0.3
+Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-42898
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-42898">https://avd.aquasec.com/nvd/cve-2022-42898</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    krb5: integer overflow vulnerabilities in PAC parsing
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-42898
+	Severity: MEDIUM
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
+	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
+    </details>
+
+
+
+---
+
 Package: libgssapi3-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2018-16860
@@ -6637,7 +7768,7 @@ Package: libgssapi3-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2021-44758
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 
 ### Locations
@@ -6677,14 +7808,14 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer derefere ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    Denial of service. [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -6711,9 +7842,9 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
     Vulnerability CVE-2021-44758
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
-	Denial of service. [spnego: send_reject when no mech selected]
+	Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -6811,7 +7942,7 @@ Package: libgssapi3-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-3437
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 
 ### Locations
@@ -6885,7 +8016,7 @@ Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
     Vulnerability CVE-2022-3437
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 	A heap-based buffer overflow vulnerability was found in Samba within the GSSAPI unwrap_des() and unwrap_des3() routines of Heimdal. The DES and Triple-DES decryption routines in the Heimdal GSSAPI library allow a length-limited write buffer overflow on malloc() allocated memory when presented with a maliciously small packet. This flaw allows a remote user to send specially crafted malicious data to the application, possibly resulting in a denial of service (DoS) attack.
     </details>
@@ -6985,7 +8116,7 @@ Package: libgssapi3-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-42898
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 
 ### Locations
@@ -7032,7 +8163,7 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 + <details>
     <summary>Full Description</summary>
     <br>
-    A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
     </details>
 
 
@@ -7059,9 +8190,9 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
     Vulnerability CVE-2022-42898
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
-	A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
     </details>
 
 
@@ -7072,7 +8203,7 @@ Package: libgssapi3-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-44640
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 
 ### Locations
@@ -7112,14 +8243,14 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -7146,9 +8277,9 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
     Vulnerability CVE-2022-44640
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
-	[Invalid free in ASN.1 codec]
+	Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -7246,7 +8377,7 @@ Package: libhcrypto4-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2021-44758
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 
 ### Locations
@@ -7286,14 +8417,14 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer derefere ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    Denial of service. [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -7320,9 +8451,9 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
     Vulnerability CVE-2021-44758
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
-	Denial of service. [spnego: send_reject when no mech selected]
+	Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -7420,7 +8551,7 @@ Package: libhcrypto4-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-3437
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 
 ### Locations
@@ -7494,7 +8625,7 @@ Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
     Vulnerability CVE-2022-3437
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 	A heap-based buffer overflow vulnerability was found in Samba within the GSSAPI unwrap_des() and unwrap_des3() routines of Heimdal. The DES and Triple-DES decryption routines in the Heimdal GSSAPI library allow a length-limited write buffer overflow on malloc() allocated memory when presented with a maliciously small packet. This flaw allows a remote user to send specially crafted malicious data to the application, possibly resulting in a denial of service (DoS) attack.
     </details>
@@ -7594,7 +8725,7 @@ Package: libhcrypto4-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-42898
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 
 ### Locations
@@ -7641,7 +8772,7 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 + <details>
     <summary>Full Description</summary>
     <br>
-    A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
     </details>
 
 
@@ -7668,9 +8799,9 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
     Vulnerability CVE-2022-42898
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
-	A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
     </details>
 
 
@@ -7681,7 +8812,7 @@ Package: libhcrypto4-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-44640
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 
 ### Locations
@@ -7721,14 +8852,14 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -7755,9 +8886,9 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
     Vulnerability CVE-2022-44640
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
-	[Invalid free in ASN.1 codec]
+	Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -7855,7 +8986,7 @@ Package: libheimbase1-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2021-44758
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 
 ### Locations
@@ -7895,14 +9026,14 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer derefere ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    Denial of service. [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -7929,9 +9060,9 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
     Vulnerability CVE-2021-44758
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
-	Denial of service. [spnego: send_reject when no mech selected]
+	Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -8029,7 +9160,7 @@ Package: libheimbase1-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-3437
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 
 ### Locations
@@ -8103,7 +9234,7 @@ Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
     Vulnerability CVE-2022-3437
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 	A heap-based buffer overflow vulnerability was found in Samba within the GSSAPI unwrap_des() and unwrap_des3() routines of Heimdal. The DES and Triple-DES decryption routines in the Heimdal GSSAPI library allow a length-limited write buffer overflow on malloc() allocated memory when presented with a maliciously small packet. This flaw allows a remote user to send specially crafted malicious data to the application, possibly resulting in a denial of service (DoS) attack.
     </details>
@@ -8203,7 +9334,7 @@ Package: libheimbase1-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-42898
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 
 ### Locations
@@ -8250,7 +9381,7 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 + <details>
     <summary>Full Description</summary>
     <br>
-    A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
     </details>
 
 
@@ -8277,9 +9408,9 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
     Vulnerability CVE-2022-42898
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
-	A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
     </details>
 
 
@@ -8290,7 +9421,7 @@ Package: libheimbase1-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-44640
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 
 ### Locations
@@ -8330,14 +9461,14 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -8364,9 +9495,9 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
     Vulnerability CVE-2022-44640
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
-	[Invalid free in ASN.1 codec]
+	Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -8464,7 +9595,7 @@ Package: libheimntlm0-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2021-44758
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 
 ### Locations
@@ -8504,14 +9635,14 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer derefere ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    Denial of service. [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -8538,9 +9669,9 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
     Vulnerability CVE-2021-44758
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
-	Denial of service. [spnego: send_reject when no mech selected]
+	Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -8638,7 +9769,7 @@ Package: libheimntlm0-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-3437
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 
 ### Locations
@@ -8712,7 +9843,7 @@ Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
     Vulnerability CVE-2022-3437
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 	A heap-based buffer overflow vulnerability was found in Samba within the GSSAPI unwrap_des() and unwrap_des3() routines of Heimdal. The DES and Triple-DES decryption routines in the Heimdal GSSAPI library allow a length-limited write buffer overflow on malloc() allocated memory when presented with a maliciously small packet. This flaw allows a remote user to send specially crafted malicious data to the application, possibly resulting in a denial of service (DoS) attack.
     </details>
@@ -8812,7 +9943,7 @@ Package: libheimntlm0-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-42898
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 
 ### Locations
@@ -8859,7 +9990,7 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 + <details>
     <summary>Full Description</summary>
     <br>
-    A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
     </details>
 
 
@@ -8886,9 +10017,9 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
     Vulnerability CVE-2022-42898
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
-	A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
     </details>
 
 
@@ -8899,7 +10030,7 @@ Package: libheimntlm0-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-44640
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 
 ### Locations
@@ -8939,14 +10070,14 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -8973,9 +10104,9 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
     Vulnerability CVE-2022-44640
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
-	[Invalid free in ASN.1 codec]
+	Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -9073,7 +10204,7 @@ Package: libhx509-5-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2021-44758
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 
 ### Locations
@@ -9113,14 +10244,14 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer derefere ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    Denial of service. [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -9147,9 +10278,9 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
     Vulnerability CVE-2021-44758
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
-	Denial of service. [spnego: send_reject when no mech selected]
+	Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -9247,7 +10378,7 @@ Package: libhx509-5-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-3437
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 
 ### Locations
@@ -9321,7 +10452,7 @@ Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
     Vulnerability CVE-2022-3437
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 	A heap-based buffer overflow vulnerability was found in Samba within the GSSAPI unwrap_des() and unwrap_des3() routines of Heimdal. The DES and Triple-DES decryption routines in the Heimdal GSSAPI library allow a length-limited write buffer overflow on malloc() allocated memory when presented with a maliciously small packet. This flaw allows a remote user to send specially crafted malicious data to the application, possibly resulting in a denial of service (DoS) attack.
     </details>
@@ -9421,7 +10552,7 @@ Package: libhx509-5-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-42898
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 
 ### Locations
@@ -9468,7 +10599,7 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 + <details>
     <summary>Full Description</summary>
     <br>
-    A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
     </details>
 
 
@@ -9495,9 +10626,9 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
     Vulnerability CVE-2022-42898
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
-	A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
     </details>
 
 
@@ -9508,7 +10639,7 @@ Package: libhx509-5-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-44640
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 
 ### Locations
@@ -9548,14 +10679,14 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -9582,9 +10713,9 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
     Vulnerability CVE-2022-44640
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
-	[Invalid free in ASN.1 codec]
+	Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -9856,7 +10987,7 @@ Package: libk5crypto3
 Installed Version: 1.16-2ubuntu0.2
 Vulnerability CVE-2018-20217
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 1.16-2ubuntu0.3
 Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
 
 ### Locations
@@ -9930,7 +11061,7 @@ Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
     Vulnerability CVE-2018-20217
 	Severity: MEDIUM
 	Package: libkrb5support0
-	Fixed Version: 
+	Fixed Version: 1.16-2ubuntu0.3
 	Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
 	A Reachable Assertion issue was discovered in the KDC in MIT Kerberos 5 (aka krb5) before 1.17. If an attacker can obtain a krbtgt ticket using an older encryption type (single-DES, triple-DES, or RC4), the attacker can crash the KDC by making an S4U2Self request.
     </details>
@@ -10113,6 +11244,93 @@ Link: [CVE-2021-37750](https://avd.aquasec.com/nvd/cve-2021-37750)
 
 ---
 
+Package: libk5crypto3
+Installed Version: 1.16-2ubuntu0.2
+Vulnerability CVE-2022-42898
+Severity: MEDIUM
+Fixed Version: 1.16-2ubuntu0.3
+Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-42898
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-42898">https://avd.aquasec.com/nvd/cve-2022-42898</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    krb5: integer overflow vulnerabilities in PAC parsing
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-42898
+	Severity: MEDIUM
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
+	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
+    </details>
+
+
+
+---
+
 Package: libkrb5-26-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2018-16860
@@ -10204,7 +11422,7 @@ Package: libkrb5-26-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2021-44758
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 
 ### Locations
@@ -10244,14 +11462,14 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer derefere ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    Denial of service. [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -10278,9 +11496,9 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
     Vulnerability CVE-2021-44758
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
-	Denial of service. [spnego: send_reject when no mech selected]
+	Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -10378,7 +11596,7 @@ Package: libkrb5-26-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-3437
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 
 ### Locations
@@ -10452,7 +11670,7 @@ Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
     Vulnerability CVE-2022-3437
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 	A heap-based buffer overflow vulnerability was found in Samba within the GSSAPI unwrap_des() and unwrap_des3() routines of Heimdal. The DES and Triple-DES decryption routines in the Heimdal GSSAPI library allow a length-limited write buffer overflow on malloc() allocated memory when presented with a maliciously small packet. This flaw allows a remote user to send specially crafted malicious data to the application, possibly resulting in a denial of service (DoS) attack.
     </details>
@@ -10552,7 +11770,7 @@ Package: libkrb5-26-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-42898
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 
 ### Locations
@@ -10599,7 +11817,7 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 + <details>
     <summary>Full Description</summary>
     <br>
-    A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
     </details>
 
 
@@ -10626,9 +11844,9 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
     Vulnerability CVE-2022-42898
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
-	A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
     </details>
 
 
@@ -10639,7 +11857,7 @@ Package: libkrb5-26-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-44640
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 
 ### Locations
@@ -10679,14 +11897,14 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -10713,9 +11931,9 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
     Vulnerability CVE-2022-44640
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
-	[Invalid free in ASN.1 codec]
+	Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -10726,7 +11944,7 @@ Package: libkrb5-3
 Installed Version: 1.16-2ubuntu0.2
 Vulnerability CVE-2018-20217
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 1.16-2ubuntu0.3
 Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
 
 ### Locations
@@ -10800,7 +12018,7 @@ Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
     Vulnerability CVE-2018-20217
 	Severity: MEDIUM
 	Package: libkrb5support0
-	Fixed Version: 
+	Fixed Version: 1.16-2ubuntu0.3
 	Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
 	A Reachable Assertion issue was discovered in the KDC in MIT Kerberos 5 (aka krb5) before 1.17. If an attacker can obtain a krbtgt ticket using an older encryption type (single-DES, triple-DES, or RC4), the attacker can crash the KDC by making an S4U2Self request.
     </details>
@@ -10983,11 +12201,98 @@ Link: [CVE-2021-37750](https://avd.aquasec.com/nvd/cve-2021-37750)
 
 ---
 
+Package: libkrb5-3
+Installed Version: 1.16-2ubuntu0.2
+Vulnerability CVE-2022-42898
+Severity: MEDIUM
+Fixed Version: 1.16-2ubuntu0.3
+Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-42898
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-42898">https://avd.aquasec.com/nvd/cve-2022-42898</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    krb5: integer overflow vulnerabilities in PAC parsing
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-42898
+	Severity: MEDIUM
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
+	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
+    </details>
+
+
+
+---
+
 Package: libkrb5support0
 Installed Version: 1.16-2ubuntu0.2
 Vulnerability CVE-2018-20217
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 1.16-2ubuntu0.3
 Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
 
 ### Locations
@@ -11061,7 +12366,7 @@ Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
     Vulnerability CVE-2018-20217
 	Severity: MEDIUM
 	Package: libkrb5support0
-	Fixed Version: 
+	Fixed Version: 1.16-2ubuntu0.3
 	Link: [CVE-2018-20217](https://avd.aquasec.com/nvd/cve-2018-20217)
 	A Reachable Assertion issue was discovered in the KDC in MIT Kerberos 5 (aka krb5) before 1.17. If an attacker can obtain a krbtgt ticket using an older encryption type (single-DES, triple-DES, or RC4), the attacker can crash the KDC by making an S4U2Self request.
     </details>
@@ -11238,6 +12543,180 @@ Link: [CVE-2021-37750](https://avd.aquasec.com/nvd/cve-2021-37750)
 	Fixed Version: 
 	Link: [CVE-2021-37750](https://avd.aquasec.com/nvd/cve-2021-37750)
 	The Key Distribution Center (KDC) in MIT Kerberos 5 (aka krb5) before 1.18.5 and 1.19.x before 1.19.3 has a NULL pointer dereference in kdc/do_tgs_req.c via a FAST inner body that lacks a server field.
+    </details>
+
+
+
+---
+
+Package: libkrb5support0
+Installed Version: 1.16-2ubuntu0.2
+Vulnerability CVE-2022-42898
+Severity: MEDIUM
+Fixed Version: 1.16-2ubuntu0.3
+Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-42898
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-42898">https://avd.aquasec.com/nvd/cve-2022-42898</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    krb5: integer overflow vulnerabilities in PAC parsing
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-42898
+	Severity: MEDIUM
+	Package: libwind0-heimdal
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
+	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
+    </details>
+
+
+
+---
+
+Package: libksba8
+Installed Version: 1.3.5-2
+Vulnerability CVE-2022-47629
+Severity: MEDIUM
+Fixed Version: 1.3.5-2ubuntu0.18.04.2
+Link: [CVE-2022-47629](https://avd.aquasec.com/nvd/cve-2022-47629)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-47629
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-47629">https://avd.aquasec.com/nvd/cve-2022-47629</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    libksba: integer overflow to code execution
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Libksba before 1.6.3 is prone to an integer overflow vulnerability in the CRL signature parser.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-47629
+	Severity: MEDIUM
+	Package: libksba8
+	Fixed Version: 1.3.5-2ubuntu0.18.04.2
+	Link: [CVE-2022-47629](https://avd.aquasec.com/nvd/cve-2022-47629)
+	Libksba before 1.6.3 is prone to an integer overflow vulnerability in the CRL signature parser.
     </details>
 
 
@@ -12466,7 +13945,7 @@ Package: libroken18-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2021-44758
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 
 ### Locations
@@ -12506,14 +13985,14 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer derefere ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    Denial of service. [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -12540,9 +14019,9 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
     Vulnerability CVE-2021-44758
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
-	Denial of service. [spnego: send_reject when no mech selected]
+	Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -12640,7 +14119,7 @@ Package: libroken18-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-3437
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 
 ### Locations
@@ -12714,7 +14193,7 @@ Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
     Vulnerability CVE-2022-3437
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 	A heap-based buffer overflow vulnerability was found in Samba within the GSSAPI unwrap_des() and unwrap_des3() routines of Heimdal. The DES and Triple-DES decryption routines in the Heimdal GSSAPI library allow a length-limited write buffer overflow on malloc() allocated memory when presented with a maliciously small packet. This flaw allows a remote user to send specially crafted malicious data to the application, possibly resulting in a denial of service (DoS) attack.
     </details>
@@ -12814,7 +14293,7 @@ Package: libroken18-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-42898
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 
 ### Locations
@@ -12861,7 +14340,7 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 + <details>
     <summary>Full Description</summary>
     <br>
-    A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
     </details>
 
 
@@ -12888,9 +14367,9 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
     Vulnerability CVE-2022-42898
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
-	A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
     </details>
 
 
@@ -12901,7 +14380,7 @@ Package: libroken18-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-44640
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 
 ### Locations
@@ -12941,14 +14420,14 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -12975,9 +14454,9 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
     Vulnerability CVE-2022-44640
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
-	[Invalid free in ASN.1 codec]
+	Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -13858,7 +15337,7 @@ Package: libwind0-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2021-44758
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 
 ### Locations
@@ -13898,14 +15377,14 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer derefere ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    Denial of service. [spnego: send_reject when no mech selected]
+    Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -13932,9 +15411,9 @@ Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
     Vulnerability CVE-2021-44758
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2021-44758](https://avd.aquasec.com/nvd/cve-2021-44758)
-	Denial of service. [spnego: send_reject when no mech selected]
+	Heimdal before 7.7.1 allows attackers to cause a NULL pointer dereference in a SPNEGO acceptor via a preferred_mech_type of GSS_C_NO_OID and a nonzero initial_response value to send_accept.
     </details>
 
 
@@ -14032,7 +15511,7 @@ Package: libwind0-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-3437
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 
 ### Locations
@@ -14106,7 +15585,7 @@ Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
     Vulnerability CVE-2022-3437
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-3437](https://avd.aquasec.com/nvd/cve-2022-3437)
 	A heap-based buffer overflow vulnerability was found in Samba within the GSSAPI unwrap_des() and unwrap_des3() routines of Heimdal. The DES and Triple-DES decryption routines in the Heimdal GSSAPI library allow a length-limited write buffer overflow on malloc() allocated memory when presented with a maliciously small packet. This flaw allows a remote user to send specially crafted malicious data to the application, possibly resulting in a denial of service (DoS) attack.
     </details>
@@ -14206,7 +15685,7 @@ Package: libwind0-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-42898
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 
 ### Locations
@@ -14253,7 +15732,7 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
 + <details>
     <summary>Full Description</summary>
     <br>
-    A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+    PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &amp;#34;a similar bug.&amp;#34;
     </details>
 
 
@@ -14280,9 +15759,9 @@ Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
     Vulnerability CVE-2022-42898
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-42898](https://avd.aquasec.com/nvd/cve-2022-42898)
-	A vulnerability was found in MIT krb5. This flaw allows an authenticated attacker to cause a KDC or kadmind process to crash by reading beyond the bounds of allocated memory, creating a denial of service. A privileged attacker may similarly be able to cause a Kerberos or GSS application service to crash.
+	PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has &#34;a similar bug.&#34;
     </details>
 
 
@@ -14293,7 +15772,7 @@ Package: libwind0-heimdal
 Installed Version: 7.5.0+dfsg-1
 Vulnerability CVE-2022-44640
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 
 ### Locations
@@ -14333,14 +15812,14 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
 + <details>
     <summary>Short Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code ...
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    [Invalid free in ASN.1 codec]
+    Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -14367,9 +15846,9 @@ Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
     Vulnerability CVE-2022-44640
 	Severity: MEDIUM
 	Package: libwind0-heimdal
-	Fixed Version: 
+	Fixed Version: 7.5.0+dfsg-1ubuntu0.3
 	Link: [CVE-2022-44640](https://avd.aquasec.com/nvd/cve-2022-44640)
-	[Invalid free in ASN.1 codec]
+	Heimdal before 7.7.1 allows remote attackers to execute arbitrary code because of an invalid free in the ASN.1 codec used by the Key Distribution Center (KDC).
     </details>
 
 
@@ -16640,6 +18119,93 @@ Link: [CVE-2021-4150](https://avd.aquasec.com/nvd/cve-2021-4150)
 
 Package: linux-libc-dev
 Installed Version: 4.15.0-193.204
+Vulnerability CVE-2021-4159
+Severity: MEDIUM
+Fixed Version: 4.15.0-201.212
+Link: [CVE-2021-4159](https://avd.aquasec.com/nvd/cve-2021-4159)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2021-4159
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2021-4159">https://avd.aquasec.com/nvd/cve-2021-4159</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: another kernel ptr leak vulnerability via BPF in coerce_reg_to_size
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A vulnerability was found in the Linux kernel&amp;#39;s EBPF verifier when handling internal data structures. Internal memory locations could be returned to userspace. A local attacker with the permissions to insert eBPF code to the kernel can use this to leak internal kernel memory details defeating some of the exploit mitigations in place for the kernel.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2021-4159
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 4.15.0-201.212
+	Link: [CVE-2021-4159](https://avd.aquasec.com/nvd/cve-2021-4159)
+	A vulnerability was found in the Linux kernel&#39;s EBPF verifier when handling internal data structures. Internal memory locations could be returned to userspace. A local attacker with the permissions to insert eBPF code to the kernel can use this to leak internal kernel memory details defeating some of the exploit mitigations in place for the kernel.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
 Vulnerability CVE-2021-4218
 Severity: MEDIUM
 Fixed Version: 
@@ -17336,6 +18902,93 @@ Link: [CVE-2022-1012](https://avd.aquasec.com/nvd/cve-2022-1012)
 
 Package: linux-libc-dev
 Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-1247
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-1247](https://avd.aquasec.com/nvd/cve-2022-1247)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-1247
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-1247">https://avd.aquasec.com/nvd/cve-2022-1247</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: A race condition bug in rose_connect()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue found in linux-kernel that leads to a race condition in rose_connect(). The rose driver uses rose_neigh-&amp;gt;use to represent how many objects are using the rose_neigh. When a user wants to delete a rose_route via rose_ioctl(), the rose driver calls rose_del_node() and removes neighbours only if their “count” and “use” are zero.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-1247
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-1247](https://avd.aquasec.com/nvd/cve-2022-1247)
+	An issue found in linux-kernel that leads to a race condition in rose_connect(). The rose driver uses rose_neigh-&gt;use to represent how many objects are using the rose_neigh. When a user wants to delete a rose_route via rose_ioctl(), the rose driver calls rose_del_node() and removes neighbours only if their “count” and “use” are zero.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
 Vulnerability CVE-2022-1263
 Severity: MEDIUM
 Fixed Version: 
@@ -17771,10 +19424,10 @@ Link: [CVE-2022-20166](https://avd.aquasec.com/nvd/cve-2022-20166)
 
 Package: linux-libc-dev
 Installed Version: 4.15.0-193.204
-Vulnerability CVE-2022-20369
+Vulnerability CVE-2022-20421
 Severity: MEDIUM
-Fixed Version: 
-Link: [CVE-2022-20369](https://avd.aquasec.com/nvd/cve-2022-20369)
+Fixed Version: 4.15.0-201.212
+Link: [CVE-2022-20421](https://avd.aquasec.com/nvd/cve-2022-20421)
 
 ### Locations
 #### **Physical Location**
@@ -17799,28 +19452,28 @@ Link: [CVE-2022-20369](https://avd.aquasec.com/nvd/cve-2022-20369)
 + <details>
   <summary>Rule Id</summary>
   <br>
-    CVE-2022-20369
+    CVE-2022-20421
   </details>
 
 
 + <details>
     <summary>Help Uri</summary>
     <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-20369">https://avd.aquasec.com/nvd/cve-2022-20369</a>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-20421">https://avd.aquasec.com/nvd/cve-2022-20421</a>
     </details>
 
 
 + <details>
     <summary>Short Description</summary>
     <br>
-    kernel: v4l2-mem2mem: Apply DST_QUEUE_OFF_BASE on MMAP buffers across ioctls
+    kernel: use after free in binder_inc_ref_for_node in drivers/android/binder.c due
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    In v4l2_m2m_querybuf of v4l2-mem2mem.c, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-223375145References: Upstream kernel
+    In binder_inc_ref_for_node of binder.c, there is a possible way to corrupt memory due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-239630375References: Upstream kernel
     </details>
 
 
@@ -17844,12 +19497,12 @@ Link: [CVE-2022-20369](https://avd.aquasec.com/nvd/cve-2022-20369)
 + <details>
     <summary>Help</summary>
     <br>
-    Vulnerability CVE-2022-20369
+    Vulnerability CVE-2022-20421
 	Severity: MEDIUM
 	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2022-20369](https://avd.aquasec.com/nvd/cve-2022-20369)
-	In v4l2_m2m_querybuf of v4l2-mem2mem.c, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-223375145References: Upstream kernel
+	Fixed Version: 4.15.0-201.212
+	Link: [CVE-2022-20421](https://avd.aquasec.com/nvd/cve-2022-20421)
+	In binder_inc_ref_for_node of binder.c, there is a possible way to corrupt memory due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-239630375References: Upstream kernel
     </details>
 
 
@@ -17937,6 +19590,93 @@ Link: [CVE-2022-20422](https://avd.aquasec.com/nvd/cve-2022-20422)
 	Fixed Version: 4.15.0-197.208
 	Link: [CVE-2022-20422](https://avd.aquasec.com/nvd/cve-2022-20422)
 	In emulation_proc_handler of armv8_deprecated.c, there is a possible way to corrupt memory due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-237540956References: Upstream kernel
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-20566
+Severity: MEDIUM
+Fixed Version: 4.15.0-197.208
+Link: [CVE-2022-20566](https://avd.aquasec.com/nvd/cve-2022-20566)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-20566
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-20566">https://avd.aquasec.com/nvd/cve-2022-20566</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    In l2cap_chan_put of l2cap_core, there is a possible use after free du ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In l2cap_chan_put of l2cap_core, there is a possible use after free due to improper locking. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-165329981References: Upstream kernel
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-20566
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 4.15.0-197.208
+	Link: [CVE-2022-20566](https://avd.aquasec.com/nvd/cve-2022-20566)
+	In l2cap_chan_put of l2cap_core, there is a possible use after free due to improper locking. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-165329981References: Upstream kernel
     </details>
 
 
@@ -18206,6 +19946,93 @@ Link: [CVE-2022-2318](https://avd.aquasec.com/nvd/cve-2022-2318)
 
 Package: linux-libc-dev
 Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-25836
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-25836](https://avd.aquasec.com/nvd/cve-2022-25836)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-25836
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-25836">https://avd.aquasec.com/nvd/cve-2022-25836</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Bluetooth® Low Energy Pairing in Bluetooth Core Specification v4.0 through v5.3 may permit an unauthenticated MITM to acquire credentials with two pairing devices via adjacent access when the MITM negotiates Legacy Passkey Pairing with the pairing Initiator and Secure Connections Passkey Pairing with the pairing Responder and brute forces the Passkey entered by the user into the Initiator. The MITM attacker can use the identified Passkey value to complete authentication with the Responder via Bluetooth pairing method confusion.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-25836
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-25836](https://avd.aquasec.com/nvd/cve-2022-25836)
+	Bluetooth® Low Energy Pairing in Bluetooth Core Specification v4.0 through v5.3 may permit an unauthenticated MITM to acquire credentials with two pairing devices via adjacent access when the MITM negotiates Legacy Passkey Pairing with the pairing Initiator and Secure Connections Passkey Pairing with the pairing Responder and brute forces the Passkey entered by the user into the Initiator. The MITM attacker can use the identified Passkey value to complete authentication with the Responder via Bluetooth pairing method confusion.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
 Vulnerability CVE-2022-26365
 Severity: MEDIUM
 Fixed Version: 4.15.0-194.205
@@ -18372,6 +20199,180 @@ Link: [CVE-2022-26373](https://avd.aquasec.com/nvd/cve-2022-26373)
 	Fixed Version: 
 	Link: [CVE-2022-26373](https://avd.aquasec.com/nvd/cve-2022-26373)
 	Non-transparent sharing of return predictor targets between contexts in some Intel(R) Processors may allow an authorized user to potentially enable information disclosure via local access.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-2663
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-2663](https://avd.aquasec.com/nvd/cve-2022-2663)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2663
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2663">https://avd.aquasec.com/nvd/cve-2022-2663</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel/netfilter: nf_conntrack_irc message handling issue
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was found in the Linux kernel in nf_conntrack_irc where the message handling can be confused and incorrectly matches the message. A firewall may be able to be bypassed when users are using unencrypted IRC with nf_conntrack_irc configured.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2663
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-2663](https://avd.aquasec.com/nvd/cve-2022-2663)
+	An issue was found in the Linux kernel in nf_conntrack_irc where the message handling can be confused and incorrectly matches the message. A firewall may be able to be bypassed when users are using unencrypted IRC with nf_conntrack_irc configured.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-2961
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-2961](https://avd.aquasec.com/nvd/cve-2022-2961)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-2961
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-2961">https://avd.aquasec.com/nvd/cve-2022-2961</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: race condition in rose_bind()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A use-after-free flaw was found in the Linux kernel’s PLP Rose functionality in the way a user triggers a race condition by calling bind while simultaneously triggering the rose_bind() function. This flaw allows a local user to crash or potentially escalate their privileges on the system.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-2961
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-2961](https://avd.aquasec.com/nvd/cve-2022-2961)
+	A use-after-free flaw was found in the Linux kernel’s PLP Rose functionality in the way a user triggers a race condition by calling bind while simultaneously triggering the rose_bind() function. This flaw allows a local user to crash or potentially escalate their privileges on the system.
     </details>
 
 
@@ -18807,6 +20808,93 @@ Link: [CVE-2022-3028](https://avd.aquasec.com/nvd/cve-2022-3028)
 	Fixed Version: 4.15.0-197.208
 	Link: [CVE-2022-3028](https://avd.aquasec.com/nvd/cve-2022-3028)
 	A race condition was found in the Linux kernel&#39;s IP framework for transforming packets (XFRM subsystem) when multiple calls to xfrm_probe_algs occurred simultaneously. This flaw could allow a local attacker to potentially trigger an out-of-bounds write or leak kernel heap memory by performing an out-of-bounds read and copying it into a socket.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-3061
+Severity: MEDIUM
+Fixed Version: 4.15.0-201.212
+Link: [CVE-2022-3061](https://avd.aquasec.com/nvd/cve-2022-3061)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3061
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3061">https://avd.aquasec.com/nvd/cve-2022-3061</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: fbdev: i740fb: divide-by-zero in drivers/video/fbdev/i740fb.c could lead to DoS
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Found Linux Kernel flaw in the i740 driver. The Userspace program could pass any values to the driver through ioctl() interface. The driver doesn&amp;#39;t check the value of &amp;#39;pixclock&amp;#39;, so it may cause a divide by zero error.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3061
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 4.15.0-201.212
+	Link: [CVE-2022-3061](https://avd.aquasec.com/nvd/cve-2022-3061)
+	Found Linux Kernel flaw in the i740 driver. The Userspace program could pass any values to the driver through ioctl() interface. The driver doesn&#39;t check the value of &#39;pixclock&#39;, so it may cause a divide by zero error.
     </details>
 
 
@@ -19424,93 +21512,6 @@ Link: [CVE-2022-3524](https://avd.aquasec.com/nvd/cve-2022-3524)
 
 Package: linux-libc-dev
 Installed Version: 4.15.0-193.204
-Vulnerability CVE-2022-3545
-Severity: MEDIUM
-Fixed Version: 
-Link: [CVE-2022-3545](https://avd.aquasec.com/nvd/cve-2022-3545)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Warning
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-3545
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3545">https://avd.aquasec.com/nvd/cve-2022-3545</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    A vulnerability has been found in Linux Kernel and classified as criti ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    A vulnerability has been found in Linux Kernel and classified as critical. Affected by this vulnerability is the function area_cache_get of the file drivers/net/ethernet/netronome/nfp/nfpcore/nfp_cppcore.c of the component IPsec. The manipulation leads to use after free. It is recommended to apply a patch to fix this issue. The identifier VDB-211045 was assigned to this vulnerability.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    5.5
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-3545
-	Severity: MEDIUM
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2022-3545](https://avd.aquasec.com/nvd/cve-2022-3545)
-	A vulnerability has been found in Linux Kernel and classified as critical. Affected by this vulnerability is the function area_cache_get of the file drivers/net/ethernet/netronome/nfp/nfpcore/nfp_cppcore.c of the component IPsec. The manipulation leads to use after free. It is recommended to apply a patch to fix this issue. The identifier VDB-211045 was assigned to this vulnerability.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
 Vulnerability CVE-2022-3564
 Severity: MEDIUM
 Fixed Version: 4.15.0-200.211
@@ -19772,10 +21773,10 @@ Link: [CVE-2022-3567](https://avd.aquasec.com/nvd/cve-2022-3567)
 
 Package: linux-libc-dev
 Installed Version: 4.15.0-193.204
-Vulnerability CVE-2022-3594
+Vulnerability CVE-2022-3586
 Severity: MEDIUM
-Fixed Version: 4.15.0-200.211
-Link: [CVE-2022-3594](https://avd.aquasec.com/nvd/cve-2022-3594)
+Fixed Version: 4.15.0-201.212
+Link: [CVE-2022-3586](https://avd.aquasec.com/nvd/cve-2022-3586)
 
 ### Locations
 #### **Physical Location**
@@ -19800,28 +21801,28 @@ Link: [CVE-2022-3594](https://avd.aquasec.com/nvd/cve-2022-3594)
 + <details>
   <summary>Rule Id</summary>
   <br>
-    CVE-2022-3594
+    CVE-2022-3586
   </details>
 
 
 + <details>
     <summary>Help Uri</summary>
     <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-3594">https://avd.aquasec.com/nvd/cve-2022-3594</a>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3586">https://avd.aquasec.com/nvd/cve-2022-3586</a>
     </details>
 
 
 + <details>
     <summary>Short Description</summary>
     <br>
-    kernel: Rate limit overflow messages in r8152 in intr_callback
+    kernel: net scheduler use-after-free information disclosure vulnerability
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    A vulnerability was found in Linux Kernel. It has been declared as problematic. Affected by this vulnerability is the function intr_callback of the file drivers/net/usb/r8152.c of the component BPF. The manipulation leads to logging of excessive data. The attack can be launched remotely. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-211363.
+    A flaw was found in the Linux kernel’s networking code. A use-after-free was found in the way the sch_sfb enqueue function used the socket buffer (SKB) cb field after the same SKB had been enqueued (and freed) into a child qdisc. This flaw allows a local, unprivileged user to crash the system, causing a denial of service.
     </details>
 
 
@@ -19845,12 +21846,12 @@ Link: [CVE-2022-3594](https://avd.aquasec.com/nvd/cve-2022-3594)
 + <details>
     <summary>Help</summary>
     <br>
-    Vulnerability CVE-2022-3594
+    Vulnerability CVE-2022-3586
 	Severity: MEDIUM
 	Package: linux-libc-dev
-	Fixed Version: 4.15.0-200.211
-	Link: [CVE-2022-3594](https://avd.aquasec.com/nvd/cve-2022-3594)
-	A vulnerability was found in Linux Kernel. It has been declared as problematic. Affected by this vulnerability is the function intr_callback of the file drivers/net/usb/r8152.c of the component BPF. The manipulation leads to logging of excessive data. The attack can be launched remotely. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-211363.
+	Fixed Version: 4.15.0-201.212
+	Link: [CVE-2022-3586](https://avd.aquasec.com/nvd/cve-2022-3586)
+	A flaw was found in the Linux kernel’s networking code. A use-after-free was found in the way the sch_sfb enqueue function used the socket buffer (SKB) cb field after the same SKB had been enqueued (and freed) into a child qdisc. This flaw allows a local, unprivileged user to crash the system, causing a denial of service.
     </details>
 
 
@@ -20033,9 +22034,96 @@ Link: [CVE-2022-3640](https://avd.aquasec.com/nvd/cve-2022-3640)
 
 Package: linux-libc-dev
 Installed Version: 4.15.0-193.204
-Vulnerability CVE-2022-3643
+Vulnerability CVE-2022-36402
 Severity: MEDIUM
 Fixed Version: 
+Link: [CVE-2022-36402](https://avd.aquasec.com/nvd/cve-2022-36402)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-36402
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-36402">https://avd.aquasec.com/nvd/cve-2022-36402</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: vmwgfx: integer overflow in vmwgfx_execbuf.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An integer overflow vulnerability was found in vmwgfx driver in drivers/gpu/vmxgfx/vmxgfx_execbuf.c in GPU component of Linux kernel with device file &amp;#39;/dev/dri/renderD128 (or Dxxx)&amp;#39;. This flaw allows a local attacker with a user account on the system to gain privilege, causing a denial of service(DoS).
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-36402
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-36402](https://avd.aquasec.com/nvd/cve-2022-36402)
+	An integer overflow vulnerability was found in vmwgfx driver in drivers/gpu/vmxgfx/vmxgfx_execbuf.c in GPU component of Linux kernel with device file &#39;/dev/dri/renderD128 (or Dxxx)&#39;. This flaw allows a local attacker with a user account on the system to gain privilege, causing a denial of service(DoS).
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-3643
+Severity: MEDIUM
+Fixed Version: 4.15.0-202.213
 Link: [CVE-2022-3643](https://avd.aquasec.com/nvd/cve-2022-3643)
 
 ### Locations
@@ -20075,7 +22163,7 @@ Link: [CVE-2022-3643](https://avd.aquasec.com/nvd/cve-2022-3643)
 + <details>
     <summary>Short Description</summary>
     <br>
-    Guests can trigger NIC interface reset/abort/crash via netback It is p ...
+    Xen Security Advisory 423 v1: Guests can trigger NIC interface reset/abort/crash via netback
     </details>
 
 
@@ -20109,7 +22197,7 @@ Link: [CVE-2022-3643](https://avd.aquasec.com/nvd/cve-2022-3643)
     Vulnerability CVE-2022-3643
 	Severity: MEDIUM
 	Package: linux-libc-dev
-	Fixed Version: 
+	Fixed Version: 4.15.0-202.213
 	Link: [CVE-2022-3643](https://avd.aquasec.com/nvd/cve-2022-3643)
 	Guests can trigger NIC interface reset/abort/crash via netback It is possible for a guest to trigger a NIC interface reset/abort/crash in a Linux based network backend by sending certain kinds of packets. It appears to be an (unwritten?) assumption in the rest of the Linux network stack that packet protocol headers are all contained within the linear section of the SKB and some NICs behave badly if this is not the case. This has been reported to occur with Cisco (enic) and Broadcom NetXtrem II BCM5780 (bnx2x) though it may be an issue with other NICs/drivers as well. In case the frontend is sending requests with split headers, netback will forward those violating above mentioned assumption to the networking core, resulting in said misbehavior.
     </details>
@@ -20207,10 +22295,10 @@ Link: [CVE-2022-36879](https://avd.aquasec.com/nvd/cve-2022-36879)
 
 Package: linux-libc-dev
 Installed Version: 4.15.0-193.204
-Vulnerability CVE-2022-39842
+Vulnerability CVE-2022-38096
 Severity: MEDIUM
 Fixed Version: 
-Link: [CVE-2022-39842](https://avd.aquasec.com/nvd/cve-2022-39842)
+Link: [CVE-2022-38096](https://avd.aquasec.com/nvd/cve-2022-38096)
 
 ### Locations
 #### **Physical Location**
@@ -20235,28 +22323,28 @@ Link: [CVE-2022-39842](https://avd.aquasec.com/nvd/cve-2022-39842)
 + <details>
   <summary>Rule Id</summary>
   <br>
-    CVE-2022-39842
+    CVE-2022-38096
   </details>
 
 
 + <details>
     <summary>Help Uri</summary>
     <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-39842">https://avd.aquasec.com/nvd/cve-2022-39842</a>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-38096">https://avd.aquasec.com/nvd/cve-2022-38096</a>
     </details>
 
 
 + <details>
     <summary>Short Description</summary>
     <br>
-    Kernel: A type conflict of size_t versus int cause an integer overflow in pxa3xx_gcu_write
+    kernel: vmwgfx: NULL pointer dereference in vmw_cmd_dx_define_query
     </details>
 
 
 + <details>
     <summary>Full Description</summary>
     <br>
-    ** DISPUTED ** An issue was discovered in the Linux kernel before 5.19. In pxa3xx_gcu_write in drivers/video/fbdev/pxa3xx-gcu.c, the count parameter has a type conflict of size_t versus int, causing an integer overflow and bypassing the size check. After that, because it is used as the third argument to copy_from_user(), a heap overflow may occur. NOTE: the original discoverer disputes that the overflow can actually happen.
+    A NULL pointer dereference vulnerability was found in vmwgfx driver in drivers/gpu/vmxgfx/vmxgfx_execbuf.c in GPU component of Linux kernel with device file &amp;#39;/dev/dri/renderD128 (or Dxxx)&amp;#39;. This flaw allows a local attacker with a user account on the system to gain privilege, causing a denial of service(DoS).
     </details>
 
 
@@ -20280,12 +22368,360 @@ Link: [CVE-2022-39842](https://avd.aquasec.com/nvd/cve-2022-39842)
 + <details>
     <summary>Help</summary>
     <br>
-    Vulnerability CVE-2022-39842
+    Vulnerability CVE-2022-38096
 	Severity: MEDIUM
 	Package: linux-libc-dev
 	Fixed Version: 
-	Link: [CVE-2022-39842](https://avd.aquasec.com/nvd/cve-2022-39842)
-	** DISPUTED ** An issue was discovered in the Linux kernel before 5.19. In pxa3xx_gcu_write in drivers/video/fbdev/pxa3xx-gcu.c, the count parameter has a type conflict of size_t versus int, causing an integer overflow and bypassing the size check. After that, because it is used as the third argument to copy_from_user(), a heap overflow may occur. NOTE: the original discoverer disputes that the overflow can actually happen.
+	Link: [CVE-2022-38096](https://avd.aquasec.com/nvd/cve-2022-38096)
+	A NULL pointer dereference vulnerability was found in vmwgfx driver in drivers/gpu/vmxgfx/vmxgfx_execbuf.c in GPU component of Linux kernel with device file &#39;/dev/dri/renderD128 (or Dxxx)&#39;. This flaw allows a local attacker with a user account on the system to gain privilege, causing a denial of service(DoS).
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-38457
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-38457](https://avd.aquasec.com/nvd/cve-2022-38457)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-38457
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-38457">https://avd.aquasec.com/nvd/cve-2022-38457</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: vmwgfx: use-after-free in vmw_cmd_res_check
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A use-after-free(UAF) vulnerability was found in function &amp;#39;vmw_cmd_res_check&amp;#39; in drivers/gpu/vmxgfx/vmxgfx_execbuf.c in Linux kernel&amp;#39;s vmwgfx driver with device file &amp;#39;/dev/dri/renderD128 (or Dxxx)&amp;#39;. This flaw allows a local attacker with a user account on the system to gain privilege, causing a denial of service(DoS).
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-38457
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-38457](https://avd.aquasec.com/nvd/cve-2022-38457)
+	A use-after-free(UAF) vulnerability was found in function &#39;vmw_cmd_res_check&#39; in drivers/gpu/vmxgfx/vmxgfx_execbuf.c in Linux kernel&#39;s vmwgfx driver with device file &#39;/dev/dri/renderD128 (or Dxxx)&#39;. This flaw allows a local attacker with a user account on the system to gain privilege, causing a denial of service(DoS).
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-39188
+Severity: MEDIUM
+Fixed Version: 4.15.0-201.212
+Link: [CVE-2022-39188](https://avd.aquasec.com/nvd/cve-2022-39188)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-39188
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-39188">https://avd.aquasec.com/nvd/cve-2022-39188</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Kernel: unmap_mapping_range() race with munmap() on VM_PFNMAP mappings leads to stale TLB entry
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in include/asm-generic/tlb.h in the Linux kernel before 5.19. Because of a race condition (unmap_mapping_range versus munmap), a device driver can free a page while it still has stale TLB entries. This only occurs in situations with VM_PFNMAP VMAs.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-39188
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 4.15.0-201.212
+	Link: [CVE-2022-39188](https://avd.aquasec.com/nvd/cve-2022-39188)
+	An issue was discovered in include/asm-generic/tlb.h in the Linux kernel before 5.19. Because of a race condition (unmap_mapping_range versus munmap), a device driver can free a page while it still has stale TLB entries. This only occurs in situations with VM_PFNMAP VMAs.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-40133
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-40133](https://avd.aquasec.com/nvd/cve-2022-40133)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-40133
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-40133">https://avd.aquasec.com/nvd/cve-2022-40133</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: vmwgfx: use-after-free in vmw_execbuf_tie_context
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A use-after-free(UAF) vulnerability was found in function &amp;#39;vmw_execbuf_tie_context&amp;#39; in drivers/gpu/vmxgfx/vmxgfx_execbuf.c in Linux kernel&amp;#39;s vmwgfx driver with device file &amp;#39;/dev/dri/renderD128 (or Dxxx)&amp;#39;. This flaw allows a local attacker with a user account on the system to gain privilege, causing a denial of service(DoS).
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-40133
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-40133](https://avd.aquasec.com/nvd/cve-2022-40133)
+	A use-after-free(UAF) vulnerability was found in function &#39;vmw_execbuf_tie_context&#39; in drivers/gpu/vmxgfx/vmxgfx_execbuf.c in Linux kernel&#39;s vmwgfx driver with device file &#39;/dev/dri/renderD128 (or Dxxx)&#39;. This flaw allows a local attacker with a user account on the system to gain privilege, causing a denial of service(DoS).
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-40307
+Severity: MEDIUM
+Fixed Version: 4.15.0-201.212
+Link: [CVE-2022-40307](https://avd.aquasec.com/nvd/cve-2022-40307)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-40307
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-40307">https://avd.aquasec.com/nvd/cve-2022-40307</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: use-after-free in efi_capsule_write in capsule-loader.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in the Linux kernel through 5.19.8. drivers/firmware/efi/capsule-loader.c has a race condition with a resultant use-after-free.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-40307
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 4.15.0-201.212
+	Link: [CVE-2022-40307](https://avd.aquasec.com/nvd/cve-2022-40307)
+	An issue was discovered in the Linux kernel through 5.19.8. drivers/firmware/efi/capsule-loader.c has a race condition with a resultant use-after-free.
     </details>
 
 
@@ -20381,6 +22817,93 @@ Link: [CVE-2022-40768](https://avd.aquasec.com/nvd/cve-2022-40768)
 
 Package: linux-libc-dev
 Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-4095
+Severity: MEDIUM
+Fixed Version: 4.15.0-201.212
+Link: [CVE-2022-4095](https://avd.aquasec.com/nvd/cve-2022-4095)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-4095
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-4095">https://avd.aquasec.com/nvd/cve-2022-4095</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: Use-after-Free/Double-Free bug in read_bbreg_hdl in drivers/staging/rtl8712/rtl8712_cmd.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A use-after-free flaw was found in Linux kernel before 5.19.2. This issue occurs in cmd_hdl_filter in drivers/staging/rtl8712/rtl8712_cmd.c, allowing an attacker to launch a local denial of service attack and gain escalation of privileges.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-4095
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 4.15.0-201.212
+	Link: [CVE-2022-4095](https://avd.aquasec.com/nvd/cve-2022-4095)
+	A use-after-free flaw was found in Linux kernel before 5.19.2. This issue occurs in cmd_hdl_filter in drivers/staging/rtl8712/rtl8712_cmd.c, allowing an attacker to launch a local denial of service attack and gain escalation of privileges.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
 Vulnerability CVE-2022-4139
 Severity: MEDIUM
 Fixed Version: 
@@ -20430,7 +22953,7 @@ Link: [CVE-2022-4139](https://avd.aquasec.com/nvd/cve-2022-4139)
 + <details>
     <summary>Full Description</summary>
     <br>
-    An incorrect TLB flush issue was found in the Linux kernel?s GPU i915 kernel driver, potentially leading to random memory corruption or data leaks. This flaw could allow a local user to crash the system or escalate their privileges on the system.
+    An incorrect TLB flush issue was found in the Linux kernel’s GPU i915 kernel driver, potentially leading to random memory corruption or data leaks. This flaw could allow a local user to crash the system or escalate their privileges on the system.
     </details>
 
 
@@ -20459,7 +22982,703 @@ Link: [CVE-2022-4139](https://avd.aquasec.com/nvd/cve-2022-4139)
 	Package: linux-libc-dev
 	Fixed Version: 
 	Link: [CVE-2022-4139](https://avd.aquasec.com/nvd/cve-2022-4139)
-	An incorrect TLB flush issue was found in the Linux kernel?s GPU i915 kernel driver, potentially leading to random memory corruption or data leaks. This flaw could allow a local user to crash the system or escalate their privileges on the system.
+	An incorrect TLB flush issue was found in the Linux kernel’s GPU i915 kernel driver, potentially leading to random memory corruption or data leaks. This flaw could allow a local user to crash the system or escalate their privileges on the system.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-44034
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-44034](https://avd.aquasec.com/nvd/cve-2022-44034)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-44034
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-44034">https://avd.aquasec.com/nvd/cve-2022-44034</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Kernel: A use-after-free due to race between scr24x_open()  and scr24x_remove()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in the Linux kernel through 6.0.6. drivers/char/pcmcia/scr24x_cs.c has a race condition and resultant use-after-free if a physically proximate attacker removes a PCMCIA device while calling open(), aka a race condition between scr24x_open() and scr24x_remove().
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-44034
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-44034](https://avd.aquasec.com/nvd/cve-2022-44034)
+	An issue was discovered in the Linux kernel through 6.0.6. drivers/char/pcmcia/scr24x_cs.c has a race condition and resultant use-after-free if a physically proximate attacker removes a PCMCIA device while calling open(), aka a race condition between scr24x_open() and scr24x_remove().
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-4543
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-4543](https://avd.aquasec.com/nvd/cve-2022-4543)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-4543
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-4543">https://avd.aquasec.com/nvd/cve-2022-4543</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: KASLR Prefetch Bypass Breaks KPTI
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A flaw named &amp;#34;EntryBleed&amp;#34; was found in the Linux Kernel Page Table Isolation (KPTI). This issue could allow a local attacker to leak KASLR base via prefetch side-channels based on TLB timing for Intel systems.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-4543
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-4543](https://avd.aquasec.com/nvd/cve-2022-4543)
+	A flaw named &#34;EntryBleed&#34; was found in the Linux Kernel Page Table Isolation (KPTI). This issue could allow a local attacker to leak KASLR base via prefetch side-channels based on TLB timing for Intel systems.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-45887
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-45887](https://avd.aquasec.com/nvd/cve-2022-45887)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-45887
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-45887">https://avd.aquasec.com/nvd/cve-2022-45887</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: memory leak in ttusb_dec_exit_dvb() in media/usb/ttusb-dec/ttusb_dec.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in the Linux kernel through 6.0.9. drivers/media/usb/ttusb-dec/ttusb_dec.c has a memory leak because of the lack of a dvb_frontend_detach call.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-45887
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-45887](https://avd.aquasec.com/nvd/cve-2022-45887)
+	An issue was discovered in the Linux kernel through 6.0.9. drivers/media/usb/ttusb-dec/ttusb_dec.c has a memory leak because of the lack of a dvb_frontend_detach call.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-45934
+Severity: MEDIUM
+Fixed Version: 4.15.0-202.213
+Link: [CVE-2022-45934](https://avd.aquasec.com/nvd/cve-2022-45934)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-45934
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-45934">https://avd.aquasec.com/nvd/cve-2022-45934</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: integer overflow in l2cap_config_req() in net/bluetooth/l2cap_core.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in the Linux kernel through 6.0.10. l2cap_config_req in net/bluetooth/l2cap_core.c has an integer wraparound via L2CAP_CONF_REQ packets.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-45934
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 4.15.0-202.213
+	Link: [CVE-2022-45934](https://avd.aquasec.com/nvd/cve-2022-45934)
+	An issue was discovered in the Linux kernel through 6.0.10. l2cap_config_req in net/bluetooth/l2cap_core.c has an integer wraparound via L2CAP_CONF_REQ packets.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-47520
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-47520](https://avd.aquasec.com/nvd/cve-2022-47520)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-47520
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-47520">https://avd.aquasec.com/nvd/cve-2022-47520</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: an out-of-bounds read in drivers/net/wireless/microchip/wilc1000/hif.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in the Linux kernel before 6.0.11. Missing offset validation in drivers/net/wireless/microchip/wilc1000/hif.c in the WILC1000 wireless driver can trigger an out-of-bounds read when parsing a Robust Security Network (RSN) information element from a Netlink packet.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-47520
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-47520](https://avd.aquasec.com/nvd/cve-2022-47520)
+	An issue was discovered in the Linux kernel before 6.0.11. Missing offset validation in drivers/net/wireless/microchip/wilc1000/hif.c in the WILC1000 wireless driver can trigger an out-of-bounds read when parsing a Robust Security Network (RSN) information element from a Netlink packet.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2023-23454
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-23454](https://avd.aquasec.com/nvd/cve-2023-23454)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-23454
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-23454">https://avd.aquasec.com/nvd/cve-2023-23454</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    cbq_classify in net/sched/sch_cbq.c in the Linux kernel through 6.1.4  ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    cbq_classify in net/sched/sch_cbq.c in the Linux kernel through 6.1.4 allows attackers to cause a denial of service (slab-out-of-bounds read) because of type confusion (non-negative numbers can sometimes indicate a TC_ACT_SHOT condition rather than valid classification results).
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-23454
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2023-23454](https://avd.aquasec.com/nvd/cve-2023-23454)
+	cbq_classify in net/sched/sch_cbq.c in the Linux kernel through 6.1.4 allows attackers to cause a denial of service (slab-out-of-bounds read) because of type confusion (non-negative numbers can sometimes indicate a TC_ACT_SHOT condition rather than valid classification results).
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2023-23455
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-23455](https://avd.aquasec.com/nvd/cve-2023-23455)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-23455
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-23455">https://avd.aquasec.com/nvd/cve-2023-23455</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    atm_tc_enqueue in net/sched/sch_atm.c in the Linux kernel through 6.1. ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    atm_tc_enqueue in net/sched/sch_atm.c in the Linux kernel through 6.1.4 allows attackers to cause a denial of service because of type confusion (non-negative numbers can sometimes indicate a TC_ACT_SHOT condition rather than valid classification results).
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-23455
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2023-23455](https://avd.aquasec.com/nvd/cve-2023-23455)
+	atm_tc_enqueue in net/sched/sch_atm.c in the Linux kernel through 6.1.4 allows attackers to cause a denial of service because of type confusion (non-negative numbers can sometimes indicate a TC_ACT_SHOT condition rather than valid classification results).
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2023-23559
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-23559](https://avd.aquasec.com/nvd/cve-2023-23559)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-23559
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-23559">https://avd.aquasec.com/nvd/cve-2023-23559</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    In rndis_query_oid in drivers/net/wireless/rndis_wlan.c in the Linux k ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    In rndis_query_oid in drivers/net/wireless/rndis_wlan.c in the Linux kernel through 6.1.5, there is an integer overflow in an addition.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-23559
+	Severity: MEDIUM
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2023-23559](https://avd.aquasec.com/nvd/cve-2023-23559)
+	In rndis_query_oid in drivers/net/wireless/rndis_wlan.c in the Linux kernel through 6.1.5, there is an integer overflow in an addition.
     </details>
 
 
@@ -21417,6 +24636,615 @@ Link: [CVE-2020-16156](https://avd.aquasec.com/nvd/cve-2020-16156)
 	Fixed Version: 5.26.1-6ubuntu0.6
 	Link: [CVE-2020-16156](https://avd.aquasec.com/nvd/cve-2020-16156)
 	CPAN 2.28 allows Signature Verification Bypass.
+    </details>
+
+
+
+---
+
+Package: python-pip
+Installed Version: 9.0.1-2.3~ubuntu1.18.04.5
+Vulnerability CVE-2022-40897
+Severity: MEDIUM
+Fixed Version: 9.0.1-2.3~ubuntu1.18.04.6
+Link: [CVE-2022-40897](https://avd.aquasec.com/nvd/cve-2022-40897)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-40897
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-40897">https://avd.aquasec.com/nvd/cve-2022-40897</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    pypa-setuptools: Regular Expression Denial of Service (ReDoS) in package_index.py
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    7.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-40897
+	Severity: HIGH
+	Package: setuptools
+	Fixed Version: 65.5.1
+	Link: [CVE-2022-40897](https://avd.aquasec.com/nvd/cve-2022-40897)
+	Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.
+    </details>
+
+
+
+---
+
+Package: python-pip
+Installed Version: 9.0.1-2.3~ubuntu1.18.04.5
+Vulnerability CVE-2022-40898
+Severity: MEDIUM
+Fixed Version: 9.0.1-2.3~ubuntu1.18.04.6
+Link: [CVE-2022-40898](https://avd.aquasec.com/nvd/cve-2022-40898)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-40898
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-40898">https://avd.aquasec.com/nvd/cve-2022-40898</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    python-wheel: remote attackers can cause  denial of service via attacker controlled input to wheel cli
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue discovered in Python Packaging Authority (PyPA) Wheel 0.37.1 and earlier allows remote attackers to cause a denial of service via attacker controlled input to wheel cli.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-40898
+	Severity: MEDIUM
+	Package: python-wheel
+	Fixed Version: 0.30.0-0.2ubuntu0.1
+	Link: [CVE-2022-40898](https://avd.aquasec.com/nvd/cve-2022-40898)
+	An issue discovered in Python Packaging Authority (PyPA) Wheel 0.37.1 and earlier allows remote attackers to cause a denial of service via attacker controlled input to wheel cli.
+    </details>
+
+
+
+---
+
+Package: python-pip-whl
+Installed Version: 9.0.1-2.3~ubuntu1.18.04.5
+Vulnerability CVE-2022-40897
+Severity: MEDIUM
+Fixed Version: 9.0.1-2.3~ubuntu1.18.04.6
+Link: [CVE-2022-40897](https://avd.aquasec.com/nvd/cve-2022-40897)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-40897
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-40897">https://avd.aquasec.com/nvd/cve-2022-40897</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    pypa-setuptools: Regular Expression Denial of Service (ReDoS) in package_index.py
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    7.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-40897
+	Severity: HIGH
+	Package: setuptools
+	Fixed Version: 65.5.1
+	Link: [CVE-2022-40897](https://avd.aquasec.com/nvd/cve-2022-40897)
+	Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.
+    </details>
+
+
+
+---
+
+Package: python-pip-whl
+Installed Version: 9.0.1-2.3~ubuntu1.18.04.5
+Vulnerability CVE-2022-40898
+Severity: MEDIUM
+Fixed Version: 9.0.1-2.3~ubuntu1.18.04.6
+Link: [CVE-2022-40898](https://avd.aquasec.com/nvd/cve-2022-40898)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-40898
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-40898">https://avd.aquasec.com/nvd/cve-2022-40898</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    python-wheel: remote attackers can cause  denial of service via attacker controlled input to wheel cli
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue discovered in Python Packaging Authority (PyPA) Wheel 0.37.1 and earlier allows remote attackers to cause a denial of service via attacker controlled input to wheel cli.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-40898
+	Severity: MEDIUM
+	Package: python-wheel
+	Fixed Version: 0.30.0-0.2ubuntu0.1
+	Link: [CVE-2022-40898](https://avd.aquasec.com/nvd/cve-2022-40898)
+	An issue discovered in Python Packaging Authority (PyPA) Wheel 0.37.1 and earlier allows remote attackers to cause a denial of service via attacker controlled input to wheel cli.
+    </details>
+
+
+
+---
+
+Package: python-pkg-resources
+Installed Version: 39.0.1-2
+Vulnerability CVE-2022-40897
+Severity: MEDIUM
+Fixed Version: 39.0.1-2ubuntu0.1
+Link: [CVE-2022-40897](https://avd.aquasec.com/nvd/cve-2022-40897)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-40897
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-40897">https://avd.aquasec.com/nvd/cve-2022-40897</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    pypa-setuptools: Regular Expression Denial of Service (ReDoS) in package_index.py
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    7.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-40897
+	Severity: HIGH
+	Package: setuptools
+	Fixed Version: 65.5.1
+	Link: [CVE-2022-40897](https://avd.aquasec.com/nvd/cve-2022-40897)
+	Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.
+    </details>
+
+
+
+---
+
+Package: python-setuptools
+Installed Version: 39.0.1-2
+Vulnerability CVE-2022-40897
+Severity: MEDIUM
+Fixed Version: 39.0.1-2ubuntu0.1
+Link: [CVE-2022-40897](https://avd.aquasec.com/nvd/cve-2022-40897)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-40897
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-40897">https://avd.aquasec.com/nvd/cve-2022-40897</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    pypa-setuptools: Regular Expression Denial of Service (ReDoS) in package_index.py
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    7.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-40897
+	Severity: HIGH
+	Package: setuptools
+	Fixed Version: 65.5.1
+	Link: [CVE-2022-40897](https://avd.aquasec.com/nvd/cve-2022-40897)
+	Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.
+    </details>
+
+
+
+---
+
+Package: python-wheel
+Installed Version: 0.30.0-0.2
+Vulnerability CVE-2022-40898
+Severity: MEDIUM
+Fixed Version: 0.30.0-0.2ubuntu0.1
+Link: [CVE-2022-40898](https://avd.aquasec.com/nvd/cve-2022-40898)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-40898
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-40898">https://avd.aquasec.com/nvd/cve-2022-40898</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    python-wheel: remote attackers can cause  denial of service via attacker controlled input to wheel cli
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue discovered in Python Packaging Authority (PyPA) Wheel 0.37.1 and earlier allows remote attackers to cause a denial of service via attacker controlled input to wheel cli.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-40898
+	Severity: MEDIUM
+	Package: python-wheel
+	Fixed Version: 0.30.0-0.2ubuntu0.1
+	Link: [CVE-2022-40898](https://avd.aquasec.com/nvd/cve-2022-40898)
+	An issue discovered in Python Packaging Authority (PyPA) Wheel 0.37.1 and earlier allows remote attackers to cause a denial of service via attacker controlled input to wheel cli.
     </details>
 
 
@@ -22645,7 +26473,7 @@ Package: vim
 Installed Version: 2:8.0.1453-1ubuntu1.9
 Vulnerability CVE-2022-0392
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 2:8.0.1453-1ubuntu1.10
 Link: [CVE-2022-0392](https://avd.aquasec.com/nvd/cve-2022-0392)
 
 ### Locations
@@ -22719,7 +26547,7 @@ Link: [CVE-2022-0392](https://avd.aquasec.com/nvd/cve-2022-0392)
     Vulnerability CVE-2022-0392
 	Severity: MEDIUM
 	Package: xxd
-	Fixed Version: 
+	Fixed Version: 2:8.0.1453-1ubuntu1.10
 	Link: [CVE-2022-0392](https://avd.aquasec.com/nvd/cve-2022-0392)
 	Heap-based Buffer Overflow in GitHub repository vim prior to 8.2.
     </details>
@@ -24462,6 +28290,441 @@ Link: [CVE-2022-2946](https://avd.aquasec.com/nvd/cve-2022-2946)
 	Fixed Version: 
 	Link: [CVE-2022-2946](https://avd.aquasec.com/nvd/cve-2022-2946)
 	Use After Free in GitHub repository vim/vim prior to 9.0.0246.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-47024
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-47024](https://avd.aquasec.com/nvd/cve-2022-47024)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-47024
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-47024">https://avd.aquasec.com/nvd/cve-2022-47024</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    A null pointer dereference issue was discovered in function gui_x11_cr ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer dereference issue was discovered in function gui_x11_create_blank_mouse in gui_x11.c in vim 8.1.2269 thru 9.0.0339 allows attackers to cause denial of service or other unspecified impacts.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-47024
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-47024](https://avd.aquasec.com/nvd/cve-2022-47024)
+	A null pointer dereference issue was discovered in function gui_x11_create_blank_mouse in gui_x11.c in vim 8.1.2269 thru 9.0.0339 allows attackers to cause denial of service or other unspecified impacts.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0049
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0049](https://avd.aquasec.com/nvd/cve-2023-0049)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0049
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0049">https://avd.aquasec.com/nvd/cve-2023-0049</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.1143. ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.1143.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0049
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0049](https://avd.aquasec.com/nvd/cve-2023-0049)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.1143.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0054
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0054](https://avd.aquasec.com/nvd/cve-2023-0054)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0054
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0054">https://avd.aquasec.com/nvd/cve-2023-0054</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145. ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0054
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0054](https://avd.aquasec.com/nvd/cve-2023-0054)
+	Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0288
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0288](https://avd.aquasec.com/nvd/cve-2023-0288)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0288
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0288">https://avd.aquasec.com/nvd/cve-2023-0288</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1 ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1189.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0288
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0288](https://avd.aquasec.com/nvd/cve-2023-0288)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1189.
+    </details>
+
+
+
+---
+
+Package: vim
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0433
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0433](https://avd.aquasec.com/nvd/cve-2023-0433)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0433
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0433">https://avd.aquasec.com/nvd/cve-2023-0433</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1 ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1225.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0433
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0433](https://avd.aquasec.com/nvd/cve-2023-0433)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1225.
     </details>
 
 
@@ -25255,7 +29518,7 @@ Package: vim-common
 Installed Version: 2:8.0.1453-1ubuntu1.9
 Vulnerability CVE-2022-0392
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 2:8.0.1453-1ubuntu1.10
 Link: [CVE-2022-0392](https://avd.aquasec.com/nvd/cve-2022-0392)
 
 ### Locations
@@ -25329,7 +29592,7 @@ Link: [CVE-2022-0392](https://avd.aquasec.com/nvd/cve-2022-0392)
     Vulnerability CVE-2022-0392
 	Severity: MEDIUM
 	Package: xxd
-	Fixed Version: 
+	Fixed Version: 2:8.0.1453-1ubuntu1.10
 	Link: [CVE-2022-0392](https://avd.aquasec.com/nvd/cve-2022-0392)
 	Heap-based Buffer Overflow in GitHub repository vim prior to 8.2.
     </details>
@@ -27072,6 +31335,441 @@ Link: [CVE-2022-2946](https://avd.aquasec.com/nvd/cve-2022-2946)
 	Fixed Version: 
 	Link: [CVE-2022-2946](https://avd.aquasec.com/nvd/cve-2022-2946)
 	Use After Free in GitHub repository vim/vim prior to 9.0.0246.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-47024
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-47024](https://avd.aquasec.com/nvd/cve-2022-47024)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-47024
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-47024">https://avd.aquasec.com/nvd/cve-2022-47024</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    A null pointer dereference issue was discovered in function gui_x11_cr ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer dereference issue was discovered in function gui_x11_create_blank_mouse in gui_x11.c in vim 8.1.2269 thru 9.0.0339 allows attackers to cause denial of service or other unspecified impacts.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-47024
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-47024](https://avd.aquasec.com/nvd/cve-2022-47024)
+	A null pointer dereference issue was discovered in function gui_x11_create_blank_mouse in gui_x11.c in vim 8.1.2269 thru 9.0.0339 allows attackers to cause denial of service or other unspecified impacts.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0049
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0049](https://avd.aquasec.com/nvd/cve-2023-0049)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0049
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0049">https://avd.aquasec.com/nvd/cve-2023-0049</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.1143. ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.1143.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0049
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0049](https://avd.aquasec.com/nvd/cve-2023-0049)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.1143.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0054
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0054](https://avd.aquasec.com/nvd/cve-2023-0054)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0054
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0054">https://avd.aquasec.com/nvd/cve-2023-0054</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145. ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0054
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0054](https://avd.aquasec.com/nvd/cve-2023-0054)
+	Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0288
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0288](https://avd.aquasec.com/nvd/cve-2023-0288)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0288
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0288">https://avd.aquasec.com/nvd/cve-2023-0288</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1 ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1189.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0288
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0288](https://avd.aquasec.com/nvd/cve-2023-0288)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1189.
+    </details>
+
+
+
+---
+
+Package: vim-common
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0433
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0433](https://avd.aquasec.com/nvd/cve-2023-0433)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0433
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0433">https://avd.aquasec.com/nvd/cve-2023-0433</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1 ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1225.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0433
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0433](https://avd.aquasec.com/nvd/cve-2023-0433)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1225.
     </details>
 
 
@@ -27865,7 +32563,7 @@ Package: vim-runtime
 Installed Version: 2:8.0.1453-1ubuntu1.9
 Vulnerability CVE-2022-0392
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 2:8.0.1453-1ubuntu1.10
 Link: [CVE-2022-0392](https://avd.aquasec.com/nvd/cve-2022-0392)
 
 ### Locations
@@ -27939,7 +32637,7 @@ Link: [CVE-2022-0392](https://avd.aquasec.com/nvd/cve-2022-0392)
     Vulnerability CVE-2022-0392
 	Severity: MEDIUM
 	Package: xxd
-	Fixed Version: 
+	Fixed Version: 2:8.0.1453-1ubuntu1.10
 	Link: [CVE-2022-0392](https://avd.aquasec.com/nvd/cve-2022-0392)
 	Heap-based Buffer Overflow in GitHub repository vim prior to 8.2.
     </details>
@@ -29682,6 +34380,441 @@ Link: [CVE-2022-2946](https://avd.aquasec.com/nvd/cve-2022-2946)
 	Fixed Version: 
 	Link: [CVE-2022-2946](https://avd.aquasec.com/nvd/cve-2022-2946)
 	Use After Free in GitHub repository vim/vim prior to 9.0.0246.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-47024
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-47024](https://avd.aquasec.com/nvd/cve-2022-47024)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-47024
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-47024">https://avd.aquasec.com/nvd/cve-2022-47024</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    A null pointer dereference issue was discovered in function gui_x11_cr ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer dereference issue was discovered in function gui_x11_create_blank_mouse in gui_x11.c in vim 8.1.2269 thru 9.0.0339 allows attackers to cause denial of service or other unspecified impacts.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-47024
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-47024](https://avd.aquasec.com/nvd/cve-2022-47024)
+	A null pointer dereference issue was discovered in function gui_x11_create_blank_mouse in gui_x11.c in vim 8.1.2269 thru 9.0.0339 allows attackers to cause denial of service or other unspecified impacts.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0049
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0049](https://avd.aquasec.com/nvd/cve-2023-0049)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0049
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0049">https://avd.aquasec.com/nvd/cve-2023-0049</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.1143. ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.1143.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0049
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0049](https://avd.aquasec.com/nvd/cve-2023-0049)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.1143.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0054
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0054](https://avd.aquasec.com/nvd/cve-2023-0054)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0054
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0054">https://avd.aquasec.com/nvd/cve-2023-0054</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145. ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0054
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0054](https://avd.aquasec.com/nvd/cve-2023-0054)
+	Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0288
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0288](https://avd.aquasec.com/nvd/cve-2023-0288)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0288
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0288">https://avd.aquasec.com/nvd/cve-2023-0288</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1 ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1189.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0288
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0288](https://avd.aquasec.com/nvd/cve-2023-0288)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1189.
+    </details>
+
+
+
+---
+
+Package: vim-runtime
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0433
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0433](https://avd.aquasec.com/nvd/cve-2023-0433)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0433
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0433">https://avd.aquasec.com/nvd/cve-2023-0433</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1 ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1225.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0433
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0433](https://avd.aquasec.com/nvd/cve-2023-0433)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1225.
     </details>
 
 
@@ -30475,7 +35608,7 @@ Package: xxd
 Installed Version: 2:8.0.1453-1ubuntu1.9
 Vulnerability CVE-2022-0392
 Severity: MEDIUM
-Fixed Version: 
+Fixed Version: 2:8.0.1453-1ubuntu1.10
 Link: [CVE-2022-0392](https://avd.aquasec.com/nvd/cve-2022-0392)
 
 ### Locations
@@ -30549,7 +35682,7 @@ Link: [CVE-2022-0392](https://avd.aquasec.com/nvd/cve-2022-0392)
     Vulnerability CVE-2022-0392
 	Severity: MEDIUM
 	Package: xxd
-	Fixed Version: 
+	Fixed Version: 2:8.0.1453-1ubuntu1.10
 	Link: [CVE-2022-0392](https://avd.aquasec.com/nvd/cve-2022-0392)
 	Heap-based Buffer Overflow in GitHub repository vim prior to 8.2.
     </details>
@@ -32292,6 +37425,441 @@ Link: [CVE-2022-2946](https://avd.aquasec.com/nvd/cve-2022-2946)
 	Fixed Version: 
 	Link: [CVE-2022-2946](https://avd.aquasec.com/nvd/cve-2022-2946)
 	Use After Free in GitHub repository vim/vim prior to 9.0.0246.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2022-47024
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2022-47024](https://avd.aquasec.com/nvd/cve-2022-47024)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-47024
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-47024">https://avd.aquasec.com/nvd/cve-2022-47024</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    A null pointer dereference issue was discovered in function gui_x11_cr ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A null pointer dereference issue was discovered in function gui_x11_create_blank_mouse in gui_x11.c in vim 8.1.2269 thru 9.0.0339 allows attackers to cause denial of service or other unspecified impacts.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-47024
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2022-47024](https://avd.aquasec.com/nvd/cve-2022-47024)
+	A null pointer dereference issue was discovered in function gui_x11_create_blank_mouse in gui_x11.c in vim 8.1.2269 thru 9.0.0339 allows attackers to cause denial of service or other unspecified impacts.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0049
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0049](https://avd.aquasec.com/nvd/cve-2023-0049)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0049
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0049">https://avd.aquasec.com/nvd/cve-2023-0049</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.1143. ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.1143.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0049
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0049](https://avd.aquasec.com/nvd/cve-2023-0049)
+	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.1143.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0054
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0054](https://avd.aquasec.com/nvd/cve-2023-0054)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0054
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0054">https://avd.aquasec.com/nvd/cve-2023-0054</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145. ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0054
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0054](https://avd.aquasec.com/nvd/cve-2023-0054)
+	Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1145.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0288
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0288](https://avd.aquasec.com/nvd/cve-2023-0288)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0288
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0288">https://avd.aquasec.com/nvd/cve-2023-0288</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1 ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1189.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0288
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0288](https://avd.aquasec.com/nvd/cve-2023-0288)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1189.
+    </details>
+
+
+
+---
+
+Package: xxd
+Installed Version: 2:8.0.1453-1ubuntu1.9
+Vulnerability CVE-2023-0433
+Severity: MEDIUM
+Fixed Version: 
+Link: [CVE-2023-0433](https://avd.aquasec.com/nvd/cve-2023-0433)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Warning
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2023-0433
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2023-0433">https://avd.aquasec.com/nvd/cve-2023-0433</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1 ...
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1225.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    5.5
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2023-0433
+	Severity: MEDIUM
+	Package: xxd
+	Fixed Version: 
+	Link: [CVE-2023-0433](https://avd.aquasec.com/nvd/cve-2023-0433)
+	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1225.
     </details>
 
 
@@ -33416,7 +38984,7 @@ Link: [CVE-2022-23491](https://avd.aquasec.com/nvd/cve-2022-23491)
 + <details>
     <summary>Short Description</summary>
     <br>
-    Certifi removing TrustCor root certificate
+    Certifi is a curated collection of Root Certificates for validating th ...
     </details>
 
 
@@ -39494,93 +45062,6 @@ Link: [CVE-2020-17541](https://avd.aquasec.com/nvd/cve-2020-17541)
 
 ---
 
-Package: libjpeg-turbo8
-Installed Version: 1.5.2-0ubuntu5.18.04.4
-Vulnerability CVE-2022-32325
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-32325](https://avd.aquasec.com/nvd/cve-2022-32325)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-32325
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-32325">https://avd.aquasec.com/nvd/cve-2022-32325</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation wh ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation which is caused by a READ memory access at jpegoptim.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-32325
-	Severity: LOW
-	Package: libjpeg-turbo8-dev
-	Fixed Version: 
-	Link: [CVE-2022-32325](https://avd.aquasec.com/nvd/cve-2022-32325)
-	JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation which is caused by a READ memory access at jpegoptim.c.
-    </details>
-
-
-
----
-
 Package: libjpeg-turbo8-dev
 Installed Version: 1.5.2-0ubuntu5.18.04.4
 Vulnerability CVE-2018-11813
@@ -39749,93 +45230,6 @@ Link: [CVE-2020-17541](https://avd.aquasec.com/nvd/cve-2020-17541)
 	Fixed Version: 1.5.2-0ubuntu5.18.04.6
 	Link: [CVE-2020-17541](https://avd.aquasec.com/nvd/cve-2020-17541)
 	Libjpeg-turbo all version have a stack-based buffer overflow in the &#34;transform&#34; component. A remote attacker can send a malformed jpeg file to the service and cause arbitrary code execution or denial of service of the target service.
-    </details>
-
-
-
----
-
-Package: libjpeg-turbo8-dev
-Installed Version: 1.5.2-0ubuntu5.18.04.4
-Vulnerability CVE-2022-32325
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2022-32325](https://avd.aquasec.com/nvd/cve-2022-32325)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2022-32325
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2022-32325">https://avd.aquasec.com/nvd/cve-2022-32325</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation wh ...
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation which is caused by a READ memory access at jpegoptim.c.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2022-32325
-	Severity: LOW
-	Package: libjpeg-turbo8-dev
-	Fixed Version: 
-	Link: [CVE-2022-32325](https://avd.aquasec.com/nvd/cve-2022-32325)
-	JPEGOPTIM v1.4.7 was discovered to contain a segmentation violation which is caused by a READ memory access at jpegoptim.c.
     </details>
 
 
@@ -40706,6 +46100,354 @@ Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
 	Fixed Version: 
 	Link: [CVE-2022-29458](https://avd.aquasec.com/nvd/cve-2022-29458)
 	ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.
+    </details>
+
+
+
+---
+
+Package: libpam-modules
+Installed Version: 1.1.8-3.6ubuntu2.18.04.3
+Vulnerability CVE-2022-28321
+Severity: LOW
+Fixed Version: 1.1.8-3.6ubuntu2.18.04.4
+Link: [CVE-2022-28321](https://avd.aquasec.com/nvd/cve-2022-28321)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-28321
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-28321">https://avd.aquasec.com/nvd/cve-2022-28321</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The Linux-PAM package before 1.5.2-6.1 for openSUSE Tumbleweed allows authentication bypass for SSH logins. The pam_access.so module doesn&amp;#39;t correctly restrict login if a user tries to connect from an IP address that is not resolvable via DNS. In such conditions, a user with denied access to a machine can still get access. NOTE: the relevance of this issue is largely limited to openSUSE Tumbleweed and openSUSE Factory; it does not affect Linux-PAM upstream.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-28321
+	Severity: LOW
+	Package: libpam0g
+	Fixed Version: 1.1.8-3.6ubuntu2.18.04.4
+	Link: [CVE-2022-28321](https://avd.aquasec.com/nvd/cve-2022-28321)
+	The Linux-PAM package before 1.5.2-6.1 for openSUSE Tumbleweed allows authentication bypass for SSH logins. The pam_access.so module doesn&#39;t correctly restrict login if a user tries to connect from an IP address that is not resolvable via DNS. In such conditions, a user with denied access to a machine can still get access. NOTE: the relevance of this issue is largely limited to openSUSE Tumbleweed and openSUSE Factory; it does not affect Linux-PAM upstream.
+    </details>
+
+
+
+---
+
+Package: libpam-modules-bin
+Installed Version: 1.1.8-3.6ubuntu2.18.04.3
+Vulnerability CVE-2022-28321
+Severity: LOW
+Fixed Version: 1.1.8-3.6ubuntu2.18.04.4
+Link: [CVE-2022-28321](https://avd.aquasec.com/nvd/cve-2022-28321)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-28321
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-28321">https://avd.aquasec.com/nvd/cve-2022-28321</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The Linux-PAM package before 1.5.2-6.1 for openSUSE Tumbleweed allows authentication bypass for SSH logins. The pam_access.so module doesn&amp;#39;t correctly restrict login if a user tries to connect from an IP address that is not resolvable via DNS. In such conditions, a user with denied access to a machine can still get access. NOTE: the relevance of this issue is largely limited to openSUSE Tumbleweed and openSUSE Factory; it does not affect Linux-PAM upstream.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-28321
+	Severity: LOW
+	Package: libpam0g
+	Fixed Version: 1.1.8-3.6ubuntu2.18.04.4
+	Link: [CVE-2022-28321](https://avd.aquasec.com/nvd/cve-2022-28321)
+	The Linux-PAM package before 1.5.2-6.1 for openSUSE Tumbleweed allows authentication bypass for SSH logins. The pam_access.so module doesn&#39;t correctly restrict login if a user tries to connect from an IP address that is not resolvable via DNS. In such conditions, a user with denied access to a machine can still get access. NOTE: the relevance of this issue is largely limited to openSUSE Tumbleweed and openSUSE Factory; it does not affect Linux-PAM upstream.
+    </details>
+
+
+
+---
+
+Package: libpam-runtime
+Installed Version: 1.1.8-3.6ubuntu2.18.04.3
+Vulnerability CVE-2022-28321
+Severity: LOW
+Fixed Version: 1.1.8-3.6ubuntu2.18.04.4
+Link: [CVE-2022-28321](https://avd.aquasec.com/nvd/cve-2022-28321)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-28321
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-28321">https://avd.aquasec.com/nvd/cve-2022-28321</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The Linux-PAM package before 1.5.2-6.1 for openSUSE Tumbleweed allows authentication bypass for SSH logins. The pam_access.so module doesn&amp;#39;t correctly restrict login if a user tries to connect from an IP address that is not resolvable via DNS. In such conditions, a user with denied access to a machine can still get access. NOTE: the relevance of this issue is largely limited to openSUSE Tumbleweed and openSUSE Factory; it does not affect Linux-PAM upstream.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-28321
+	Severity: LOW
+	Package: libpam0g
+	Fixed Version: 1.1.8-3.6ubuntu2.18.04.4
+	Link: [CVE-2022-28321](https://avd.aquasec.com/nvd/cve-2022-28321)
+	The Linux-PAM package before 1.5.2-6.1 for openSUSE Tumbleweed allows authentication bypass for SSH logins. The pam_access.so module doesn&#39;t correctly restrict login if a user tries to connect from an IP address that is not resolvable via DNS. In such conditions, a user with denied access to a machine can still get access. NOTE: the relevance of this issue is largely limited to openSUSE Tumbleweed and openSUSE Factory; it does not affect Linux-PAM upstream.
+    </details>
+
+
+
+---
+
+Package: libpam0g
+Installed Version: 1.1.8-3.6ubuntu2.18.04.3
+Vulnerability CVE-2022-28321
+Severity: LOW
+Fixed Version: 1.1.8-3.6ubuntu2.18.04.4
+Link: [CVE-2022-28321](https://avd.aquasec.com/nvd/cve-2022-28321)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-28321
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-28321">https://avd.aquasec.com/nvd/cve-2022-28321</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    The Linux-PAM package before 1.5.2-6.1 for openSUSE Tumbleweed allows authentication bypass for SSH logins. The pam_access.so module doesn&amp;#39;t correctly restrict login if a user tries to connect from an IP address that is not resolvable via DNS. In such conditions, a user with denied access to a machine can still get access. NOTE: the relevance of this issue is largely limited to openSUSE Tumbleweed and openSUSE Factory; it does not affect Linux-PAM upstream.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-28321
+	Severity: LOW
+	Package: libpam0g
+	Fixed Version: 1.1.8-3.6ubuntu2.18.04.4
+	Link: [CVE-2022-28321](https://avd.aquasec.com/nvd/cve-2022-28321)
+	The Linux-PAM package before 1.5.2-6.1 for openSUSE Tumbleweed allows authentication bypass for SSH logins. The pam_access.so module doesn&#39;t correctly restrict login if a user tries to connect from an IP address that is not resolvable via DNS. In such conditions, a user with denied access to a machine can still get access. NOTE: the relevance of this issue is largely limited to openSUSE Tumbleweed and openSUSE Factory; it does not affect Linux-PAM upstream.
     </details>
 
 
@@ -43237,93 +48979,6 @@ Link: [CVE-2019-15213](https://avd.aquasec.com/nvd/cve-2019-15213)
 
 Package: linux-libc-dev
 Installed Version: 4.15.0-193.204
-Vulnerability CVE-2019-16230
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2019-16230](https://avd.aquasec.com/nvd/cve-2019-16230)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2019-16230
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2019-16230">https://avd.aquasec.com/nvd/cve-2019-16230</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: null pointer dereference in drivers/gpu/drm/radeon/radeon_display.c
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ** DISPUTED ** drivers/gpu/drm/radeon/radeon_display.c in the Linux kernel 5.2.14 does not check the alloc_workqueue return value, leading to a NULL pointer dereference. NOTE: A third-party software maintainer states that the work queue allocation is happening during device initialization, which for a graphics card occurs during boot. It is not attacker controllable and OOM at that time is highly unlikely.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2019-16230
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2019-16230](https://avd.aquasec.com/nvd/cve-2019-16230)
-	** DISPUTED ** drivers/gpu/drm/radeon/radeon_display.c in the Linux kernel 5.2.14 does not check the alloc_workqueue return value, leading to a NULL pointer dereference. NOTE: A third-party software maintainer states that the work queue allocation is happening during device initialization, which for a graphics card occurs during boot. It is not attacker controllable and OOM at that time is highly unlikely.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
 Vulnerability CVE-2019-19378
 Severity: LOW
 Fixed Version: 
@@ -43751,93 +49406,6 @@ Link: [CVE-2019-20429](https://avd.aquasec.com/nvd/cve-2019-20429)
 	Fixed Version: 
 	Link: [CVE-2019-20429](https://avd.aquasec.com/nvd/cve-2019-20429)
 	In the Lustre file system before 2.12.3, the ptlrpc module has an out-of-bounds read and panic (via a modified lm_bufcount field) due to the lack of validation for specific fields of packets sent by a client. This is caused by interaction between sptlrpc_svc_unwrap_request and lustre_msg_hdr_size_v2.
-    </details>
-
-
-
----
-
-Package: linux-libc-dev
-Installed Version: 4.15.0-193.204
-Vulnerability CVE-2020-11725
-Severity: LOW
-Fixed Version: 
-Link: [CVE-2020-11725](https://avd.aquasec.com/nvd/cve-2020-11725)
-
-### Locations
-#### **Physical Location**
-- bioinformaticsua/catalogue
-
-
-- Line 1
-
-
-
-
-
-
-
-### Level
-
-- Note
-
-
-### Rule Information
-
-+ <details>
-  <summary>Rule Id</summary>
-  <br>
-    CVE-2020-11725
-  </details>
-
-
-+ <details>
-    <summary>Help Uri</summary>
-    <br>
-    <a href="https://avd.aquasec.com/nvd/cve-2020-11725">https://avd.aquasec.com/nvd/cve-2020-11725</a>
-    </details>
-
-
-+ <details>
-    <summary>Short Description</summary>
-    <br>
-    kernel: improper handling of private_size*count multiplication due to count=info-&amp;gt;owner typo
-    </details>
-
-
-+ <details>
-    <summary>Full Description</summary>
-    <br>
-    ** DISPUTED ** snd_ctl_elem_add in sound/core/control.c in the Linux kernel through 5.6.3 has a count=info-&amp;gt;owner line, which later affects a private_size*count multiplication for unspecified &amp;#34;interesting side effects.&amp;#34; NOTE: kernel engineers dispute this finding, because it could be relevant only if new callers were added that were unfamiliar with the misuse of the info-&amp;gt;owner field to represent data unrelated to the &amp;#34;owner&amp;#34; concept. The existing callers, SNDRV_CTL_IOCTL_ELEM_ADD and SNDRV_CTL_IOCTL_ELEM_REPLACE, have been designed to misuse the info-&amp;gt;owner field in a safe way.
-    </details>
-
-
-+ <details>
-    <summary>Precision</summary>
-    <br>
-    very-high
-    </details>
-
-
-+ <details>
-    <summary>Security-severity</summary>
-    <br>
-    2.0
-    </details>
-
-
-
-
-
-+ <details>
-    <summary>Help</summary>
-    <br>
-    Vulnerability CVE-2020-11725
-	Severity: LOW
-	Package: linux-libc-dev
-	Fixed Version: 
-	Link: [CVE-2020-11725](https://avd.aquasec.com/nvd/cve-2020-11725)
-	** DISPUTED ** snd_ctl_elem_add in sound/core/control.c in the Linux kernel through 5.6.3 has a count=info-&gt;owner line, which later affects a private_size*count multiplication for unspecified &#34;interesting side effects.&#34; NOTE: kernel engineers dispute this finding, because it could be relevant only if new callers were added that were unfamiliar with the misuse of the info-&gt;owner field to represent data unrelated to the &#34;owner&#34; concept. The existing callers, SNDRV_CTL_IOCTL_ELEM_ADD and SNDRV_CTL_IOCTL_ELEM_REPLACE, have been designed to misuse the info-&gt;owner field in a safe way.
     </details>
 
 
@@ -44977,6 +50545,93 @@ Link: [CVE-2022-3565](https://avd.aquasec.com/nvd/cve-2022-3565)
 
 Package: linux-libc-dev
 Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-3594
+Severity: LOW
+Fixed Version: 4.15.0-200.211
+Link: [CVE-2022-3594](https://avd.aquasec.com/nvd/cve-2022-3594)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-3594
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-3594">https://avd.aquasec.com/nvd/cve-2022-3594</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: Rate limit overflow messages in r8152 in intr_callback
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    A vulnerability was found in Linux Kernel. It has been declared as problematic. Affected by this vulnerability is the function intr_callback of the file drivers/net/usb/r8152.c of the component BPF. The manipulation leads to logging of excessive data. The attack can be launched remotely. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-211363.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-3594
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 4.15.0-200.211
+	Link: [CVE-2022-3594](https://avd.aquasec.com/nvd/cve-2022-3594)
+	A vulnerability was found in Linux Kernel. It has been declared as problematic. Affected by this vulnerability is the function intr_callback of the file drivers/net/usb/r8152.c of the component BPF. The manipulation leads to logging of excessive data. The attack can be launched remotely. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-211363.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
 Vulnerability CVE-2022-3621
 Severity: LOW
 Fixed Version: 4.15.0-200.211
@@ -45056,6 +50711,702 @@ Link: [CVE-2022-3621](https://avd.aquasec.com/nvd/cve-2022-3621)
 	Fixed Version: 4.15.0-200.211
 	Link: [CVE-2022-3621](https://avd.aquasec.com/nvd/cve-2022-3621)
 	A vulnerability was found in Linux Kernel. It has been classified as problematic. Affected is the function nilfs_bmap_lookup_at_level of the file fs/nilfs2/inode.c of the component nilfs2. The manipulation leads to null pointer dereference. It is possible to launch the attack remotely. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-211920.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-39842
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-39842](https://avd.aquasec.com/nvd/cve-2022-39842)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-39842
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-39842">https://avd.aquasec.com/nvd/cve-2022-39842</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Kernel: A type conflict of size_t versus int cause an integer overflow in pxa3xx_gcu_write
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    ** DISPUTED ** An issue was discovered in the Linux kernel before 5.19. In pxa3xx_gcu_write in drivers/video/fbdev/pxa3xx-gcu.c, the count parameter has a type conflict of size_t versus int, causing an integer overflow and bypassing the size check. After that, because it is used as the third argument to copy_from_user(), a heap overflow may occur. NOTE: the original discoverer disputes that the overflow can actually happen.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-39842
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-39842](https://avd.aquasec.com/nvd/cve-2022-39842)
+	** DISPUTED ** An issue was discovered in the Linux kernel before 5.19. In pxa3xx_gcu_write in drivers/video/fbdev/pxa3xx-gcu.c, the count parameter has a type conflict of size_t versus int, causing an integer overflow and bypassing the size check. After that, because it is used as the third argument to copy_from_user(), a heap overflow may occur. NOTE: the original discoverer disputes that the overflow can actually happen.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-41848
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-41848](https://avd.aquasec.com/nvd/cve-2022-41848)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-41848
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-41848">https://avd.aquasec.com/nvd/cve-2022-41848</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: Race condition between mgslpc_ioctl and mgslpc_detach
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    drivers/char/pcmcia/synclink_cs.c in the Linux kernel through 5.19.12 has a race condition and resultant use-after-free if a physically proximate attacker removes a PCMCIA device while calling ioctl, aka a race condition between mgslpc_ioctl and mgslpc_detach.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-41848
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-41848](https://avd.aquasec.com/nvd/cve-2022-41848)
+	drivers/char/pcmcia/synclink_cs.c in the Linux kernel through 5.19.12 has a race condition and resultant use-after-free if a physically proximate attacker removes a PCMCIA device while calling ioctl, aka a race condition between mgslpc_ioctl and mgslpc_detach.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-44032
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-44032](https://avd.aquasec.com/nvd/cve-2022-44032)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-44032
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-44032">https://avd.aquasec.com/nvd/cve-2022-44032</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Kernel: Race between cmm_open() and cm4000_detach() result in UAF
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in the Linux kernel through 6.0.6. drivers/char/pcmcia/cm4000_cs.c has a race condition and resultant use-after-free if a physically proximate attacker removes a PCMCIA device while calling open(), aka a race condition between cmm_open() and cm4000_detach().
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-44032
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-44032](https://avd.aquasec.com/nvd/cve-2022-44032)
+	An issue was discovered in the Linux kernel through 6.0.6. drivers/char/pcmcia/cm4000_cs.c has a race condition and resultant use-after-free if a physically proximate attacker removes a PCMCIA device while calling open(), aka a race condition between cmm_open() and cm4000_detach().
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-44033
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-44033](https://avd.aquasec.com/nvd/cve-2022-44033)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-44033
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-44033">https://avd.aquasec.com/nvd/cve-2022-44033</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    Kernel: A race condition between cm4040_open() and reader_detach() may result in UAF
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in the Linux kernel through 6.0.6. drivers/char/pcmcia/cm4040_cs.c has a race condition and resultant use-after-free if a physically proximate attacker removes a PCMCIA device while calling open(), aka a race condition between cm4040_open() and reader_detach().
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-44033
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-44033](https://avd.aquasec.com/nvd/cve-2022-44033)
+	An issue was discovered in the Linux kernel through 6.0.6. drivers/char/pcmcia/cm4040_cs.c has a race condition and resultant use-after-free if a physically proximate attacker removes a PCMCIA device while calling open(), aka a race condition between cm4040_open() and reader_detach().
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-45884
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-45884](https://avd.aquasec.com/nvd/cve-2022-45884)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-45884
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-45884">https://avd.aquasec.com/nvd/cve-2022-45884</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: use-after-free due to race condition occurring in dvb_register_device()
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in the Linux kernel through 6.0.9. drivers/media/dvb-core/dvbdev.c has a use-after-free, related to dvb_register_device dynamically allocating fops.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-45884
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-45884](https://avd.aquasec.com/nvd/cve-2022-45884)
+	An issue was discovered in the Linux kernel through 6.0.9. drivers/media/dvb-core/dvbdev.c has a use-after-free, related to dvb_register_device dynamically allocating fops.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-45885
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-45885](https://avd.aquasec.com/nvd/cve-2022-45885)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-45885
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-45885">https://avd.aquasec.com/nvd/cve-2022-45885</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: use-after-free due to race condition occurring in dvb_frontend.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in the Linux kernel through 6.0.9. drivers/media/dvb-core/dvb_frontend.c has a race condition that can cause a use-after-free when a device is disconnected.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-45885
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-45885](https://avd.aquasec.com/nvd/cve-2022-45885)
+	An issue was discovered in the Linux kernel through 6.0.9. drivers/media/dvb-core/dvb_frontend.c has a race condition that can cause a use-after-free when a device is disconnected.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-45886
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-45886](https://avd.aquasec.com/nvd/cve-2022-45886)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-45886
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-45886">https://avd.aquasec.com/nvd/cve-2022-45886</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: use-after-free due to race condition occurring in dvb_net.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in the Linux kernel through 6.0.9. drivers/media/dvb-core/dvb_net.c has a .disconnect versus dvb_device_open race condition that leads to a use-after-free.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-45886
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-45886](https://avd.aquasec.com/nvd/cve-2022-45886)
+	An issue was discovered in the Linux kernel through 6.0.9. drivers/media/dvb-core/dvb_net.c has a .disconnect versus dvb_device_open race condition that leads to a use-after-free.
+    </details>
+
+
+
+---
+
+Package: linux-libc-dev
+Installed Version: 4.15.0-193.204
+Vulnerability CVE-2022-45919
+Severity: LOW
+Fixed Version: 
+Link: [CVE-2022-45919](https://avd.aquasec.com/nvd/cve-2022-45919)
+
+### Locations
+#### **Physical Location**
+- bioinformaticsua/catalogue
+
+
+- Line 1
+
+
+
+
+
+
+
+### Level
+
+- Note
+
+
+### Rule Information
+
++ <details>
+  <summary>Rule Id</summary>
+  <br>
+    CVE-2022-45919
+  </details>
+
+
++ <details>
+    <summary>Help Uri</summary>
+    <br>
+    <a href="https://avd.aquasec.com/nvd/cve-2022-45919">https://avd.aquasec.com/nvd/cve-2022-45919</a>
+    </details>
+
+
++ <details>
+    <summary>Short Description</summary>
+    <br>
+    kernel: use-after-free due to race condition occurring in dvb_ca_en50221.c
+    </details>
+
+
++ <details>
+    <summary>Full Description</summary>
+    <br>
+    An issue was discovered in the Linux kernel through 6.0.10. In drivers/media/dvb-core/dvb_ca_en50221.c, a use-after-free can occur is there is a disconnect after an open, because of the lack of a wait_event.
+    </details>
+
+
++ <details>
+    <summary>Precision</summary>
+    <br>
+    very-high
+    </details>
+
+
++ <details>
+    <summary>Security-severity</summary>
+    <br>
+    2.0
+    </details>
+
+
+
+
+
++ <details>
+    <summary>Help</summary>
+    <br>
+    Vulnerability CVE-2022-45919
+	Severity: LOW
+	Package: linux-libc-dev
+	Fixed Version: 
+	Link: [CVE-2022-45919](https://avd.aquasec.com/nvd/cve-2022-45919)
+	An issue was discovered in the Linux kernel through 6.0.10. In drivers/media/dvb-core/dvb_ca_en50221.c, a use-after-free can occur is there is a disconnect after an open, because of the lack of a wait_event.
     </details>
 
 

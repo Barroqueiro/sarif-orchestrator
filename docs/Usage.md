@@ -189,11 +189,11 @@ Arguments:
 
     - Target to be scanned
 
-Zap offers a great deal of costumization and complexity when testing, this tool only functions with a configuration file already present within the `config` folder. The one present is configured for a normal active scan but can be adapted for the user needs without altering the reporting section as the SARIF reporting depends on that section
+Note: Zap offers a great deal of costumization and complexity when testing, this tool only functions with a configuration file already present within the `config` folder. The one present is configured for a normal active scan but can be adapted for the user needs without altering the reporting section as the SARIF reporting depends on that section
 
 ## Example
 
-The following configuration file provides the steps for a 2 tool scan (Dockle and Hadolint), here hadolint is configured with the scan option and takes as arguments the Dockerfile to be analysed, dockle is configured much of the same way but this time taking as argument the image it is going to scan, a custom argument to ensure the tool times out after 600 seconds and this execution depends on hadolint, meaning once hadolint is finished dockle is lauched.
+The following configuration file provides the steps for a 3 tool scan (Dockle, Hadolint and Trivy), here hadolint is configured with the scan option and takes as arguments the Dockerfile to be analysed, dockle is configured much of the same way but this time taking as argument the image it is going to scan and a custom argument to ensure the tool times out after 600 seconds, finally Trivy is configured to run a scan on the same image and this execution depends on Dockle, meaning once Dockle is finished Trivy is launched.
 
 ```
 [[runs]]
@@ -208,5 +208,11 @@ tool = "dockle"
 option = "scan"
 args = ["bioinformaticsua/catalogue:Test"]
 custom_args = "--timeout 600s"
-depends_on= ["hadolint"]
+
+[[runs]]
+
+tool = "trivy"
+option = "image"
+args = ["bioinformaticsua/catalogue:Test"]
+depends_on= ["dockle"]
 ```

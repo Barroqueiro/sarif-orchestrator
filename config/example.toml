@@ -10,4 +10,10 @@ tool = "dockle"
 option = "scan"
 args = ["bioinformaticsua/catalogue:Test"]
 custom_args = "--timeout 600s"
-depends_on= ["hadolint"]
+
+[[runs]]
+
+tool = "trivy"
+option = "image"
+args = ["bioinformaticsua/catalogue:Test"]
+depends_on= ["dockle"]
