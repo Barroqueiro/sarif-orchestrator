@@ -36,7 +36,7 @@ The configuration for this file is provided by the `.env` file inside the same f
 This service takes a configuration file along with shared directories between the host and containers and executes the configured tools to produce SARIF results.
 
 - `INPUT_HOST_DIR` - A folder to be shared with the containers for the purposes of sharing input information, this folder should take files that will be analyzed by the project
-- `OUTPUT_HOST_DIR` - A folder to be shared with the containers for the purposes of retreiving information from the containers, this folder will have 2 folders automatically created (`Reporting` and `Logs`) where the first will receive the SARIF files produced by analysis and the later will Logs for all tools executed as well as a Log File for the orchetsrator to make troubleshooting easier
+- `OUTPUT_HOST_DIR` - A folder to be shared with the containers for the purposes of retreiving information from the containers, this folder will have 2 folders automatically created (`Reporting` and `Logs`) where the first will receive the SARIF files produced by analysis and the later will receive Logs for all tools executed as well as a Log File for the orchetsrator to make troubleshooting easier
 - `CONFIG_HOST_DIR` - A folder to be shared with the containers for the purposed of sharing configuration information, this folder should take files meant to configure the orchestrator or the tools ran by it
 - `CONFIG_FILE` - The file that configures the current analysis, the specification is addressed later
 
@@ -56,7 +56,8 @@ The file uses [toml](https://toml.io/en/) and its composed of a list of runs whe
 - **tool**: Name of the tool to be executed, the name must match the names within the tools folder
 - **option**: Name of the option to be executed by the selected tool, the options must be defined within the tool's configuration file
 - **args**: The arguments to be passed that are considered essential for a run of a option of a tool
-- **custom_args**: Custom arguments that can be used to configure tools in the command line (Possibly interesting to defined levels of sensitivy and things alike, using the config folder and custom arguments it can be possible to use configuration files within the tools)
+- **custom_args**: Custom arguments that can be used to configure tools in the command line (Possibly interesting to define levels of sensitivity and things alike, using the config folder and custom arguments it can be possible to use configuration files within the tools)
+  - The usage of configuration files per tools is made by passing the custom argument to the tool indicating the path of the configuration file (Remember to relate this path to the shared docker directory) and by placing a configuration file adapted towards the user's needs inside the config folder
 - **depends_on**: Creates a dependency graph between tools, each tool within this list must have finished for the tool being considered to be allowed to run
 - **platform**: Specifies the platform for the docker create command
 
@@ -83,19 +84,19 @@ When finishing up the reporting process the orchestrator will iterate over all v
 
 ## Id
 
-All results take into considerationa `ruleId` and as such these Ids can be used to ignore vulnerabilities as well, every Id included inside the `.idignore` file will be discarded from the results.
+All results take into consideration `ruleId` and as such these Ids can be used to ignore vulnerabilities as well, every Id included inside the `.idignore` file will be discarded from the results.
 
-Note: Both file follow the `.gitignore` comment syntax for simplification, this means that they can be commented using the `#` symbol and all lines with that symbol as the first characters will be ignored, **this does not allow for inline commenting**.
+Note: Both files follow the `.gitignore` comment syntax for simplification, this means that they can be commented using the `#` symbol and all lines with that symbol as the first characters will be ignored, **this does not allow for inline commenting**.
 
 ## Tools available
 
 ### Bandit
 
-Bandit looks for common security issus in python code.
+Bandit looks for common security issues in python code.
 
 Arguments:
 
-    - Path of the code to be analysed
+- Path of the code to be analysed
 
 ### Dependency Check
 
@@ -103,116 +104,122 @@ Detects publicly disclosed vulnerabilities in the dependencies of a project.
 
 Arguments:
 
-    - Path to scan
+- Path to scan
 
-Note: Dependency Check is only built on docker using the linux/amd64 architecture, this means that when running this image on other host OS it can have unexpected bahviour even when casting the platform to linux/amd64.
+Note: Dependency Check is only built on docker using the linux/amd64 architecture, this means that when running this image on an host with a different OS, the image can have unexpected bahviour even when casting the platform to linux/amd64.
 
 ### Dockle
 
-Scans Docker images for bad practices
+Scans Docker images for bad practices.
 
 Arguments:
 
-    - Image to be scanned
+- Image to be scanned
 
 ### EsLint
 
-Scans JavaScript files for problems
+Scans JavaScript files for problems.
 
 Arguments:
 
-    - File(s) to be scanned (Glob patterns can be passed as arguments (p.e 'lib/**'))
+- File(s) to be scanned (Glob patterns can be passed as arguments (p.e 'lib/**'))
 
 Note: EsLint will not work without a configuration file by default, one is present within the `config` folder and can be altered for necessities
 
 ### Flake8
 
-Checks style conventions and code complexity in python files
+Checks style conventions and code complexity in python files.
 
 Arguments:
 
-    - Path to be scanned
+- Path to be scanned
 
 ### GitLeaks
 
-Detects hardcoded secrets in git repositories
+Detects hardcoded secrets in git repositories.
 
 Arguments:
 
-    - Path to be scanned
+- Path to be scanned
 
 ### Grype
 
-Vulnerability scanner for containers and filesystems
+Vulnerability scanner for containers and filesystems.
 
 Arguments:
 
-    - Image to be scanned
+- Image to be scanned
 
 ### Hadolint
 
-Scans docker images for bad practices and performs shell linting
+Scans docker images for bad practices and performs shell linting.
 
 Arguments:
 
-    - Docker file to be analysed
+- Dockerfile to be analysed
 
 ### Horusec
 
-Collection of tools for SAST and SCA analysis for different languages
+Collection of tools for SAST and SCA analysis for different languages.
 
 Arguments:
 
-    - Path to be scanned
+- Path to be scanned
 
 ### Semgrep
 
-Code scanning for different linguages
+Code scanning for different linguages.
 
 Arguments:
 
-    - Path to be scanned
+- Path to be scanned
+
+Note: Semgrep is only built on docker using the linux/amd64 architecture, no such problems as Dependency Check were found when forcing the platform but unexpected bahviour can happen.
 
 ### Trivy
 
-Multi-purpose scanner (Images, filesystems, git repositories)
+Multi-purpose scanner (Images, filesystems, git repositories).
 
 Arguments:
 
-    - Image to be scanned (or path to be scanned depending on the option selected)
+- Image to be scanned (or path to be scanned depending on the option selected)
 
 ### Zap
 
-Dynamic scanner for web applications
+Dynamic scanner for web applications.
 
 Arguments:
 
-    - Target to be scanned
+- Target to be scanned
 
 Note: Zap offers a great deal of costumization and complexity when testing, this tool only functions with a configuration file already present within the `config` folder. The one present is configured for a normal active scan but can be adapted for the user needs without altering the reporting section as the SARIF reporting depends on that section
 
 ## Example
 
-The following configuration file provides the steps for a 3 tool scan (Dockle, Hadolint and Trivy), here hadolint is configured with the scan option and takes as arguments the Dockerfile to be analysed, dockle is configured much of the same way but this time taking as argument the image it is going to scan and a custom argument to ensure the tool times out after 600 seconds, finally Trivy is configured to run a scan on the same image and this execution depends on Dockle, meaning once Dockle is finished Trivy is launched.
+The following configuration file provides the steps for a 3 tool scan (`Dockle`, `Hadolint` and `Trivy`), here `Hadolint` is configured with the scan option and takes as arguments the Dockerfile to be analysed (This Dockerfile is present within the root of the input folder), `Dockle` is configured much of the same way but this time taking as argument the image it is going to scan and a custom argument to ensure the tool times out after 600 seconds, finally `Trivy` is configured to run a scan on the same image and this execution depends on `Dockle`, meaning once `Dockle` is finished `Trivy` is launched.
 
 ```
 [[runs]]
 
 tool = "hadolint"
 option = "scan"
-args = ["Security-Pipeline-Testing/Dockerfile"]
+args = ["Dockerfile"]
 
 [[runs]]
 
 tool = "dockle"
 option = "scan"
-args = ["bioinformaticsua/catalogue:Test"]
+args = ["test-image:Test"]
 custom_args = "--timeout 600s"
 
 [[runs]]
 
 tool = "trivy"
 option = "image"
-args = ["bioinformaticsua/catalogue:Test"]
+args = ["test-image:Test"]
 depends_on= ["dockle"]
 ```
+
+## TL;DR
+
+This orchestrator needs 3 directories to be shared with, a config, a input and output directories, the configuration is based upon a toml file present within the `config` folder and execution is made using docker-compose. Ignoring vulnerabilities is possible by hash and by Id.
