@@ -4,7 +4,7 @@ services:
     build: 
       context: ../
       dockerfile: ./docker/Dockerfile
-    image: sarif-orchestrator
+    image: cruzdinis12/sarif-orchestrator
     network_mode: "host"
     volumes:
       - ${INPUT_HOST_DIR}:/input:ro
@@ -23,7 +23,7 @@ services:
       - "/config/${CONFIG_FILE}"
       - "--keep-images"
   report:
-    image: sarif-orchestrator
+    image: cruzdinis12/sarif-orchestrator
     volumes:
       - ${INPUT_DIR}:/input:ro
       - ${OUTPUT_DIR}:/output:rw
