@@ -27,6 +27,5 @@ Documentation can be found inside the [Docs Folder]([../Docs](https://github.com
 - [x] OWASP Depedency Check [Docker](https://github.com/jeremylong/DependencyCheck#docker)
   - Platform only available for linux/amd64 
 - [x] Zap [Docker](https://www.zaproxy.org/docs/docker/about/)
-  - Testing still missing
 
 
