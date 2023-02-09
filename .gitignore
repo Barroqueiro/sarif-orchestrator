@@ -6,6 +6,7 @@ __pycache__/
 # Mine
 input/
 output/
+docker/.env
 .DS_Store
 venv/
 

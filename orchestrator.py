@@ -450,11 +450,7 @@ def main():
     orchestrator_parser.add_argument('--keep-images', action='store_true',
                         help='Keep images after finishing')
 
-    reporting_parser = subparsers.add_parser("report", help="Produce Markdown reports from sarif files")
-    reporting_parser.add_argument('--input-dir', type=str, required=True,
-                        help='Directory with the sarif files')
-    reporting_parser.add_argument('--output-dir', type=str, required=True,
-                        help='Directory to output the results')
+    subparsers.add_parser("report", help="Produce Markdown reports from sarif files")
     args = parser.parse_args()
     command_args = vars(args)
 
@@ -477,7 +473,7 @@ def main():
     
     if command == "report":
 
-        produce_sarif_reports(command_args["input_dir"],command_args["output_dir"])
+        produce_sarif_reports(INPUT_DIR_DOCKER,OUTPUT_DIR_DOCKER)
 
 
 if __name__ == "__main__":

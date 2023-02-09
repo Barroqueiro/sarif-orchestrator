@@ -23,16 +23,9 @@ services:
       - "/config/${CONFIG_FILE}"
       - "--keep-images"
   report:
-    depends_on:
-        orchestrator:
-            condition: service_completed_successfully
     image: sarif-orchestrator
     volumes:
       - ${INPUT_DIR}:/input:ro
       - ${OUTPUT_DIR}:/output:rw
     command:
       - "report"
-      - "--input-dir"
-      - "/input"
-      - "--output-dir"
-      - "/output"
