@@ -4,7 +4,7 @@ The sarif tool orchestrator is a docker orchestrator that following a toml file 
 
 ## Documentation
 
-Documentation can be found inside the [Docs Folder]([../Docs](https://github.com/Barroqueiro/sarif-orchestrator/tree/main/docs))
+Documentation can be found inside the [Docs Folder](https://github.com/Barroqueiro/sarif-orchestrator/tree/main/docs)
 
 
 ## List of (Possible) Tools and Notes
