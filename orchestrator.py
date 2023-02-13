@@ -171,7 +171,7 @@ def produce_sarif_reports(input_dir, output_dir):
     for subdir, dirs, files in os.walk(input_dir):
         for file in files:
             ext = os.path.splitext(file)[-1].lower()
-            if ext in [".sarif", ".json.sarif"]:
+            if ".sarif" in file:
                 produce_single_sarif(os.path.join(subdir, file),output_dir)
 
 def produce_single_sarif(file, output_dir):
@@ -205,7 +205,7 @@ def produce_single_sarif(file, output_dir):
     env = Environment(loader=FileSystemLoader("templates"), autoescape=True, extensions=['jinja2.ext.do'])
     template = env.get_template('Sarif_to_Markdown.jinja2')
     output_from_parsed_template = template.render(tool=tool_info,rules=rules_info,results=results_info)
-    with open(output_dir + "/" + basename.replace(".sarif",".md"),"w") as f:
+    with open(output_dir + "/" + basename.split(".sarif")[0]+".md","w") as f:
         f.write(output_from_parsed_template)
 
 ## error warning note
