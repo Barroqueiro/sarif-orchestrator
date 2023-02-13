@@ -220,9 +220,9 @@ def setup():
     setup function creates the reporting and logs directories if they don't exist already, sets up up the logger
     """
 
-    mkdir_output_cmd = f'mkdir -m666 {OUTPUT_DIR_DOCKER}/{REPORT_DIR}'
-    mkdir_logs_cmd = f'mkdir -m666 {OUTPUT_DIR_DOCKER}/{LOGS_DIR}'
-    mkdir_identifer_cmd = f'mkdir -m666 {OUTPUT_DIR_DOCKER}/{REPORT_DIR}/{IDENTIFIER}'
+    mkdir_output_cmd = f'mkdir -m777 {OUTPUT_DIR_DOCKER}/{REPORT_DIR}'
+    mkdir_logs_cmd = f'mkdir -m777 {OUTPUT_DIR_DOCKER}/{LOGS_DIR}'
+    mkdir_identifer_cmd = f'mkdir -m777 {OUTPUT_DIR_DOCKER}/{REPORT_DIR}/{IDENTIFIER}'
 
     exit_code_mkdir_output = subprocess.run(shlex.split(mkdir_output_cmd), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode
     exit_code_mkdir_logs = subprocess.run(shlex.split(mkdir_logs_cmd), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode
