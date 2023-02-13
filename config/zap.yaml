@@ -76,7 +76,7 @@ jobs:
   - type: report                       # Report generation
     parameters:
       template: sarif-json             # String: The template id, default : traditional-html
-      reportDir: /zap/wrk              # String: The directory into which the report will be written
+      reportDir: /zap/wrk/Reporting    # String: The directory into which the report will be written
       reportFile: zap_scan.sarif       # String: The report file name pattern, default: {{yyyy-MM-dd}}-ZAP-Report-[[site]]
       reportTitle:                     # String: The report title
       reportDescription:               # String: The report description

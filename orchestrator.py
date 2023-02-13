@@ -2,7 +2,6 @@
 Docker conatiner orchestrator for SARIF reporting tools
 """
 import os
-import uuid
 import toml
 import json
 import shlex
@@ -49,7 +48,6 @@ CONFIG_DIR_DOCKER = "/config"                               # Default directory 
 LOG_FILE = f'{OUTPUT_DIR_DOCKER}/{LOGS_DIR}/app.log'        # Log file
 HASH_IGNORE_FILE = ".hashignore"
 ID_IGNORE_FILE = ".idignore"
-IDENTIFIER = str(uuid.uuid4())
 
 # Logger object
 logger = None
@@ -222,18 +220,15 @@ def setup():
 
     mkdir_output_cmd = f'mkdir -m777 {OUTPUT_DIR_DOCKER}/{REPORT_DIR}'
     mkdir_logs_cmd = f'mkdir -m777 {OUTPUT_DIR_DOCKER}/{LOGS_DIR}'
-    mkdir_identifer_cmd = f'mkdir -m777 {OUTPUT_DIR_DOCKER}/{REPORT_DIR}/{IDENTIFIER}'
 
     exit_code_mkdir_output = subprocess.run(shlex.split(mkdir_output_cmd), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode
     exit_code_mkdir_logs = subprocess.run(shlex.split(mkdir_logs_cmd), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode
-    exit_code_mkdir_identifer = subprocess.run(shlex.split(mkdir_identifer_cmd), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode
 
     logging.basicConfig(filename=LOG_FILE, filemode='w', format='[%(name)-8s]  [%(levelname)-8s]  %(message)s', level=logging.DEBUG)
     globals()["logger"] = logging.getLogger()
 
     log_subprocess(mkdir_output_cmd, exit_code_mkdir_output)
     log_subprocess(mkdir_logs_cmd, exit_code_mkdir_logs)
-    log_subprocess(mkdir_identifer_cmd, exit_code_mkdir_identifer)
 
 def finish(to_clean, keep_images):
     """
@@ -353,7 +348,7 @@ def create_tool(tool, input_dir_host, output_dir_host, config_dir_host , to_clea
     input_volume_docker = INPUT_DIR_DOCKER if config["input_volume_docker"] == "" else config["input_volume_docker"]
 
     # Output file
-    output = f"{output_volume_docker}/{REPORT_DIR}/{IDENTIFIER}/{tool}_{option}.sarif"
+    output = f"{output_volume_docker}/{REPORT_DIR}/{tool}_{option}.sarif"
 
     # Format the options
     option_cmd = config["options"][option].format(*args,output_place=output,custom_args=custom_args)
