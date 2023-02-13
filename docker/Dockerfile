@@ -1,5 +1,8 @@
 FROM alpine:3.14
 
+RUN addgroup -S appgroup && adduser -S orchestrator -G orchestrator
+USER orchestrator
+
 WORKDIR /app
 
 # Install Python
