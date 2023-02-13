@@ -146,7 +146,7 @@ def update_sarif_reports(input_dir):
     for subdir, dirs, files in os.walk(input_dir):
         for file in files:
             ext = os.path.splitext(file)[-1].lower()
-            if ext in [".sarif", ".json.sarif"]:
+            if ext in [".sarif", ".sarif.json"]:
                 update_single_sarif(os.path.join(subdir, file))
 
 # Reporting functions
