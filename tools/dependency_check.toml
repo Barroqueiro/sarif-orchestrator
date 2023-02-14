@@ -8,4 +8,4 @@ share_network = 0
 
 [options]
     
-scan = "{custom_args} -f SARIF -o {output_place} --scan /src/{0}"
+scan = "{custom_args} --enableExperimental -f SARIF -o {output_place} --scan /src/{0}"
