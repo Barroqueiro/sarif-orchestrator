@@ -2,18 +2,18 @@
 
 tool = "hadolint"
 option = "scan"
-args = ["Security-Pipeline-Testing/Dockerfile"]
+args = ["<dockerfile_placeholder>"]
 
 [[runs]]
 
 tool = "dockle"
 option = "scan"
-args = ["bioinformaticsua/catalogue:Test"]
+args = ["<image_placeholder>"]
 custom_args = "--timeout 600s"
 
 [[runs]]
 
 tool = "trivy"
 option = "image"
-args = ["bioinformaticsua/catalogue:Test"]
+args = ["<image_placeholder>"]
 depends_on= ["dockle"]

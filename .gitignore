@@ -7,6 +7,7 @@ __pycache__/
 input/
 output/
 docker/.env
+config/run.toml
 .DS_Store
 venv/
 

@@ -223,3 +223,34 @@ depends_on= ["dockle"]
 ## TL;DR
 
 This orchestrator needs 3 directories to be shared with, a config, a input and output directories, the configuration is based upon a toml file present within the `config` folder and execution is made using docker-compose. Ignoring vulnerabilities is possible by hash and by Id.
+
+### Quick start
+
+```
+# Clone repository
+git clone git@github.com:Barroqueiro/sarif-orchestrator.git
+cd sarif-orchestrator
+
+# Make directories for input and output
+mkdir input
+mkdir output
+
+# Get inside docker directory
+cd docker
+
+# Make and edit .env file
+cp .env.example .env
+nano .env
+
+# Build sarif-orchestrator image (Optional)
+docker-compose build
+
+# Scan (Edit the run file to be used in the scan)
+docker-compose up orchestrator
+
+# Make a reporting directory
+mkdir ../output/Markdown
+
+# Report 
+docker-compose up report
+```
