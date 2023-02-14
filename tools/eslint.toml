@@ -3,6 +3,8 @@ image = "eslint-sarif"
 output_volume_docker = ""
 input_volume_docker = "/data"
 default_option = "scan"
+share_socket = 0
+share_network = 0
 
 [options]
     

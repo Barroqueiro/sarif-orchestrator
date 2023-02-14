@@ -3,6 +3,8 @@ image = "owasp/zap2docker-stable"
 output_volume_docker = "/zap/wrk"
 input_volume_docker = ""
 default_option = "scan"
+share_socket = 0
+share_network = 1
 
 [options]
     

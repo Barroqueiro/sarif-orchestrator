@@ -3,7 +3,9 @@ image = "hadolint/hadolint"
 output_volume_docker = ""
 input_volume_docker = ""
 default_option = "scan"
+share_socket = 0
+share_network = 0
 
 [options]
 
-scan = 'sh -c "hadolint /input/{0} {custom_args} -f sarif | tee -a {output_place}"'
+scan = 'sh -c "hadolint /input/{0} {custom_args} -f sarif | tee {output_place}"'

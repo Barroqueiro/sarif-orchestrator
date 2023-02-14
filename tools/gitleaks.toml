@@ -3,6 +3,8 @@ image = "zricethezav/gitleaks"
 output_volume_docker = ""
 input_volume_docker = "/path"
 default_option = "detect"
+share_socket = 0
+share_network = 0
 
 [options]
     

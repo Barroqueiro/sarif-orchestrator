@@ -8,6 +8,7 @@ input/
 output/
 docker/.env
 config/run.toml
+config/run2.toml
 .DS_Store
 venv/
 

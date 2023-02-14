@@ -324,10 +324,10 @@ def create_tool(tool, input_dir_host, output_dir_host, config_dir_host , to_clea
     :param arguments: Dictionary with tool specific arguments
     """
 
-    docker_cmd = "docker create --network host --name {name} {platform} -v {output_volume}:{output_volume_docker}:rw \
+    docker_cmd = "docker create {network} --name {name} {platform} -v {output_volume}:{output_volume_docker}:rw \
                     -v {input_volume}:{input_volume_docker}:ro \
                     -v {config_volume}:{config_volume_docker}:ro  \
-                    -v /var/run/docker.sock:/var/run/docker.sock \
+                    {socket} \
                     {image}:{tag} {option}" 
 
     option = tool_values["option"]
@@ -337,6 +337,9 @@ def create_tool(tool, input_dir_host, output_dir_host, config_dir_host , to_clea
 
     # Load tool config
     config = toml.loads(open(f"tools/{tool}.toml").read())
+
+    network = "--network host" if config["share_network"] else ""
+    socket = "-v /var/run/docker.sock:/var/run/docker.sock" if config["share_socket"] else ""
 
     # Set a default option if none was specified
     if not option:
@@ -358,7 +361,7 @@ def create_tool(tool, input_dir_host, output_dir_host, config_dir_host , to_clea
     tag = config["tag"]
     call = docker_cmd.format(output_volume=output_dir_host, input_volume=input_dir_host, config_volume=config_dir_host,\
                         output_volume_docker=output_volume_docker, input_volume_docker=input_volume_docker, config_volume_docker=CONFIG_DIR_DOCKER,  \
-                        image=image, tag=tag, option=option_cmd, name=name, platform=platform)
+                        image=image, tag=tag, option=option_cmd, name=name, platform=platform, network=network, socket=socket)
 
     # Create log file and run the process
     p = subprocess.run(shlex.split(call), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode

@@ -3,7 +3,9 @@ image = "owasp/dependency-check"
 output_volume_docker = "/report"
 input_volume_docker = "/src"
 default_option = "scan"
+share_socket = 0
+share_network = 0
 
 [options]
     
-scan = "{custom_args} -f SARIF -o {output_place} --scan {0}"
+scan = "{custom_args} -f SARIF -o {output_place} --scan /src/{0}"

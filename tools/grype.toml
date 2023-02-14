@@ -3,6 +3,8 @@ image = "anchore/grype"
 output_volume_docker = ""
 input_volume_docker = ""
 default_option = "scan"
+share_socket = 1
+share_network = 0
 
 [options]
     

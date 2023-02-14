@@ -10,7 +10,7 @@ The Docker socket conforms to the Unix socket protocol, and in this case, the `d
 
 Docker supports [volumes](https://docs.docker.com/storage/volumes/), which enable transparent sharing of a specific directory from the host to the container. The container mounts the host's referenced directory, displaying the contents of the folder or file, and any information created inside the container is delivered back to the host.
 
-The docker socket being a file (/`var/run/docker.sock`) is then able to be mounted within the container, this means that the container can communicate with the docker daemon process running on the host. This allows for the orchestration of containers on a certain host from inside a container. The Docker process, as a process that needs access to namespaces and cgroups requires root permissions (UID = 0).
+The docker socket being a file (`/var/run/docker.sock`) is then able to be mounted within the container, this means that the container can communicate with the docker daemon process running on the host. This allows for the orchestration of containers on a certain host from inside a container. The Docker process, as a process that needs access to namespaces and cgroups requires root permissions (UID = 0).
 
 ## Integrity problems
 
