@@ -23,7 +23,7 @@
 {%- endfor %} 
 {%- endmacro %}
 
-{% macro addDetails(title,info) %}
+{% macro addDetailsMD(title,info) %}
 + <details>
     <summary>{{title}}</summary>
     <br>
@@ -31,8 +31,24 @@
     </details>
 {%- endmacro %}
 
-{% macro addDetailsUrl(title,info) %}
+{% macro addDetailsHTML(title,info) %}
+<details>
+    <summary>{{title}}</summary>
+    <br>
+    {{ info.replace("\n","\n\t") }}
+    </details>
+{%- endmacro %}
+
+{% macro addDetailsUrlMD(title,info) %}
 + <details>
+    <summary>{{title}}</summary>
+    <br>
+    <a href="{{ info }}">{{ info }}</a>
+    </details>
+{%- endmacro %}
+
+{% macro addDetailsUrlHTML(title,info) %}
+<details>
     <summary>{{title}}</summary>
     <br>
     <a href="{{ info }}">{{ info }}</a>

@@ -1,5 +1,5 @@
-{%- from "macros.html" import addDetails -%}
-{%- from "macros.html" import addDetailsUrl -%}
+{%- from "macros.html" import addDetailsMD -%}
+{%- from "macros.html" import addDetailsUrlMD -%}
 # Vulnerability Report
 
 This report was automaticly generated based on the vulnerabilities specification of a [SARIF](https://sarifweb.azurewebsites.net) file.
@@ -76,23 +76,23 @@ This report was automaticly generated based on the vulnerabilities specification
   </details>
 
 {%+ if "helpUri" in rules[vuln["ruleId"]] -%}
-{{ addDetailsUrl("Help Uri", rules[vuln["ruleId"]]["helpUri"]) }}
+{{ addDetailsUrlMD("Help Uri", rules[vuln["ruleId"]]["helpUri"]) }}
 {%+ endif %}
 {%+ if "shortDescription" in rules[vuln["ruleId"]] -%}
-{{ addDetails("Short Description", rules[vuln["ruleId"]]["shortDescription"]["text"]) }}
+{{ addDetailsMD("Short Description", rules[vuln["ruleId"]]["shortDescription"]["text"]) }}
 {%+ endif %}
 {%+ if "fullDescription" in rules[vuln["ruleId"]] -%}
-{{ addDetails("Full Description", rules[vuln["ruleId"]]["fullDescription"]["text"]) }}
+{{ addDetailsMD("Full Description", rules[vuln["ruleId"]]["fullDescription"]["text"]) }}
 {%+ endif %}
 {%+ if "properties" in rules[vuln["ruleId"]] -%}
 {%+ for p in rules[vuln["ruleId"]]["properties"] -%}
 {%+ if rules[vuln["ruleId"]]["properties"][p] is string -%}
-{{ addDetails(p.capitalize(), rules[vuln["ruleId"]]["properties"][p]) }}
+{{ addDetailsMD(p.capitalize(), rules[vuln["ruleId"]]["properties"][p]) }}
 {%+ endif %}
 {%+ endfor %}
 {%+ endif %}
 {%+ if "help" in rules[vuln["ruleId"]] -%}
-{{ addDetails("Help", rules[vuln["ruleId"]]["help"]["text"]) }}
+{{ addDetailsMD("Help", rules[vuln["ruleId"]]["help"]["text"]) }}
 {%+ endif %}
 
 

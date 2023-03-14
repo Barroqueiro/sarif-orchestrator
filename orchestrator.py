@@ -48,6 +48,7 @@ CONFIG_DIR_DOCKER = "/config"                               # Default directory 
 LOG_FILE = f'{OUTPUT_DIR_DOCKER}/{LOGS_DIR}/app.log'        # Log file
 HASH_IGNORE_FILE = ".hashignore"
 ID_IGNORE_FILE = ".idignore"
+EXTENSIONS = {"Markdown": ".md", "HTML":".html", "PDF": ".pdf"}
 
 # Logger object
 logger = None
@@ -164,7 +165,7 @@ def populate_level(results, rules):
             else:
                 r["level"] = "warning"
 
-def produce_sarif_reports(input_dir, output_dir):
+def produce_sarif_reports(input_dir, output_dir, type):
     """
     Walk through a directory and find all sarif files, produce a report for each
     """
@@ -172,9 +173,9 @@ def produce_sarif_reports(input_dir, output_dir):
         for file in files:
             ext = os.path.splitext(file)[-1].lower()
             if ".sarif" in file:
-                produce_single_sarif(os.path.join(subdir, file),output_dir)
+                produce_single_sarif(os.path.join(subdir, file),output_dir, type)
 
-def produce_single_sarif(file, output_dir):
+def produce_single_sarif(file, output_dir, type):
     """
     Given a sarif file, recover information and craft a markdown file that represents the findings
     """
@@ -200,13 +201,15 @@ def produce_single_sarif(file, output_dir):
     populate_level(results, rules_info)
 
     results_info = [r for r in sorted(results, key=lambda x: "f" if x["level"] == "warning" else x["level"])]
+    extension = EXTENSIONS[type]
 
     # Load template and produce final report
     env = Environment(loader=FileSystemLoader("templates"), autoescape=True, extensions=['jinja2.ext.do'])
-    template = env.get_template('Sarif_to_Markdown.jinja2')
+    template = env.get_template(f'Sarif_to_{type}.jinja2')
     output_from_parsed_template = template.render(tool=tool_info,rules=rules_info,results=results_info)
-    with open(output_dir + "/" + basename.split(".sarif")[0]+".md","w") as f:
+    with open(output_dir + "/" + basename.split(".sarif")[0]+extension,"w") as f:
         f.write(output_from_parsed_template)
+
 
 ## error warning note
 
@@ -452,7 +455,9 @@ def main():
     orchestrator_parser.add_argument('--keep-images', action='store_true',
                         help='Keep images after finishing')
 
-    subparsers.add_parser("report", help="Produce Markdown reports from sarif files")
+    report_parser = subparsers.add_parser("report", help="Produce Markdown reports from sarif files")
+    report_parser.add_argument('--type', type=str, required=True,
+                        help='Type of report to produce')
     args = parser.parse_args()
     command_args = vars(args)
 
@@ -474,8 +479,7 @@ def main():
         update_sarif_reports(OUTPUT_DIR_DOCKER + "/" +REPORT_DIR)
     
     if command == "report":
-
-        produce_sarif_reports(INPUT_DIR_DOCKER,OUTPUT_DIR_DOCKER)
+        produce_sarif_reports(INPUT_DIR_DOCKER,OUTPUT_DIR_DOCKER, command_args["type"])
 
 
 if __name__ == "__main__":
