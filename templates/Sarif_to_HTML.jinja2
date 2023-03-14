@@ -5,6 +5,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+<br>
 <div class="container">
 <div class="container-fluid text-sm-left p-5 bg-light">
 <h1>Vulnerability Report</h1>
@@ -38,7 +39,13 @@
 
 
 {%+ for vuln in results -%}
-<div class="container-fluid text-sm-left p-5 bg-secondary">
+{%+ if vuln["level"] == "error" -%}
+<div class="container-fluid text-sm-left p-5" style="background-color:#FFA390">
+{%+ elif vuln["level"] == "warning" -%}
+<div class="container-fluid text-sm-left p-5" style="background-color:#FFE690">
+{%+ else -%}
+<div class="container-fluid text-sm-left p-5" style="background-color:#90F7FF">
+{%+ endif %}
 <h4>{{ vuln["message"]["text"] }}<h4>
 
 {%+ if "locations" in vuln -%}
@@ -72,20 +79,31 @@
 </div>
 
 {%+ if "level" in vuln -%}
-<h5>Level<h5>
+<h5>Level</h5>
 <div class="container">
 <h6>- {{ vuln["level"].capitalize() }}</h6>
 </div>
 {%+ endif %}
 
+{%+ if "properties" in vuln -%}
+<h5>Properties</h5>
+{%+ for p in vuln["properties"] -%}
+{%+ if vuln["properties"][p] is string -%}
+<div class="container">
+<h6>{{ addDetailsHTML(p.capitalize(), vuln["properties"][p]) }}</h6>
+</div>
+{%+ endif %}
+{% endfor %}
+{%+ endif %}
+
 <h5>Rule Information<h5>
 <div class="container">
 
-<details>
+<h6><details>
 <summary>Rule Id</summary>
 <br>
-    {{ vuln["ruleId"] }}
-</details>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ vuln["ruleId"] }}</p>
+</details></h6>
 
 {%+ if "helpUri" in rules[vuln["ruleId"]] -%}
 <h6>{{ addDetailsUrlHTML("Help Uri", rules[vuln["ruleId"]]["helpUri"]) }}</h6>
@@ -113,5 +131,6 @@
 {% endfor %}
 </div>
 </div>
+<br>
 </body>
 </html>

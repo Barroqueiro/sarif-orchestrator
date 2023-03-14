@@ -1,0 +1,146 @@
+{%- from "macros.html" import addDetailsHTML -%}
+{%- from "macros.html" import addDetailsUrlHTML -%}
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<br>
+<div class="container">
+<div class="container-fluid text-sm-left p-5 bg-light">
+<h1>Vulnerability Report</h1>
+
+<h2><p>&nbsp;&nbsp;&nbsp;&nbsp;This report was automaticly generated based on the vulnerabilities specification of a <a href="https://sarifweb.azurewebsites.net">SARIF</a> file.</p><h3>
+</div>
+<br>
+<div class="container-fluid text-sm-left p-5 bg-light">
+<h1>Tool information <h3>
+
+<h2><p>&nbsp;&nbsp;&nbsp;&nbsp;Name: {{ tool["name"] }}</p></h2>
+{%+ if "fullName" in tool -%}
+<h2><p>&nbsp;&nbsp;&nbsp;&nbsp;Full name: {{ tool["fullName"] }}</p></h2>
+{%+ endif %}
+{%+ if "informationUri" in tool -%}
+<h2><p>&nbsp;&nbsp;&nbsp;&nbsp;Information Uri: <a href="{{ tool['informationUri'] }}">{{ tool["informationUri"] }}</a></p></h2>
+{%+ endif %}
+{%+ if "downloadUri" in tool -%}
+<h2><p>&nbsp;&nbsp;&nbsp;&nbsp;Information Uri: <a href="{{ tool['downloadUri'] }}">{{ tool['downloadUri'] }}</a></p></h2>
+{%+ endif %}
+{%+ if "version" in tool -%}
+<h2><p>&nbsp;&nbsp;&nbsp;&nbsp;Version: {{ tool["version"] }}</p></h2>
+{%+ endif %}
+{%+ if "semanticVersion" in tool -%}
+<h2><p>&nbsp;&nbsp;&nbsp;&nbsp;Semantic version: {{ tool["semanticVersion"] }}</p></h2>
+{%+ endif %}
+</div>
+<br>
+<div>
+    <pdf:nextpage /> 
+</div> 
+<h1>Vulnerabilities <h2>
+
+
+{%+ for vuln in results -%}
+<div class="container-fluid text-sm-left p-5">
+{%+ if vuln["level"] == "error" -%}
+<div class="container-fluid text-sm-left p-5" style="background-color:#FFA390">
+{%+ elif vuln["level"] == "warning" -%}
+<div class="container-fluid text-sm-left p-5" style="background-color:#FFE690">
+{%+ else -%}
+<div class="container-fluid text-sm-left p-5" style="background-color:#90F7FF">
+{%+ endif %}
+<h3><p><br>&nbsp;&nbsp;&nbsp;&nbsp;{{ vuln["message"]["text"] }}</p><h3>
+</div>
+{%+ if "locations" in vuln -%}
+<h4><p>&nbsp;&nbsp;&nbsp;&nbsp;Locations</p><h4>
+<div class="container">
+{%+ for l in vuln["locations"]-%}
+{%+ if "physicalLocation" in l -%}
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Physical Location</p></h6>
+{%+ if "artifactLocation" in l["physicalLocation"] -%}
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- {{ l["physicalLocation"]["artifactLocation"]["uri"] }}</p></h6>
+{%+ endif %}
+{%+ endif %}
+{%+ if "region" in l["physicalLocation"] -%}
+{%+ if "startLine" in l["physicalLocation"]["region"] -%}
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Line {{ l["physicalLocation"]["region"]["startLine"] }}</p></h6>
+{%+ endif %}
+{%+ if "snippet" in l["physicalLocation"]["region"] and l["physicalLocation"]["region"]["snippet"]["text"] != ""  -%}
+```
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ l["physicalLocation"]["region"]["snippet"]["text"].strip()|safe }}</h6>
+```
+{%+ endif %}
+{%+ endif %}
+{%+ if "logicalLocations" in l -%}
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logical Locations</p></h6>
+{%+ for logic in l["logicalLocations"] -%}
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- {{ logic["name"] }}</p></h6>
+{%+ endfor %}
+{%+ endif %}
+{%+ endfor %}
+{%+ endif %}
+</div>
+
+{%+ if "level" in vuln -%}
+<h4><p>&nbsp;&nbsp;&nbsp;&nbsp;Level</p></h4>
+<div class="container">
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- {{ vuln["level"].capitalize() }}</p></h6>
+</div>
+{%+ endif %}
+
+{%+ if "properties" in vuln -%}
+<h4><p>&nbsp;&nbsp;&nbsp;&nbsp;Properties</p></h4>
+{%+ for p in vuln["properties"] -%}
+{%+ if vuln["properties"][p] is string -%}
+<h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ p.capitalize() }}</p></h4>
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ vuln["properties"][p] }}</p></h6>
+{%+ endif %}
+{% endfor %}
+{%+ endif %}
+
+<h5>Rule Information<h5>
+<div class="container">
+
+<h6><details>
+<summary>&nbsp;&nbsp;&nbsp;&nbsp;Rule Id</summary>
+<br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ vuln["ruleId"] }}</p>
+</details></h6>
+
+{%+ if "helpUri" in rules[vuln["ruleId"]] -%}
+<h4><p>&nbsp;&nbsp;&nbsp;&nbsp;Help Uri</p></h4>
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ rules[vuln["ruleId"]]["helpUri"] }}</p></h6>
+{%+ endif %}
+{%+ if "shortDescription" in rules[vuln["ruleId"]] -%}
+<h4><p>&nbsp;&nbsp;&nbsp;&nbsp;Short Description</p></h4>
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ rules[vuln["ruleId"]]["shortDescription"]["text"] }}</p></h6>
+{%+ endif %}
+{%+ if "fullDescription" in rules[vuln["ruleId"]] -%}
+<h4><p>&nbsp;&nbsp;&nbsp;&nbsp;Full Description</p></h4>
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ rules[vuln["ruleId"]]["fullDescription"]["text"] }}</p></h6>
+{%+ endif %}
+{%+ if "properties" in rules[vuln["ruleId"]] -%}
+<h4><p>&nbsp;&nbsp;&nbsp;&nbsp;Properties</p></h4>
+{%+ for p in rules[vuln["ruleId"]]["properties"] -%}
+{%+ if rules[vuln["ruleId"]]["properties"][p] is string -%}
+<h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ p.capitalize() }}</p></h4>
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ rules[vuln["ruleId"]]["properties"][p] }}</p></h6>
+{%+ endif %}
+{%+ endfor %}
+{%+ endif %}
+{%+ if "help" in rules[vuln["ruleId"]] -%}
+<h4><p>&nbsp;&nbsp;&nbsp;&nbsp;Help</p></h4>
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ rules[vuln["ruleId"]]["help"]["text"] }}</p></h6>
+{%+ endif %}
+</div>
+</div>
+<br>
+<div>
+    <pdf:nextpage /> 
+</div> 
+{% endfor %}
+</div>
+</div>
+<br>
+</body>
+</html>

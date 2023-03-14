@@ -67,6 +67,15 @@ This report was automaticly generated based on the vulnerabilities specification
 - {{ vuln["level"].capitalize() }}
 {%+ endif %}
 
+{%+ if "properties" in vuln -%}
+### Properties
+{%+ for p in vuln["properties"] -%}
+{%+ if vuln["properties"][p] is string -%}
+{{ addDetailsMD(p.capitalize(), vuln["properties"][p]) }}
+{%+ endif %}
+{% endfor %}
+{%+ endif %}
+
 ### Rule Information
 
 + <details>
