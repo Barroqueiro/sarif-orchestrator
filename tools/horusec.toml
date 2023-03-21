@@ -4,7 +4,7 @@ output_volume_docker = ""
 input_volume_docker = ""
 default_option = "scan"
 share_socket = 0
-share_network = 0
+share_network = 1
 
 [options]
     

@@ -280,6 +280,7 @@ def get_runs(config):
         res[tool] = {r:run[r] for r in run if r != "tool"}
         res[tool].setdefault("option", None)
         res[tool].setdefault("platform", None)
+        res[tool].setdefault("sha256", None)
         res[tool].setdefault("custom_args","")
         res[tool].setdefault("depends_on",[])
         res[tool]["state"] = states.WAITTING
@@ -337,12 +338,14 @@ def create_tool(tool, input_dir_host, output_dir_host, config_dir_host , to_clea
                     -v {input_volume}:{input_volume_docker}:ro \
                     -v {config_volume}:{config_volume_docker}:ro  \
                     {socket} \
-                    {image}:{tag} {option}" 
+                    {designation} {option}" 
 
     option = tool_values["option"]
     args = tool_values["args"]
     custom_args = tool_values["custom_args"]
     platform = f"--platform={tool_values['platform']}" if tool_values["platform"] else ""
+    digest = f"@sha256:{tool_values['sha256']}" if tool_values["sha256"] else ""
+
 
     # Load tool config
     config = toml.loads(open(f"tools/{tool}.toml").read())
@@ -366,11 +369,18 @@ def create_tool(tool, input_dir_host, output_dir_host, config_dir_host , to_clea
 
     # Format full docker command
     name = tool + "_" + option
+
     image = config["image"]
     tag = config["tag"]
+
+    if digest:
+        designation = "{image}{digest}".format(image=image, digest=digest)
+    else:
+        designation = "{image}:{tag}".format(image=image, tag=tag)
+
     call = docker_cmd.format(output_volume=output_dir_host, input_volume=input_dir_host, config_volume=config_dir_host,\
                         output_volume_docker=output_volume_docker, input_volume_docker=input_volume_docker, config_volume_docker=CONFIG_DIR_DOCKER,  \
-                        image=image, tag=tag, option=option_cmd, name=name, platform=platform, network=network, socket=socket)
+                        designation=designation, option=option_cmd, name=name, platform=platform, network=network, socket=socket)
 
     # Create log file and run the process
     p = subprocess.run(shlex.split(call), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode
@@ -394,7 +404,7 @@ def run_tool_thread(tool, input_dir_host, output_dir_host, config_dir_host, runs
     :param to_clean: List to append information for clean up (name, image, tag)
     """
     # Get the arguments for a tool run
-    tool_values = {a:runs[tool][a] for a in runs[tool] if a in ["option", "args", "custom_args","platform"]}
+    tool_values = {a:runs[tool][a] for a in runs[tool] if a in ["option", "args", "custom_args","platform","sha256"]}
 
     # Create the docker container
     container = create_tool(tool, input_dir_host, output_dir_host, config_dir_host, to_clean, tool_values)

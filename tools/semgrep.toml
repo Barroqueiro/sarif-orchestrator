@@ -8,4 +8,4 @@ share_network = 0
 
 [options]
     
-scan = "scan --config auto --sarif --output {output_place} {0}"
+scan = "semgrep scan --config auto --sarif --output {output_place} {0}"

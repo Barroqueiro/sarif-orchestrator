@@ -5,7 +5,6 @@ services:
       context: ../
       dockerfile: ./docker/Dockerfile
     image: cruzdinis12/sarif-orchestrator
-    network_mode: "host"
     volumes:
       - ${INPUT_HOST_DIR}:/input:ro
       - ${OUTPUT_HOST_DIR}:/output:rw

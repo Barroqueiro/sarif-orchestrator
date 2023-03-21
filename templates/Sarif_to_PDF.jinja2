@@ -9,7 +9,6 @@
 <div class="container">
 <div class="container-fluid text-sm-left p-5 bg-light">
 <h1>Vulnerability Report</h1>
-
 <h2><p>&nbsp;&nbsp;&nbsp;&nbsp;This report was automaticly generated based on the vulnerabilities specification of a <a href="https://sarifweb.azurewebsites.net">SARIF</a> file.</p><h3>
 </div>
 <br>
@@ -109,7 +108,7 @@
 
 {%+ if "helpUri" in rules[vuln["ruleId"]] -%}
 <h4><p>&nbsp;&nbsp;&nbsp;&nbsp;Help Uri</p></h4>
-<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ rules[vuln["ruleId"]]["helpUri"] }}</p></h6>
+<h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ rules[vuln['ruleId']]['helpUri'] }}">{{ rules[vuln["ruleId"]]["helpUri"] }}</a></p></h6>
 {%+ endif %}
 {%+ if "shortDescription" in rules[vuln["ruleId"]] -%}
 <h4><p>&nbsp;&nbsp;&nbsp;&nbsp;Short Description</p></h4>
