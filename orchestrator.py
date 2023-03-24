@@ -100,10 +100,17 @@ def update_single_sarif(filename):
     """
 
     # Get items to ignore
-    hashes = open(CONFIG_DIR_DOCKER + "/" + HASH_IGNORE_FILE).read().split("\n")
-    hashes = [h for h in hashes if h != "" and h[0] != "#" ]
-    ids = open(CONFIG_DIR_DOCKER + "/" + ID_IGNORE_FILE).read().split("\n")
-    ids = [i for i in ids if i != "" and i[0] != "#" ]
+    if os.path.isfile(CONFIG_DIR_DOCKER + "/" + HASH_IGNORE_FILE):
+        hashes = open(CONFIG_DIR_DOCKER + "/" + HASH_IGNORE_FILE).read().split("\n")
+        hashes = [h for h in hashes if h != "" and h[0] != "#" ]
+    else:
+        hashes = []
+        
+    if os.path.isfile(CONFIG_DIR_DOCKER + "/" + ID_IGNORE_FILE):
+        ids = open(CONFIG_DIR_DOCKER + "/" + ID_IGNORE_FILE).read().split("\n")
+        ids = [i for i in ids if i != "" and i[0] != "#" ]
+    else:
+        ids = []
 
     # Load information
     with open(filename,"r") as f:
@@ -173,7 +180,7 @@ def produce_sarif_reports(input_dir, output_dir, t):
     for subdir, dirs, files in os.walk(input_dir):
         for file in files:
             ext = os.path.splitext(file)[-1].lower()
-            if ".sarif" in file:
+            if ".sarif" in file and t in ["MD","HTML","PDF"]:
                 produce_single_sarif(os.path.join(subdir, file),output_dir, t)
 
 def produce_single_sarif(file, output_dir, t):
