@@ -8,6 +8,7 @@ import shlex
 import queue
 import hashlib
 import logging
+import requests
 import argparse
 import threading
 import subprocess
@@ -86,6 +87,22 @@ def release():
     """
     globals()["semaphore"].put(1)
 
+# Upload Functions
+
+def upload_file(params, file, headers, url):
+    with open(file) as f:
+        r = requests.post("{url}/api/v2/import-scan/".format(url=url), files={'file': f}, data=params, headers=headers)
+
+    print("Upload comcluded with code: ",r.status_code)
+
+def upload_dir(params, dir, headers, url):
+
+    for subdir, dirs, files in os.walk(f"/input/{dir}"):
+        for file in files:
+            ext = os.path.splitext(file)[-1].lower()
+            if ".sarif" in file:
+                upload_file(params, os.path.join(subdir, file), headers, url)
+
 # Vulnerability ignoring functions
 
 def hash_vuln(vuln):
@@ -105,7 +122,7 @@ def update_single_sarif(filename):
         hashes = [h for h in hashes if h != "" and h[0] != "#" ]
     else:
         hashes = []
-        
+
     if os.path.isfile(CONFIG_DIR_DOCKER + "/" + ID_IGNORE_FILE):
         ids = open(CONFIG_DIR_DOCKER + "/" + ID_IGNORE_FILE).read().split("\n")
         ids = [i for i in ids if i != "" and i[0] != "#" ]
@@ -481,6 +498,10 @@ def main():
     report_parser = subparsers.add_parser("report", help="Produce Markdown reports from sarif files")
     report_parser.add_argument('--type', type=str, required=True,
                         help='Type of report to produce')
+
+    upload_parser = subparsers.add_parser("upload", help="Upload results to DefectDojo")
+    upload_parser.add_argument('--config', type=str, required=True,
+                        help='Configuration file for upload')
     args = parser.parse_args()
     command_args = vars(args)
 
@@ -506,6 +527,21 @@ def main():
         for t in command_args["type"].split(","):
             produce_sarif_reports(INPUT_DIR_DOCKER,OUTPUT_DIR_DOCKER, t)
 
+    if command == "upload":
+
+        config = toml.loads(open(command_args["config"]).read())
+
+        params = {k:v for k,v in config.items() if k not in ["url","file","dir","auth"]}
+        params["scan_type"] = "SARIF"
+
+        headers = {'Authorization': 'token {}'.format(config["auth"])}
+
+        if config["file"]:
+
+            upload_file(params, "/input/{file}".format(file=config["file"]), headers, config["url"])
+        else:
+            
+            upload_dir(params, config["dir"], headers, config["url"])
 
 if __name__ == "__main__":
     main()

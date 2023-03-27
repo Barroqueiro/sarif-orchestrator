@@ -6,27 +6,38 @@ services:
       dockerfile: ./docker/Dockerfile
     image: cruzdinis12/sarif-orchestrator
     volumes:
-      - ${INPUT_HOST_DIR}:/input:ro
-      - ${OUTPUT_HOST_DIR}:/output:rw
+      - ${ORCHESTRATOR_INPUT_HOST_DIR}:/input:ro
+      - ${ORCHESTRATOR_OUTPUT_HOST_DIR}:/output:rw
       - ${CONFIG_HOST_DIR}:/config:ro
       - /var/run/docker.sock:/var/run/docker.sock:rw 
     command:
       - "orchestrator"
       - "--input-dir-host"
-      - "${INPUT_HOST_DIR}"
+      - "${ORCHESTRATOR_INPUT_HOST_DIR}"
       - "--output-dir-host"
-      - "${OUTPUT_HOST_DIR}"
+      - "${ORCHESTRATOR_OUTPUT_HOST_DIR}"
       - "--config-dir-host"
       - "${CONFIG_HOST_DIR}"
       - "--config"
-      - "/config/${CONFIG_FILE}"
+      - "/config/${ORCHESTRATOR_CONFIG_FILE}"
       - "--keep-images"
   report:
     image: cruzdinis12/sarif-orchestrator
     volumes:
-      - ${INPUT_DIR}:/input:ro
-      - ${OUTPUT_DIR}:/output:rw
+      - ${REPORT_INPUT_HOST_DIR}:/input:ro
+      - ${REPORT_OUTPUT_HOST_DIR}:/output:rw
+      - ${CONFIG_HOST_DIR}:/config:ro
     command:
       - "report"
       - "--type"
-      - "${TYPE}"
+      - "${REPORT_TYPE}"
+  upload:
+    image: cruzdinis12/sarif-orchestrator
+    network_mode: "host"
+    volumes:
+      - ${UPLOAD_INPUT_HOST_DIR}:/input:ro
+      - ${CONFIG_HOST_DIR}:/config:ro
+    command:
+      - "upload"
+      - "--config"
+      - "/config/${UPLOAD_CONFIG_FILE}"
