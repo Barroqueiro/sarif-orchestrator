@@ -1,11 +1,11 @@
-tag = "v2.8.0"
+tag = "v2.8.0-beta.1-arm64"
 image = "horuszup/horusec-cli"
 output_volume_docker = ""
-input_volume_docker = ""
+input_volume_docker = "/src/horusec"
 default_option = "scan"
-share_socket = 0
+share_socket = 1
 share_network = 1
 
 [options]
     
-scan = "horusec start -p /input/{0} -o sarif -O {output_place} {custom_args}"
+scan = "horusec start -p /src/horusec/{0} -o sarif -O {output_place} {custom_args}"

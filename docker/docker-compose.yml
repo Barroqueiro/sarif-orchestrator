@@ -24,7 +24,7 @@ services:
   report:
     image: cruzdinis12/sarif-orchestrator
     volumes:
-      - ${REPORT_INPUT_HOST_DIR}:/input:ro
+      - ${REPORT_INPUT_HOST_DIR}:/input:rw
       - ${REPORT_OUTPUT_HOST_DIR}:/output:rw
       - ${CONFIG_HOST_DIR}:/config:ro
     command:
@@ -35,7 +35,7 @@ services:
     image: cruzdinis12/sarif-orchestrator
     network_mode: "host"
     volumes:
-      - ${UPLOAD_INPUT_HOST_DIR}:/input:ro
+      - ${UPLOAD_INPUT_HOST_DIR}:/input:rw
       - ${CONFIG_HOST_DIR}:/config:ro
     command:
       - "upload"

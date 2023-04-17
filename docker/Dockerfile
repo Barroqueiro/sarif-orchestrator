@@ -18,8 +18,9 @@ COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
 ADD tools /app/tools
+ADD src /app/src
 ADD templates /app/templates
-COPY orchestrator.py .
+COPY main.py .
 
-ENTRYPOINT ["python3", "orchestrator.py"]
+ENTRYPOINT ["python3", "main.py"]
 CMD ["--help"]

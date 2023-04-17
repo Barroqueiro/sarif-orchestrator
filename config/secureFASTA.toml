@@ -1,0 +1,60 @@
+[[runs]]
+
+tool = "hadolint"
+option = "scan"
+args = ["SecureFASTA/Dockerfile"]
+
+[[runs]]
+
+tool = "flake8"
+option = "scan"
+args = ["SecureFASTA"]
+
+
+[[runs]]
+
+tool = "bandit"
+option = "scan"
+args = ["SecureFASTA"]
+custom_args = "-r"
+
+[[runs]]
+
+tool = "semgrep"
+option = "scan"
+args = ["SecureFASTA"]
+platform = "linux/amd64"
+
+# [[runs]]
+
+# tool = "dependency_check"
+# option = "scan"
+# args = ["SecureFASTA/requirements.txt"]
+# platform = "linux/amd64"
+
+[[runs]]
+
+tool = "horusec"
+option = "scan"
+args = ["SecureFASTA"]
+
+[[runs]]
+
+tool = "gitleaks"
+option = "detect"
+args = ["SecureFASTA"]
+custom_args = "--exit-code 0"
+
+[[runs]]
+
+tool = "dockle"
+option = "scan"
+args = ["secure-fasta"]
+custom_args = "--timeout 600s"
+
+[[runs]]
+
+tool = "trivy"
+option = "image"
+args = ["secure-fasta"]
+depends_on=["dockle"]

@@ -1,6 +1,3 @@
-"""
-Docker conatiner orchestrator for SARIF reporting tools
-"""
 import os
 import toml
 import json
@@ -8,14 +5,13 @@ import shlex
 import queue
 import hashlib
 import logging
-import requests
-import argparse
 import threading
 import subprocess
 from enum import Enum
 from datetime import datetime
-from jinja2 import Environment, FileSystemLoader
-from xhtml2pdf import pisa
+
+from src.constants import *
+
 
 # Example of runs object for consideration
 
@@ -30,6 +26,13 @@ from xhtml2pdf import pisa
 #         "queue": <Queue>
 #     }
 
+# Logger object
+logger = None
+
+# Semaphore to keep access to shared resources controlled
+semaphore = queue.Queue()
+semaphore.put(1)
+
 # States simulation of an enumerate to keep things cleaner (Using enums)
 
 class states(str, Enum):
@@ -39,25 +42,6 @@ class states(str, Enum):
     WAITTING = "WAITTING"
     RUNNING = "RUNNING"
     FINISHED = "FINISHED"
-
-
-# Constants
-REPORT_DIR = "Reporting"                                    # Directory that will store the reports generated
-LOGS_DIR = "Logs"                                           # Directory that will store the logs created (By this orchestrator and each tool)
-OUTPUT_DIR_DOCKER = "/output"                               # Default directory that is used to share output information (From docker's prespective)
-INPUT_DIR_DOCKER = "/input"                                 # Default directory that is used to share input information (From docker's prespective)
-CONFIG_DIR_DOCKER = "/config"                               # Default directory that is used to share configuration information (From docker's prespective)
-LOG_FILE = f'{OUTPUT_DIR_DOCKER}/{LOGS_DIR}/app.log'        # Log file
-HASH_IGNORE_FILE = ".hashignore"
-ID_IGNORE_FILE = ".idignore"
-EXTENSIONS = {"MD": ".md", "HTML":".html", "PDF": ".pdf"}
-
-# Logger object
-logger = None
-
-# Semaphore to keep access to shared resources controlled
-semaphore = queue.Queue()
-semaphore.put(1)
 
 # Printing and Logging functions
 def log_subprocess(cmd,exit_code):
@@ -86,164 +70,6 @@ def release():
     Release the semaphore for shared resource usage
     """
     globals()["semaphore"].put(1)
-
-# Upload Functions
-
-def upload_file(params, file, headers, url):
-    with open(file) as f:
-        r = requests.post("{url}/api/v2/import-scan/".format(url=url), files={'file': f}, data=params, headers=headers)
-
-    print("Upload comcluded with code: ",r.status_code)
-
-def upload_dir(params, dir, headers, url):
-
-    for subdir, dirs, files in os.walk(f"/input/{dir}"):
-        for file in files:
-            ext = os.path.splitext(file)[-1].lower()
-            if ".sarif" in file:
-                upload_file(params, os.path.join(subdir, file), headers, url)
-
-# Vulnerability ignoring functions
-
-def hash_vuln(vuln):
-    """
-    Produce a SHA-256 hash of a result object
-    """
-    return hashlib.sha256(str(vuln).encode("utf-8")).hexdigest()
-
-def update_single_sarif(filename):
-    """
-    Update a SARIF file with the hashes for each vulnerability found, if an hash or id is found within the ignoring files they are discarded from the final results
-    """
-
-    # Get items to ignore
-    if os.path.isfile(CONFIG_DIR_DOCKER + "/" + HASH_IGNORE_FILE):
-        hashes = open(CONFIG_DIR_DOCKER + "/" + HASH_IGNORE_FILE).read().split("\n")
-        hashes = [h for h in hashes if h != "" and h[0] != "#" ]
-    else:
-        hashes = []
-
-    if os.path.isfile(CONFIG_DIR_DOCKER + "/" + ID_IGNORE_FILE):
-        ids = open(CONFIG_DIR_DOCKER + "/" + ID_IGNORE_FILE).read().split("\n")
-        ids = [i for i in ids if i != "" and i[0] != "#" ]
-    else:
-        ids = []
-
-    # Load information
-    with open(filename,"r") as f:
-        data = json.loads(f.read())
-    runs = data["runs"]
-
-    # Remove or update the vulnerability entries
-    for r in runs:
-        iterator = [x for x in r["results"]]
-        results = r["results"]
-        for res in iterator:
-
-            # Remove ids
-            if res["ruleId"] in ids:
-                results.remove(res)
-                continue
-
-            # Get hash if it exists else hash the vulnerability
-            if "properties" in res and "hash" in res["properties"]:
-                hash = res["properties"]["hash"]
-            else:
-                hash = hash_vuln(res)
-                if "properties" in res:
-                    res["properties"]["hash"] = hash
-                else:
-                    res["properties"] = {"hash": hash}
-
-            # Remove hashes
-            if hash in hashes:
-                results.remove(res)
-
-    # Store the information back
-    data["runs"] = runs
-
-    with open(filename, "w", encoding='utf-8') as f:
-        json.dump(data, f, indent=4)
-
-def update_sarif_reports(input_dir):
-    """
-    Walk through a directory and find all sarif files, update each with hashing information
-    """
-    for subdir, dirs, files in os.walk(input_dir):
-        for file in files:
-            if ".sarif" in file:
-                update_single_sarif(os.path.join(subdir, file))
-
-# Reporting functions
-
-def populate_level(results, rules):
-    """
-    Populate the level atribute of sarif results if not included
-    """
-    for r in results:
-        if "level" not in r:
-            if "defaultConfiguration" in rules[r["ruleId"]]:
-                if "level" in rules[r["ruleId"]]["defaultConfiguration"]:
-                    r["level"] = rules[r["ruleId"]]["defaultConfiguration"]["level"]
-                else:
-                    r["level"] = "warning"
-            else:
-                r["level"] = "warning"
-
-def produce_sarif_reports(input_dir, output_dir, t):
-    """
-    Walk through a directory and find all sarif files, produce a report for each
-    """
-    for subdir, dirs, files in os.walk(input_dir):
-        for file in files:
-            ext = os.path.splitext(file)[-1].lower()
-            if ".sarif" in file and t in ["MD","HTML","PDF"]:
-                produce_single_sarif(os.path.join(subdir, file),output_dir, t)
-
-def produce_single_sarif(file, output_dir, t):
-    """
-    Given a sarif file, recover information and craft a markdown file that represents the findings
-    """
-    basename = os.path.basename(file)
-
-    with open(file,"r") as f:
-        data = json.loads(f.read())
-
-    # Get information on the tool and it's rules 
-    info_rules_tools = data["runs"][0]["tool"]["driver"]
-
-    # Produce dictionary with rules
-    if "rules" in info_rules_tools:
-        rules_info = {r["id"]: r for r in info_rules_tools["rules"]}
-    else:
-        rules_info = {}
-
-    # Produce dictionary for tool information without the rules
-    tool_info = {key: value for key, value in info_rules_tools.items() if key != "rules"}
-
-    # Populate the level of results to then order it
-    results = data["runs"][0]["results"]
-    populate_level(results, rules_info)
-
-    results_info = [r for r in sorted(results, key=lambda x: "f" if x["level"] == "warning" else x["level"])]
-    extension = EXTENSIONS[t]
-
-    # Load template and produce final report
-    env = Environment(loader=FileSystemLoader("templates"), autoescape=True, extensions=['jinja2.ext.do'])
-    template = env.get_template(f'Sarif_to_{t}.jinja2')
-    output_from_parsed_template = template.render(tool=tool_info,rules=rules_info,results=results_info)
-    if t == "PDF":
-        pisa.CreatePDF(
-            src=output_from_parsed_template,  # HTML to convert
-            dest=open(output_dir + "/" + basename.split(".sarif")[0]+extension,"w+b"))
-    else:
-        with open(output_dir + "/" + basename.split(".sarif")[0]+extension,"w") as f:
-            f.write(output_from_parsed_template)
-
-
-## error warning note
-
-# Setup and Cleaning functions
 
 def setup():
     """
@@ -359,7 +185,7 @@ def create_tool(tool, input_dir_host, output_dir_host, config_dir_host , to_clea
     """
 
     docker_cmd = "docker create {network} --name {name} {platform} -v {output_volume}:{output_volume_docker}:rw \
-                    -v {input_volume}:{input_volume_docker}:ro \
+                    -v {input_volume}:{input_volume_docker}:rw \
                     -v {config_volume}:{config_volume_docker}:ro  \
                     {socket} \
                     {designation} {option}" 
@@ -479,69 +305,74 @@ def run_tasks(runs, input_dir_host, output_dir_host, config_dir_host):
 
     return to_clean
 
-# Main
-def main():
-    parser = argparse.ArgumentParser(description="Orchestrating sarif tools")
-    subparsers = parser.add_subparsers(title="subcommands", help="Different commands", dest="command")
-    orchestrator_parser = subparsers.add_parser("orchestrator", help="Orchestrate tools to produce sarif reporting")
-    orchestrator_parser.add_argument('--input-dir-host', type=str, required=True,
-                        help='Directory to be shared with docker for input')
-    orchestrator_parser.add_argument('--output-dir-host', type=str, required=True,
-                        help='Directory to be shared with the docker runs for output')
-    orchestrator_parser.add_argument('--config-dir-host', type=str, required=True,
-                        help='Directory to be shared with the docker runs for configuration')
-    orchestrator_parser.add_argument('--config', type=str, required=True,
-                        help='Current path')
-    orchestrator_parser.add_argument('--keep-images', action='store_true',
-                        help='Keep images after finishing')
+# Vulnerability ignoring functions
 
-    report_parser = subparsers.add_parser("report", help="Produce Markdown reports from sarif files")
-    report_parser.add_argument('--type', type=str, required=True,
-                        help='Type of report to produce')
+def hash_vuln(vuln):
+    """
+    Produce a SHA-256 hash of a result object
+    """
+    return hashlib.sha256(str(vuln).encode("utf-8")).hexdigest()
 
-    upload_parser = subparsers.add_parser("upload", help="Upload results to DefectDojo")
-    upload_parser.add_argument('--config', type=str, required=True,
-                        help='Configuration file for upload')
-    args = parser.parse_args()
-    command_args = vars(args)
+def update_single_sarif(filename):
+    """
+    Update a SARIF file with the hashes for each vulnerability found, if an hash or id is found within the ignoring files they are discarded from the final results
+    """
 
-    command = command_args["command"]
+    # Get items to ignore
+    if os.path.isfile(CONFIG_DIR_DOCKER + "/" + HASH_IGNORE_FILE):
+        hashes = open(CONFIG_DIR_DOCKER + "/" + HASH_IGNORE_FILE).read().split("\n")
+        hashes = [h for h in hashes if h != "" and h[0] != "#" ]
+    else:
+        hashes = []
 
-    if command == "orchestrator":
+    if os.path.isfile(CONFIG_DIR_DOCKER + "/" + ID_IGNORE_FILE):
+        ids = open(CONFIG_DIR_DOCKER + "/" + ID_IGNORE_FILE).read().split("\n")
+        ids = [i for i in ids if i != "" and i[0] != "#" ]
+    else:
+        ids = []
 
-        config = toml.loads(open(command_args["config"]).read())
-        print("Full config: ")
+    # Load information
+    with open(filename,"r") as f:
+        data = json.loads(f.read())
+    runs = data["runs"]
 
-        setup()
-        runs = get_runs(config)
-        print_config(runs)
+    # Remove or update the vulnerability entries
+    for r in runs:
+        iterator = [x for x in r["results"]]
+        results = r["results"]
+        for res in iterator:
 
-        to_clean = run_tasks(runs, command_args["input_dir_host"], command_args["output_dir_host"], command_args["config_dir_host"])
+            # Remove ids
+            if res["ruleId"] in ids:
+                results.remove(res)
+                continue
 
-        finish(to_clean, command_args["keep_images"])
+            # Get hash if it exists else hash the vulnerability
+            if "properties" in res and "hash" in res["properties"]:
+                hash = res["properties"]["hash"]
+            else:
+                hash = hash_vuln(res)
+                if "properties" in res:
+                    res["properties"]["hash"] = hash
+                else:
+                    res["properties"] = {"hash": hash}
 
-        update_sarif_reports(OUTPUT_DIR_DOCKER + "/" +REPORT_DIR)
-    
-    if command == "report":
+            # Remove hashes
+            if hash in hashes:
+                results.remove(res)
 
-        for t in command_args["type"].split(","):
-            produce_sarif_reports(INPUT_DIR_DOCKER,OUTPUT_DIR_DOCKER, t)
+    # Store the information back
+    data["runs"] = runs
 
-    if command == "upload":
+    with open(filename, "w", encoding='utf-8') as f:
+        json.dump(data, f, indent=4)
 
-        config = toml.loads(open(command_args["config"]).read())
+def update_sarif_reports():
+    """
+    Walk through a directory and find all sarif files, update each with hashing information
+    """
+    for subdir, dirs, files in os.walk(OUTPUT_DIR_DOCKER + "/" +REPORT_DIR):
+        for file in files:
+            if ".sarif" in file:
+                update_single_sarif(os.path.join(subdir, file))
 
-        params = {k:v for k,v in config.items() if k not in ["url","file","dir","auth"]}
-        params["scan_type"] = "SARIF"
-
-        headers = {'Authorization': 'token {}'.format(config["auth"])}
-
-        if config["file"]:
-
-            upload_file(params, "/input/{file}".format(file=config["file"]), headers, config["url"])
-        else:
-            
-            upload_dir(params, config["dir"], headers, config["url"])
-
-if __name__ == "__main__":
-    main()
