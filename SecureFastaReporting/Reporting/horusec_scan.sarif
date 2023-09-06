@@ -1,0 +1,398 @@
+{
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "Safety",
+                    "informationUri": "https://docs.horusec.io/docs/cli/analysis-tools/overview/",
+                    "rules": [
+                        {
+                            "id": "53325",
+                            "shortDescription": {
+                                "text": "Werkzeug 2.2.3 includes a fix for CVE-2023-25577: Prior to version 2.2.3, Werkzeug's multipart form data parser will parse an unlimited number of parts, including file parts. Parts can be a small amount of bytes, but each requires CPU time to parse and may use more memory as Python data. If a request can be made to an endpoint that accesses 'request.data', 'request.form', 'request.files', or 'request.get_data(parse_form_data=False)', it can cause unexpectedly high resource usage. This allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. The amount of RAM required can trigger an out of memory kill of the process. Unlimited file parts can use up memory and file handles. If many concurrent requests are sent continuously, this can exhaust or kill all available workers.\r\nhttps://github.com/pallets/werkzeug/security/advisories/GHSA-xg9f-g7g7-2323"
+                            },
+                            "fullDescription": {
+                                "text": "Werkzeug 2.2.3 includes a fix for CVE-2023-25577: Prior to version 2.2.3, Werkzeug's multipart form data parser will parse an unlimited number of parts, including file parts. Parts can be a small amount of bytes, but each requires CPU time to parse and may use more memory as Python data. If a request can be made to an endpoint that accesses 'request.data', 'request.form', 'request.files', or 'request.get_data(parse_form_data=False)', it can cause unexpectedly high resource usage. This allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. The amount of RAM required can trigger an out of memory kill of the process. Unlimited file parts can use up memory and file handles. If many concurrent requests are sent continuously, this can exhaust or kill all available workers.\r\nhttps://github.com/pallets/werkzeug/security/advisories/GHSA-xg9f-g7g7-2323"
+                            },
+                            "helpUri": "https://docs.horusec.io/docs/cli/analysis-tools/overview/",
+                            "name": "Werkzeug 2.2.3 includes a fix for CVE-2023-25577: Prior to version 2.2.3, Werkzeug's multipart form data parser will parse an unlimited number of parts, including file parts. Parts can be a small amount of bytes, but each requires CPU time to parse and may use more memory as Python data. If a request can be made to an endpoint that accesses 'request.data', 'request.form', 'request.files', or 'request.get_data(parse_form_data=False)', it can cause unexpectedly high resource usage. This allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. The amount of RAM required can trigger an out of memory kill of the process. Unlimited file parts can use up memory and file handles. If many concurrent requests are sent continuously, this can exhaust or kill all available workers.\r"
+                        },
+                        {
+                            "id": "53326",
+                            "shortDescription": {
+                                "text": "Werkzeug 2.2.3 includes a fix for CVE-2023-23934: Browsers may allow \"nameless\" cookies that look like '=value' instead of 'key=value'. A vulnerable browser may allow a compromised application on an adjacent subdomain to exploit this to set a cookie like '=__Host-test=bad' for another subdomain. Werkzeug prior to 2.2.3 will parse the cookie '=__Host-test=bad' as __Host-test=bad'. If a Werkzeug application is running next to a vulnerable or malicious subdomain which sets such a cookie using a vulnerable browser, the Werkzeug application will see the bad cookie value but the valid cookie key.\r\nhttps://github.com/pallets/werkzeug/security/advisories/GHSA-px8h-6qxv-m22q"
+                            },
+                            "fullDescription": {
+                                "text": "Werkzeug 2.2.3 includes a fix for CVE-2023-23934: Browsers may allow \"nameless\" cookies that look like '=value' instead of 'key=value'. A vulnerable browser may allow a compromised application on an adjacent subdomain to exploit this to set a cookie like '=__Host-test=bad' for another subdomain. Werkzeug prior to 2.2.3 will parse the cookie '=__Host-test=bad' as __Host-test=bad'. If a Werkzeug application is running next to a vulnerable or malicious subdomain which sets such a cookie using a vulnerable browser, the Werkzeug application will see the bad cookie value but the valid cookie key.\r\nhttps://github.com/pallets/werkzeug/security/advisories/GHSA-px8h-6qxv-m22q"
+                            },
+                            "helpUri": "https://docs.horusec.io/docs/cli/analysis-tools/overview/",
+                            "name": "Werkzeug 2.2.3 includes a fix for CVE-2023-23934: Browsers may allow \"nameless\" cookies that look like '=value' instead of 'key=value'. A vulnerable browser may allow a compromised application on an adjacent subdomain to exploit this to set a cookie like '=__Host-test=bad' for another subdomain. Werkzeug prior to 2.2.3 will parse the cookie '=__Host-test=bad' as __Host-test=bad'. If a Werkzeug application is running next to a vulnerable or malicious subdomain which sets such a cookie using a vulnerable browser, the Werkzeug application will see the bad cookie value but the valid cookie key.\r"
+                        },
+                        {
+                            "id": "51668",
+                            "shortDescription": {
+                                "text": "Sqlalchemy 2.0.0b1 avoids leaking cleartext passwords to the open for careless uses of str(engine.URL()) in logs and prints.\r\nhttps://github.com/sqlalchemy/sqlalchemy/pull/8563"
+                            },
+                            "fullDescription": {
+                                "text": "Sqlalchemy 2.0.0b1 avoids leaking cleartext passwords to the open for careless uses of str(engine.URL()) in logs and prints.\r\nhttps://github.com/sqlalchemy/sqlalchemy/pull/8563"
+                            },
+                            "helpUri": "https://docs.horusec.io/docs/cli/analysis-tools/overview/",
+                            "name": "Sqlalchemy 2.0.0b1 avoids leaking cleartext passwords to the open for careless uses of str(engine.URL()) in logs and prints.\r"
+                        }
+                    ],
+                    "version": "2.8.0-beta.1"
+                }
+            },
+            "artifacts": [
+                {
+                    "location": {
+                        "uri": "requirements.txt"
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "message": {
+                        "text": "Sqlalchemy 2.0.0b1 avoids leaking cleartext passwords to the open for careless uses of str(engine.URL()) in logs and prints.\r\nhttps://github.com/sqlalchemy/sqlalchemy/pull/8563"
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "requirements.txt"
+                                },
+                                "region": {
+                                    "snippet": {
+                                        "text": "sqlalchemy"
+                                    },
+                                    "startLine": 9,
+                                    "startColumn": 1
+                                }
+                            }
+                        }
+                    ],
+                    "ruleId": "51668",
+                    "properties": {
+                        "hash": "ddd042abebc63e251cb665a98920f85944b383e2f88ccbc8a0beab63532ae878"
+                    }
+                },
+                {
+                    "message": {
+                        "text": "Werkzeug 2.2.3 includes a fix for CVE-2023-25577: Prior to version 2.2.3, Werkzeug's multipart form data parser will parse an unlimited number of parts, including file parts. Parts can be a small amount of bytes, but each requires CPU time to parse and may use more memory as Python data. If a request can be made to an endpoint that accesses 'request.data', 'request.form', 'request.files', or 'request.get_data(parse_form_data=False)', it can cause unexpectedly high resource usage. This allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. The amount of RAM required can trigger an out of memory kill of the process. Unlimited file parts can use up memory and file handles. If many concurrent requests are sent continuously, this can exhaust or kill all available workers.\r\nhttps://github.com/pallets/werkzeug/security/advisories/GHSA-xg9f-g7g7-2323"
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "requirements.txt"
+                                },
+                                "region": {
+                                    "snippet": {
+                                        "text": "werkzeug"
+                                    },
+                                    "startLine": 24,
+                                    "startColumn": 1
+                                }
+                            }
+                        }
+                    ],
+                    "ruleId": "53325",
+                    "properties": {
+                        "hash": "9807f6cc8793c7712f1098e390a7e97ac78ab1a9d4d8dd558c757663b200a142"
+                    }
+                },
+                {
+                    "message": {
+                        "text": "Werkzeug 2.2.3 includes a fix for CVE-2023-23934: Browsers may allow \"nameless\" cookies that look like '=value' instead of 'key=value'. A vulnerable browser may allow a compromised application on an adjacent subdomain to exploit this to set a cookie like '=__Host-test=bad' for another subdomain. Werkzeug prior to 2.2.3 will parse the cookie '=__Host-test=bad' as __Host-test=bad'. If a Werkzeug application is running next to a vulnerable or malicious subdomain which sets such a cookie using a vulnerable browser, the Werkzeug application will see the bad cookie value but the valid cookie key.\r\nhttps://github.com/pallets/werkzeug/security/advisories/GHSA-px8h-6qxv-m22q"
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "requirements.txt"
+                                },
+                                "region": {
+                                    "snippet": {
+                                        "text": "werkzeug"
+                                    },
+                                    "startLine": 24,
+                                    "startColumn": 1
+                                }
+                            }
+                        }
+                    ],
+                    "ruleId": "53326",
+                    "properties": {
+                        "hash": "9ea796f79f7b491157a92f76810f12010d70aa211ddbf70c33363d85da26e9ec"
+                    }
+                }
+            ]
+        },
+        {
+            "tool": {
+                "driver": {
+                    "name": "Trivy",
+                    "informationUri": "https://docs.horusec.io/docs/cli/analysis-tools/overview/",
+                    "rules": [
+                        {
+                            "id": "",
+                            "shortDescription": {
+                                "text": "The instruction 'RUN <package-manager> update' should always be followed by '<package-manager> install' in the same RUN statement. - The instruction 'RUN <package-manager> update' should always be followed by '<package-manager> install' in the same RUN statement. - Combine '<package-manager> update' and '<package-manager> install' instructions to single one - [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run https://avd.aquasec.com/appshield/ds017]"
+                            },
+                            "fullDescription": {
+                                "text": "The instruction 'RUN <package-manager> update' should always be followed by '<package-manager> install' in the same RUN statement. - The instruction 'RUN <package-manager> update' should always be followed by '<package-manager> install' in the same RUN statement. - Combine '<package-manager> update' and '<package-manager> install' instructions to single one - [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run https://avd.aquasec.com/appshield/ds017]"
+                            },
+                            "helpUri": "https://docs.horusec.io/docs/cli/analysis-tools/overview/",
+                            "name": "The instruction 'RUN <package-manager> update' should always be followed by '<package-manager> install' in the same RUN statement. - The instruction 'RUN <package-manager> update' should always be followed by '<package-manager> install' in the same RUN statement. - Combine '<package-manager> update' and '<package-manager> install' instructions to single one - [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run https://avd.aquasec.com/appshield/ds017]"
+                        }
+                    ],
+                    "version": "2.8.0-beta.1"
+                }
+            },
+            "artifacts": [
+                {
+                    "location": {
+                        "uri": "Dockerfile"
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "message": {
+                        "text": "Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile. - Specify at least 1 USER command in Dockerfile with non-root user as argument - Add 'USER <non root user name>' line to the Dockerfile - [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/ https://avd.aquasec.com/appshield/ds002]"
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "Dockerfile"
+                                },
+                                "region": {
+                                    "snippet": {
+                                        "text": "root user"
+                                    },
+                                    "startLine": 1,
+                                    "startColumn": 1
+                                }
+                            }
+                        }
+                    ],
+                    "ruleId": "",
+                    "properties": {
+                        "hash": "00db024ace847d19f2fc28f1733a19e55c8a166615755bb2a6779a82086c5d65"
+                    }
+                },
+                {
+                    "message": {
+                        "text": "The instruction 'RUN <package-manager> update' should always be followed by '<package-manager> install' in the same RUN statement. - The instruction 'RUN <package-manager> update' should always be followed by '<package-manager> install' in the same RUN statement. - Combine '<package-manager> update' and '<package-manager> install' instructions to single one - [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run https://avd.aquasec.com/appshield/ds017]"
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "Dockerfile"
+                                },
+                                "region": {
+                                    "snippet": {
+                                        "text": "'RUN <package-manager> update' instruction alone"
+                                    },
+                                    "startLine": 1,
+                                    "startColumn": 1
+                                }
+                            }
+                        }
+                    ],
+                    "ruleId": "",
+                    "properties": {
+                        "hash": "1076b074b4244118d2b2bc803903a8ef18f69ebdada80112d55487bbb8aeac8d"
+                    }
+                }
+            ]
+        },
+        {
+            "tool": {
+                "driver": {
+                    "name": "Bandit",
+                    "informationUri": "https://docs.horusec.io/docs/cli/analysis-tools/overview/",
+                    "rules": [
+                        {
+                            "id": "B310",
+                            "shortDescription": {
+                                "text": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected."
+                            },
+                            "fullDescription": {
+                                "text": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected."
+                            },
+                            "helpUri": "https://docs.horusec.io/docs/cli/analysis-tools/overview/",
+                            "name": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected."
+                        },
+                        {
+                            "id": "B403",
+                            "shortDescription": {
+                                "text": "Consider possible security implications associated with dumps module."
+                            },
+                            "fullDescription": {
+                                "text": "Consider possible security implications associated with dumps module."
+                            },
+                            "helpUri": "https://docs.horusec.io/docs/cli/analysis-tools/overview/",
+                            "name": "Consider possible security implications associated with dumps module."
+                        },
+                        {
+                            "id": "B301",
+                            "shortDescription": {
+                                "text": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue."
+                            },
+                            "fullDescription": {
+                                "text": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue."
+                            },
+                            "helpUri": "https://docs.horusec.io/docs/cli/analysis-tools/overview/",
+                            "name": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue."
+                        },
+                        {
+                            "id": "B608",
+                            "shortDescription": {
+                                "text": "Possible SQL injection vector through string-based query construction."
+                            },
+                            "fullDescription": {
+                                "text": "Possible SQL injection vector through string-based query construction."
+                            },
+                            "helpUri": "https://docs.horusec.io/docs/cli/analysis-tools/overview/",
+                            "name": "Possible SQL injection vector through string-based query construction."
+                        }
+                    ],
+                    "version": "2.8.0-beta.1"
+                }
+            },
+            "artifacts": [
+                {
+                    "location": {
+                        "uri": "routes/account.py"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "routes/signup.py"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "utils/profile_image.py"
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "message": {
+                        "text": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue."
+                    },
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "routes/account.py"
+                                },
+                                "region": {
+                                    "snippet": {
+                                        "text": "99     else:\n100         preferences = loads(b64decode(preferences))\n101 \n"
+                                    },
+                                    "startLine": 100,
+                                    "startColumn": 1
+                                }
+                            }
+                        }
+                    ],
+                    "ruleId": "B301",
+                    "properties": {
+                        "hash": "c94e7ca8e597456981cf05c9e0d550063bf643016b92e84a3187389afc3b790e"
+                    }
+                },
+                {
+                    "message": {
+                        "text": "Possible SQL injection vector through string-based query construction."
+                    },
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "routes/signup.py"
+                                },
+                                "region": {
+                                    "snippet": {
+                                        "text": "15         result = session.execute(\n16             text(f\"\"\"\n17                 SELECT id, code FRO"
+                                    },
+                                    "startLine": 16,
+                                    "startColumn": 1
+                                }
+                            }
+                        }
+                    ],
+                    "ruleId": "B608",
+                    "properties": {
+                        "hash": "27bf50df9ec60c845fe1fa77c49bb665b56b78ecb8f9d46339492a60b4706cf7"
+                    }
+                },
+                {
+                    "message": {
+                        "text": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected."
+                    },
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "utils/profile_image.py"
+                                },
+                                "region": {
+                                    "snippet": {
+                                        "text": "6 def download(url: str) -> bytes:\n7     with urlopen(url) as response:\n8         return response.re"
+                                    },
+                                    "startLine": 7,
+                                    "startColumn": 1
+                                }
+                            }
+                        }
+                    ],
+                    "ruleId": "B310",
+                    "properties": {
+                        "hash": "711de23aa478fb086d2a4e61c006bd1a05b9fbfc6ccfc170d70ca057868ce9b2"
+                    }
+                },
+                {
+                    "message": {
+                        "text": "Consider possible security implications associated with dumps module."
+                    },
+                    "level": "note",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "routes/account.py"
+                                },
+                                "region": {
+                                    "snippet": {
+                                        "text": "1 from pickle import dumps, loads\n2 from base64 import b64encode, b64decode\n3 import json\n"
+                                    },
+                                    "startLine": 1,
+                                    "startColumn": 1
+                                }
+                            }
+                        }
+                    ],
+                    "ruleId": "B403",
+                    "properties": {
+                        "hash": "dae1b8e04a180eaa04e6fe56fe6a4a36b075d07eb232ec741860ead15d61f58d"
+                    }
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0",
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json"
+}

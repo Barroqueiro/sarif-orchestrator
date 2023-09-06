@@ -1,4 +1,4 @@
-tag = "2.12.0"
+tag = "2.11.1"
 image = "owasp/zap2docker-stable"
 output_volume_docker = "/zap/wrk"
 input_volume_docker = ""
@@ -8,4 +8,4 @@ share_network = 1
 
 [options]
     
-scan = 'bash -c "export target={0}; ./zap.sh -cmd -autorun /config/zap.yaml"'
+scan = 'bash -c "export target={0}; ./zap.sh -cmd -addonupdate; ./zap.sh -cmd -autorun /config/zap.yaml"'

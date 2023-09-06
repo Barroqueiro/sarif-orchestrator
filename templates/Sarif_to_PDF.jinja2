@@ -65,9 +65,7 @@
 <h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Line {{ l["physicalLocation"]["region"]["startLine"] }}</p></h6>
 {%+ endif %}
 {%+ if "snippet" in l["physicalLocation"]["region"] and l["physicalLocation"]["region"]["snippet"]["text"] != ""  -%}
-```
 <h6><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ l["physicalLocation"]["region"]["snippet"]["text"].strip()|safe }}</h6>
-```
 {%+ endif %}
 {%+ endif %}
 {%+ if "logicalLocations" in l -%}
