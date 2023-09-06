@@ -1,10 +1,10 @@
-tag = "7.4.1"
+tag = "8.2.1"
 image = "owasp/dependency-check"
 output_volume_docker = "/report"
 input_volume_docker = "/src"
 default_option = "scan"
 share_socket = 0
-share_network = 0
+share_network = 1
 
 [options]
     
