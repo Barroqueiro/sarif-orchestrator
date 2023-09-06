@@ -2,24 +2,16 @@
 
 ## Docker compose
 
-The `docker-compose.yml` file found inside the docker folder provides a simple way to run the project, this file presents 2 services available:
+The `docker-compose.yml` file found inside the docker folder provides a simple way to run the project, this file presents 3 services available:
 
 - orchestrator
   - Which allows the user to leverage the different available tools and produce reports based on the input parameters
 - report
   - Which allows the user to transform the SARIF logs into more readable options (At the moment only Markdown is available)
+- upload
+  - Which allows for the upload of the scan information into a DefectDojo instance
 
-The command to run each of the services is then:
-
-```
-docker-compose up orchestrator
-```
-
-or
-
-```
-docker-compose up report
-```
+The command to run each of the services is then: `docker-compose up orchestrator`, `docker-compose up report` or `docker-compose up upload`
 
 The services can however be used simultaneously or chained together by using docker-compose's depends-on condition syntax
 
@@ -29,23 +21,32 @@ depends_on:
             condition: service_completed_successfully
 ```
 
-The configuration for this file is provided by the `.env` file inside the same folder, this file has 6 possible variables to be configured, divided by service these are the objectives of each:
+The configuration for this file is provided by the `.env` file inside the same folder, this file has 9 possible variables to be configured, divided by service these are the objectives of each:
+
+### Global setting
+
+- `CONFIG_HOST_DIR` - A folder to be shared with the containers for sharing configuration information through files.
 
 ### Orchestrator service
 
 This service takes a configuration file along with shared directories between the host and containers and executes the configured tools to produce SARIF results.
 
-- `INPUT_HOST_DIR` - A folder to be shared with the containers for the purposes of sharing input information, this folder should take files that will be analyzed by the project
-- `OUTPUT_HOST_DIR` - A folder to be shared with the containers for the purposes of retreiving information from the containers, this folder will have 2 folders automatically created (`Reporting` and `Logs`) where the first will receive the SARIF files produced by analysis and the later will receive Logs for all tools executed as well as a Log File for the orchetsrator to make troubleshooting easier
-- `CONFIG_HOST_DIR` - A folder to be shared with the containers for the purposed of sharing configuration information, this folder should take files meant to configure the orchestrator or the tools ran by it
-- `CONFIG_FILE` - The file that configures the current analysis, the specification is addressed later
+- `ORCHESTRATOR_INPUT_HOST_DIR` - A folder to be shared with the containers for the purposes of sharing input information, this folder should take files that will be analyzed by the project
+- `ORCHESTRATOR_OUTPUT_HOST_DIR` - A folder to be shared with the containers for the purposes of retreiving information from the containers, this folder will have 2 folders automatically created (`Reporting` and `Logs`) where the first will receive the SARIF files produced by analysis and the later will receive Logs for all tools executed as well as a Log File for the orchetsrator to make troubleshooting easier
+- `ORCHESTRATOR_CONFIG_FILE` - The file that configures the current analysis, the specification is addressed later
 
 ### Report service
 
 This service takes a input folder, collects the SARIF files found inside and outputs a markdown file for each of the identified files to an output directory
 
-- `INPUT_DIR` - Input folder containing the sarif files
-- `OUTPUT_DIR` - Output folder to take the Markdown files produced
+- `REPORT_INPUT_HOST_DIR` - Input folder containing the sarif files
+- `REPORT_OUTPUT_HOST_DIR` - Output folder to take the Markdown files produced
+- `REPORT TYPE` - The type of report to be produced. There exists 3 different formats (MarkDown, HTML and PDF). Multiple formats can be selected by making use of a comma.
+
+### Upload Service
+
+- `UPLOAD_CONFIG_FILE` - Configuration file for the upload containing information on the DefectDojo instance we are targetting.
+- `UPLOAD_INPUT_HOST_DIR` - Input folder to take the information for upload
 
 ## Configuration file
 
@@ -77,6 +78,8 @@ platform = "linux/amd64"
 ## Ignoring vulnerabilities
 
 Vulnerabilities reported can be false positives or simply accepted as a risk, this can be achieved in different ways, one of which works outside this orchestrator as most tools provide a way to do this either by a configuration file or by command line, a unifying solution was created to keep the track of ignored vulnerabilities in a more sustainable way.
+
+In our solutions both the `.hashignore` and `.idignore` files can be placed under the global configuration directory. These are explained bellow.
 
 ### Hash
 
